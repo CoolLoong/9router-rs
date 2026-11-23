@@ -1,0 +1,51 @@
+pkgname=9router-rs-git
+pkgver=0.5.119.r1577.ge21d4d6bc1ea
+pkgrel=1
+pkgdesc='9Router AI gateway and dashboard, native Rust port'
+arch=('x86_64')
+url='https://github.com/CoolLoong/9router-rs'
+license=('MIT')
+depends=('glibc' 'libgcc')
+makedepends=('cargo' 'git' 'nodejs>=22.13.0' 'npm')
+provides=('9router-rs' '9router')
+conflicts=('9router-rs' '9router')
+options=('!debug' '!lto')
+source=("9router-rs::git+${url}.git#branch=master")
+sha256sums=('SKIP')
+
+_target=x86_64-unknown-linux-gnu
+
+pkgver() {
+  cd "$srcdir/9router-rs"
+  local version revision commit
+  version=$(sed -n 's/^version = "\([^"]*\)".*/\1/p' Cargo.toml)
+  revision=$(git rev-list --count HEAD)
+  commit=$(git rev-parse --short=12 HEAD)
+  printf '%s.r%s.g%s\n' "$version" "$revision" "$commit"
+}
+
+prepare() {
+  cd "$srcdir/9router-rs"
+  cargo fetch --locked --target "$_target"
+  npm --prefix dashboard ci --include=dev
+}
+
+build() {
+  cd "$srcdir/9router-rs"
+  local archive_dir="$srcdir/native-package"
+  local archive="9router-${pkgver%.r[0-9]*}-native-preview-$_target"
+  npm --prefix dashboard run build
+  rm -f "$archive_dir/$archive.tar.gz"
+  cargo run --release --locked --offline -p ninerouter-package -- \
+    --target "$_target" --output "$archive_dir"
+}
+
+package() {
+  cd "$srcdir/9router-rs"
+  local archive="9router-${pkgver%.r[0-9]*}-native-preview-$_target"
+  local license_dir="$pkgdir/usr/share/licenses/$pkgname"
+  install -Dm755 "target/$_target/release/ninerouter" "$pkgdir/usr/bin/9router"
+  install -d "$license_dir"
+  tar -xzf "$srcdir/native-package/$archive.tar.gz" -C "$license_dir" \
+    --strip-components=1 "$archive/LICENSE" "$archive/licenses"
+}

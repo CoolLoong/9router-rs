@@ -9,6 +9,16 @@ cargo run --offline --locked -p ninerouter-package -- --target aarch64-apple-dar
 
 The default output is `dist/`. Use `--target-dir` to select a Cargo build directory. The archive contains the `9router` executable, its version and SHA-256 in `manifest.json`, and project, asset, and dependency licenses. Static musl packages include the Rust toolchain notice from `share/doc/rust/COPYRIGHT-library.html`. Install the `rust-docs` component for that toolchain if the notice is missing.
 
+## Install on Arch Linux with paru
+
+From the repository root on x86_64, run:
+
+```sh
+paru -Bi packaging/arch
+```
+
+The recipe fetches the `master` branch from GitHub, builds the dashboard and Rust executable, and installs `9router-rs-git`. Pacman owns `/usr/bin/9router`. Run the same command to build and install a newer commit.
+
 ## Linux preview updates
 
 Set `NINEROUTER_NATIVE_UPDATE_MANIFEST` to the HTTPS URL of the release manifest. Set `NINEROUTER_NATIVE_UPDATE_VERIFY_KEY` to the unpadded Base64URL encoding of the trusted 32-byte Ed25519 public key. Both settings are read by the running process. The preview has no built-in release feed or key.
