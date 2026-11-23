@@ -450,10 +450,12 @@ fn import_main(db: &Connection, data: &Value, now: &str) -> rusqlite::Result<()>
     assert_size(db, "proxyPools", rows(data, "proxyPools").len())?;
 
     for row in rows(data, "apiKeys") {
+        let access = crate::keys::backup_key_access(row)?;
         bind_row(
             db,
             "INSERT OR REPLACE INTO apiKeys
-            (id,key,name,machineId,isActive,createdAt) VALUES (?1,?2,?3,?4,?5,?6)",
+            (id,key,name,machineId,isActive,createdAt,accessRestricted,accessAllow)
+            VALUES (?1,?2,?3,?4,?5,?6,?7,?8)",
             &[
                 row["id"].clone(),
                 row["key"].clone(),
@@ -461,6 +463,8 @@ fn import_main(db: &Connection, data: &Value, now: &str) -> rusqlite::Result<()>
                 fallback(&row["machineId"], Value::Null),
                 active(&row["isActive"]),
                 fallback(&row["createdAt"], json!(now)),
+                access["accessRestricted"].clone(),
+                access["accessAllow"].clone(),
             ],
         )?;
     }

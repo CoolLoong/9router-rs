@@ -23,6 +23,31 @@
     "include": ["README.md"]
   },
   {
+    "name": "jsonschema",
+    "family": true,
+    "version": "0.61.2",
+    "repository": "https://github.com/Stranger6667/jsonschema",
+    "revision": "0e82636fde8b2afb5e712ede6c261166ea10fc17",
+    "file": "jsonschema-MIT.txt",
+    "source": "https://github.com/Stranger6667/jsonschema/blob/0e82636fde8b2afb5e712ede6c261166ea10fc17/LICENSE"
+  },
+  {
+    "name": "uuid-simd",
+    "version": "0.8.0",
+    "repository": "https://github.com/Nugine/simd",
+    "revision": "d74c030d9dc4f3cae02146d1f497ff62726ef09a",
+    "file": "nugine-simd-MIT.txt",
+    "source": "https://github.com/Nugine/simd/blob/d74c030d9dc4f3cae02146d1f497ff62726ef09a/LICENSE"
+  },
+  {
+    "name": "vsimd",
+    "version": "0.8.0",
+    "repository": "https://github.com/Nugine/simd",
+    "revision": "d74c030d9dc4f3cae02146d1f497ff62726ef09a",
+    "file": "nugine-simd-MIT.txt",
+    "source": "https://github.com/Nugine/simd/blob/d74c030d9dc4f3cae02146d1f497ff62726ef09a/LICENSE"
+  },
+  {
     "name": "winapi-x86_64-pc-windows-gnu",
     "version": "0.4.0",
     "repository": "https://github.com/retep998/winapi-rs",

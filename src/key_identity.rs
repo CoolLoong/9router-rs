@@ -10,9 +10,7 @@ const DEFAULT_MACHINE_SALT: &str = "endpoint-proxy-salt";
 const DEFAULT_KEY_SECRET: &str = "endpoint-proxy-api-key-secret";
 
 pub fn generate(root: &Path) -> std::io::Result<(String, String)> {
-    let raw = raw_machine_id(root)?;
-    let hash = Sha256::digest(format!("{raw}{DEFAULT_MACHINE_SALT}"));
-    let machine = format!("{hash:x}")[..16].to_owned();
+    let machine = machine_id(root)?;
 
     let mut key_id = String::with_capacity(6);
     while key_id.len() < 6 {
@@ -33,6 +31,12 @@ pub fn generate(root: &Path) -> std::io::Result<(String, String)> {
     let crc = format!("{:x}", mac.finalize().into_bytes());
     let key = format!("sk-{machine}-{key_id}-{}", &crc[..8]);
     Ok((machine, key))
+}
+
+pub(crate) fn machine_id(root: &Path) -> std::io::Result<String> {
+    let raw = raw_machine_id(root)?;
+    let hash = Sha256::digest(format!("{raw}{DEFAULT_MACHINE_SALT}"));
+    Ok(format!("{hash:x}")[..16].to_owned())
 }
 
 pub(crate) fn raw_machine_id(root: &Path) -> std::io::Result<String> {

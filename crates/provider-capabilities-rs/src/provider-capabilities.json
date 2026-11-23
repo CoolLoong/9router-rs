@@ -774,6 +774,36 @@
       }
     },
     "codex": {
+      "gpt-6.2-sol": {
+        "vision": true,
+        "reasoning": true,
+        "search": true,
+        "thinkingFormat": "openai",
+        "thinkingCanDisable": false,
+        "thinkingEffortSupported": true,
+        "contextWindow": 872000,
+        "maxOutput": 128000
+      },
+      "gpt-6.2-astra": {
+        "vision": true,
+        "reasoning": true,
+        "search": true,
+        "thinkingFormat": "openai",
+        "thinkingCanDisable": false,
+        "thinkingEffortSupported": true,
+        "contextWindow": 872000,
+        "maxOutput": 128000
+      },
+      "gpt-6.2-astra[1m]": {
+        "vision": true,
+        "reasoning": true,
+        "search": true,
+        "thinkingFormat": "openai",
+        "thinkingCanDisable": false,
+        "thinkingEffortSupported": true,
+        "contextWindow": 872000,
+        "maxOutput": 128000
+      },
       "gpt-6-astra": {
         "vision": true,
         "reasoning": true,
@@ -1513,6 +1543,36 @@
       }
     },
     "cx": {
+      "gpt-6.2-sol": {
+        "vision": true,
+        "reasoning": true,
+        "search": true,
+        "thinkingFormat": "openai",
+        "thinkingCanDisable": false,
+        "thinkingEffortSupported": true,
+        "contextWindow": 872000,
+        "maxOutput": 128000
+      },
+      "gpt-6.2-astra": {
+        "vision": true,
+        "reasoning": true,
+        "search": true,
+        "thinkingFormat": "openai",
+        "thinkingCanDisable": false,
+        "thinkingEffortSupported": true,
+        "contextWindow": 872000,
+        "maxOutput": 128000
+      },
+      "gpt-6.2-astra[1m]": {
+        "vision": true,
+        "reasoning": true,
+        "search": true,
+        "thinkingFormat": "openai",
+        "thinkingCanDisable": false,
+        "thinkingEffortSupported": true,
+        "contextWindow": 872000,
+        "maxOutput": 128000
+      },
       "gpt-6-astra": {
         "vision": true,
         "reasoning": true,

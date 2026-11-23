@@ -5,9 +5,7 @@ use axum::middleware::{self, Next};
 use axum::response::{IntoResponse, Response};
 use axum::routing::get;
 use axum::{Json, Router};
-use key_access_rs::port::{
-    key_access_from_columns, key_access_to_columns, validate_key_access_input,
-};
+use key_access_rs::port::key_access_from_columns;
 use rusqlite::types::{Value as SqlValue, ValueRef};
 use rusqlite::{Connection, OptionalExtension, Row, TransactionBehavior, params, params_from_iter};
 use serde_json::{Map, Value, json};
@@ -355,20 +353,7 @@ fn import_row(db: &Connection, table: &Table, item: &Value) -> rusqlite::Result<
         args.push(SqlValue::Text(Value::Object(data).to_string()));
     }
     if table.name == "apiKeys" {
-        let access = if let Some(access) = item.get("access") {
-            let checked = validate_key_access_input(access.clone()).map_err(conversion_error)?;
-            if checked["ok"] != true {
-                let id = item.get("id").map_or_else(|| "undefined".into(), js_text);
-                return Err(conversion_error(format!(
-                    "apiKeys {id}: {}",
-                    js_text(&checked["error"])
-                )));
-            }
-            checked["value"].clone()
-        } else {
-            Value::Null
-        };
-        let values = key_access_to_columns(access).map_err(conversion_error)?;
+        let values = crate::keys::backup_key_access(item)?;
         columns.extend(["accessRestricted", "accessAllow"]);
         args.push(scalar(&values["accessRestricted"])?);
         args.push(scalar(&values["accessAllow"])?);

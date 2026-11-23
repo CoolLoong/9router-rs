@@ -86,6 +86,22 @@ fn conversion_error(error: String) -> rusqlite::Error {
     rusqlite::Error::ToSqlConversionFailure(Box::new(std::io::Error::other(error)))
 }
 
+pub(super) fn backup_key_access(item: &Value) -> rusqlite::Result<Value> {
+    let Some(access) = item.get("access") else {
+        return key_access_to_columns(Value::Null).map_err(conversion_error);
+    };
+    let checked = validate_key_access_input(access.clone()).map_err(conversion_error)?;
+    if checked["ok"] != true {
+        let text = crate::chat_output::js_text;
+        let id = item.get("id").map_or_else(|| "undefined".into(), text);
+        return Err(conversion_error(format!(
+            "apiKeys {id}: {}",
+            text(&checked["error"])
+        )));
+    }
+    key_access_to_columns(checked["value"].clone()).map_err(conversion_error)
+}
+
 fn by_id(db: &Connection, id: &str) -> rusqlite::Result<Option<Value>> {
     db.query_row(
         &format!("SELECT {KEY_COLUMNS} FROM apiKeys WHERE id = ?1"),

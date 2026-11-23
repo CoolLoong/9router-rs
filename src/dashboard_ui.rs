@@ -22,6 +22,8 @@ mod integrations_ui;
 mod management_ui;
 #[path = "dashboard_optimization_ui.rs"]
 mod optimization_ui;
+#[path = "dashboard_original.rs"]
+mod original;
 #[path = "translator_ui.rs"]
 mod translator_ui;
 #[path = "dashboard_usage_ui.rs"]
@@ -51,6 +53,7 @@ struct DashboardUi {
 }
 
 pub fn router(storage: Storage) -> Router {
+    let browser_storage = storage.clone();
     let catalog = catalog_ui::router(storage.clone());
     let chat = chat_ui::router(storage.clone());
     let integrations = integrations_ui::router(storage.clone());
@@ -89,6 +92,11 @@ pub fn router(storage: Storage) -> Router {
         .merge(optimization)
         .merge(usage)
         .merge(translator)
+        .merge(original::assets())
+        .layer(axum::middleware::from_fn_with_state(
+            browser_storage,
+            original::render,
+        ))
 }
 
 async fn quota_auto_ping_script() -> Response {
