@@ -1552,7 +1552,13 @@ async fn prepare_call(
                 return None;
             }
             if provider == "codex" {
-                codex_executor::prepare(format, body, upstream_model, accept)
+                codex_executor::prepare(
+                    format,
+                    body,
+                    upstream_model,
+                    accept,
+                    client == Client::Codex,
+                )
             } else if provider == "grok-cli" {
                 crate::grok_cli_body::prepare(format, body, upstream_model, accept)
             } else {
@@ -2858,6 +2864,7 @@ async fn execute(state: &ChatState, context: ChatRequest<'_>, call: PreparedCall
                     &model,
                     &account,
                     session,
+                    format,
                     is_compact_path(&endpoint),
                 )
             });

@@ -8,6 +8,7 @@ use crate::provider_index::js_trim;
 #[derive(Clone, Copy, PartialEq, Eq)]
 pub(super) enum Client {
     Claude,
+    Codex,
     DeepSeekTui,
     Other,
 }
@@ -34,20 +35,19 @@ impl Client {
         {
             return Self::Claude;
         }
-        if agent.contains("deepseek-tui")
-            && ![
-                "gemini-cli",
-                "codex-tui",
-                "codex-cli",
-                "codex_cli_rs",
-                "codex desktop",
-            ]
+        if agent.contains("gemini-cli") {
+            return Self::Other;
+        }
+        if ["codex-tui", "codex-cli", "codex_cli_rs", "codex desktop"]
             .into_iter()
             .any(|marker| agent.contains(marker))
-            && !field("originator")
+            || field("originator")
                 .to_ascii_lowercase()
                 .starts_with("codex_")
         {
+            return Self::Codex;
+        }
+        if agent.contains("deepseek-tui") {
             Self::DeepSeekTui
         } else {
             Self::Other

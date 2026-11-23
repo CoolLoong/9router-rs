@@ -4,11 +4,13 @@ use std::sync::{Arc, Mutex, OnceLock};
 use axum::body::Bytes;
 use axum::http::{HeaderMap, StatusCode};
 use futures_util::{StreamExt, stream};
+use provider_capabilities_rs::port::model_capabilities;
 use serde_json::{Value, json};
 
 use crate::chat_format::ChatFormat;
 use crate::chat_input::{PreparedChat, js_space, truthy};
 use crate::responses_request;
+use crate::thinking_intent::{Thinking, budget_level, model_suffix, thinking_intent};
 
 const SUPPORTED: &[&str] = &[
     "model",
@@ -59,15 +61,34 @@ pub fn prepare(
     mut body: Value,
     model: &str,
     accept: &str,
+    native_client: bool,
 ) -> Option<PreparedChat> {
     if !body.is_object() || contains_remote_image(&body) {
         return None;
     }
     if client == ChatFormat::Responses {
+        if let Some(effort) = request_effort(model, (!native_client).then_some(&body)) {
+            if !native_client {
+                crate::claude_thinking::strip(&mut body);
+            }
+            if !body["reasoning"].is_object() {
+                body["reasoning"] = json!({});
+            }
+            body["reasoning"]["effort"] = json!(effort);
+        }
         body["model"] = json!(model);
         return Some(PreparedChat { body, stream: true });
     }
 
+    let messages_effort = if client == ChatFormat::Messages
+        && (body.get("thinking").is_some() || body.get("output_config").is_some())
+    {
+        let effort = request_effort(model, Some(&body));
+        crate::claude_thinking::strip(&mut body);
+        effort
+    } else {
+        None
+    };
     let fields = body.as_object_mut()?;
     let effort = fields.shift_remove("reasoning_effort");
     let reasoning = fields.shift_remove("reasoning");
@@ -79,12 +100,26 @@ pub fn prepare(
     if let Some(reasoning) = reasoning {
         converted.body["reasoning"] = reasoning;
     }
-    if let Some(effort) = effort {
+    if let Some(effort) = messages_effort.map(Value::String).or(effort) {
         converted.body["reasoning_effort"] = effort;
     }
     converted.body["model"] = json!(model);
     converted.stream = true;
     Some(converted)
+}
+
+fn request_effort(model: &str, body: Option<&Value>) -> Option<String> {
+    let (base, suffix) = model_suffix(model);
+    if model_capabilities(Some("codex"), base, None)["reasoning"] != true {
+        return None;
+    }
+    let intent = suffix.or_else(|| body.and_then(thinking_intent))?;
+    Some(match intent {
+        Thinking::None => "none".to_owned(),
+        Thinking::Auto => "auto".to_owned(),
+        Thinking::Level(level) => level,
+        Thinking::Budget(budget) => budget_level(budget).to_owned(),
+    })
 }
 
 fn contains_remote_image(value: &Value) -> bool {
@@ -259,6 +294,7 @@ pub fn finish(
     model: &str,
     account: &Value,
     session: String,
+    client: ChatFormat,
     compact_path: bool,
 ) -> Option<Exchange> {
     let mut compact = compact_path;
@@ -406,21 +442,22 @@ pub fn finish(
         upstream.to_owned()
     };
     let supported = models[&upstream]["levels"].as_array();
-    let normalized =
-        if supported.is_some_and(|levels| levels.iter().any(|entry| entry == requested)) {
-            requested
-        } else if lite && matches!(requested, "none" | "minimal") {
-            "low"
-        } else if requested == "ultra"
-            && supported.is_some_and(|levels| levels.iter().any(|entry| entry == "max"))
-        {
-            "max"
-        } else if matches!(requested, "max" | "ultra") {
-            "xhigh"
-        } else {
-            requested
-        }
-        .to_owned();
+    let normalized = if supported
+        .is_some_and(|levels| levels.iter().any(|entry| entry == requested))
+    {
+        requested
+    } else if lite && client != ChatFormat::Messages && matches!(requested, "none" | "minimal") {
+        "low"
+    } else if requested == "ultra"
+        && supported.is_some_and(|levels| levels.iter().any(|entry| entry == "max"))
+    {
+        "max"
+    } else if matches!(requested, "max" | "ultra") {
+        "xhigh"
+    } else {
+        requested
+    }
+    .to_owned();
     body["model"] = json!(upstream);
     if !body["reasoning"].is_object() {
         body["reasoning"] = json!({});

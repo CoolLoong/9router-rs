@@ -1917,7 +1917,14 @@ fn codex_plan(mut body: Value, model: &str, account: &Value, session: String) ->
         .filter(|model| !model.is_empty())
         .unwrap_or(model)
         .to_owned();
-    let exchange = codex_executor::finish(&mut body, &requested, account, session, false)?;
+    let exchange = codex_executor::finish(
+        &mut body,
+        &requested,
+        account,
+        session,
+        ChatFormat::Responses,
+        false,
+    )?;
     Some(Plan {
         destination: exchange.url(),
         transport: Transport::Codex(exchange),

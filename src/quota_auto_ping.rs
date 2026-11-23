@@ -11,6 +11,7 @@ use tokio::time::{Instant, MissedTickBehavior, interval_at};
 use crate::account_quota::{
     Provider, QuotaState, access, active_refreshable, auth_expired, proactive, supports_direct,
 };
+use crate::chat_format::ChatFormat;
 use crate::codex_executor::{self, Sessions};
 use crate::provider_connections;
 use crate::provider_oauth::{RefreshMode, refresh_account};
@@ -488,8 +489,15 @@ async fn send(
     let exchange = if service == Service::Codex {
         let session = sessions.pick(&input, account, &HeaderMap::new(), None);
         Some(
-            codex_executor::finish(&mut input, "gpt-5.6-terra", account, session, false)
-                .ok_or(())?,
+            codex_executor::finish(
+                &mut input,
+                "gpt-5.6-terra",
+                account,
+                session,
+                ChatFormat::Responses,
+                false,
+            )
+            .ok_or(())?,
         )
     } else {
         None
