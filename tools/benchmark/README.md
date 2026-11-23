@@ -45,8 +45,16 @@ Each request has a unique input. A successful response has HTTP 200 and the matc
 
 Linux process metrics cover the direct gateway PID and its threads. The Node PID runs `node app/server.js` directly, so the reference measurement excludes launcher overhead. Both workloads share the host with the benchmark client and Axum mock. Results describe the selected packages, machine, and local echo workload.
 
+## Generate the chart
+
+Run from the workspace root with Python 3. The script uses only the standard library.
+
+```sh
+python3 tools/benchmark/plot.py benchmark.json benchmark.svg
+```
+
+Bars show the median and whiskers span the minimum to maximum across rounds. Each metric has its own scale.
+
 ## Recorded run
 
-The [Linux x86_64 report](results/linux-x86_64-0.5.119.json) records five valid rounds per gateway on an Intel Core i7-14700HX. During the concurrency-8 runs, the Node main thread used a median of 0.96 CPU cores. In the single concurrency-16 check, Node throughput stayed inside the concurrency-8 run range. The benchmark process, including the client and mock, used below 0.10 cores at the median on both sides.
-
-A separate Rust diagnostic run used `strace -f -k -e trace=clock_nanosleep`. It showed SQLite busy-handler backoff during concurrent requests. The timing table uses the five runs without tracing. The trace establishes that this wait occurs in the workload. It leaves its share of the tail latency undetermined.
+The [Linux x86_64 report](results/linux-x86_64-0.5.119.json) and [chart](results/linux-x86_64-0.5.119.svg) compare upstream 9Router 0.5.119 with Rust commit `fe121385`, which reuses SQLite connections. Each gateway completed all five rounds on an Intel Core i7-14700HX.

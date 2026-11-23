@@ -85,22 +85,11 @@ DATA_DIR="$HOME/.9router-rs" ./target/release/ninerouter --host 127.0.0.1 --port
 
 ## 性能与资源占用
 
-同机测试上游 9Router 0.5.119 和 Rust 0.5.119。每版交替跑 5 轮，每轮 1000 次非流式 Chat Completions，并发 8。两版使用同一个本地回显上游，所有请求均校验响应和上游调用。以下为中位数及各轮范围。
+同机对比上游 9Router 0.5.119 和启用 SQLite 连接复用的 Rust 版 `fe121385`。每版跑 5 轮，每轮 1,000 次非流式 Chat Completions 请求，并发 8，共用同一个本地回显上游。
 
-| 指标 | 原版 Node.js | 9Router Rust |
-| --- | ---: | ---: |
-| 启动到健康检查通过（ms） | 312.7 (304.0 至 322.8) | 12.2 (11.7 至 12.3) |
-| p50 延迟（ms） | 21.28 (20.91 至 21.60) | 4.65 (4.37 至 4.73) |
-| p95 延迟（ms） | 29.76 (27.50 至 32.97) | 55.73 (40.06 至 56.41) |
-| p99 延迟（ms） | 35.33 (33.92 至 39.46) | 132.21 (108.12 至 132.36) |
-| 吞吐（req/s） | 362.2 (358.8 至 374.1) | 650.7 (640.1 至 672.6) |
-| 预热后 RSS（MiB） | 169.1 (168.3 至 169.5) | 37.1 (36.7 至 37.9) |
-| 采样峰值 RSS（MiB） | 246.5 (244.7 至 247.1) | 47.6 (45.9 至 48.1) |
-| 网关 CPU 每请求（ms） | 3.20 (3.12 至 3.24) | 3.79 (3.68 至 3.83) |
+![Node.js 与 Rust 的吞吐、延迟、CPU、内存与启动耗时对比图](tools/benchmark/results/linux-x86_64-0.5.119.svg)
 
-在这组负载中，Rust 吞吐更高、RSS 更低，p95、p99 和每请求 CPU 时间更高。 [逐轮数据](tools/benchmark/results/linux-x86_64-0.5.119.json)
-
-[复现 benchmark](tools/benchmark/README.md)
+[逐轮数据](tools/benchmark/results/linux-x86_64-0.5.119.json) · [复现 benchmark 和图表](tools/benchmark/README.md)
 
 ---
 

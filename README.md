@@ -85,22 +85,11 @@ Model, plan, and video examples come from the upstream guide. Providers determin
 
 ## Performance and Resource Usage
 
-Original 9Router 0.5.119 and Rust 0.5.119, on the same Linux host. Each gateway ran five alternating rounds with 1,000 non-streaming Chat Completions requests per round at concurrency 8. Both used the same loopback echo provider. Every response and upstream call was checked. Values are the median and range across runs.
+Upstream 9Router 0.5.119 vs. 9Router Rust at `fe121385` with SQLite connection reuse. Five rounds per gateway on the same Linux host, with 1,000 non-streaming Chat Completions requests per round, concurrency 8, and a shared loopback echo upstream.
 
-| Metric | Original Node.js | 9Router Rust |
-| --- | ---: | ---: |
-| Ready time (ms) | 312.7 (304.0 to 322.8) | 12.2 (11.7 to 12.3) |
-| p50 latency (ms) | 21.28 (20.91 to 21.60) | 4.65 (4.37 to 4.73) |
-| p95 latency (ms) | 29.76 (27.50 to 32.97) | 55.73 (40.06 to 56.41) |
-| p99 latency (ms) | 35.33 (33.92 to 39.46) | 132.21 (108.12 to 132.36) |
-| Throughput (req/s) | 362.2 (358.8 to 374.1) | 650.7 (640.1 to 672.6) |
-| Warm RSS (MiB) | 169.1 (168.3 to 169.5) | 37.1 (36.7 to 37.9) |
-| Sampled peak RSS (MiB) | 246.5 (244.7 to 247.1) | 47.6 (45.9 to 48.1) |
-| Gateway CPU per request (ms) | 3.20 (3.12 to 3.24) | 3.79 (3.68 to 3.83) |
+![Gateway benchmark comparing Node.js and Rust throughput, latency, CPU, memory, and startup time](tools/benchmark/results/linux-x86_64-0.5.119.svg)
 
-Rust had higher throughput and lower RSS in this workload. Its p95 and p99 latency and CPU time per request were higher. [Per-round data](tools/benchmark/results/linux-x86_64-0.5.119.json)
-
-[Reproduce the benchmark](tools/benchmark/README.md)
+[Per-round data](tools/benchmark/results/linux-x86_64-0.5.119.json) · [Reproduce the benchmark and chart](tools/benchmark/README.md)
 
 ---
 

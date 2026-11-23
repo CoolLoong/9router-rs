@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="974" height="716" viewBox="0 0 974 716" role="img" aria-labelledby="title description">
+<title id="title">9Router gateway benchmark</title>
+<desc id="description">Throughput, Original Node.js, median 372.6 req/s. Throughput, 9Router Rust, median 12,153.6 req/s. p95 latency, Original Node.js, median 27.90 ms. p95 latency, 9Router Rust, median 0.85 ms. p50 latency, Original Node.js, median 21.02 ms. p50 latency, 9Router Rust, median 0.63 ms. p99 latency, Original Node.js, median 34.52 ms. p99 latency, 9Router Rust, median 1.17 ms. Gateway CPU / request, Original Node.js, median 3.11 ms. Gateway CPU / request, 9Router Rust, median 0.47 ms. Sampled peak RSS, Original Node.js, median 246.0 MiB. Sampled peak RSS, 9Router Rust, median 39.3 MiB. Warm RSS, Original Node.js, median 166.7 MiB. Warm RSS, 9Router Rust, median 37.3 MiB. Time to ready, Original Node.js, median 309.9 ms. Time to ready, 9Router Rust, median 12.0 ms.</desc>
+<style>
+text { font-family: Inter, system-ui, sans-serif; fill: #172b44; }
+.title { font-size: 29px; font-weight: 720; }
+.panel-title { font-size: 16px; font-weight: 680; }
+.caption { font-size: 12px; fill: #526377; }
+.value { font-size: 13px; font-weight: 650; }
+</style>
+<rect width="974" height="716" fill="#f8fafc"/>
+<text x="26" y="47" class="title">9Router gateway benchmark</text>
+<text x="27" y="76" class="caption">5 rounds per gateway · 1,000 requests per round · concurrency 8 · Rust fe121385</text>
+<rect x="27" y="98" width="13" height="13" rx="3" fill="#486581"/>
+<text x="46" y="109" class="caption">Original Node.js</text>
+<rect x="164" y="98" width="13" height="13" rx="3" fill="#b94721"/>
+<text x="183" y="109" class="caption">9Router Rust</text>
+<text x="306" y="109" class="caption">Bars show medians. Whiskers show the range across rounds.</text>
+<rect x="26" y="134" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="44" y="161" class="panel-title">Throughput</text>
+<text x="315" y="161" class="caption">req/s · Higher is better</text>
+<rect x="44" y="182" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="182" width="8.94" height="14" rx="4" fill="#486581"/>
+<path d="M 52.71,200 H 53.17 M 52.71,197 v 6 M 53.17,197 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="363" y="194" class="value">372.6 req/s</text>
+<rect x="44" y="215" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="215" width="291.72" height="14" rx="4" fill="#b94721"/>
+<path d="M 320.74,233 H 347.00 M 320.74,230 v 6 M 347.00,230 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="363" y="227" class="value">12,153.6 req/s</text>
+<rect x="500" y="134" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="518" y="161" class="panel-title">p95 latency</text>
+<text x="789" y="161" class="caption">ms · Lower is better</text>
+<rect x="518" y="182" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="182" width="285.79" height="14" rx="4" fill="#486581"/>
+<path d="M 800.15,200 H 821.00 M 800.15,197 v 6 M 821.00,197 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="837" y="194" class="value">27.90 ms</text>
+<rect x="518" y="215" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="215" width="8.68" height="14" rx="4" fill="#b94721"/>
+<path d="M 526.40,233 H 528.84 M 526.40,230 v 6 M 528.84,230 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="837" y="227" class="value">0.85 ms</text>
+<rect x="26" y="273" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="44" y="300" class="panel-title">p50 latency</text>
+<text x="315" y="300" class="caption">ms · Lower is better</text>
+<rect x="44" y="321" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="321" width="294.39" height="14" rx="4" fill="#486581"/>
+<path d="M 329.05,339 H 347.00 M 329.05,336 v 6 M 347.00,336 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="363" y="333" class="value">21.02 ms</text>
+<rect x="44" y="354" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="354" width="8.80" height="14" rx="4" fill="#b94721"/>
+<path d="M 52.48,372 H 53.06 M 52.48,369 v 6 M 53.06,369 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="363" y="366" class="value">0.63 ms</text>
+<rect x="500" y="273" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="518" y="300" class="panel-title">p99 latency</text>
+<text x="789" y="300" class="caption">ms · Lower is better</text>
+<rect x="518" y="321" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="321" width="285.02" height="14" rx="4" fill="#486581"/>
+<path d="M 792.63,339 H 821.00 M 792.63,336 v 6 M 821.00,336 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="837" y="333" class="value">34.52 ms</text>
+<rect x="518" y="354" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="354" width="9.63" height="14" rx="4" fill="#b94721"/>
+<path d="M 526.20,372 H 534.96 M 526.20,369 v 6 M 534.96,369 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="837" y="366" class="value">1.17 ms</text>
+<rect x="26" y="412" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="44" y="439" class="panel-title">Gateway CPU / request</text>
+<text x="315" y="439" class="caption">ms · Lower is better</text>
+<rect x="44" y="460" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="460" width="289.95" height="14" rx="4" fill="#486581"/>
+<path d="M 329.29,478 H 347.00 M 329.29,475 v 6 M 347.00,475 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="363" y="472" class="value">3.11 ms</text>
+<rect x="44" y="493" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="493" width="43.82" height="14" rx="4" fill="#b94721"/>
+<path d="M 85.02,511 H 87.82 M 85.02,508 v 6 M 87.82,508 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="363" y="505" class="value">0.47 ms</text>
+<rect x="500" y="412" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="518" y="439" class="panel-title">Sampled peak RSS</text>
+<text x="789" y="439" class="caption">MiB · Lower is better</text>
+<rect x="518" y="460" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="460" width="299.84" height="14" rx="4" fill="#486581"/>
+<path d="M 816.82,478 H 821.00 M 816.82,475 v 6 M 821.00,475 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="837" y="472" class="value">246.0 MiB</text>
+<rect x="518" y="493" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="493" width="47.96" height="14" rx="4" fill="#b94721"/>
+<path d="M 565.50,511 H 566.20 M 565.50,508 v 6 M 566.20,508 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="837" y="505" class="value">39.3 MiB</text>
+<rect x="26" y="551" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="44" y="578" class="panel-title">Warm RSS</text>
+<text x="315" y="578" class="caption">MiB · Lower is better</text>
+<rect x="44" y="599" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="599" width="299.42" height="14" rx="4" fill="#486581"/>
+<path d="M 342.48,617 H 347.00 M 342.48,614 v 6 M 347.00,614 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="363" y="611" class="value">166.7 MiB</text>
+<rect x="44" y="632" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="44" y="632" width="66.98" height="14" rx="4" fill="#b94721"/>
+<path d="M 110.23,650 H 111.57 M 110.23,647 v 6 M 111.57,647 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="363" y="644" class="value">37.3 MiB</text>
+<rect x="500" y="551" width="448" height="126" rx="10" fill="#fff" stroke="#e2e8f0"/>
+<text x="518" y="578" class="panel-title">Time to ready</text>
+<text x="789" y="578" class="caption">ms · Lower is better</text>
+<rect x="518" y="599" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="599" width="246.40" height="14" rx="4" fill="#486581"/>
+<path d="M 756.17,617 H 821.00 M 756.17,614 v 6 M 821.00,614 v 6" stroke="#486581" stroke-width="1.2" fill="none"/>
+<text x="837" y="611" class="value">309.9 ms</text>
+<rect x="518" y="632" width="303" height="14" rx="4" fill="#f1f5f9"/>
+<rect x="518" y="632" width="9.58" height="14" rx="4" fill="#b94721"/>
+<path d="M 527.24,650 H 528.03 M 527.24,647 v 6 M 528.03,647 v 6" stroke="#b94721" stroke-width="1.2" fill="none"/>
+<text x="837" y="644" class="value">12.0 ms</text>
+<text x="27" y="700" class="caption">Linux loopback · non-streaming Chat Completions · same echo upstream</text>
+</svg>
