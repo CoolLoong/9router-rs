@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/api/providers"
+body = '{"provider":"perplexity-agent","name":"Fixture perplexity-agent","apiKey":"offline-static-perplexity-agent"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 201
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

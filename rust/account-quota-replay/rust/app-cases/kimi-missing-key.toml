@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["kimi-missing-key"]
+status.code = 0
+fs.sandbox = true

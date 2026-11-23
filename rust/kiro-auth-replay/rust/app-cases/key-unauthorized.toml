@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["key-unauthorized"]
+status.code = 0
+fs.sandbox = true

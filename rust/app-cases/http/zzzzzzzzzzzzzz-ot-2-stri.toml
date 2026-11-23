@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/chat/completions"
+body = '{"model":"fixture-live/fixture-combo-a","messages":[{"role":"user","content":"fixture stripped thinking"}],"stream":false,"reasoning_effort":"medium","thinking":{"type":"enabled"}}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

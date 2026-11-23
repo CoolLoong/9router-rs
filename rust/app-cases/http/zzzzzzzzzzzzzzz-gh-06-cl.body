@@ -1,0 +1,8 @@
+data: {"id":"chatcmpl-msg_gh_claude_fixture","object":"chat.completion.chunk",[..],"model":"claude-sonnet-4.6","choices":[{"index":0,"delta":{"role":"assistant"},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-msg_gh_claude_fixture","object":"chat.completion.chunk",[..],"model":"claude-sonnet-4.6","choices":[{"index":0,"delta":{"content":"GitHub Claude SSE fixture"},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-msg_gh_claude_fixture","object":"chat.completion.chunk",[..],"model":"claude-sonnet-4.6","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2012,"completion_tokens":3,"total_tokens":2015,"cached_tokens":3,"prompt_tokens_details":{"cached_tokens":3,"cache_creation_tokens":2}}}
+
+data: [DONE]
+

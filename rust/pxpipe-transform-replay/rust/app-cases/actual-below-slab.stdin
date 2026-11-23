@@ -1,0 +1,1 @@
+{"actual": {"model": "claude-fable-5", "body": {"model": "claude-fable-5", "system": "mini", "max_tokens": 40, "messages": [{"role": "user", "content": "fixture user input"}]}, "repeat": 1, "minChars": 25}}

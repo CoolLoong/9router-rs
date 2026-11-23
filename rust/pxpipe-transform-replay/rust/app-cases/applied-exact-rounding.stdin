@@ -1,0 +1,1 @@
+{"enabled":true,"available":true,"format":"claude","minChars":2,"body":{"text":"synthetic"},"outcome":{"applied":true,"body":{"text":"compressed"},"info":{"compressedChars":1000,"imageTokens":6392,"baselineTokens":6400}}}

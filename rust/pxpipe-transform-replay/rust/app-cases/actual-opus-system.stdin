@@ -1,0 +1,1 @@
+{"actual": {"model": "claude-opus-5-5", "body": {"model": "claude-opus-5-5", "system": "Configuration sample src/demo/spec.yml identifies DEMO_ORIGIN=http://example.invalid/demo/alpha and XREF-8142.\nUse exact values. ", "max_tokens": 40, "messages": [{"role": "user", "content": "fixture user input"}]}, "repeat": 340, "minChars": 20}}

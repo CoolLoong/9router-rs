@@ -1,0 +1,35 @@
+[request]
+method = "POST"
+path = "/v1/audio/transcriptions"
+body = """
+--synthetic-live-stt\r
+Content-Disposition: form-data; name="model"\r
+\r
+gemini/gemini-2.5-flash-native-audio-preview-09-17\r
+--synthetic-live-stt\r
+Content-Disposition: form-data; name="prompt"\r
+\r
+Fixture live shared\r
+--synthetic-live-stt\r
+Content-Disposition: form-data; name="response_format"\r
+\r
+verbose_json\r
+--synthetic-live-stt\r
+Content-Disposition: form-data; name="file"; filename="fixture.pcm"\r
+Content-Type: audio/pcm\r
+\r
+synthetic PCM bytes\r
+--synthetic-live-stt--\r
+"""
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "multipart/form-data; boundary=synthetic-live-stt"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

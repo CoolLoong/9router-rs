@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["codex-consume-policy"]
+status.code = 0
+fs.sandbox = true

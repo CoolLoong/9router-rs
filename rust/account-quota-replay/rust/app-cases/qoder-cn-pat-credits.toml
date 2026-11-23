@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["qoder-cn-pat-credits"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,1 @@
+{"id":"openai/dall-e-3","name":"DALL-E 3","kind":"image","owned_by":"openai","endpoint":"/v1/images/generations","params":["size","quality","style","response_format"]}

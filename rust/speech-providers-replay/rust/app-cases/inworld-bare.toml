@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["inworld-bare"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,1 @@
+{"messages":[{"role":"tool","tool_call_id":"fixture","content":"Compiled 150 packages\nDownloaded 1 packages\nerror[E1001]: fixture\n  --> src/main.rs:42:3\n     |\n  42 | invalid fixture\n Finished release [optimized]"}]}

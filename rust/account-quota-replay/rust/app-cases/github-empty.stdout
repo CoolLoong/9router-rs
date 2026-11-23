@@ -1,0 +1,1 @@
+{"accessRotated": false, "copilotRotated": false, "outbound": [{"method": "GET", "path": "/github/quota", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "GitHub Copilot connected. Unable to parse quota data."}, "status": 200}]}

@@ -1,0 +1,4 @@
+data: {"id":"chatcmpl-[..]","object":"chat.completion.chunk",[..],"model":"qwen3:8b","choices":[{"index":0,"delta":{"content":"Ollama stream fixture","tool_calls":[{"index":0,"id":"call_ollama_fixture","type":"function","function":{"name":"fixture_lookup","arguments":"{\"q\":\"next\"}"}}]},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-[..]","object":"chat.completion.chunk",[..],"model":"qwen3:8b","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}],"usage":{"prompt_tokens":11,"completion_tokens":3,"total_tokens":14,"prompt_tokens_details":{"cached_tokens":4}}}
+

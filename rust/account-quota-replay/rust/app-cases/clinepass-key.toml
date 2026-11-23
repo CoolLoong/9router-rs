@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["clinepass-key"]
+status.code = 0
+fs.sandbox = true

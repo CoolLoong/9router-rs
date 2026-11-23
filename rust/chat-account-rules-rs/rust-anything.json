@@ -1,0 +1,139 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/wing/projects/9router-rs",
+  "unit": "open-sse/services/accountFallback.js",
+  "language": "ts",
+  "kind": "napi",
+  "crate_name": "chat-account-rules-rs",
+  "exports": [
+    {
+      "name": "getQuotaCooldown",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 9,
+      "params": [
+        {
+          "name": "backoffLevel",
+          "ts_type": "number",
+          "optional": true,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "checkFallbackError",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 29,
+      "params": [
+        {
+          "name": "status",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "errorText",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "backoffLevel",
+          "ts_type": "number",
+          "optional": true,
+          "rest": false
+        },
+        {
+          "name": "provider",
+          "ts_type": "unknown",
+          "optional": true,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": [
+    {
+      "name": "isAccountUnavailable",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 80,
+      "reason": "clock-dependent pending deterministic clock boundary"
+    },
+    {
+      "name": "getUnavailableUntil",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 88,
+      "reason": "clock-dependent pending deterministic clock boundary"
+    },
+    {
+      "name": "getEarliestRateLimitedUntil",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 97,
+      "reason": "legacy account-level availability is outside this gateway slice"
+    },
+    {
+      "name": "formatRetryAfter",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 115,
+      "reason": "clock-dependent response formatting"
+    },
+    {
+      "name": "getModelLockKey",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 137,
+      "reason": "application supplies typed model names"
+    },
+    {
+      "name": "isModelLockActive",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 145,
+      "reason": "clock-dependent existing connection state"
+    },
+    {
+      "name": "getEarliestModelLockUntil",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 156,
+      "reason": "clock-dependent existing connection state"
+    },
+    {
+      "name": "buildModelLockUpdate",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 172,
+      "reason": "clock-dependent existing connection state"
+    },
+    {
+      "name": "buildClearModelLocksUpdate",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 180,
+      "reason": "application resets active locks through typed connection storage"
+    },
+    {
+      "name": "filterAvailableAccounts",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 191,
+      "reason": "legacy account-level availability is outside this gateway slice"
+    },
+    {
+      "name": "resetAccountState",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 209,
+      "reason": "legacy account-level availability is outside this gateway slice"
+    },
+    {
+      "name": "applyErrorState",
+      "file": "open-sse/services/accountFallback.js",
+      "line": 227,
+      "reason": "legacy account-level availability is outside this gateway slice"
+    }
+  ]
+}

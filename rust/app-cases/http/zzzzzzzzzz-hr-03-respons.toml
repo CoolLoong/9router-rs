@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/responses"
+body = '{"model":"fixture-responses/fixture-response-headroom","stream":true,"store":false,"input":[{"type":"message","role":"user","content":[{"type":"input_text","text":"fixture Responses Headroom"}]},{"type":"function_call","name":"fixture_read","call_id":"fixture_hr_tool","arguments":"{}"},{"type":"function_call_output","call_id":"fixture_hr_tool","output":"Fixture headroom uncompressed text with useful details"}]}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+cache-control = "no-cache"
+content-type = "text/event-stream"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

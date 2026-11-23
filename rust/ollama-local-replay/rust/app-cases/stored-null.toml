@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["stored-null"]
+status.code = 0
+fs.sandbox = true

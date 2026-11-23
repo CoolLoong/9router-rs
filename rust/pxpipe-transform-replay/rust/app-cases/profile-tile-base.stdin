@@ -1,0 +1,1 @@
+{"actual": {"model": "openai/gpt-4o", "body": {"model": "openai/gpt-4o", "max_tokens": 20, "messages": [{"role": "user", "content": "Test the fixture and keep the exact phrase."}], "system": "Sample for default tile cost and a portable preflight. \n"}, "minChars": 20, "repeat": 520, "scope": "gpt-4o"}}

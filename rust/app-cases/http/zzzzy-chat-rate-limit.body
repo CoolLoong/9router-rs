@@ -1,0 +1,1 @@
+{"error":{"message":"[openai-compatible-chat-fixture-live/fixture-rate-limit] [429]: {\"error\":{\"message\":\"fixture upstream is rate limited\",\"type\":\"rate_limit_exceeded\",\"code\":\"rate_limit_exceeded\"}} (reset after 2s)"}}

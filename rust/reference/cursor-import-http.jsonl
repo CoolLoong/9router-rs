@@ -1,0 +1,4 @@
+{"name":"zzzzzzzzzzzzzzz-ci-00-instructions","method":"GET","path":"/api/oauth/cursor/import","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzz-ci-01-missing","method":"POST","path":"/api/oauth/cursor/import","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{}"}
+{"name":"zzzzzzzzzzzzzzz-ci-02-short","method":"POST","path":"/api/oauth/cursor/import","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"accessToken\":\"synthetic\",\"machineId\":\"11111111-2222-3333-4444-555555555555\"}"}
+{"name":"zzzzzzzzzzzzzzz-ci-03-save","method":"POST","path":"/api/oauth/cursor/import","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"accessToken\":\"e30.eyJlbWFpbCI6ImZpeHR1cmUtY3Vyc29yQGV4YW1wbGUuaW52YWxpZCIsInN1YiI6ImZpeHR1cmUtY3Vyc29yLXVzZXIifQ.synthetic\",\"machineId\":\"11111111-2222-3333-4444-555555555555\"}"}

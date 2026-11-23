@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/auth/login"
+body = '{"password":"123456"}'
+
+[request.headers]
+content-type = "application/json"
+x-migration-stage = "oidc-on"
+
+[response]
+status = 403
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

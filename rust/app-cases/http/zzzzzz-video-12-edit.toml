@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/videos/edits"
+body = '{"model":"xai/grok-imagine-video-edit","prompt":"edit fixture","video_url":"https://example.invalid/video.mp4"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 202
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+x-9router-connection-id = "[..]"

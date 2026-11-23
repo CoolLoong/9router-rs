@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["opencode-go-missing"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,8 @@
+{"name":"zzzzzzzzzzzzzzz-cw-00-catalog","method":"GET","path":"/api/cli-tools/cowork-mcp-registry","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzz-cw-01-cached","method":"GET","path":"/api/cli-tools/cowork-mcp-registry?refresh=0","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzz-cw-02-refresh","method":"GET","path":"/api/cli-tools/cowork-mcp-registry?refresh=1","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzz-cw-03-invalid","method":"POST","path":"/api/cli-tools/cowork-mcp-tools","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{}"}
+{"name":"zzzzzzzzzzzzzzz-cw-04-json","method":"POST","path":"/api/cli-tools/cowork-mcp-tools","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"url\":\"http://127.0.0.1:52989/cowork-mcp-fixture/json\"}"}
+{"name":"zzzzzzzzzzzzzzz-cw-05-sse","method":"POST","path":"/api/cli-tools/cowork-mcp-tools","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"url\":\"http://127.0.0.1:52989/cowork-mcp-fixture/sse\"}"}
+{"name":"zzzzzzzzzzzzzzz-cw-06-auth","method":"POST","path":"/api/cli-tools/cowork-mcp-tools","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"url\":\"http://127.0.0.1:52989/cowork-mcp-fixture/auth\"}"}
+{"name":"zzzzzzzzzzzzzzz-cw-07-init-fail","method":"POST","path":"/api/cli-tools/cowork-mcp-tools","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"url\":\"http://127.0.0.1:52989/cowork-mcp-fixture/init-fail\"}"}

@@ -1,0 +1,1 @@
+{"id":"chatcmpl-static-fixture","object":"chat.completion",[..],"model":"gpt-4o-mini","choices":[{"index":0,"message":{"role":"assistant","content":"native openai fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":6,"completion_tokens":4,"total_tokens":10}}

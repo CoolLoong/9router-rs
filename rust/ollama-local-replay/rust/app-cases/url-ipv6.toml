@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["url-ipv6"]
+status.code = 0
+fs.sandbox = true

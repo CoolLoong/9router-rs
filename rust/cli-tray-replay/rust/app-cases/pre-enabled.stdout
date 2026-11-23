@@ -1,0 +1,1 @@
+{"autostart": "Enable Auto-start", "autostart_file": null, "icon": [[32, 32, 4096]], "menu": [["9Router (Port 20128)", false], ["Open Dashboard", true], ["✓ Auto-start Enabled", true], ["Quit", true]], "ready": true, "removed": true, "tooltip": "9Router - Port 20128"}

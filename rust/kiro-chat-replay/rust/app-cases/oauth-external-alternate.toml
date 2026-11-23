@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["oauth-external-alternate"]
+status.code = 0
+fs.sandbox = true

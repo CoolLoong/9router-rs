@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["qoder-cn-user"]
+status.code = 0
+fs.sandbox = true

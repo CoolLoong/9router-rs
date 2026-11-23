@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["ollama-denied"]
+status.code = 0
+fs.sandbox = true

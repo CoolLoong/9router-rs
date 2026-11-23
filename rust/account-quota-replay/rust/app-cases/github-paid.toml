@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["github-paid"]
+status.code = 0
+fs.sandbox = true

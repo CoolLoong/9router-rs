@@ -1,0 +1,13 @@
+[request]
+method = "GET"
+path = "/api/keys"
+
+[request.headers]
+cookie = "auth_token=eyJhbGciOiJIUzI1NiJ9.eyJhdXRoZW50aWNhdGVkIjp0cnVlLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MjAwMDAwMDAwMCwibmJmIjoxOTk5OTk5MDAwfQ.sdvuDj9VGMolTmRHsJqkGCQuhAjO0qN_lofhRDcaD8k"
+
+[response]
+status = 401
+
+[response.headers]
+content-type = "application/json"
+vary = "Accept-Encoding"

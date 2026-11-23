@@ -1,0 +1,4 @@
+bin.name = "original"
+args = ["marked"]
+status.code = 0
+fs.sandbox = true

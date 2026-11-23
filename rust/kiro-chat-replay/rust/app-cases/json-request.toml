@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["json-request"]
+status.code = 0
+fs.sandbox = true

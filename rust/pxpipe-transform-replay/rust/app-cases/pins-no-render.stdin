@@ -1,0 +1,1 @@
+{"actual": {"model": "claude-fable-5", "body": {"model": "claude-fable-5", "messages": [{"role": "user", "content": "@pxpipe pin remain in original when images are skipped\nRead current message."}], "max_tokens": 30}, "minChars": 20}}

@@ -1,0 +1,1 @@
+{"network": [{"method": "TLS", "route": "direct", "target": "api.cline.bot:443"}], "responses": [200, {"message": "ClinePass usage error: fetch failed"}]}

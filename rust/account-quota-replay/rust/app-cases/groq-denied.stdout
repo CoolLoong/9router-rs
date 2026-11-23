@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/groq/models", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Groq authentication failed. Check the API key.", "plan": "Groq"}, "status": 200}]}

@@ -1,0 +1,4 @@
+{"name":"wl-01-provider-inventory","method":"GET","path":"/api/providers/web-login","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"wl-02-no-session","method":"GET","path":"/api/providers/web-login?provider=fixture-not-registered","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"wl-03-missing-cancel-provider","method":"DELETE","path":"/api/providers/web-login","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"wl-04-unsupported-provider","method":"POST","path":"/api/providers/web-login","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\"fixture-not-registered\"}"}

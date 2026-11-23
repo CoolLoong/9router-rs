@@ -1,0 +1,15 @@
+{"name":"tools-models-guard","path":"/api/providers/fixture-live-connection/models"}
+{"name":"tools-models-missing","path":"/api/providers/fixture-absent/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-test-guard","path":"/api/providers/fixture-live-connection/test","method":"POST"}
+{"name":"tools-test-missing","path":"/api/providers/fixture-absent/test","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-test-models-guard","path":"/api/providers/fixture-live-connection/test-models","method":"POST"}
+{"name":"tools-test-models-missing","path":"/api/providers/fixture-absent/test-models","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-probe-guard","path":"/api/models/test","method":"POST","body":"{}","headers":{"content-type":"application/json"}}
+{"name":"tools-probe-required","path":"/api/models/test","method":"POST","body":"{}","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"}}
+{"name":"tools-list-live","path":"/api/providers/fixture-live-connection/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-z01-good-test","path":"/api/providers/fixture-live-connection/test","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-z02-good-store","path":"/api/providers/fixture-live-connection","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-z03-bad-test","path":"/api/providers/fixture-node-connection/test","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-z04-bad-store","path":"/api/providers/fixture-node-connection","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"tools-z05-enable","path":"/api/providers/fixture-live-connection","method":"PUT","body":"{\"isActive\":true}","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"}}
+{"name":"tools-z06-probe","path":"/api/models/test","method":"POST","body":"{\"model\":\"fixture-live/gpt-5.6-sol\"}","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"}}

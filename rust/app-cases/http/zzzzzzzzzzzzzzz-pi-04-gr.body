@@ -1,0 +1,1 @@
+{"total":3,"success":1,"failed":2,"results":[{"index":0,"ok":true,"id":"[..]","email":"grok-fixture@example.invalid"},{"index":1,"ok":false,"error":"Item is not an object"},{"index":2,"ok":false,"error":"Missing access_token / accessToken"}]}

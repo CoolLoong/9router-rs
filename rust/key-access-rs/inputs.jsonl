@@ -1,0 +1,71 @@
+{"fn":"normalizeAllowList","args":[[]]}
+{"fn":"normalizeAllowList","args":[null]}
+{"fn":"normalizeAllowList","args":[" x "]}
+{"fn":"normalizeAllowList","args":[[null,1,false,{},[],""]]}
+{"fn":"normalizeAllowList","args":[[" Gemini/ Flash ","gemini/ flash","GPT/5","gpt/5","","   ","GPT/6"]]}
+{"fn":"normalizeAllowList","args":[["\ufeff x \u202f","X","\u0085x\u0085","\u0085"]]}
+{"fn":"normalizeAllowList","args":[["\u03a3","\u03c3","\u039f\u03a3","\u03bf\u03c2","\u03bf\u03c3","\u0130","i\u0307","i","\u212a","k"]]}
+{"fn":"normalizeAllowList","args":[["\ud835\udc00","\ud83d\ude00","\ud83d\ude00 ",{"$utf16":[55296]},{"$utf16":[32,55296,32]},{"$utf16":[55296,65]},{"$utf16":[55296,97]}]]}
+{"fn":"keyAccessFromColumns","args":[0,"[\"x\"]"]}
+{"fn":"keyAccessFromColumns","args":[null,null]}
+{"fn":"keyAccessFromColumns","args":[true,""]}
+{"fn":"keyAccessFromColumns","args":[true,null]}
+{"fn":"keyAccessFromColumns","args":[true,["x"]]}
+{"fn":"keyAccessFromColumns","args":[1,"not json"]}
+{"fn":"keyAccessFromColumns","args":[1,"{\"a\":1}"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\" a \", \"A\", \"\", 3, \"b\"]"]}
+{"fn":"keyAccessFromColumns","args":["1","[\"x\"]"]}
+{"fn":"keyAccessFromColumns","args":[2,"[\"x\"]"]}
+{"fn":"keyAccessFromColumns","args":[false,"[\"x\"]"]}
+{"fn":"keyAccessFromColumns","args":[1.0," [ \"A\", \"a\", \"\ud83d\ude00\" ] "]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"\\ud800\",\" \\ud800 \",\"\\ud83d\\ude00\",\"\\n X \",\"\\u0000\",1e400,{\"ignored\":1e400}]"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"x\", \"\\ud800\", \"invalid\\x00\"]"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"x\", \"\\u\"]"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"x\",]"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"slashes \\\\ \\/ quote \\\" tab \\t esc \\b \\f \\r\"]"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"x\"]\ufeff"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"x\",\"\u2028\",\"\u2029\",\"\u0085\"]"]}
+{"fn":"keyAccessFromColumns","args":[1,"[\"x\",[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[0]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"]}
+{"fn":"keyAccessToColumns","args":[{"$undefined":true}]}
+{"fn":"keyAccessToColumns","args":[null]}
+{"fn":"keyAccessToColumns","args":[0]}
+{"fn":"keyAccessToColumns","args":[{}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":true,"allow":["x","X"]}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":false,"allow":["x"]}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":"false","allow":["yes"]}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":[],"allow":["array"]}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":{},"allow":"string"}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":{"$num":"NaN"},"allow":["ignored"]}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":-1,"allow":["\u0085X","x"]}]}
+{"fn":"keyAccessToColumns","args":[{"restricted":true,"allow":[" \ud83d\ude00 ",{"$utf16":[55296]},"\u0000","e\u0001","a\u2028\u2029z","a\t\n\r\f\b/\"\\"]}]}
+{"fn":"validateKeyAccessInput","args":[{"$undefined":true}]}
+{"fn":"validateKeyAccessInput","args":[null]}
+{"fn":"validateKeyAccessInput","args":[[]]}
+{"fn":"validateKeyAccessInput","args":["x"]}
+{"fn":"validateKeyAccessInput","args":[0]}
+{"fn":"validateKeyAccessInput","args":[true]}
+{"fn":"validateKeyAccessInput","args":[{"$utf16":[55296]}]}
+{"fn":"validateKeyAccessInput","args":[{"$num":"NaN"}]}
+{"fn":"validateKeyAccessInput","args":[{}]}
+{"fn":"validateKeyAccessInput","args":[{"restrict":true}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":"true"}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":false,"allow":null}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":false,"allow":["x",1]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":{"$undefined":true}}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":false}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":[" Model ","model","","Other",{"$utf16":[55296]}]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":false,"allow":["x","X"]}]}
+{"fn":"validateKeyAccessInput","args":[{"y":1,"restricted":false,"12":1,"2":1,"03":1,"4294967295":1,"z":2,"allow":[]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":["x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x"]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":[" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\ufeff"]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":false,"allow":["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":[" \ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\u00a0"]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":["\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00x"]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":[{"$utf16":[55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296,55296]}]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x"]}]}
+{"fn":"validateKeyAccessInput","args":[{"restricted":true,"allow":["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x","x",null]}]}
+{"fn":"keyAccessFromColumns","args":[1,{"$utf16":[91,34,55296,34,44,34,120,34,93]}]}
+{"fn":"keyAccessFromColumns","args":[1,{"$utf16":[91,34,92,55296,34,44,34,120,34,93]}]}
+{"fn":"keyAccessFromColumns","args":[1,{"$utf16":[91,34,92,92,55296,34,44,34,120,34,93]}]}
+{"fn":"keyAccessFromColumns","args":[1,{"$utf16":[91,34,120,34,44,55296,93]}]}

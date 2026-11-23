@@ -1,0 +1,49 @@
+<div class="page-heading">
+  <a href="/dashboard/providers#provider-nodes">Back to compatible endpoints</a>
+  <h1>{{title}}</h1>
+</div>
+<p id="node-status" class="notice" role="status" hidden></p>
+<section class="card" aria-label="Compatible endpoint settings">
+  <form id="node-form" class="settings-form" method="post" data-node-id="{{id}}">
+    <fieldset id="node-fields" disabled>
+      <label for="node-type">Protocol</label>
+      <select id="node-type">
+        <option value="openai-compatible">OpenAI compatible</option>
+        <option value="anthropic-compatible">Anthropic compatible</option>
+        <option value="custom-embedding">Custom embedding</option>
+      </select>
+      <label for="node-name">Name</label>
+      <input id="node-name" autocomplete="off" required>
+      <label for="node-prefix">Model prefix</label>
+      <input id="node-prefix" autocomplete="off" placeholder="my-endpoint" required>
+      <div class="settings-form" id="node-api-fields">
+        <label for="node-api">API type</label>
+        <select id="node-api">
+          <option value="chat">Chat Completions</option>
+          <option value="responses">Responses API</option>
+        </select>
+      </div>
+      <label for="node-url">Base URL</label>
+      <input id="node-url" type="url" autocomplete="off" required>
+      <div class="key-actions">
+        <button class="button button-primary" type="submit">{{save}}</button>
+        <a id="node-add-key" class="button" {{edit-hidden}}>Add API-key connection</a>
+        <button id="node-delete" class="button button-danger" type="button" {{edit-hidden}}>Delete endpoint</button>
+      </div>
+    </fieldset>
+  </form>
+</section>
+<section class="card" aria-labelledby="node-check-title">
+  <h2 id="node-check-title">Check endpoint</h2>
+  <p class="muted">The check uses the base URL and API type above. The test key is used only for this request.</p>
+  <p id="node-check-status" class="notice" role="status" hidden></p>
+  <form id="node-check-form" class="settings-form" method="post">
+    <fieldset id="node-check-fields" disabled>
+      <label for="node-check-key">Test API key</label>
+      <input id="node-check-key" type="password" autocomplete="new-password" required>
+      <label id="node-check-model-label" for="node-check-model">Model ID for inference fallback (optional)</label>
+      <input id="node-check-model" autocomplete="off">
+      <button class="button" type="submit">Check endpoint</button>
+    </fieldset>
+  </form>
+</section>

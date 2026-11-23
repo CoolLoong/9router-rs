@@ -1,0 +1,18 @@
+[request]
+method = "POST"
+path = "/v1/chat/completions"
+body = '{"model":"fixture-unavailable-local-bypass","stream":true,"messages":[{"role":"user","content":"count"}]}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+user-agent = "claude-cli/2.0.0 (external)"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+cache-control = "no-cache"
+content-type = "text/event-stream"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

@@ -1,0 +1,10 @@
+{
+  "schema": "rust-anything/app-cases@1",
+  "name": "original",
+  "run": [
+    "node",
+    "--no-warnings",
+    "original.mjs"
+  ],
+  "timeout_secs": 30
+}

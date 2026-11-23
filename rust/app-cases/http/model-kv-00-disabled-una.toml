@@ -1,0 +1,10 @@
+[request]
+method = "GET"
+path = "/api/models/disabled"
+
+[response]
+status = 401
+
+[response.headers]
+content-type = "application/json"
+vary = "Accept-Encoding"

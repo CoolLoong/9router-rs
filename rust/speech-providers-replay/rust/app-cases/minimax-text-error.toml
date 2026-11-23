@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["minimax-text-error"]
+status.code = 0
+fs.sandbox = true

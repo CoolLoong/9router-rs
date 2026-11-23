@@ -1,0 +1,6 @@
+{"name":"xai-api-key","args":["key"]}
+{"name":"xai-pkce-and-refresh","args":["oauth"]}
+{"name":"xai-discovery-fallback","args":["fallback"]}
+{"name":"xai-fresh-token-rejected","args":["reject"]}
+{"name":"xai-loopback-callback","args":["callback"]}
+{"name":"xai-manual-code","args":["manual"]}

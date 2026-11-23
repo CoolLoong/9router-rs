@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/chat/completions"
+body = '{"model":"fixture-live/fixture-round","messages":[{"role":"user","content":"rotate round one"}],"stream":false}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "POST", "path": "/cursor/period", "valid": true}, {"method": "GET", "path": "/cursor/legacy", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Fixture plan not tracked", "plan": "Cursor"}, "status": 200}]}

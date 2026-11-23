@@ -1,0 +1,1 @@
+{"success":true,"result":{"body":{"model":"gemini-2.5-flash","messages":[{"role":"assistant","tool_calls":[{"id":"call_report","type":"function","function":{"name":"report","arguments":"{}"}}]}],"stream":true}}}

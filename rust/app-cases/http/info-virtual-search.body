@@ -1,0 +1,1 @@
+{"id":"brave-search/search","name":"Brave Search Search","kind":"webSearch","owned_by":"brave-search","endpoint":"/v1/search","params":["query","max_results","country","language","time_range","domain_filter","search_type"],"searchTypes":["web","news"],"maxResults":20}

@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["github-success"]
+status.code = 0
+fs.sandbox = true

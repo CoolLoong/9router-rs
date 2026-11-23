@@ -1,0 +1,15 @@
+[request]
+method = "PUT"
+path = "/api/combos/fixture-seeded-combo"
+body = '{"models":null}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

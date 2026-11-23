@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/v1beta/models/gemini-2.5-pro-preview-tts:generateContent"
+body = '{"contents":[{"parts":[{"text":"native known-gzip"}]}],"generationConfig":{"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":"Kore"}}}},"fixture":{"numeric":3.0}}'
+
+[request.headers]
+content-type = "application/json; charset=UTF-8"
+x-api-key = "offline-chat-key"
+
+[response]
+status = 401
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

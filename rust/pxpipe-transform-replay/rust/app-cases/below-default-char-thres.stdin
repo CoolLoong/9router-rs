@@ -1,0 +1,1 @@
+{"enabled":true,"available":true,"format":"claude","body":{"model":"cláude","messages":[{"role":"user","content":"🫖\\abc\n\b\u001f中文"}]}}

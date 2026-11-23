@@ -1,0 +1,1 @@
+{"id":"resp_codex_fixture","object":"chat.completion",[..],"model":"gpt-5.6-sol","choices":[{"index":0,"message":{"role":"assistant","content":"Codex primary"},"finish_reason":"stop"}],"usage":{"prompt_tokens":7,"completion_tokens":3,"total_tokens":10}}

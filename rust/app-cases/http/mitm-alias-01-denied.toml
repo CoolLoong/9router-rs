@@ -1,0 +1,10 @@
+[request]
+method = "GET"
+path = "/api/cli-tools/antigravity-mitm/alias"
+
+[response]
+status = 403
+
+[response.headers]
+content-type = "application/json"
+vary = "Accept-Encoding"

@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/keys"
+body = '{"name":"New migration key"}'
+
+[request.headers]
+content-type = "application/json"
+cookie = "auth_token=eyJhbGciOiJIUzI1NiJ9.eyJhdXRoZW50aWNhdGVkIjp0cnVlLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MjAwMDAwMDAwMH0.UDLMJNvwtKjtLwhP5dznQ4waQO2GYEa6auJ7Ej_wPPU"
+
+[response]
+status = 201
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

@@ -1,0 +1,1 @@
+{"body":{"text":"compressed"},"summary":{"applied":true,"reason":"applied","originalChars":20,"compressedBodyChars":21,"imagedChars":1000,"imageCount":0,"imageBytes":0,"tokensBeforeEst":6400,"tokensAfterEst":6392,"cacheOwnsControl":false,"tokensSavedEst":8,"savedPct":0.13},"request":{"body":{"text":"synthetic"},"options":{"minCompressChars":2}}}

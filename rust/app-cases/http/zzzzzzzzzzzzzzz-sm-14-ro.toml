@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/chat/completions"
+body = '{"model":"smart-adaptive","stream":false,"messages":[{"role":"user","content":"fixture smart choose first"}]}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+x-session-id = "fixture-smart-session"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

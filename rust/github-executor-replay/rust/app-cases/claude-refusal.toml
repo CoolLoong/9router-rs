@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["claude-refusal"]
+status.code = 0
+fs.sandbox = true

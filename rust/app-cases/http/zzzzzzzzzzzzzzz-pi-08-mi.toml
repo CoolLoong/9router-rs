@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/oauth/xiaomi-mimo/api-key"
+body = '{"apiKey":" sk-synthetic-mimo-key ","uid":"fixture-mimo","baseUrl":"http://127.0.0.1:52989/mimo-fixture/v1/"}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

@@ -1,0 +1,1 @@
+{"connection":{"providerSpecificData":{"prefix":"fixture-node","apiType":"chat","baseUrl":"http://127.0.0.1:9/v1","nodeName":"Fixture node","keep":"fixture"},"id":"fixture-node-connection","provider":"openai-compatible-chat-fixture-node","authType":"apikey","name":"Fixture node","email":null,"priority":7,"isActive":false,"createdAt":"[..]","updatedAt":"[..]"}}

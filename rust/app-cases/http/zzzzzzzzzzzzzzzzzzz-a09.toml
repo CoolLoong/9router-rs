@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/chat/completions"
+body = '{"model":"alitp-intl/qwen3.6-flash","messages":[{"role":"user","content":[{"type":"text","text":"fixture ali chat","cache_control":{"type":"ephemeral"},"signature":"fixture-ignored"}]}],"stream":false}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

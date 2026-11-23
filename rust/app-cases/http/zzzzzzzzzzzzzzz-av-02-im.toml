@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/responses"
+body = '{"model":"anthropic/claude-sonnet-4-20250514","stream":false,"max_output_tokens":30,"input":[{"role":"user","content":[{"type":"input_text","text":"Anthropic inline vision"},{"type":"input_image","image_url":"data:image/png;base64,aW1hZ2Utc3ludGhldGlj","detail":"high"}]}]}'
+
+[request.headers]
+content-type = "application/json"
+x-api-key = "offline-chat-key"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

@@ -1,0 +1,1 @@
+{"id":"msg_kimi_fixture","type":"message","role":"assistant","model":"k3","content":[{"type":"text","text":"Kimi fixture answer"}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":6,"output_tokens":2}}

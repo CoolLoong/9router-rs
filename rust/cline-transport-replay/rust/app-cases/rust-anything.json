@@ -1,0 +1,10 @@
+{
+  "schema": "rust-anything/app-cases@1",
+  "name": "cline-transport-contract",
+  "run": [
+    "sh",
+    "run.sh",
+    "reference"
+  ],
+  "timeout_secs": 20
+}

@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/opencode/go", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "OpenCode Go subscription required for this API key.", "plan": "OpenCode Go"}, "status": 200}]}

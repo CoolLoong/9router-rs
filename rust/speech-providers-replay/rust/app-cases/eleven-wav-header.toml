@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["eleven-wav-header"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/ollama/usage", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Ollama Cloud usage response was not JSON."}, "status": 200}]}

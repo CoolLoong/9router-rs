@@ -1,0 +1,71 @@
+<div class="page-heading">
+  <h1>Models</h1>
+  <p class="muted">Manage model aliases, custom model IDs, and disabled provider models.</p>
+</div>
+<p id="catalog-status" class="notice" role="status" hidden></p>
+<section class="card" aria-labelledby="aliases-title">
+  <h2 id="aliases-title">Aliases</h2>
+  <form class="catalog-fields" id="alias-form" method="post">
+    <div><label for="alias-name">Alias</label><input id="alias-name" required autocomplete="off"></div>
+    <div><label for="alias-model">Provider/model ID</label><input id="alias-model" required autocomplete="off"></div>
+    <div class="catalog-submit"><button class="button button-primary" type="submit">Save alias</button></div>
+  </form>
+  <div id="alias-list" class="key-list" aria-live="polite"></div>
+</section>
+<section class="card" aria-labelledby="custom-title">
+  <div class="card-heading">
+    <h2 id="custom-title">Custom models</h2>
+    <button class="button button-primary" id="new-custom-model" type="button">Add custom model</button>
+  </div>
+  <div id="custom-list" class="key-list" aria-live="polite"></div>
+</section>
+<section class="card" aria-labelledby="disabled-title">
+  <h2 id="disabled-title">Disabled models</h2>
+  <form class="catalog-fields" id="disable-model-form" method="post">
+    <div><label for="disabled-provider">Provider alias</label><input id="disabled-provider" required autocomplete="off"></div>
+    <div><label for="disabled-id">Model ID</label><input id="disabled-id" required autocomplete="off"></div>
+    <div class="catalog-submit"><button type="submit" class="button">Disable model</button></div>
+  </form>
+  <div id="disabled-list" class="key-list" aria-live="polite"></div>
+</section>
+<dialog id="custom-model-dialog" aria-labelledby="custom-model-title">
+  <form id="custom-model-form" method="dialog">
+    <h2 id="custom-model-title">Custom model</h2>
+    <label for="custom-provider">Provider alias</label>
+    <input id="custom-provider" required autocomplete="off">
+    <label for="custom-id">Model ID</label>
+    <input id="custom-id" required autocomplete="off">
+    <label for="custom-name">Display name</label>
+    <input id="custom-name" autocomplete="off">
+    <label for="custom-type">Type</label>
+    <select id="custom-type">
+      <option value="llm">Chat</option>
+      <option value="embedding">Embedding</option>
+      <option value="image">Text to image</option>
+      <option value="imageToText">Image to text</option>
+      <option value="tts">Text to speech</option>
+      <option value="stt">Speech to text</option>
+      <option value="webSearch">Web search</option>
+      <option value="webFetch">Web fetch</option>
+      <option value="video">Video</option>
+      <option value="music">Music</option>
+      <option value="systemone">System One</option>
+    </select>
+    <fieldset id="custom-transport-fields" hidden>
+      <label for="custom-transport">Transport</label>
+      <select id="custom-transport"><option value="">Default</option><option value="gemini-live">Gemini Live</option></select>
+    </fieldset>
+    <fieldset id="custom-cap-fields">
+      <label for="custom-vision">Vision support</label>
+      <select id="custom-vision"><option value="">Automatic</option><option value="true">Yes</option><option value="false">No</option></select>
+      <label for="custom-reasoning">Reasoning support</label>
+      <select id="custom-reasoning"><option value="">Automatic</option><option value="true">Yes</option><option value="false">No</option></select>
+    </fieldset>
+    <p class="notice notice-error" id="custom-model-error" role="alert" hidden></p>
+    <div class="dialog-actions">
+      <button type="button" class="button" data-catalog-close="custom-model-dialog">Cancel</button>
+      <button type="submit" class="button button-primary">Save model</button>
+    </div>
+  </form>
+</dialog>
+<noscript><p class="muted">Enable JavaScript to manage models.</p></noscript>

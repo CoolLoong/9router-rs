@@ -1,0 +1,1 @@
+{"enabled":true,"available":true,"format":"claude","body":{"text":"a string to use for the input and output token estimation"},"minChars":2,"outcome":{"applied":true,"body":{"text":"compressed"},"info":{"compressedChars":16,"imageCount":0,"imageTokens":0,"imageBytes":8}}}

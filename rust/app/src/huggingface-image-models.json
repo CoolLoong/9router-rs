@@ -1,0 +1,52 @@
+{
+  "black-forest-labs/FLUX.1-schnell": "fal-ai/fal-ai/flux/schnell",
+  "black-forest-labs/FLUX.1-dev": "fal-ai/fal-ai/flux/dev",
+  "black-forest-labs/FLUX.1-Krea-dev": "fal-ai/fal-ai/flux/krea",
+  "black-forest-labs/FLUX.1-Kontext-dev": {
+    "path": "fal-ai/fal-ai/flux-kontext/dev",
+    "task": "image-to-image"
+  },
+  "black-forest-labs/FLUX.2-dev": {
+    "path": "fal-ai/fal-ai/flux-2/edit",
+    "task": "image-to-image"
+  },
+  "black-forest-labs/FLUX.2-klein-9B": {
+    "path": "fal-ai/fal-ai/flux-2/klein/9b/edit",
+    "task": "image-to-image"
+  },
+  "black-forest-labs/FLUX.2-klein-4B": {
+    "path": "fal-ai/fal-ai/flux-2/klein/4b/distilled/edit",
+    "task": "image-to-image"
+  },
+  "black-forest-labs/FLUX.2-klein-base-9B": {
+    "path": "fal-ai/fal-ai/flux-2/klein/9b/base/edit",
+    "task": "image-to-image"
+  },
+  "black-forest-labs/FLUX.2-klein-base-4B": {
+    "path": "fal-ai/fal-ai/flux-2/klein/4b/base/edit",
+    "task": "image-to-image"
+  },
+  "stabilityai/stable-diffusion-xl-base-1.0": "fal-ai/fal-ai/fast-sdxl",
+  "stabilityai/stable-diffusion-3.5-large": "fal-ai/fal-ai/stable-diffusion-v35-large",
+  "stabilityai/stable-diffusion-3.5-large-turbo": "fal-ai/fal-ai/stable-diffusion-v35-large/turbo",
+  "Qwen/Qwen-Image": "fal-ai/fal-ai/qwen-image",
+  "Qwen/Qwen-Image-2512": "fal-ai/fal-ai/qwen-image-2512",
+  "Qwen/Qwen-Image-Edit": {
+    "path": "fal-ai/fal-ai/qwen-image-edit",
+    "task": "image-to-image"
+  },
+  "Qwen/Qwen-Image-Edit-2509": {
+    "path": "fal-ai/fal-ai/qwen-image-edit-2509",
+    "task": "image-to-image"
+  },
+  "Qwen/Qwen-Image-Edit-2511": {
+    "path": "fal-ai/fal-ai/qwen-image-edit-plus",
+    "task": "image-to-image"
+  },
+  "ideogram-ai/ideogram-4-fp8": "fal-ai/ideogram/v4",
+  "tencent/HunyuanImage-3.0": "fal-ai/fal-ai/hunyuan-image/v3/text-to-image",
+  "Tongyi-MAI/Z-Image-Turbo": "fal-ai/fal-ai/z-image/turbo",
+  "krea/Krea-2-Turbo": "fal-ai/fal-ai/krea-2/turbo",
+  "HiDream-ai/HiDream-I1-Fast": "fal-ai/fal-ai/hidream-i1-fast",
+  "playgroundai/playground-v2.5-1024px-aesthetic": "fal-ai/fal-ai/playground-v25"
+}

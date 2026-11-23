@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/oauth/cursor/import"
+body = '{"accessToken":"e30.eyJlbWFpbCI6ImZpeHR1cmUtY3Vyc29yQGV4YW1wbGUuaW52YWxpZCIsInN1YiI6ImZpeHR1cmUtY3Vyc29yLXVzZXIifQ.synthetic","machineId":"11111111-2222-3333-4444-555555555555"}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

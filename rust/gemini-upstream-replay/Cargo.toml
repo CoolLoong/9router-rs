@@ -1,0 +1,9 @@
+[package]
+name = "gemini-upstream-replay"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+url = "2"

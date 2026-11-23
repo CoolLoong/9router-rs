@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/v1/embeddings"
+body = "{"
+
+[request.headers]
+content-type = "application/json"
+
+[response]
+status = 400
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

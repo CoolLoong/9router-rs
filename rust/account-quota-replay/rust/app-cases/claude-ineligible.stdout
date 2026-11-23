@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/claude/quota?cedar_ember=1", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"extraUsage": null, "plan": "Claude Code", "quotas": {}, "resetCredits": null}, "status": 200}]}

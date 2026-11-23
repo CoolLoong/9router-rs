@@ -1,0 +1,18 @@
+[request]
+method = "POST"
+path = "/responses"
+body = '{"model":"cx/gpt-6.1-sol","stream":true,"input":[{"type":"message","role":"system","content":[{"type":"input_text","text":"cached developer instruction"}],"id":"msg_fixture_keep"},{"type":"item_reference","id":"resp_fixture_temp"},{"type":"message","role":"user","content":[{"type":"input_text","text":"fixture Lite Codex"}]}],"tools":[{"type":"function","name":"fixture_find","parameters":{"type":"object","properties":{"token":{"type":"string","pattern":"\\p{L}+"},"pattern":{"type":"string","pattern":"^ok$"}}}}],"instructions":"fixture instructions"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+x-session-id = "fixture-codex-session"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+cache-control = "no-cache"
+content-type = "text/event-stream"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

@@ -1,0 +1,1 @@
+{"id":"msg-xiaomi-fixture","type":"message","role":"assistant","model":"mimo-v2.6-pro","content":[{"type":"text","text":"Xiaomi cn fixture"}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":2009,"output_tokens":3}}

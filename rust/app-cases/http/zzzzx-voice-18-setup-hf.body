@@ -1,0 +1,1 @@
+{"connection":{"id":"[..]","provider":"huggingface","authType":"apikey","name":"Fixture huggingface STT","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"baseUrl":"http://127.0.0.1:52989/hf/models","connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

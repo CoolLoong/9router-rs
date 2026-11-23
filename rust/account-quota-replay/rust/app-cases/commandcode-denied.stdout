@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/commandcode/alpha/whoami", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Command Code authentication failed. Check the API key.", "plan": "Command Code"}, "status": 200}]}

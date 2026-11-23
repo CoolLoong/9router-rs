@@ -1,0 +1,5 @@
+bin.name = "original"
+args = []
+env.add.TZ = "UTC"
+status.code = 0
+fs.sandbox = true

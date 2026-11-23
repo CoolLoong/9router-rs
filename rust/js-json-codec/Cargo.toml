@@ -1,0 +1,9 @@
+[package]
+name = "js-json-codec"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+serde_bytes = "0.11"
+serde_json = { version = "1", features = ["raw_value"] }

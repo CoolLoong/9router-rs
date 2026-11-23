@@ -1,0 +1,43 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/wing/projects/9router-rs",
+  "unit": "src/app/api/v1/messages/count_tokens/",
+  "language": "ts",
+  "kind": "napi",
+  "crate_name": "anthropic-token-count-rs",
+  "exports": [
+    {
+      "name": "estimateAnthropicInputTokens",
+      "file": "src/app/api/v1/messages/count_tokens/route.js",
+      "line": 61,
+      "params": [
+        {
+          "name": "body",
+          "ts_type": "unknown",
+          "optional": true,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": [
+    {
+      "name": "OPTIONS",
+      "file": "src/app/api/v1/messages/count_tokens/route.js",
+      "line": 10,
+      "reason": "HTTP adapter"
+    },
+    {
+      "name": "POST",
+      "file": "src/app/api/v1/messages/count_tokens/route.js",
+      "line": 75,
+      "reason": "HTTP adapter"
+    }
+  ]
+}

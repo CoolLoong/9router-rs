@@ -1,0 +1,1 @@
+{"node":{"id":"openai-compatible-chat-[..]","type":"openai-compatible","name":"New OpenAI","prefix":"fixture-created-openai","apiType":"chat","baseUrl":"http://127.0.0.1:9/v1","createdAt":"[..]","updatedAt":"[..]"}}

@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/deepseek/balance", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "DeepSeek balance API error (503): Fixture outage", "plan": "DeepSeek"}, "status": 200}]}

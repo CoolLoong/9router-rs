@@ -1,0 +1,4 @@
+bin.name = "original"
+args = ["upgrade"]
+status.code = 0
+fs.sandbox = true

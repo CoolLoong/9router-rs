@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["deepgram-ogg"]
+status.code = 0
+fs.sandbox = true

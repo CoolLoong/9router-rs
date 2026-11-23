@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/messages"
+body = '{"model":"fixture-responses/fixture-response-model","messages":[{"role":"user","content":"client JSON from Messages"}],"stream":false,"max_tokens":64}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

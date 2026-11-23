@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["claude-plain"]
+status.code = 0
+fs.sandbox = true

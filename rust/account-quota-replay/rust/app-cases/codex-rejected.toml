@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["codex-rejected"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,32 @@
+<div class="page-heading"><h1>Tunnel &amp; Tailscale</h1></div>
+<p id="tunnel-status" class="notice" role="status" hidden></p>
+<section class="card" aria-labelledby="cloudflare-title">
+  <div class="card-heading"><h2 id="cloudflare-title">Cloudflare Quick Tunnel</h2>
+    <div class="key-actions"><button class="button" id="cloudflare-enable" type="button">Enable</button>
+      <button class="button" id="cloudflare-disable" type="button">Disable</button></div>
+  </div>
+  <p id="cloudflare-state" role="status"></p>
+  <div id="cloudflare-addresses" class="info-grid"></div>
+</section>
+<section class="card" aria-labelledby="tailscale-title">
+  <div class="card-heading"><h2 id="tailscale-title">Tailscale Funnel</h2>
+    <div class="key-actions"><button class="button" id="tailscale-check" type="button">Check setup</button>
+      <button class="button" id="tailscale-enable" type="button">Enable</button>
+      <button class="button" id="tailscale-disable" type="button">Disable</button></div>
+  </div>
+  <p id="tailscale-state" role="status"></p>
+  <p id="tailscale-setup" class="muted" hidden></p>
+  <form id="tailscale-install-form" class="settings-form" method="post" hidden>
+    <div id="tailscale-sudo-fields" class="settings-form">
+      <label for="tailscale-sudo-password">Sudo password</label>
+      <input type="password" id="tailscale-sudo-password" autocomplete="new-password" required>
+    </div>
+    <p class="muted" id="tailscale-install-consent" hidden></p>
+    <button class="button button-primary" type="submit">Install or start Tailscale</button>
+  </form>
+  <div id="tailscale-addresses" class="info-grid"></div>
+</section>
+<section class="card" aria-labelledby="tunnel-access-title">
+  <h2 id="tunnel-access-title">Dashboard access</h2>
+  <label class="check-row"><input id="tunnel-dashboard-access" type="checkbox"> Allow the dashboard through tunnel URLs</label>
+</section>

@@ -1,0 +1,18 @@
+[request]
+method = "POST"
+path = "/v1/videos/generations"
+body = '{"model":"xai/grok-imagine-video","prompt":"text fixture","seconds":5}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+idempotency-key = "fixture-video-once"
+
+[response]
+status = 202
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/vnd.fixture+json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+x-9router-connection-id = "[..]"

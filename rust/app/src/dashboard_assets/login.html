@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Sign in · 9Router</title>
+  <link rel="stylesheet" href="/__9router-ui/dashboard.css">
+  <script defer src="/__9router-ui/dashboard.js"></script>
+</head>
+<body class="login-page" data-page="login" data-ready="{{ready}}">
+  <main class="login-stack">
+    <header class="login-brand">
+      <div class="brand-mark" aria-hidden="true">9R</div>
+      <h1>9Router</h1>
+      <p>{{description}}</p>
+    </header>
+
+    <section class="card login-card" aria-labelledby="login-title">
+      <h2 id="login-title">Dashboard sign-in</h2>
+      <p id="login-status" class="notice notice-error" role="alert" {{error-hidden}}>{{error}}</p>
+      <a class="button button-primary" href="/dashboard" {{continue-hidden}}>Continue to dashboard</a>
+      <div class="login-controls" {{controls-hidden}}>
+        {{sso}}
+        {{divider}}
+        <form id="login-form" method="post" action="/api/auth/login" {{password-hidden}}>
+          {{recovery}}
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required>
+          <button class="button button-primary" id="login-submit" type="submit">Sign in</button>
+          {{defaults}}
+        </form>
+        <noscript><p class="muted">Enable JavaScript to sign in with a password.</p></noscript>
+      </div>
+    </section>
+    <footer class="license">9Router · Copyright © 2024–2026 decolua and contributors · <a href="/__9router-ui/license.txt">MIT License</a></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/messages"
+body = '{"model":"kimi/k3","messages":[{"role":"user","content":"fixture Kimi Messages"}],"max_tokens":30,"stream":false}'
+
+[request.headers]
+anthropic-version = "2023-06-01"
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

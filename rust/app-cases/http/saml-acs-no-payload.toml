@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/api/auth/saml/acs"
+body = "RelayState=fixture"
+
+[request.headers]
+content-type = "application/x-www-form-urlencoded"
+x-forwarded-host = "gateway.example.invalid"
+x-forwarded-proto = "https"
+
+[response]
+status = 307
+
+[response.headers]
+location = "https://gateway.example.invalid/login?error=saml_missing_response"
+set-cookie = "saml_state=; Path=/; Expires=Thu, 01 Jan 1970 [..] GMT"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"

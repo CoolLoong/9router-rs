@@ -1,0 +1,115 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/wing/projects/9router-rs",
+  "unit": "open-sse/providers/capabilities.js",
+  "language": "ts",
+  "kind": "napi",
+  "crate_name": "provider-capabilities-rs",
+  "exports": [
+    {
+      "name": "capabilitiesFromServiceKind",
+      "file": "open-sse/providers/capabilities.js",
+      "line": 80,
+      "params": [
+        {
+          "name": "kind",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "aggregateComboCapabilities",
+      "file": "open-sse/providers/capabilities.js",
+      "line": 705,
+      "params": [
+        {
+          "name": "comboModels",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "comboLookup",
+          "ts_type": "unknown",
+          "optional": true,
+          "rest": false
+        },
+        {
+          "name": "resolveCaps",
+          "ts_type": "unknown",
+          "optional": true,
+          "rest": false
+        },
+        {
+          "name": "_depth",
+          "ts_type": "number",
+          "optional": true,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "getCapabilitiesForModel",
+      "file": "open-sse/providers/capabilities.js",
+      "line": 839,
+      "params": [
+        {
+          "name": "provider",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "model",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "isGemini4Model",
+      "file": "open-sse/providers/capabilities.js",
+      "line": 886,
+      "params": [
+        {
+          "name": "model",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": [
+    {
+      "name": "setCatalogSource",
+      "file": "open-sse/providers/capabilities.js",
+      "line": 765,
+      "reason": "Rust uses request-scoped catalog input"
+    }
+  ]
+}

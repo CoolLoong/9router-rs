@@ -1,0 +1,13 @@
+[request]
+method = "POST"
+path = "/api/providers/fixture-muse-oauth/test"
+
+[request.headers]
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

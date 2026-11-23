@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/clinepass/quota", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "ClinePass authentication expired. Please re-authorize.", "plan": "ClinePass"}, "status": 200}]}

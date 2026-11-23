@@ -1,0 +1,1 @@
+{"id":"chatcmpl-fixture-azure",[..],"model":"fixture-azure-deployment","object":"chat.completion","choices":[{"index":0,"message":{"role":"assistant","content":"custom-deploy"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2004,"completion_tokens":2,"total_tokens":2006}}

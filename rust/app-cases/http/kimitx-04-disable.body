@@ -1,0 +1,1 @@
+{"connection":{"expiresAt":"[..]","providerSpecificData":{"deviceId":"[..]","authMethod":"device_code"},"id":"fixture-kimi-code","provider":"kimi","authType":"oauth","name":"fixture-kimi-code","email":null,"priority":1,"isActive":false,"createdAt":"[..]","updatedAt":"[..]"}}

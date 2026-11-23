@@ -1,0 +1,10 @@
+data: {"id":"chatcmpl-msg_migration_fixture","object":"chat.completion.chunk",[..],"model":"claude-migration-fixture","choices":[{"index":0,"delta":{"role":"assistant"},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-msg_migration_fixture","object":"chat.completion.chunk",[..],"model":"claude-migration-fixture","choices":[{"index":0,"delta":{"tool_calls":[{"index":0,"id":"toolu_fixture","type":"function","function":{"name":"fixture_lookup","arguments":""}}]},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-msg_migration_fixture","object":"chat.completion.chunk",[..],"model":"claude-migration-fixture","choices":[{"index":0,"delta":{"tool_calls":[{"index":0,"id":"toolu_fixture","function":{"arguments":"{\"term\":\""}}]},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-msg_migration_fixture","object":"chat.completion.chunk",[..],"model":"claude-migration-fixture","choices":[{"index":0,"delta":{"tool_calls":[{"index":0,"id":"toolu_fixture","function":{"arguments":"rust\"}"}}]},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-msg_migration_fixture","object":"chat.completion.chunk",[..],"model":"claude-migration-fixture","choices":[{"index":0,"delta":{},"finish_reason":"tool_calls"}],"usage":{"prompt_tokens":2009,"completion_tokens":3,"total_tokens":2012}}
+

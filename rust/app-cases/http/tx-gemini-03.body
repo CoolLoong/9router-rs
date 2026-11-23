@@ -1,0 +1,1 @@
+{"success":true,"result":{"body":{"model":"gemini-2.5-flash","messages":[{"role":"system","content":"Use concise answers"},{"role":"user","content":[{"type":"image_url","image_url":{"url":"data:image/png;base64,aW1hZ2U="}},{"type":"text","text":"describe"}]},{"role":"assistant","content":"looking"}],"stream":false,"max_tokens":64000,"temperature":0,"top_p":0.8}}}

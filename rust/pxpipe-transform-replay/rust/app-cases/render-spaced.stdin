@@ -1,0 +1,1 @@
+{"render": {"text": "const x: 中文 = 123;\nconst y = x;\n", "rowSpacing": 2}}

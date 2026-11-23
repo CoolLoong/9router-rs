@@ -1,0 +1,12 @@
+{"name":"editor-opencode-guard","path":"/api/cli-tools/opencode-settings"}
+{"name":"editor-opencode-absent","path":"/api/cli-tools/opencode-settings","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"editor-opencode-reset","path":"/api/cli-tools/opencode-settings","method":"DELETE","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"editor-opencode-post-required","path":"/api/cli-tools/opencode-settings","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{}"}
+{"name":"editor-opencode-post-json","path":"/api/cli-tools/opencode-settings","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{"}
+{"name":"editor-opencode-patch-none","path":"/api/cli-tools/opencode-settings","method":"PATCH","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"clearActiveModel\":true}"}
+{"name":"editor-opencode-patch-bad","path":"/api/cli-tools/opencode-settings","method":"PATCH","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{"}
+{"name":"editor-cline-guard","path":"/api/cli-tools/cline-settings"}
+{"name":"editor-cline-absent","path":"/api/cli-tools/cline-settings","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"editor-cline-reset","path":"/api/cli-tools/cline-settings","method":"DELETE","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"editor-cline-post-required","path":"/api/cli-tools/cline-settings","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{}"}
+{"name":"editor-cline-post-json","path":"/api/cli-tools/cline-settings","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{"}

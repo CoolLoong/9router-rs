@@ -1,0 +1,8 @@
+[package]
+name = "responses-request-replay"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }
+url = "2"

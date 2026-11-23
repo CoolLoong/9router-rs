@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["pre-enabled"]
+status.code = 0
+fs.sandbox = true

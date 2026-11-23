@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["inworld-default-voice"]
+status.code = 0
+fs.sandbox = true

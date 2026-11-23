@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["apply-bad-body"]
+status.code = 0
+fs.sandbox = true

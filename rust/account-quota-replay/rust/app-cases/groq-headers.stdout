@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/groq/models", "valid": true}], "refreshRotated": false, "replies": [{"body": {"plan": "Groq", "quotas": {"Requests": {"resetAt": "now+179560ms", "total": 20, "unlimited": false, "used": 3}, "Tokens": {"resetAt": "now+4023ms", "total": 300, "unlimited": false, "used": 0}}}, "status": 200}]}

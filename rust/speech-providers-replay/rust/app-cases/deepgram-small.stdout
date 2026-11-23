@@ -1,0 +1,1 @@
+{"result": {"error": "Upstream returned empty audio", "status": 502}, "wire": [{"body": {"text": "Fixture TTS"}, "path": "/v1/speak?model=aura-test-en", "verifiedAuth": true}]}

@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/images/generations"
+body = '{"model":"cloudflare-ai/@cf/black-forest-labs/flux-2-dev","prompt":"offline flux","size":"768x896","steps":25,"seed":0}'
+
+[request.headers]
+authorization = "Bearer offline-active-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

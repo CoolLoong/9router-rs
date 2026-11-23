@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/qoder/global/usage", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Qoder connected. Usage response was not JSON."}, "status": 200}]}

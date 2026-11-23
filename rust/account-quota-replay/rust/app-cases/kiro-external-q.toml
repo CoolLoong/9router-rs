@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["kiro-external-q"]
+status.code = 0
+fs.sandbox = true

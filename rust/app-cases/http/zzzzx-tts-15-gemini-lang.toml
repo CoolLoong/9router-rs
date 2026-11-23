@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/audio/speech"
+body = '{"model":"gemini/gemini-2.5-flash-preview-tts/Puck","input":" Gemini voice fixture ","language":"zh-CN","response_format":"json"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

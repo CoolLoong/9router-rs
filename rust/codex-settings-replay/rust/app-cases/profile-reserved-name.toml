@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["profile-reserved-name"]
+status.code = 0
+fs.sandbox = true

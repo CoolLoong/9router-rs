@@ -1,0 +1,6 @@
+data: {"id":"chatcmpl-kimi-fixture",[..],"model":"k3","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","content":"Kimi fixture answer"},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-kimi-fixture",[..],"model":"k3","object":"chat.completion.chunk","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2006,"completion_tokens":2,"total_tokens":2008}}
+
+data: [DONE]
+

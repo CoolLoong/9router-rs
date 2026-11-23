@@ -1,0 +1,1 @@
+{"result": {"digest": "f52b23db1fbb6ded89ef42a23ce0c8922c45f25c50b568a93bf1c075420bbb7c", "format": "pcm", "length": 120, "originalEncoding": false, "status": 200}, "wire": [{"body": {"text": "Fixture TTS"}, "path": "/v1/speak?model=aura-test-en", "verifiedAuth": true}]}

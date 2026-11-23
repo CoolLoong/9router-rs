@@ -1,0 +1,6 @@
+data: {"id":"chatcmpl-migration-fixture",[..],"model":"fixture-combo-filter","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant"},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-migration-fixture",[..],"model":"fixture-combo-filter","object":"chat.completion.chunk","choices":[{"index":0,"delta":{},"finish_reason":"content_filter"}],"usage":{"prompt_tokens":2004,"completion_tokens":2,"total_tokens":2006}}
+
+data: [DONE]
+

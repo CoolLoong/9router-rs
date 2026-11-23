@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["codex-no-workspace"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["idc-missing-refresh"]
+status.code = 0
+fs.sandbox = true

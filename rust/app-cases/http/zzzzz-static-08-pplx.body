@@ -1,0 +1,1 @@
+{"id":"resp_static_fixture","object":"response","model":"perplexity/sonar","created_at":1795046400,"status":"completed","output":[{"type":"message","role":"assistant","content":[{"type":"output_text","text":"native fixture"}]}],"usage":{"input_tokens":2006,"output_tokens":4}}

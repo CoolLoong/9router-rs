@@ -1,0 +1,1 @@
+{"body":{"choices":[{"finish_reason":"stop","index":0,"message":{"content":"fixture oauth-expired-refresh","role":"assistant"}}],"created":1795046400,"id":"chatcmpl-cline-fixture","model":"anthropic/claude-sonnet-4.6","object":"chat.completion","usage":{"completion_tokens":2,"prompt_tokens":2006,"total_tokens":2008}},"mime":"application/json","status":200}

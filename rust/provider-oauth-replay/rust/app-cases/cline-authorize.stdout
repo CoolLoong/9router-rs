@@ -1,0 +1,1 @@
+{"db": [], "requests": [], "result": {"flow": "authorization_code", "matches_pkce": true, "parameters": ["callback_url", "client_type", "redirect_uri"], "path": "/cline/authorize"}}

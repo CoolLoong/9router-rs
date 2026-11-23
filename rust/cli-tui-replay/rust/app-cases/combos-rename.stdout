@@ -1,0 +1,1 @@
+{"reads": ["/api/combos", "/api/keys", "/api/providers", "/api/tunnel/status", "/v1/models"], "requests": [{"body": {"models": ["oc/alpha", "oc/beta"], "name": "Renamed Combo"}, "method": "PUT", "path": "/api/combos/combo-fixture"}]}

@@ -1,0 +1,75 @@
+<div class="page-heading" id="media-page" data-media-kind="{{kind}}" data-provider="{{provider}}" data-alias="{{alias}}" data-endpoint="{{preview}}">
+  <a href="{{back}}">Back to providers</a>
+  <h1>{{title}}</h1>
+</div>
+<p id="integration-status" class="notice" role="status" hidden></p>
+<section class="card" aria-labelledby="media-connection-title">
+  <div class="card-heading">
+    <h2 id="media-connection-title">Connections</h2>
+    <a class="button button-primary" href="/dashboard/providers/new" id="media-create-connection" {{create-hidden}}>{{create-label}}</a>
+  </div>
+  <div id="media-connections" class="key-list"></div>
+  <p class="muted" {{no-auth-hidden}}>This provider needs no account credentials.</p>
+  <div class="key-actions">
+    <a href="/dashboard/models" id="media-models">Manage models and aliases</a>
+    <a href="{{provider-settings}}">Provider settings</a>
+  </div>
+</section>
+{{credentials}}
+{{oauth}}
+{{service-info}}
+<section class="card" aria-labelledby="media-public-proxy-title" id="media-public-proxy" {{public-proxy-hidden}}>
+  <h2 id="media-public-proxy-title">Outbound proxy</h2>
+  <form class="settings-form" method="post" id="media-public-proxy-form">
+    <label for="media-public-proxy-rotation">Proxy selection</label>
+    <select id="media-public-proxy-rotation" disabled>
+      <option value="none">Fixed pool</option>
+      <option value="round-robin">Round-robin</option>
+      <option value="random">Random</option>
+    </select>
+    <label for="media-public-proxy-pool">Proxy pool</label>
+    <select id="media-public-proxy-pool" disabled><option value="">Use gateway proxy settings</option></select>
+    <button type="submit" class="button" disabled>Save proxy</button>
+  </form>
+  <p id="media-public-proxy-status" role="status" hidden></p>
+</section>
+<section class="card" aria-labelledby="embedding-config-title" {{custom-hidden}}>
+  <h2 id="embedding-config-title">Custom embedding endpoint</h2>
+  <a id="embedding-editor" href="{{embedding-editor}}" class="button">Edit or check endpoint</a>
+</section>
+<section class="card" aria-labelledby="media-sample-title" id="media-sample" {{sample-hidden}}>
+  <div>
+    <h2 id="media-sample-title">API preview</h2>
+    <code>{{preview}}</code>
+  </div>
+  <form method="post" class="settings-form" id="media-preview-form">
+    <label for="media-key">Gateway API key</label>
+    <select id="media-key"><option value="">No key</option></select>
+    <div id="media-preview-connections" hidden>
+      <label for="media-preview-connection">Provider connection</label>
+      <select id="media-preview-connection"><option value="">Auto (by priority)</option></select>
+    </div>
+    <div {{image-hidden}}>
+      <label for="media-image-response-format">Image response</label>
+      <select id="media-image-response-format"><option value="">JSON</option><option value="binary">Binary</option></select>
+    </div>
+    {{tts}}
+    <label for="media-preview-body">Request JSON</label>
+    <textarea id="media-preview-body" rows="6" spellcheck="false" required></textarea>
+    <div {{audio-hidden}}>
+      <label for="media-preview-file">Audio file</label>
+      <input id="media-preview-file" type="file" accept="audio/*">
+    </div>
+    <div class="key-actions">
+      <button class="button button-primary" type="submit" disabled>Run preview</button>
+      <button class="button" id="media-preview-copy" type="button" disabled>Copy cURL</button>
+      <button class="button" id="media-preview-stop" type="button" hidden>Stop</button>
+    </div>
+  </form>
+  <p class="muted" id="media-preview-status" role="status"></p>
+  <audio id="media-preview-audio" controls preload="none" hidden></audio>
+  <video id="media-preview-video" controls preload="none" hidden></video>
+  <img id="media-preview-image" alt="Generated image" hidden>
+  <a id="media-preview-download" class="button" hidden>Download result</a>
+  <pre class="usage-log" id="media-preview-result" hidden></pre>
+</section>

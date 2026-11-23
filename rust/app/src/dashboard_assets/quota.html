@@ -1,0 +1,37 @@
+<div class="page-heading">
+  <h1>Quota Tracker</h1>
+</div>
+<p id="quota-status" class="notice" role="status" hidden></p>
+<section class="card" aria-labelledby="quota-accounts-title">
+  <div class="card-heading">
+    <h2 id="quota-accounts-title">Provider accounts</h2>
+    <div class="key-actions">
+      <label class="check-row"><input id="quota-refresh-auto" type="checkbox" checked> Auto-refresh</label>
+      <button class="button" type="button" id="quota-refresh">Refresh</button>
+      <button class="button" type="button" id="quota-expiring" aria-pressed="false" title="Sort the current page by quota reset time">Expiring first</button>
+      <button class="button" type="button" id="quota-disable-depleted" disabled>Turn off depleted</button>
+      <button class="button" type="button" id="quota-enable-available" disabled>Turn on available</button>
+    </div>
+  </div>
+  <div class="catalog-fields">
+    <div><label for="quota-provider">Provider</label><select id="quota-provider"><option value="all">All providers</option></select></div>
+    <div><label for="quota-state">Account status</label><select id="quota-state"><option value="all">All accounts</option><option value="active">Active</option><option value="inactive">Turned off</option></select></div>
+    <div><label for="quota-sort">Quota order</label><select id="quota-sort"><option value="default">Default order</option><option value="remaining-asc">Lowest remaining first</option><option value="remaining-desc">Highest remaining first</option></select></div>
+    <div><label for="quota-size">Accounts per page</label><input type="number" id="quota-size" min="1" max="500" step="1" value="20"></div>
+  </div>
+  <label class="check-row"><input id="quota-show-hidden" type="checkbox"> Show hidden quotas</label>
+  <div class="key-actions" aria-label="Account pages">
+    <button class="button" id="quota-previous" type="button" disabled>Previous</button>
+    <p id="quota-pagination" class="muted" aria-live="polite"></p>
+    <button class="button" id="quota-next" type="button" disabled>Next</button>
+  </div>
+</section>
+<div id="quota-accounts" class="usage-view"></div>
+<dialog id="quota-credits">
+  <div class="card-heading">
+    <h2 id="quota-credits-title">Reset credits</h2>
+    <form method="dialog"><button class="button" type="submit">Close</button></form>
+  </div>
+  <p id="quota-credits-status" class="notice" role="status" hidden></p>
+  <dl class="info-grid" id="quota-credits-list"></dl>
+</dialog>

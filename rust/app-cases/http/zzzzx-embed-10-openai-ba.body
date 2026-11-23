@@ -1,0 +1,1 @@
+{"object":"list","data":[{"object":"embedding","index":0,"embedding":"AACAPw=="},{"object":"embedding","index":1,"embedding":"AAAAQA=="}],"model":"fixture-embedding-upstream","usage":{"prompt_tokens":7,"completion_tokens":0,"total_tokens":7}}

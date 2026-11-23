@@ -1,0 +1,16 @@
+<section class="card" aria-labelledby="cowork-connectors-title">
+  <h2 id="cowork-connectors-title">Cowork connectors</h2>
+  <p class="muted" id="cowork-existing-connectors" hidden></p>
+  <label class="check-row" id="cowork-browser-preset-choice" hidden>
+    <input id="cowork-browser-preset" type="checkbox" disabled>Browser MCP
+  </label>
+  <button class="button" id="cowork-load-catalog" type="button">Load connector catalog</button>
+  <div class="settings-form">
+    <label for="cowork-catalog">Available connectors</label>
+    <select id="cowork-catalog" disabled></select>
+    <button type="button" class="button" id="cowork-add-connector" disabled>Add to selection</button>
+    <label for="cowork-connector-selection">Connector selection as JSON</label>
+    <textarea id="cowork-connector-selection" rows="6" spellcheck="false" placeholder="Leave blank to keep the current connectors"></textarea>
+    <p class="muted">Apply to host saves this selection. Enter [] to remove connectors added through 9Router.</p>
+  </div>
+</section>

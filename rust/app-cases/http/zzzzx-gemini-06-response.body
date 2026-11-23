@@ -1,0 +1,1 @@
+{"id":"chatcmpl-migration-gemini","object":"chat.completion",[..],"model":"gemini-2.5-flash","choices":[{"index":0,"message":{"role":"assistant","content":"Gemini migration"},"finish_reason":"stop"}],"usage":{}}

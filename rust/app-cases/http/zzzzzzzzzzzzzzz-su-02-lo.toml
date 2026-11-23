@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/locale"
+body = '{"locale":"zh-CN"}'
+
+[request.headers]
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+set-cookie = "locale=zh-CN; Path=/; [..]; Max-Age=31536000"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

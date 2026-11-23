@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["claude-ineligible"]
+status.code = 0
+fs.sandbox = true

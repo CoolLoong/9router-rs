@@ -1,0 +1,266 @@
+{"fn":"withCodexReviewModels","args":["x"],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[null],"error":"Cannot read properties of null (reading 'flatMap')"}
+{"fn":"withCodexReviewModels","args":[true],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[{"a":"b"}],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[["a",1]],"error":"Cannot read properties of undefined (reading 'endsWith')"}
+{"fn":"withCodexReviewModels","args":[0],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[[]],"ok":[]}
+{"fn":"withCodexReviewModels","args":[{}],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[{"a":{"b":"c"}}],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"error":"models.flatMap is not a function"}
+{"fn":"withCodexReviewModels","args":[[3,1,2]],"error":"Cannot read properties of undefined (reading 'endsWith')"}
+{"fn":"isMuseSparkModel","args":[true],"ok":false}
+{"fn":"isMuseSparkModel","args":[[]],"ok":false}
+{"fn":"isMuseSparkModel","args":[{"a":"b"}],"ok":false}
+{"fn":"isMuseSparkModel","args":[{}],"ok":false}
+{"fn":"isMuseSparkModel","args":["x"],"ok":false}
+{"fn":"isMuseSparkModel","args":[0],"ok":false}
+{"fn":"isMuseSparkModel","args":[{"a":{"b":"c"}}],"ok":false}
+{"fn":"isMuseSparkModel","args":[["a",1]],"ok":false}
+{"fn":"isMuseSparkModel","args":[null],"ok":false}
+{"fn":"isMuseSparkModel","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":false}
+{"fn":"isMuseSparkModel","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":false}
+{"fn":"isMuseSparkModel","args":[[3,1,2]],"ok":false}
+{"fn":"isDeepSeekModel","args":[true],"ok":false}
+{"fn":"isDeepSeekModel","args":[0],"ok":false}
+{"fn":"isDeepSeekModel","args":[[]],"ok":false}
+{"fn":"isDeepSeekModel","args":[{}],"ok":false}
+{"fn":"isDeepSeekModel","args":["x"],"ok":false}
+{"fn":"isDeepSeekModel","args":[{"a":{"b":"c"}}],"ok":false}
+{"fn":"isDeepSeekModel","args":[{"a":"b"}],"ok":false}
+{"fn":"isDeepSeekModel","args":[["a",1]],"ok":false}
+{"fn":"isDeepSeekModel","args":[null],"ok":false}
+{"fn":"isDeepSeekModel","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":false}
+{"fn":"isDeepSeekModel","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":false}
+{"fn":"isDeepSeekModel","args":[[3,1,2]],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[0],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[["a",1]],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":["x"],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[{"a":"b"}],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[[]],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[{}],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[true],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[null],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[{"a":{"b":"c"}}],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[[3,1,2]],"ok":false}
+{"fn":"opencodeFamilyFormats","args":[[]],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[{}],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[{"a":"b"}],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[0],"ok":null}
+{"fn":"opencodeFamilyFormats","args":["x"],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[null],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[{"a":{"b":"c"}}],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[["a",1]],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[true],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[[3,1,2]],"ok":null}
+{"fn":"deriveModelName","args":["x"],"ok":"x"}
+{"fn":"deriveModelName","args":[{"a":"b"}],"ok":{"a":"b"}}
+{"fn":"deriveModelName","args":[[]],"ok":[]}
+{"fn":"deriveModelName","args":[["a",1]],"ok":["a",1]}
+{"fn":"deriveModelName","args":[{"a":{"b":"c"}}],"ok":{"a":{"b":"c"}}}
+{"fn":"deriveModelName","args":[{}],"ok":{}}
+{"fn":"deriveModelName","args":[0],"ok":0}
+{"fn":"deriveModelName","args":[null],"ok":null}
+{"fn":"deriveModelName","args":[true],"ok":true}
+{"fn":"deriveModelName","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}}
+{"fn":"deriveModelName","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}}
+{"fn":"deriveModelName","args":[[3,1,2]],"ok":[3,1,2]}
+{"fn":"normalizeModelId","args":[{"a":"b"}],"ok":{"a":"b"}}
+{"fn":"normalizeModelId","args":[["a",1]],"ok":["a",1]}
+{"fn":"normalizeModelId","args":[{"a":{"b":"c"}}],"ok":{"a":{"b":"c"}}}
+{"fn":"normalizeModelId","args":[{}],"ok":{}}
+{"fn":"normalizeModelId","args":[0],"ok":0}
+{"fn":"normalizeModelId","args":[[]],"ok":[]}
+{"fn":"normalizeModelId","args":[null],"ok":null}
+{"fn":"normalizeModelId","args":["x"],"ok":"x"}
+{"fn":"normalizeModelId","args":[true],"ok":true}
+{"fn":"normalizeModelId","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}}
+{"fn":"normalizeModelId","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}}
+{"fn":"normalizeModelId","args":[[3,1,2]],"ok":[3,1,2]}
+{"fn":"normalizeModel","args":[[]],"ok":{"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[["a",1]],"ok":{"0":"a","1":1,"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[{"a":{"b":"c"}}],"ok":{"a":{"b":"c"},"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":["x"],"ok":{"id":"x","name":"x"}}
+{"fn":"normalizeModel","args":[null],"error":"Cannot read properties of null (reading 'name')"}
+{"fn":"normalizeModel","args":[{}],"ok":{"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[0],"ok":{"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[{"a":"b"}],"ok":{"a":"b","name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[true],"ok":{"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6,"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7,"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[[3,1,2]],"ok":{"0":3,"1":1,"2":2,"name":{"$undefined":true}}}
+{"fn":"modelKind","args":[{"a":"b"}],"ok":"llm"}
+{"fn":"modelKind","args":[0],"ok":"llm"}
+{"fn":"modelKind","args":[null],"ok":"llm"}
+{"fn":"modelKind","args":[{}],"ok":"llm"}
+{"fn":"modelKind","args":["x"],"ok":"llm"}
+{"fn":"modelKind","args":[{"a":{"b":"c"}}],"ok":"llm"}
+{"fn":"modelKind","args":[true],"ok":"llm"}
+{"fn":"modelKind","args":[[]],"ok":"llm"}
+{"fn":"modelKind","args":[["a",1]],"ok":"llm"}
+{"fn":"modelKind","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":"llm"}
+{"fn":"modelKind","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":"llm"}
+{"fn":"modelKind","args":[[3,1,2]],"ok":"llm"}
+{"fn":"modelQuotaFamily","args":["x"],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[{"a":{"b":"c"}}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[true],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[{"a":"b"}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[0],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[["a",1]],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[null],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[{}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[[]],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[[3,1,2]],"ok":"normal"}
+{"fn":"modelStrip","args":[{}],"ok":[]}
+{"fn":"modelStrip","args":[[]],"ok":[]}
+{"fn":"modelStrip","args":[true],"ok":[]}
+{"fn":"modelStrip","args":[["a",1]],"ok":[]}
+{"fn":"modelStrip","args":[null],"ok":[]}
+{"fn":"modelStrip","args":[0],"ok":[]}
+{"fn":"modelStrip","args":[{"a":{"b":"c"}}],"ok":[]}
+{"fn":"modelStrip","args":[{"a":"b"}],"ok":[]}
+{"fn":"modelStrip","args":["x"],"ok":[]}
+{"fn":"modelStrip","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":[]}
+{"fn":"modelStrip","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":[]}
+{"fn":"modelStrip","args":[[3,1,2]],"ok":[]}
+{"fn":"modelTargetFormat","args":[[]],"ok":null}
+{"fn":"modelTargetFormat","args":[null],"ok":null}
+{"fn":"modelTargetFormat","args":[true],"ok":null}
+{"fn":"modelTargetFormat","args":[0],"ok":null}
+{"fn":"modelTargetFormat","args":[{"a":{"b":"c"}}],"ok":null}
+{"fn":"modelTargetFormat","args":[{"a":"b"}],"ok":null}
+{"fn":"modelTargetFormat","args":[{}],"ok":null}
+{"fn":"modelTargetFormat","args":[["a",1]],"ok":null}
+{"fn":"modelTargetFormat","args":["x"],"ok":null}
+{"fn":"modelTargetFormat","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":null}
+{"fn":"modelTargetFormat","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":null}
+{"fn":"modelTargetFormat","args":[[3,1,2]],"ok":null}
+{"fn":"modelSupportedFormats","args":[true],"ok":null}
+{"fn":"modelSupportedFormats","args":[{}],"ok":null}
+{"fn":"modelSupportedFormats","args":[{"a":"b"}],"ok":null}
+{"fn":"modelSupportedFormats","args":[["a",1]],"ok":null}
+{"fn":"modelSupportedFormats","args":[{"a":{"b":"c"}}],"ok":null}
+{"fn":"modelSupportedFormats","args":[[]],"ok":null}
+{"fn":"modelSupportedFormats","args":[0],"ok":null}
+{"fn":"modelSupportedFormats","args":[null],"ok":null}
+{"fn":"modelSupportedFormats","args":["x"],"ok":null}
+{"fn":"modelSupportedFormats","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":null}
+{"fn":"modelSupportedFormats","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":null}
+{"fn":"modelSupportedFormats","args":[[3,1,2]],"ok":null}
+{"fn":"withCodexReviewModels","args":[[{"id":"gpt-5.4","name":"GPT 5.4","reasoning":true},{"id":"gpt-5.4-review","name":"Custom"},{"id":"image-1","name":"Image","kind":"image"},{"id":"gpt-5.3","name":"GPT 5.3","upstreamModelId":"gpt-5.3-codex","quotaFamily":"original"}]],"ok":[{"id":"gpt-5.4","name":"GPT 5.4","reasoning":true},{"id":"gpt-5.4-review","name":"GPT 5.4 Review","reasoning":true,"upstreamModelId":"gpt-5.4","quotaFamily":"review"},{"id":"gpt-5.4-review","name":"Custom"},{"id":"image-1","name":"Image","kind":"image"},{"id":"gpt-5.3","name":"GPT 5.3","upstreamModelId":"gpt-5.3-codex","quotaFamily":"original"},{"id":"gpt-5.3-review","name":"GPT 5.3 Review","upstreamModelId":"gpt-5.3-codex","quotaFamily":"review"}]}
+{"fn":"withCodexReviewModels","args":[[{"id":"a"},{"id":"b","name":null},{"id":"c","name":["a",null,"b"]},{"id":"d","name":"d","type":"embedding"}]],"ok":[{"id":"a"},{"id":"a-review","name":"undefined Review","upstreamModelId":"a","quotaFamily":"review"},{"id":"b","name":null},{"id":"b-review","name":"null Review","upstreamModelId":"b","quotaFamily":"review"},{"id":"c","name":["a",null,"b"]},{"id":"c-review","name":"a,,b Review","upstreamModelId":"c","quotaFamily":"review"},{"id":"d","name":"d","type":"embedding"}]}
+{"fn":"withCodexReviewModels","args":[[{"id":"e","name":"draft","kind":null,"type":""}]],"ok":[{"id":"e","name":"draft","kind":null,"type":""},{"id":"e-review","name":"draft Review","kind":null,"type":"","upstreamModelId":"e","quotaFamily":"review"}]}
+{"fn":"withCodexReviewModels","args":[[{"kind":"embedding"}]],"ok":[{"kind":"embedding"}]}
+{"fn":"withCodexReviewModels","args":[[{}]],"error":"Cannot read properties of undefined (reading 'endsWith')"}
+{"fn":"withCodexReviewModels","args":[[null]],"error":"Cannot read properties of null (reading 'kind')"}
+{"fn":"withCodexReviewModels","args":[[{"id":null}]],"error":"Cannot read properties of null (reading 'endsWith')"}
+{"fn":"withCodexReviewModels","args":[[{"id":42}]],"error":"model.id.endsWith is not a function"}
+{"fn":"withCodexReviewModels","args":[[]],"ok":[]}
+{"fn":"withCodexReviewModels","args":[null],"error":"Cannot read properties of null (reading 'flatMap')"}
+{"fn":"withCodexReviewModels","args":[{}],"error":"models.flatMap is not a function"}
+{"fn":"isMuseSparkModel","args":["ocg/MUSE_SPARK-1.1(max)"],"ok":true}
+{"fn":"isMuseSparkModel","args":[" museSpark:"],"ok":true}
+{"fn":"isMuseSparkModel","args":["muse-spark﻿suffix"],"ok":true}
+{"fn":"isMuseSparkModel","args":["muse-sparksuffix"],"ok":false}
+{"fn":"isMuseSparkModel","args":["x/muse-sparkish"],"ok":false}
+{"fn":"isMuseSparkModel","args":["x/muse--spark"],"ok":false}
+{"fn":"isMuseSparkModel","args":["muse spark"],"ok":false}
+{"fn":"isMuseSparkModel","args":["muse-spark()"],"ok":false}
+{"fn":"isMuseSparkModel","args":[null],"ok":false}
+{"fn":"isMuseSparkModel","args":[42],"ok":false}
+{"fn":"isDeepSeekModel","args":["oc/deepseek-v4-pro(max)"],"ok":true}
+{"fn":"isDeepSeekModel","args":["p/q/DEEPSEEK-v4-flash(high)  "],"ok":true}
+{"fn":"isDeepSeekModel","args":["deepseekish"],"ok":false}
+{"fn":"isDeepSeekModel","args":["deepseek"],"ok":false}
+{"fn":"isDeepSeekModel","args":["deepseek-v4"],"ok":true}
+{"fn":"isDeepSeekModel","args":[{"id":"deepseek-v4"}],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":["oc/mimo-v2.6-flash-free"],"ok":true}
+{"fn":"isOpencodeFreeTierModel","args":["oc/muse-spark-1.3-contributor-FREE(medium) "],"ok":true}
+{"fn":"isOpencodeFreeTierModel","args":["oc/mimo-v2.6-flash-free-form"],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":["free"],"ok":false}
+{"fn":"isOpencodeFreeTierModel","args":[false],"ok":false}
+{"fn":"opencodeFamilyFormats","args":["GPT-6"],"ok":{"match":{"$regexp":"/^(grok|gpt|muse[-_]?spark)/i"},"supportedFormats":["openai-responses"],"targetFormat":"openai-responses"}}
+{"fn":"opencodeFamilyFormats","args":["grok-4.3"],"ok":{"match":{"$regexp":"/^(grok|gpt|muse[-_]?spark)/i"},"supportedFormats":["openai-responses"],"targetFormat":"openai-responses"}}
+{"fn":"opencodeFamilyFormats","args":["muse_spark-1.3-contributor-free"],"ok":{"match":{"$regexp":"/^(grok|gpt|muse[-_]?spark)/i"},"supportedFormats":["openai-responses"],"targetFormat":"openai-responses"}}
+{"fn":"opencodeFamilyFormats","args":["deepseek-v4-pro"],"ok":{"match":{"$regexp":"/^deepseek-v4-(pro|flash)/"},"supportedFormats":["openai","claude","openai-responses"]}}
+{"fn":"opencodeFamilyFormats","args":["deepseek-v4-flash(max)"],"ok":{"match":{"$regexp":"/^deepseek-v4-(pro|flash)/"},"supportedFormats":["openai","claude","openai-responses"]}}
+{"fn":"opencodeFamilyFormats","args":["Deepseek-v4-pro"],"ok":null}
+{"fn":"opencodeFamilyFormats","args":["qwen-3.7"],"ok":{"match":{"$regexp":"/^(minimax|qwen)/"},"supportedFormats":["openai","claude"]}}
+{"fn":"opencodeFamilyFormats","args":["minimax-m3"],"ok":{"match":{"$regexp":"/^(minimax|qwen)/"},"supportedFormats":["openai","claude"]}}
+{"fn":"opencodeFamilyFormats","args":["Claude-Sonnet"],"ok":{"match":{"$regexp":"/^claude-/i"},"supportedFormats":["claude"]}}
+{"fn":"opencodeFamilyFormats","args":["oc/GPT-6"],"ok":null}
+{"fn":"opencodeFamilyFormats","args":["unknown"],"ok":null}
+{"fn":"opencodeFamilyFormats","args":[null],"ok":null}
+{"fn":"deriveModelName","args":["kimi-K2.7-THINKING"],"ok":"Kimi K2.7 Thinking"}
+{"fn":"deriveModelName","args":["GLM-5.4v"],"ok":"GLM 5.4V (Vision)"}
+{"fn":"deriveModelName","args":["GLM-5.4"],"ok":"GLM 5.4"}
+{"fn":"deriveModelName","args":["MiniMax-M3.1"],"ok":"MiniMax M3.1"}
+{"fn":"deriveModelName","args":["gemini-3.8-flash"],"ok":"Gemini 3.8 Flash"}
+{"fn":"deriveModelName","args":["Gpt-6-alpha_beta"],"ok":"GPT 6 Alpha Beta"}
+{"fn":"deriveModelName","args":["grok-4-4.1"],"ok":"Grok 4 4.1"}
+{"fn":"deriveModelName","args":["qWen3.6-coder"],"ok":"Qwen 3.6 Coder"}
+{"fn":"deriveModelName","args":["deepseek-v4-pro"],"ok":"DeepSeek V4 Pro"}
+{"fn":"deriveModelName","args":["qwen-3.6"],"ok":"qwen-3.6"}
+{"fn":"deriveModelName","args":["gpt-éclair ßeta"],"ok":"GPT Éclair SSeta"}
+{"fn":"deriveModelName","args":["gpt-𐐨elta"],"ok":"GPT 𐐨elta"}
+{"fn":"deriveModelName","args":["gemini-﻿ 2.5-\tflash"],"ok":"Gemini 2.5 Flash"}
+{"fn":"deriveModelName","args":["gemini-abc"],"ok":"Gemini abc"}
+{"fn":"deriveModelName","args":["gemini- wrapped"],"ok":"gemini- wrapped"}
+{"fn":"deriveModelName","args":["gpt-𝔘nicode"],"ok":"GPT 𝔘nicode"}
+{"fn":"deriveModelName","args":["gpt-İzmir"],"ok":"GPT İzmir"}
+{"fn":"deriveModelName","args":["qwen."],"ok":"Qwen ."}
+{"fn":"deriveModelName","args":["gpt-\n"],"ok":"gpt-\n"}
+{"fn":"deriveModelName","args":["gpt-4\n"],"ok":"gpt-4\n"}
+{"fn":"deriveModelName","args":[{"$utf16":[103,112,116,45,55296,45,97]}],"ok":{"$utf16":[71,80,84,32,55296,32,65]}}
+{"fn":"deriveModelName","args":[17],"ok":17}
+{"fn":"deriveModelName","args":[null],"ok":null}
+{"fn":"normalizeModelId","args":["claude-sonnet-4-5"],"ok":"claude-sonnet-4.5"}
+{"fn":"normalizeModelId","args":["x-1-2-3-4"],"ok":"x-1.2-3.4"}
+{"fn":"normalizeModelId","args":["1-23-4-56"],"ok":"1.23.4-56"}
+{"fn":"normalizeModelId","args":["qwen3-coder-next"],"ok":"qwen3-coder-next"}
+{"fn":"normalizeModelId","args":["Qwen٣-4"],"ok":"Qwen٣-4"}
+{"fn":"normalizeModelId","args":[{"$utf16":[55296,49,45,50]}],"ok":{"$utf16":[55296,49,46,50]}}
+{"fn":"normalizeModelId","args":[null],"ok":null}
+{"fn":"normalizeModelId","args":[{"id":"abc"}],"ok":{"id":"abc"}}
+{"fn":"normalizeModel","args":["gemini-3.8-flash"],"ok":{"id":"gemini-3.8-flash","name":"Gemini 3.8 Flash"}}
+{"fn":"normalizeModel","args":[{"id":"kimi-k2.7-thinking","kind":"llm","upstreamModelId":"kimi-k2.7"}],"ok":{"id":"kimi-k2.7-thinking","kind":"llm","upstreamModelId":"kimi-k2.7","name":"Kimi K2.7 Thinking"}}
+{"fn":"normalizeModel","args":[{"id":"a","name":null}],"ok":{"id":"a","name":null}}
+{"fn":"normalizeModel","args":[{"id":"a","name":""}],"ok":{"id":"a","name":""}}
+{"fn":"normalizeModel","args":[{"id":3}],"ok":{"id":3,"name":3}}
+{"fn":"normalizeModel","args":[false],"ok":{"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[null],"error":"Cannot read properties of null (reading 'name')"}
+{"fn":"normalizeModel","args":[{}],"ok":{"name":{"$undefined":true}}}
+{"fn":"normalizeModel","args":[[1,"a"]],"ok":{"0":1,"1":"a","name":{"$undefined":true}}}
+{"fn":"modelKind","args":[{"kind":"stt","type":"embedding"}],"ok":"stt"}
+{"fn":"modelKind","args":[{"kind":"","type":"embedding"}],"ok":"embedding"}
+{"fn":"modelKind","args":[{"kind":42,"type":"embedding"}],"ok":42}
+{"fn":"modelKind","args":[{"kind":false}],"ok":"llm"}
+{"fn":"modelKind","args":[{}],"ok":"llm"}
+{"fn":"modelKind","args":[null],"ok":"llm"}
+{"fn":"modelQuotaFamily","args":[{"quotaFamily":"review"}],"ok":"review"}
+{"fn":"modelQuotaFamily","args":[{"quotaFamily":false}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[{"quotaFamily":0}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[{}],"ok":"normal"}
+{"fn":"modelQuotaFamily","args":[null],"ok":"normal"}
+{"fn":"modelStrip","args":[{"strip":["image","audio"]}],"ok":["image","audio"]}
+{"fn":"modelStrip","args":[{"strip":0}],"ok":[]}
+{"fn":"modelStrip","args":[{"strip":"pdf"}],"ok":"pdf"}
+{"fn":"modelStrip","args":[{}],"ok":[]}
+{"fn":"modelStrip","args":[null],"ok":[]}
+{"fn":"modelTargetFormat","args":[{"targetFormat":"openai-responses"}],"ok":"openai-responses"}
+{"fn":"modelTargetFormat","args":[{"targetFormat":false}],"ok":null}
+{"fn":"modelTargetFormat","args":[{"targetFormat":"x"}],"ok":"x"}
+{"fn":"modelTargetFormat","args":[{}],"ok":null}
+{"fn":"modelTargetFormat","args":[null],"ok":null}
+{"fn":"modelSupportedFormats","args":[{"supportedFormats":["openai","claude"]}],"ok":["openai","claude"]}
+{"fn":"modelSupportedFormats","args":[{"supportedFormats":[]}],"ok":[]}
+{"fn":"modelSupportedFormats","args":[{"supportedFormats":0}],"ok":null}
+{"fn":"modelSupportedFormats","args":[{}],"ok":null}
+{"fn":"modelSupportedFormats","args":[null],"ok":null}

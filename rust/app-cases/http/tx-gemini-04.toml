@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/translator/translate"
+body = '{"step":2,"body":{"model":"gemini/gemini-2.5-flash","generationConfig":{"maxOutputTokens":64},"tools":[{"functionDeclarations":[{"name":"first","parameters":{"type":"object","properties":{"a":{"type":"string"}}}},{"name":"second","description":"the second"}]}],"contents":[{"role":"model","parts":[{"text":"calling"},{"functionCall":{"name":"first","id":"explicit-first","args":{"a":"x"}}},{"functionCall":{"name":"second"}}]},{"role":"user","parts":[{"text":"continue after both"},{"functionResponse":{"name":"first","id":"explicit-first","response":{"result":["one","two"]}}},{"functionResponse":{"name":"second","response":{"result":false}}}]}]}}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

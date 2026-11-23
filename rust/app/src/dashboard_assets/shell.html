@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{title}} · 9Router</title>
+  <link rel="stylesheet" href="/__9router-ui/dashboard.css">
+  <script defer src="/__9router-ui/dashboard.js"></script>
+  {{script}}
+</head>
+<body data-page="{{page}}">
+  <a class="skip-link" href="#dashboard-main">Skip to content</a>
+  <div class="dashboard">
+    <aside class="sidebar" aria-label="Dashboard navigation">
+      <a class="brand" href="/dashboard"><span class="brand-mark" aria-hidden="true">9R</span><span>9Router</span></a>
+      <nav aria-label="Routing">
+        <span class="nav-label">Routing</span>
+        <a href="/dashboard/endpoint" {{endpoint-current}}>Endpoint &amp; Key</a>
+        <a href="/dashboard/providers" {{providers-current}}>Providers</a>
+        <a href="/dashboard/models" {{models-current}}>Models</a>
+        <a href="/dashboard/basic-chat" {{chat-current}}>Basic Chat</a>
+        <a href="/dashboard/combos" {{combos-current}}>Combos &amp; Vision Adapter</a>
+        <a href="/dashboard/media-providers/web" {{media-web-current}}>Web Fetch &amp; Search</a>
+        <a href="/dashboard/media-providers/embedding" {{media-embedding-current}}>Embeddings</a>
+        <a href="/dashboard/media-providers/tts" {{media-tts-current}}>Text to Speech</a>
+        <a href="/dashboard/media-providers/stt" {{media-stt-current}}>Speech to Text</a>
+        <a href="/dashboard/media-providers/image" {{media-image-current}}>Images</a>
+        <a href="/dashboard/media-providers/video" {{media-video-current}}>Video</a>
+        <a href="/dashboard/media-providers/systemone" {{media-systemone-current}}>System One</a>
+      </nav>
+      <nav aria-label="Administration">
+        <span class="nav-label">Administration</span>
+        <a href="/dashboard/usage" {{usage-current}}>Usage</a>
+        <a href="/dashboard/console-log" {{console-current}}>Console log</a>
+        <a href="/dashboard/settings/pricing" {{pricing-current}}>Pricing</a>
+        <a href="/dashboard/quota" {{quota-current}}>Quota Tracker</a>
+        <a href="/dashboard/token-saver" {{token-saver-current}}>Token Saver</a>
+        <a href="/dashboard/pxpipe" {{pxpipe-current}}>PXPIPE</a>
+        <a href="/dashboard/cli-tools" {{cli-current}}>CLI Tools</a>
+        <a href="/dashboard/proxy-pools" {{proxy-pools-current}}>Proxy Pools</a>
+        <a href="/dashboard/profile" {{profile-current}}>Profile &amp; Settings</a>
+        {{update-link}}
+        <a href="/dashboard/skills" {{skills-current}}>Skills</a>
+        {{translator-link}}
+        <a href="/dashboard/endpoint?panel=tunnel">Tunnel &amp; Tailscale</a>
+      </nav>
+    </aside>
+
+    <div class="workspace">
+      <header class="workspace-bar">
+        <span class="workspace-label">Dashboard</span>
+        <div class="session-actions">
+          <a href="/dashboard/profile">Settings</a>
+          <button type="button" class="button button-flat" id="sign-out" {{session-hidden}}>Sign out</button>
+        </div>
+      </header>
+
+      <main id="dashboard-main" class="workspace-content">
+        <p id="session-status" class="notice notice-error" role="alert" hidden></p>
+        {{content}}
+      </main>
+      <footer class="license workspace-footer">9Router · Copyright © 2024–2026 decolua and contributors · <a href="/__9router-ui/license.txt">MIT License</a></footer>
+    </div>
+  </div>
+</body>
+</html>

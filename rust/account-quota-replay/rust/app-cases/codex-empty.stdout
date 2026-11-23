@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/codex/quota", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"limitReached": false, "plan": "unknown", "quotas": {}, "resetCredits": {"availableCount": 0}, "reviewLimitReached": false, "sparkLimitReached": false}, "status": 200}]}

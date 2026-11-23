@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["groq-headers"]
+status.code = 0
+fs.sandbox = true

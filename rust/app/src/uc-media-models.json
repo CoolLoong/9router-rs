@@ -1,0 +1,524 @@
+{
+  "image": {
+    "seedream-v4.5": {
+      "name": "Seedream v4.5",
+      "aspects": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4"
+      ]
+    },
+    "seedream-v5": {
+      "name": "Seedream v5",
+      "aspects": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3"
+      ]
+    },
+    "seedream-v5-flash": {
+      "name": "Seedream v5 Flash",
+      "aspects": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "4:5",
+        "5:4",
+        "21:9"
+      ],
+      "resolutions": [
+        "1k",
+        "1.5k",
+        "2k"
+      ]
+    },
+    "nano-banana-pro-ultra": {
+      "name": "Nano Banana Pro Ultra",
+      "aspects": [
+        "1:1",
+        "3:2",
+        "2:3",
+        "3:4",
+        "4:3",
+        "4:5",
+        "5:4",
+        "9:16",
+        "16:9",
+        "21:9"
+      ],
+      "resolutions": [
+        "4k",
+        "8k"
+      ]
+    },
+    "nano-banana-pro": {
+      "name": "Nano Banana Pro",
+      "aspects": [
+        "1:1",
+        "2:3",
+        "3:2",
+        "3:4",
+        "4:3",
+        "4:5",
+        "5:4",
+        "9:16",
+        "16:9",
+        "21:9"
+      ],
+      "resolutions": [
+        "1k",
+        "2k",
+        "4k"
+      ]
+    },
+    "nano-banana": {
+      "name": "Nano Banana",
+      "aspects": [
+        "1:1",
+        "9:16",
+        "16:9",
+        "3:4",
+        "4:3",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    "nano-banana-2": {
+      "name": "Nano Banana 2",
+      "aspects": [
+        "1:1",
+        "3:2",
+        "2:3",
+        "3:4",
+        "4:3",
+        "4:5",
+        "5:4",
+        "9:16",
+        "16:9",
+        "21:9"
+      ],
+      "resolutions": [
+        "1k",
+        "2k",
+        "4k"
+      ]
+    },
+    "gpt-image": {
+      "name": "GPT Image 1.5",
+      "aspects": [
+        "1:1",
+        "2:3",
+        "3:2"
+      ],
+      "qualities": [
+        "medium",
+        "high"
+      ]
+    },
+    "gpt-image-2": {
+      "name": "GPT Image 2",
+      "aspects": [
+        "1:1",
+        "3:2",
+        "2:3",
+        "3:4",
+        "4:3",
+        "4:5",
+        "5:4",
+        "9:16",
+        "16:9",
+        "21:9"
+      ]
+    },
+    "gpt-image-2.5-flare": {
+      "name": "GPT Image 2.5 Flare",
+      "aspects": [
+        "1:1",
+        "3:2",
+        "2:3",
+        "3:4",
+        "4:3",
+        "4:5",
+        "5:4",
+        "9:16",
+        "16:9",
+        "21:9",
+        "2:1",
+        "1:2",
+        "3:1",
+        "1:3",
+        "9:21"
+      ]
+    },
+    "gpt-image-2.5-sunburst": {
+      "name": "GPT Image 2.5 Sunburst",
+      "aspects": [
+        "1:1",
+        "3:2",
+        "2:3",
+        "3:4",
+        "4:3",
+        "4:5",
+        "5:4",
+        "9:16",
+        "16:9",
+        "21:9",
+        "2:1",
+        "1:2",
+        "3:1",
+        "1:3",
+        "9:21"
+      ]
+    },
+    "wan-2.6": {
+      "name": "Wan 2.6",
+      "aspects": [
+        "1:1",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3"
+      ]
+    },
+    "wan-2.6-image": {
+      "name": "Wan 2.6",
+      "upstream": "wan-2.6",
+      "aspects": [
+        "1:1",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3"
+      ]
+    },
+    "wan-2.7-text-to-image": {
+      "name": "Wan 2.7",
+      "aspects": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3"
+      ]
+    },
+    "wan-2.7-text-to-image-pro": {
+      "name": "Wan 2.7 Pro",
+      "aspects": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3"
+      ]
+    },
+    "prefect-pony-xl": {
+      "name": "Prefect Pony XL",
+      "aspects": [
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3"
+      ]
+    },
+    "1.0": {
+      "name": "Flux.1",
+      "aspects": []
+    },
+    "1.1": {
+      "name": "Flux.1.1",
+      "aspects": []
+    },
+    "1.2": {
+      "name": "Wan 2.6 (Flux tier)",
+      "aspects": []
+    },
+    "2.0": {
+      "name": "Flux.2",
+      "aspects": []
+    },
+    "flux-2-max": {
+      "name": "Flux 2 Max",
+      "aspects": []
+    },
+    "SDXL": {
+      "name": "SDXL uncensored",
+      "aspects": []
+    },
+    "realism": {
+      "name": "Realism",
+      "aspects": []
+    },
+    "realism-2": {
+      "name": "Realism 2",
+      "aspects": []
+    },
+    "z-image-turbo": {
+      "name": "Z Image Turbo",
+      "aspects": []
+    }
+  },
+  "video": {
+    "default": {
+      "name": "Standard",
+      "t2v": true,
+      "i2v": true,
+      "aspects": [
+        "auto",
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
+      "resolutions": [
+        "480p",
+        "720p"
+      ],
+      "seconds": [
+        5,
+        8
+      ]
+    },
+    "turbo": {
+      "name": "Turbo",
+      "t2v": true,
+      "i2v": true,
+      "aspects": [
+        "auto",
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
+      "resolutions": [
+        "480p",
+        "720p"
+      ],
+      "seconds": [
+        5,
+        8
+      ]
+    },
+    "wan-2.2-uncensored-v2": {
+      "name": "Wan Ultra Uncensored v2",
+      "t2v": true,
+      "i2v": true,
+      "aspects": [
+        "auto",
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
+      "resolutions": [
+        "480p",
+        "720p"
+      ],
+      "seconds": [
+        5,
+        8
+      ]
+    },
+    "wan-2.2-uncensored": {
+      "name": "Wan Ultra Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "aspects": [
+        "auto",
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
+      "resolutions": [
+        "480p",
+        "720p"
+      ],
+      "seconds": [
+        5,
+        8
+      ]
+    },
+    "wan-2.6": {
+      "name": "Wan v2.6",
+      "t2v": true,
+      "i2v": true,
+      "aspects": [
+        "auto",
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
+      "seconds": [
+        5,
+        8
+      ]
+    },
+    "wan-2.6-ultra": {
+      "name": "Wan 2.6 Ultra Uncensored",
+      "t2v": true,
+      "i2v": true
+    },
+    "wan-2.7": {
+      "name": "Wan 2.7",
+      "t2v": true,
+      "i2v": true
+    },
+    "wan-2.7-pro": {
+      "name": "Wan 2.7 Pro",
+      "t2v": true,
+      "i2v": true
+    },
+    "wan-2.7-uncensored": {
+      "name": "Wan 2.7 Uncensored",
+      "t2v": true,
+      "i2v": true
+    },
+    "wan-2.7-uncensored-v2": {
+      "name": "Wan 2.7 Uncensored v2",
+      "t2v": true,
+      "i2v": true
+    },
+    "wan-3.0": {
+      "name": "Wan 3.0",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "wan-3.0-uncensored": {
+      "name": "Wan 3.0 Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "wan-3.0-uncensored-pro": {
+      "name": "Wan 3.0 Uncensored Pro",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "sora-2": {
+      "name": "Sora 2",
+      "t2v": true,
+      "i2v": true,
+      "seconds": [
+        4,
+        8,
+        12
+      ]
+    },
+    "sora-2-pro": {
+      "name": "Sora 2 Pro",
+      "t2v": true,
+      "i2v": true,
+      "seconds": [
+        4,
+        8,
+        12
+      ]
+    },
+    "grok-imagine-video": {
+      "name": "Grok Imagine Video",
+      "t2v": true,
+      "i2v": true
+    },
+    "bytedance-seedance-2.0": {
+      "name": "Seedance 2.0",
+      "t2v": true,
+      "i2v": true
+    },
+    "seedance-2.0-fast": {
+      "name": "Seedance 2.0 Fast",
+      "t2v": true,
+      "i2v": true
+    },
+    "seedance-2.0-uncensored": {
+      "name": "Seedance 2.0 Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "seedance-2.0-fast-uncensored": {
+      "name": "Seedance 2.0 Fast Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "seedance-2.0-mini-uncensored": {
+      "name": "Seedance 2.0 Mini Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "seedance-2.0-mini-turbo": {
+      "name": "Seedance 2.0 Mini Turbo Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "seedance-v1.5-pro-uncensored": {
+      "name": "Seedance v1.5 Pro Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "seedance-2.5-uncensored": {
+      "name": "Seedance 2.5 Uncensored",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "seedance-2.5": {
+      "name": "Seedance 2.5",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "vidu-q3-uncensored": {
+      "name": "Vidu Q3 Uncensored",
+      "t2v": true,
+      "i2v": true
+    },
+    "av-gen-v2": {
+      "name": "AV-Gen v2 with audio",
+      "t2v": true,
+      "i2v": true,
+      "audio": true
+    },
+    "cosmos-predict": {
+      "name": "Cosmos Predict 2.5",
+      "t2v": true,
+      "i2v": true
+    },
+    "minimax-h3": {
+      "name": "MiniMax H3",
+      "t2v": true,
+      "i2v": true
+    },
+    "happyhorse-1.0": {
+      "name": "Happy Horse 1.0",
+      "t2v": true,
+      "i2v": true
+    },
+    "wan/v2.2-a14b": {
+      "name": "Wan v2.2-a14b",
+      "t2v": true,
+      "i2v": true
+    }
+  }
+}

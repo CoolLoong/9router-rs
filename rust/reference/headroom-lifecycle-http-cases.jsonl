@@ -1,0 +1,7 @@
+{"name":"headroom-start-local-guard","path":"/api/headroom/start","method":"POST"}
+{"name":"headroom-stop-local-guard","path":"/api/headroom/stop","method":"POST"}
+{"name":"headroom-start-forwarded","path":"/api/headroom/start","method":"POST","headers":{"x-forwarded-for":"192.0.2.15","x-9r-cli-token":"offline-invalid"}}
+{"name":"headroom-stop-not-running","path":"/api/headroom/stop","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"headroom-z01-external-config","path":"/api/settings","method":"PATCH","headers":{"content-type":"application/json","x-9r-cli-token":"68977b6fd9422fbb"},"body":"{\"headroomUrl\":\"https://example.invalid:2025\"}"}
+{"name":"headroom-z02-external-start","path":"/api/headroom/start","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"headroom-z03-external-restart","path":"/api/headroom/restart","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

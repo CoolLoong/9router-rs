@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/kimi/usages", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Kimi authentication expired. Please re-authorize.", "plan": "Kimi Coding"}, "status": 200}]}

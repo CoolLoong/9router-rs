@@ -1,0 +1,1 @@
+{"enabled":true,"available":true,"format":"claude","body":{"model":"test"},"model":"test","minChars":2,"timeoutMs":3,"outcome":{"timeout":true}}

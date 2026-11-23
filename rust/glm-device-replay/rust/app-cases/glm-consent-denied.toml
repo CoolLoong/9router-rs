@@ -1,0 +1,4 @@
+bin.name = "reference"
+args = ["denied"]
+status.code = 0
+fs.sandbox = true

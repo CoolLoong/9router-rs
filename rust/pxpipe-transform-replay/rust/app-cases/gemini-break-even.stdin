@@ -1,0 +1,1 @@
+{"actual": {"model": "gemini-3.8-flash-high", "body": {"model": "gemini-3.8-flash-high", "max_tokens": 30, "messages": [{"role": "user", "content": "Proceed with the fixture using this model."}], "system": "Small synthetic system prompt."}, "minChars": 20}}

@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/opencode/zen", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "OpenCode Zen access forbidden for this API key.", "plan": "OpenCode Zen"}, "status": 200}]}

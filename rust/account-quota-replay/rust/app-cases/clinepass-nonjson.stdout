@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/clinepass/quota", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "ClinePass usage response was not JSON."}, "status": 200}]}

@@ -1,0 +1,48 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/wing/projects/9router-rs",
+  "unit": "src/lib/providerConnectionResponse.js",
+  "language": "ts",
+  "kind": "napi",
+  "crate_name": "provider-response-rs",
+  "exports": [
+    {
+      "name": "usesAwsCredentialForm",
+      "file": "src/lib/providerConnectionResponse.js",
+      "line": 3,
+      "params": [
+        {
+          "name": "provider",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "toProviderConnectionResponse",
+      "file": "src/lib/providerConnectionResponse.js",
+      "line": 7,
+      "params": [
+        {
+          "name": "connection",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": []
+}

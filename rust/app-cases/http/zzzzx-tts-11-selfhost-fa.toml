@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/audio/speech"
+body = '{"model":"selfhosted-tts/fixture-tts-outage","input":"Kokoro rejects"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 502
+
+[response.headers]
+content-type = "application/json"
+retry-after = "30"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

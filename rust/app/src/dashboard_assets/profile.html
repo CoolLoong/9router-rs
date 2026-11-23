@@ -1,0 +1,191 @@
+<div class="page-heading"><h1>Profile &amp; Settings</h1></div>
+<p id="management-status" class="notice" role="status" hidden></p>
+<section class="card" aria-labelledby="theme-title">
+  <h2 id="theme-title">Appearance</h2>
+  <label for="theme-choice">Theme</label>
+  <select id="theme-choice">
+    <option value="system">System</option>
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+  </select>
+</section>
+<section class="card" aria-labelledby="access-title">
+  <div>
+    <h2 id="access-title">Access</h2>
+    <p class="muted" id="profile-user"></p>
+  </div>
+  <form id="router-settings-form" class="settings-form" method="post">
+    <fieldset id="router-settings-fields" disabled>
+      <label class="check-row"><input id="settings-login" type="checkbox">Require dashboard login</label>
+      <label class="check-row"><input id="settings-api-key" type="checkbox">Require API key for inference requests</label>
+      <label class="check-row"><input id="settings-tunnel" type="checkbox">Allow dashboard access through tunnels</label>
+      <label class="check-row"><input id="settings-observability" type="checkbox">Enable observability</label>
+      <button type="submit" class="button button-primary">Save access settings</button>
+    </fieldset>
+  </form>
+</section>
+<section class="card" aria-labelledby="routing-title">
+  <h2 id="routing-title">Routing strategy</h2>
+  <form id="routing-form" class="settings-form" method="post" novalidate>
+    <fieldset id="routing-fields" disabled>
+      <label class="check-row"><input id="routing-accounts" type="checkbox">Account round robin</label>
+      <div id="routing-account-limit-fields" class="settings-form" hidden>
+        <label for="routing-account-limit">Calls per account before switching</label>
+        <input id="routing-account-limit" type="number" min="1" max="10" step="1" disabled>
+      </div>
+      <label class="check-row"><input id="routing-combos" type="checkbox">Combo round robin</label>
+      <div id="routing-combo-limit-fields" class="settings-form" hidden>
+        <label for="routing-combo-limit">Calls per combo model before switching</label>
+        <input id="routing-combo-limit" type="number" min="1" max="100" step="1" disabled>
+      </div>
+      <button type="submit" class="button button-primary">Save routing settings</button>
+    </fieldset>
+  </form>
+</section>
+<section class="card" aria-labelledby="password-title">
+  <h2 id="password-title">Dashboard password</h2>
+  <form id="profile-password-form" class="settings-form" method="post">
+    <fieldset id="profile-password-fields" disabled>
+      <div id="profile-current-fields" class="settings-form">
+        <label for="profile-current-password">Current password</label>
+        <input id="profile-current-password" type="password" autocomplete="current-password">
+      </div>
+      <label for="profile-new-password">New password</label>
+      <input id="profile-new-password" type="password" autocomplete="new-password" required>
+      <label for="profile-confirm-password">Confirm password</label>
+      <input id="profile-confirm-password" type="password" autocomplete="new-password" required>
+      <button type="submit" class="button button-primary">Update password</button>
+    </fieldset>
+  </form>
+</section>
+<section class="card" aria-labelledby="profile-sso-title">
+  <h2 id="profile-sso-title">Single sign-on</h2>
+  <p id="profile-sso-status" class="notice" role="status" hidden></p>
+  <form id="profile-sso-form" class="settings-form" method="post">
+    <fieldset id="profile-sso-fields" disabled>
+      <label for="profile-sso-type">Protocol</label>
+      <select id="profile-sso-type">
+        <option value="oidc">OpenID Connect</option>
+        <option value="saml">SAML 2.0</option>
+      </select>
+      <label for="profile-auth-mode">Dashboard sign-in</label>
+      <select id="profile-auth-mode">
+        <option value="password">Password only</option>
+        <option value="sso">Single sign-on only</option>
+        <option value="both">Password or single sign-on</option>
+      </select>
+      <fieldset id="profile-oidc-fields" aria-labelledby="profile-oidc-title">
+        <legend id="profile-oidc-title">OpenID Connect</legend>
+        <label for="profile-oidc-issuer">Issuer URL</label>
+        <input id="profile-oidc-issuer" type="url" placeholder="https://idp.example.com">
+        <label for="profile-oidc-client">Client ID</label>
+        <input id="profile-oidc-client" autocomplete="off">
+        <label for="profile-oidc-secret">Client secret</label>
+        <input id="profile-oidc-secret" type="password" autocomplete="new-password">
+        <label for="profile-oidc-scopes">Scopes</label>
+        <input id="profile-oidc-scopes" placeholder="openid profile email">
+        <label for="profile-oidc-label">Sign-in button label</label>
+        <input id="profile-oidc-label" placeholder="Sign in with OIDC">
+        <p class="muted">Redirect URI <code id="profile-oidc-callback"></code></p>
+      </fieldset>
+      <fieldset id="profile-saml-fields" aria-labelledby="profile-saml-title" hidden disabled>
+        <legend id="profile-saml-title">SAML 2.0</legend>
+        <label for="profile-saml-metadata">Identity provider metadata XML</label>
+        <input id="profile-saml-metadata" type="file" accept=".xml,application/xml,text/xml">
+        <label for="profile-saml-entry">Single sign-on service URL</label>
+        <input id="profile-saml-entry" type="url" placeholder="https://idp.example.com/saml">
+        <label for="profile-saml-issuer">Service provider entity ID</label>
+        <input id="profile-saml-issuer" placeholder="urn:9router:sp">
+        <label for="profile-saml-cert">IdP X.509 certificate</label>
+        <textarea id="profile-saml-cert" rows="4" placeholder="Paste a PEM or Base64 certificate"></textarea>
+        <label for="profile-saml-cert-file">Upload certificate</label>
+        <input id="profile-saml-cert-file" type="file" accept=".crt,.pem,.cer,text/plain">
+        <label for="profile-saml-email">Email attribute</label>
+        <input id="profile-saml-email" placeholder="email">
+        <label for="profile-saml-name">Display name attribute</label>
+        <input id="profile-saml-name" placeholder="name">
+        <label for="profile-saml-label">Sign-in button label</label>
+        <input id="profile-saml-label" placeholder="Sign in with SAML SSO">
+        <p class="muted">Assertion consumer service URL <code id="profile-saml-acs"></code></p>
+        <a href="/api/auth/saml/metadata" download="9router-sp-metadata.xml">Download service provider metadata</a>
+        <details id="profile-saml-guide">
+          <summary>Set up your SAML identity provider</summary>
+          <p>Use the assertion consumer service URL above and <code id="profile-saml-audience">urn:9router:sp</code> as the service provider entity ID or audience. Use an email address as the NameID when available.</p>
+          <dl>
+            <dt>AWS IAM Identity Center</dt>
+            <dd>Add a custom SAML 2.0 application. Fill in the application ACS URL and SAML audience. Map the Subject or email attribute to <code>${user:email}</code>, then import the application's metadata XML.</dd>
+            <dt>Microsoft Entra ID</dt>
+            <dd>Create an enterprise application with SAML single sign-on. Set Identifier to the entity ID and Reply URL to the ACS URL. Import the federation metadata XML or upload the IdP certificate.</dd>
+            <dt>Okta / Auth0</dt>
+            <dd>Create a SAML 2.0 integration. Set the single sign-on URL to the ACS URL, the Audience URI to the entity ID and the NameID format to EmailAddress. Import the IdP metadata or upload the certificate.</dd>
+            <dt>Keycloak / Authentik</dt>
+            <dd>Create a SAML client. Use the entity ID as the client ID and the ACS URL as the SAML processing URL. Import the exported SAML descriptor or upload the IdP certificate.</dd>
+          </dl>
+        </details>
+      </fieldset>
+      <div class="key-actions">
+        <button type="submit" class="button button-primary">Save sign-in settings</button>
+        <button id="profile-sso-test" type="button" class="button">Test configuration</button>
+      </div>
+    </fieldset>
+  </form>
+</section>
+<section class="card" aria-labelledby="profile-database-title">
+  <h2 id="profile-database-title">Database backups</h2>
+  <p id="profile-database-status" class="notice" role="status" hidden></p>
+  <p class="muted">Backup files contain credentials. Keep them private.</p>
+  <p id="profile-database-sign-in" hidden><a href="/login?sign-in=1">Sign in to manage backups</a>.</p>
+  <fieldset id="profile-database-fields" disabled>
+    <div class="key-actions">
+      <button id="profile-export" type="button" class="button">Export database</button>
+    </div>
+    <label for="profile-backup-file">Backup file</label>
+    <input id="profile-backup-file" type="file" accept=".json,application/json">
+    <div class="key-actions">
+      <button id="profile-import" type="button" class="button" disabled>Import database</button>
+    </div>
+  </fieldset>
+</section>
+<section class="card" aria-labelledby="outbound-title">
+  <h2 id="outbound-title">Outbound proxy</h2>
+  <form id="outbound-form" class="settings-form" method="post">
+    <fieldset id="outbound-fields" disabled>
+      <label class="check-row"><input id="outbound-enabled" type="checkbox">Enable outbound proxy</label>
+      <label for="outbound-url">Proxy URL</label>
+      <input id="outbound-url" type="password" autocomplete="new-password" placeholder="Leave blank to keep the stored URL">
+      <label for="outbound-exclusions">No-proxy hosts</label>
+      <input id="outbound-exclusions" autocomplete="off" placeholder="localhost,127.0.0.1">
+      <div class="key-actions">
+        <button type="submit" class="button button-primary">Save proxy settings</button>
+        <button id="outbound-test" type="button" class="button">Test proxy</button>
+      </div>
+    </fieldset>
+  </form>
+  <a href="/dashboard/proxy-pools">Manage proxy pools</a>
+</section>
+<button class="button button-danger" id="profile-shutdown" type="button" hidden>Shutdown</button>
+<dialog id="profile-shutdown-dialog" aria-labelledby="profile-shutdown-title" aria-describedby="profile-shutdown-detail">
+  <form id="profile-shutdown-form" method="post">
+    <h2 id="profile-shutdown-title">Shut down 9Router</h2>
+    <p id="profile-shutdown-detail">Stop the 9Router gateway?</p>
+    <p id="profile-shutdown-status" class="notice" role="status" hidden></p>
+    <div class="dialog-actions">
+      <button class="button" id="profile-shutdown-cancel" type="button" autofocus>Cancel</button>
+      <button class="button button-danger" id="profile-shutdown-confirm" type="submit">Shutdown</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="profile-database-dialog" aria-labelledby="profile-database-dialog-title" aria-describedby="profile-database-dialog-detail">
+  <form id="profile-database-form" method="post">
+    <h2 id="profile-database-dialog-title">Confirm database action</h2>
+    <p id="profile-database-dialog-detail"></p>
+    <p id="profile-database-dialog-status" class="notice" role="status" hidden></p>
+    <label for="profile-database-password">Current password</label>
+    <input id="profile-database-password" type="password" autocomplete="current-password" required>
+    <div class="dialog-actions">
+      <button id="profile-database-cancel" type="button" class="button">Cancel</button>
+      <button id="profile-database-confirm" type="submit" class="button button-primary">Confirm</button>
+    </div>
+  </form>
+</dialog>
+<noscript><p class="muted">Enable JavaScript to edit settings.</p></noscript>

@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/minimax/global/token_plan/remains", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "MiniMax API key invalid or inactive. Use an active Token/Coding Plan key."}, "status": 200}]}

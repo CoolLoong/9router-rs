@@ -1,0 +1,81 @@
+<div class="page-heading">
+  <div>
+    <h1>Endpoint &amp; Key</h1>
+    <p class="muted">Connect your tools and manage access to this router.</p>
+  </div>
+</div>
+
+<section class="card endpoint-card" aria-labelledby="endpoint-title">
+  <h2 id="endpoint-title">API endpoint</h2>
+  <div class="endpoint-value">
+    <code id="server-endpoint">/v1</code>
+    <button type="button" class="button" id="copy-endpoint">Copy URL</button>
+  </div>
+  <label class="check-row">
+    <input type="checkbox" id="require-key" {{require-key}}>
+    <span>Require API key for inference requests</span>
+  </label>
+</section>
+
+<section class="card" aria-labelledby="keys-title">
+  <div class="card-heading">
+    <div>
+      <h2 id="keys-title">API keys</h2>
+      <p class="muted">Create keys, switch them on or off, and choose the models each key may call.</p>
+    </div>
+    <button type="button" class="button button-primary" id="new-key">New API key</button>
+  </div>
+  <p id="workspace-status" class="notice" role="status" aria-live="polite" hidden></p>
+  <div id="key-list" class="key-list" aria-busy="true">
+    <p class="muted">Loading API keys…</p>
+  </div>
+  <noscript><p class="muted">Enable JavaScript to view and manage keys.</p></noscript>
+</section>
+
+{{native-updates}}
+
+<dialog id="create-key-dialog" aria-labelledby="create-key-title">
+  <form id="create-key-form" method="dialog">
+    <h2 id="create-key-title">Create API key</h2>
+    <label for="key-name">Name</label>
+    <input id="key-name" name="name" autocomplete="off" required>
+    <p class="notice notice-error" id="create-key-error" role="alert" hidden></p>
+    <div class="dialog-actions">
+      <button type="button" class="button" data-close="create-key-dialog">Cancel</button>
+      <button class="button button-primary" type="submit">Create key</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="created-key-dialog" aria-labelledby="created-key-title">
+  <h2 id="created-key-title">API key created</h2>
+  <p class="muted">Copy the key into your client. Keep it private.</p>
+  <code id="created-key-value" class="created-key"></code>
+  <p id="created-key-status" class="notice" role="status" hidden></p>
+  <div class="dialog-actions">
+    <button type="button" class="button" id="copy-created-key">Copy key</button>
+    <button type="button" class="button button-primary" data-close="created-key-dialog">Done</button>
+  </div>
+</dialog>
+<dialog id="key-access-dialog" aria-labelledby="key-access-title">
+  <form id="key-access-form" method="dialog">
+    <h2 id="key-access-title">API key access</h2>
+    <label class="check-row">
+      <input type="checkbox" id="access-restricted">
+      <span>Restrict access to listed combos and models</span>
+    </label>
+    <fieldset id="access-list-fields">
+      <label for="access-allow">Allowed IDs</label>
+      <textarea id="access-allow" rows="6" spellcheck="false" aria-describedby="access-hint"></textarea>
+      <p class="muted" id="access-hint">Enter one combo or model ID per line. A restricted key with no entries cannot call any models.</p>
+      <label for="access-search">Find combos and models</label>
+      <input id="access-search" type="search" autocomplete="off" aria-controls="access-model-picks">
+      <p id="access-picker-status" class="muted" role="status"></p>
+      <div id="access-model-picks" class="access-model-picks"></div>
+    </fieldset>
+    <p class="notice notice-error" id="key-access-error" role="alert" hidden></p>
+    <div class="dialog-actions">
+      <button type="button" class="button" data-close="key-access-dialog">Cancel</button>
+      <button type="submit" class="button button-primary">Save access</button>
+    </div>
+  </form>
+</dialog>

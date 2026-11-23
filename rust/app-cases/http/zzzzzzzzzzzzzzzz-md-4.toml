@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/images/generations?response_format=binary"
+body = '{"model":"shared-img-combo","prompt":"OpenAI fixture JPEG","output_format":"JpEg","response_format":"b64_json"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-disposition = 'inline; filename="image.jpg"'
+content-type = "image/jpeg"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"

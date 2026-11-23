@@ -1,0 +1,1 @@
+{"connectionId":"fixture-cline-transport","models":[{"id":"anthropic/fixture-live-cline","name":"Last Cline entry"},{"id":"cline-pass/fixture-live-pass","name":"Live Pass"},{"id":"cline-pass/fixture-plain-model","name":"cline-pass/fixture-plain-model"},{"id":"cline-free/fixture-live-free","name":"Free Cline"}],"provider":"cline"}

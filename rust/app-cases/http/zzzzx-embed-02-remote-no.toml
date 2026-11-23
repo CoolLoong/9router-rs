@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/v1/embeddings"
+body = '{"model":"fixture-live/fixture-embedding","input":"fixture embedding"}'
+
+[request.headers]
+content-type = "application/json"
+x-forwarded-for = "192.0.2.70"
+
+[response]
+status = 401
+
+[response.headers]
+content-type = "application/json"
+vary = "Accept-Encoding"

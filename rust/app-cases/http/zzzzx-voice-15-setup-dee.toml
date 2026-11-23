@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/providers"
+body = '{"provider":"deepgram","apiKey":"offline-deepgram-stt","name":"Fixture deepgram STT","providerSpecificData":{"baseUrl":"http://127.0.0.1:52989/deepgram/v1/listen?custom=1&smart_format=false&smart_format=dup"}}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 201
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

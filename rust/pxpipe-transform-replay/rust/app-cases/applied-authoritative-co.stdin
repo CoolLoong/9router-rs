@@ -1,0 +1,1 @@
+{"enabled":true,"available":true,"format":"claude","minChars":2,"body":{"messages":[{"role":"user","content":"a few words to estimate actual savings"}]},"outcome":{"applied":true,"body":{"messages":[{"role":"user","content":"替代🫖"}]},"info":{"compressedChars":31,"imageBytes":257,"imageCount":2,"imageTokens":7,"baselineTokens":35},"cache":{"ownsCacheControl":true}}}

@@ -1,0 +1,1 @@
+{"connection":{"id":"[..]","provider":"azure","authType":"apikey","name":"Azure fixture default","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"azureEndpoint":"http://127.0.0.1:52989/azure-fixture/","connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

@@ -1,0 +1,24 @@
+<dialog id="quota-auto-ping" aria-labelledby="quota-auto-ping-title">
+  <h2 id="quota-auto-ping-title">Quota auto-ping</h2>
+  <p id="quota-auto-ping-message" class="notice" role="status" hidden></p>
+  <form id="quota-auto-ping-form" class="settings-form">
+    <p class="muted">Sends a short model request to start the next quota window.</p>
+    <label class="check-row"><input type="checkbox" id="quota-ping-reactive"> Ping on quota reset</label>
+    <label class="check-row"><input type="checkbox" id="quota-ping-anchored"> Ping on a daily schedule</label>
+    <fieldset id="quota-ping-fields">
+      <legend>Daily schedule</legend>
+      <label for="quota-ping-anchor">First ping</label>
+      <input type="time" id="quota-ping-anchor" required>
+      <label for="quota-ping-zone">Time zone</label>
+      <input type="text" id="quota-ping-zone" placeholder="Asia/Shanghai" required>
+      <label for="quota-ping-window">Hours between pings</label>
+      <input type="number" id="quota-ping-window" min="0.5" max="24" step="any" required>
+      <label for="quota-ping-slots">Pings per day</label>
+      <input type="number" id="quota-ping-slots" min="1" max="48" required>
+    </fieldset>
+    <div class="key-actions">
+      <button class="button button-primary" type="submit">Save schedule</button>
+      <button class="button" type="button" id="quota-ping-cancel">Cancel</button>
+    </div>
+  </form>
+</dialog>

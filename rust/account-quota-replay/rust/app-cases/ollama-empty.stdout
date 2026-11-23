@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/ollama/usage", "valid": true}, {"method": "POST", "path": "/ollama/me", "valid": true}, {"method": "GET", "path": "/ollama/balance", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Ollama Cloud connected. No usage limits reported.", "plan": "Team", "quotas": {}}, "status": 200}]}

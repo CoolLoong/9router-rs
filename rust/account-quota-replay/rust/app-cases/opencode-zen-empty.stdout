@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/opencode/zen", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "OpenCode Zen usage response did not contain valid quota data.", "plan": "OpenCode Zen"}, "status": 200}]}

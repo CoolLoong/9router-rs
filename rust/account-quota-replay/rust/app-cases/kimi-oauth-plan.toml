@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["kimi-oauth-plan"]
+status.code = 0
+fs.sandbox = true

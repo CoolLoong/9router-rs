@@ -1,0 +1,14 @@
+event: response.created
+data: {"type":"response.created","response":{"id":"resp_native_fixture","created_at":1784419200,"object":"response","model":"fixture-response-rtk","status":"in_progress","output":[]},"sequence_number":1}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","output_index":0,"item_id":"msg_responses_fixture","delta":"native responses migration","sequence_number":2}
+
+event: response.output_item.done
+data: {"type":"response.output_item.done","output_index":0,"item":{"id":"msg_responses_fixture","type":"message","role":"assistant","content":[{"type":"output_text","text":"native responses migration","annotations":[]}]},"sequence_number":3}
+
+event: response.completed
+data: {"type":"response.completed","response":{"id":"resp_native_fixture","created_at":1784419200,"object":"response","model":"fixture-response-rtk","status":"completed","output":[{"id":"msg_responses_fixture","type":"message","role":"assistant","content":[{"type":"output_text","text":"native responses migration","annotations":[]}]}],"usage":{"input_tokens":5,"output_tokens":3,"total_tokens":8,"input_tokens_details":{"cached_tokens":2}}},"sequence_number":4}
+
+data: [DONE]
+

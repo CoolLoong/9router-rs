@@ -1,0 +1,1 @@
+{"reads": ["/api/keys", "/api/tunnel/status"], "requests": [{"body": {"name": "CLI Test Key"}, "method": "POST", "path": "/api/keys"}]}

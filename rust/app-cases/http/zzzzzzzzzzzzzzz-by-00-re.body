@@ -1,0 +1,1 @@
+{"id":"chatcmpl-[..]","object":"chat.completion",[..],"model":"fixture-unavailable-local-bypass","choices":[{"index":0,"message":{"role":"assistant","content":"CLI Command Execution: Clear Terminal"},"finish_reason":"stop"}],"usage":{"prompt_tokens":1,"completion_tokens":1,"total_tokens":2}}

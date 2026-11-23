@@ -1,0 +1,14 @@
+[request]
+method = "GET"
+path = "/api/auth/oidc/callback?error=access_denied"
+
+[request.headers]
+x-forwarded-host = "gateway.example.invalid"
+x-forwarded-proto = "https"
+
+[response]
+status = 307
+
+[response.headers]
+location = "https://gateway.example.invalid/login?error=access_denied"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"

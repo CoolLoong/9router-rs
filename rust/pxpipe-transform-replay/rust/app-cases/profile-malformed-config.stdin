@@ -1,0 +1,1 @@
+{"actual": {"model": "grok-4.6", "body": {"model": "grok-4.6", "max_tokens": 20, "messages": [{"role": "user", "content": "Test the fixture and keep the exact phrase."}], "system": "Mock tarball intentionally tests syntax fallback in env."}, "minChars": 20, "repeat": 420, "scope": "grok-4.6", "overrides": "{ invalid json"}}

@@ -1,0 +1,11 @@
+{"fn":"usesAwsCredentialForm","args":["bedrock"]}
+{"fn":"usesAwsCredentialForm","args":["gemini"]}
+{"fn":"usesAwsCredentialForm","args":["Bedrock"]}
+{"fn":"toProviderConnectionResponse","args":[{"id":"one","provider":"gemini","apiKey":"offline","accessToken":"offline","refreshToken":"offline","idToken":"offline","name":"One","providerSpecificData":{"enabledModels":["gemini-4-argon"]}}]}
+{"fn":"toProviderConnectionResponse","args":[{"id":"two","provider":"bedrock","apiKey":"offline","providerSpecificData":{"accessKeyId":"synthetic","sessionToken":"offline","region":"test-region"}}]}
+{"fn":"toProviderConnectionResponse","args":[{"provider":"bedrock","providerSpecificData":{}}]}
+{"fn":"toProviderConnectionResponse","args":[{"provider":"bedrock","providerSpecificData":null}]}
+{"fn":"toProviderConnectionResponse","args":[{"provider":"gemini","providerSpecificData":{"sessionToken":"offline-non-aws"},"errorCode":null}]}
+{"fn":"toProviderConnectionResponse","args":[null]}
+{"fn":"toProviderConnectionResponse","args":[{"$undefined":true}]}
+{"fn":"toProviderConnectionResponse","args":["😀"]}

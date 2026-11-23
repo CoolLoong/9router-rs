@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["claude-consume-throttled"]
+status.code = 0
+fs.sandbox = true

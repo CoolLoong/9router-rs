@@ -1,0 +1,4 @@
+bin.name = "reference"
+args = ["fallback"]
+status.code = 0
+fs.sandbox = true

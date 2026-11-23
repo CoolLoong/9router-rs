@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["codex-consume-unavailable"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,1 @@
+{"id":"chatcmpl-static-fixture",[..],"model":"deepseek-v4-flash","object":"chat.completion","choices":[{"index":0,"message":{"role":"assistant","content":"native deepseek fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2006,"completion_tokens":4,"total_tokens":2010}}

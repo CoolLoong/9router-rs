@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["profile-delete-link"]
+status.code = 0
+fs.sandbox = true

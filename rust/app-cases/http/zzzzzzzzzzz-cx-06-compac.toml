@@ -1,0 +1,18 @@
+[request]
+method = "POST"
+path = "/v1/responses/compact"
+body = '{"model":"cx/gpt-5.6-sol","stream":false,"input":"fixture Codex compact"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+user-agent = "codex-cli/fixture"
+x-session-id = "fixture-codex-session"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

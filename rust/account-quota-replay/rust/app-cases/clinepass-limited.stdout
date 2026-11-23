@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/clinepass/quota", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "ClinePass usage API error (429): Rate limit xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "plan": "ClinePass"}, "status": 200}]}

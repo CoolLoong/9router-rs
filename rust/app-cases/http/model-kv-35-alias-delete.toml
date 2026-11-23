@@ -1,0 +1,13 @@
+[request]
+method = "DELETE"
+path = "/api/models/alias?alias=%E6%B5%8B%E8%AF%95%E5%88%AB%E5%90%8D"
+
+[request.headers]
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

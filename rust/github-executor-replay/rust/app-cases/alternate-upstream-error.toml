@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["alternate-upstream-error"]
+status.code = 0
+fs.sandbox = true

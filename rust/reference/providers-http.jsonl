@@ -1,0 +1,19 @@
+{"name":"provider-00-list","path":"/api/providers","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"provider-01-aws-redact","path":"/api/providers/fixture-bedrock","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"provider-02-missing","path":"/api/providers/not-found","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"provider-03-no-auth","method":"DELETE","path":"/api/providers/fixture-gemini-two"}
+{"name":"provider-04-invalid","method":"POST","path":"/api/providers","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\"not-a-provider\",\"apiKey\":\"offline\"}"}
+{"name":"provider-05-missing-key","method":"POST","path":"/api/providers","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\"Gemini\"}"}
+{"name":"provider-06-cookie-key","method":"POST","path":"/api/providers","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\"gemini-web\"}"}
+{"name":"provider-07-missing-node","method":"POST","path":"/api/providers","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\"openai-compatible-missing\",\"apiKey\":\"offline\",\"name\":\"Fixture missing\"}"}
+{"name":"provider-08-duplicate","method":"POST","path":"/api/providers","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\" Gemini \",\"name\":\"Fixture Gemini 1\",\"apiKey\":\"offline\"}"}
+{"name":"provider-09-proxy-invalid","method":"PUT","path":"/api/providers/fixture-gemini-one","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"connectionProxyEnabled\":true,\"connectionProxyUrl\":\" \"}"}
+{"name":"provider-10-pool-missing","method":"PUT","path":"/api/providers/fixture-gemini-one","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"proxyPoolId\":\"not-a-proxy-pool\"}"}
+{"name":"provider-11-merge","method":"PUT","path":"/api/providers/fixture-gemini-one","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"testStatus\":\"active\",\"priority\":40,\"providerSpecificData\":{\"prefix\":\"fixture-gem\"},\"proxyPoolId\":\"fixture-proxy-pool\",\"connectionProxyEnabled\":true,\"connectionProxyUrl\":\" http://127.0.0.1:9 \",\"apiKey\":\"offline-new-key\"}"}
+{"name":"provider-12-update-read","path":"/api/providers/fixture-gemini-one","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"provider-13-remove-pool","method":"PUT","path":"/api/providers/fixture-gemini-one","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"proxyPoolId\":\"__none__\"}"}
+{"name":"provider-14-aws-empty","method":"PUT","path":"/api/providers/fixture-bedrock","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"providerSpecificData\":{\"sessionToken\":\"\",\"region\":\"us-east-2\"}}"}
+{"name":"provider-15-aws-null","method":"PUT","path":"/api/providers/fixture-bedrock","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"providerSpecificData\":{\"sessionToken\":null}}"}
+{"name":"provider-16-delete","method":"DELETE","path":"/api/providers/fixture-gemini-two","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"provider-17-deleted","path":"/api/providers/fixture-gemini-two","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"provider-18-reordered","path":"/api/providers/fixture-gemini-one","headers":{"x-9r-cli-token":"68977b6fd9422fbb","x-migration-stage":"after-delete"}}

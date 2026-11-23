@@ -1,0 +1,1 @@
+{"connection":{"id":"[..]","provider":"anthropic","authType":"apikey","name":"Fixture official Anthropic","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

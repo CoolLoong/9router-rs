@@ -1,0 +1,7 @@
+{"name":"zzzzzzzzzzzzzzzzz-op-01-kilo","method":"POST","path":"/api/providers/fixture-kilo-chat/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzzz-op-02-github","method":"POST","path":"/api/providers/fixture-oauth-probe-github/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzzz-op-03-qoder","method":"POST","path":"/api/providers/fixture-oauth-probe-qoder/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzzz-op-04-qoder-cn","method":"POST","path":"/api/providers/fixture-oauth-probe-qoder-cn/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzzz-op-05-cursor","method":"POST","path":"/api/providers/fixture-oauth-probe-cursor/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzzz-op-06-codebuddy-cn-no-access","method":"POST","path":"/api/providers/fixture-oauth-probe-codebuddy-cn/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzzz-op-07-codebuddy-intl","method":"POST","path":"/api/providers/fixture-oauth-probe-codebuddy-intl/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

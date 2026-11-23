@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["live-failed"]
+status.code = 0
+fs.sandbox = true

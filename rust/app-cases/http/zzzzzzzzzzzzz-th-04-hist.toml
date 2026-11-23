@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/messages"
+body = '{"model":"fixture-anthropic/claude-sonnet-4-20250514","stream":false,"max_tokens":64000,"thinking":{"type":"enabled","budget_tokens":8192},"messages":[{"role":"user","content":"Anthropic thinking history"},{"role":"assistant","content":[{"type":"thinking","thinking":"fixture-visible-thought","signature":"fixture-original-signature"},{"type":"tool_use","id":"fixture_th_tool","name":"fixture_read","input":{}}]},{"role":"user","content":[{"type":"tool_result","tool_use_id":"fixture_th_tool","content":"fixture result"}]}]}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

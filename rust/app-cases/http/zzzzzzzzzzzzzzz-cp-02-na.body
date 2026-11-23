@@ -1,0 +1,1 @@
+{"id":"msg_migration_fixture","type":"message","role":"assistant","model":"claude-haiku-4-5","content":[{"type":"text","text":"native Anthropic migration"}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":2006,"output_tokens":3,"cache_read_input_tokens":2,"cache_creation_input_tokens":1}}

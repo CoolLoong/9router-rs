@@ -1,0 +1,1 @@
+{"id":"chatcmpl-msg_migration_fixture","object":"chat.completion",[..],"model":"claude-migration-fixture","choices":[{"index":0,"message":{"role":"assistant","content":"native Anthropic migration"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2006,"completion_tokens":3,"total_tokens":2009}}

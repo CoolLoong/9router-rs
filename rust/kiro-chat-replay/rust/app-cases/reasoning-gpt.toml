@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["reasoning-gpt"]
+status.code = 0
+fs.sandbox = true

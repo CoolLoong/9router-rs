@@ -1,0 +1,112 @@
+{"fn":"buildCreateTableSql","args":[[],{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[null,0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[null,true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[["a",1],["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[["a",1],{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[["a",1],0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[["a",1],null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[null,"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[null,{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[["a",1],true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[["a",1],[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x","x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[null,{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[null,[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[null,null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[{},{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[["a",1],{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[0,0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[null,["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},true],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[["a",1],{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",["a",1]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[["a",1],"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{},null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[{"a":{"b":"c"}},"x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[true,[]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x",null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":[[],{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[null,{"a":"b"}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"a":"b"},0],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["x","X"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["X","x"],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6},{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7},{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[3,1,2],{"a":{"b":"c"}}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":[[],[3,1,2]],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["_meta",{"columns":{"key":"TEXT PRIMARY KEY","value":"TEXT NOT NULL"}}],"ok":"CREATE TABLE IF NOT EXISTS _meta (key TEXT PRIMARY KEY, value TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["settings",{"columns":{"id":"INTEGER PRIMARY KEY CHECK (id = 1)","data":"TEXT NOT NULL"}}],"ok":"CREATE TABLE IF NOT EXISTS settings (id INTEGER PRIMARY KEY CHECK (id = 1), data TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["providerConnections",{"columns":{"id":"TEXT PRIMARY KEY","provider":"TEXT NOT NULL","authType":"TEXT NOT NULL","name":"TEXT","email":"TEXT","priority":"INTEGER","isActive":"INTEGER DEFAULT 1","data":"TEXT NOT NULL","createdAt":"TEXT NOT NULL","updatedAt":"TEXT NOT NULL"},"indexes":["CREATE INDEX IF NOT EXISTS idx_pc_provider ON providerConnections(provider)","CREATE INDEX IF NOT EXISTS idx_pc_provider_active ON providerConnections(provider, isActive)","CREATE INDEX IF NOT EXISTS idx_pc_priority ON providerConnections(provider, priority)"]}],"ok":"CREATE TABLE IF NOT EXISTS providerConnections (id TEXT PRIMARY KEY, provider TEXT NOT NULL, authType TEXT NOT NULL, name TEXT, email TEXT, priority INTEGER, isActive INTEGER DEFAULT 1, data TEXT NOT NULL, createdAt TEXT NOT NULL, updatedAt TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["providerNodes",{"columns":{"id":"TEXT PRIMARY KEY","type":"TEXT","name":"TEXT","data":"TEXT NOT NULL","createdAt":"TEXT NOT NULL","updatedAt":"TEXT NOT NULL"},"indexes":["CREATE INDEX IF NOT EXISTS idx_pn_type ON providerNodes(type)"]}],"ok":"CREATE TABLE IF NOT EXISTS providerNodes (id TEXT PRIMARY KEY, type TEXT, name TEXT, data TEXT NOT NULL, createdAt TEXT NOT NULL, updatedAt TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["proxyPools",{"columns":{"id":"TEXT PRIMARY KEY","isActive":"INTEGER DEFAULT 1","testStatus":"TEXT","data":"TEXT NOT NULL","createdAt":"TEXT NOT NULL","updatedAt":"TEXT NOT NULL"},"indexes":["CREATE INDEX IF NOT EXISTS idx_pp_active ON proxyPools(isActive)","CREATE INDEX IF NOT EXISTS idx_pp_status ON proxyPools(testStatus)"]}],"ok":"CREATE TABLE IF NOT EXISTS proxyPools (id TEXT PRIMARY KEY, isActive INTEGER DEFAULT 1, testStatus TEXT, data TEXT NOT NULL, createdAt TEXT NOT NULL, updatedAt TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["apiKeys",{"columns":{"id":"TEXT PRIMARY KEY","key":"TEXT UNIQUE NOT NULL","name":"TEXT","machineId":"TEXT","isActive":"INTEGER DEFAULT 1","createdAt":"TEXT NOT NULL","accessRestricted":"INTEGER DEFAULT 0","accessAllow":"TEXT"},"indexes":["CREATE INDEX IF NOT EXISTS idx_ak_key ON apiKeys(key)"]}],"ok":"CREATE TABLE IF NOT EXISTS apiKeys (id TEXT PRIMARY KEY, key TEXT UNIQUE NOT NULL, name TEXT, machineId TEXT, isActive INTEGER DEFAULT 1, createdAt TEXT NOT NULL, accessRestricted INTEGER DEFAULT 0, accessAllow TEXT)"}
+{"fn":"buildCreateTableSql","args":["combos",{"columns":{"id":"TEXT PRIMARY KEY","name":"TEXT UNIQUE NOT NULL","kind":"TEXT","models":"TEXT NOT NULL","createdAt":"TEXT NOT NULL","updatedAt":"TEXT NOT NULL"},"indexes":["CREATE INDEX IF NOT EXISTS idx_combo_name ON combos(name)"]}],"ok":"CREATE TABLE IF NOT EXISTS combos (id TEXT PRIMARY KEY, name TEXT UNIQUE NOT NULL, kind TEXT, models TEXT NOT NULL, createdAt TEXT NOT NULL, updatedAt TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["kv",{"columns":{"scope":"TEXT NOT NULL","key":"TEXT NOT NULL","value":"TEXT NOT NULL"},"primaryKey":"PRIMARY KEY (scope, key)","indexes":["CREATE INDEX IF NOT EXISTS idx_kv_scope ON kv(scope)"]}],"ok":"CREATE TABLE IF NOT EXISTS kv (scope TEXT NOT NULL, key TEXT NOT NULL, value TEXT NOT NULL, PRIMARY KEY (scope, key))"}
+{"fn":"buildCreateTableSql","args":["usageHistory",{"columns":{"id":"INTEGER PRIMARY KEY AUTOINCREMENT","timestamp":"TEXT NOT NULL","provider":"TEXT","model":"TEXT","connectionId":"TEXT","apiKey":"TEXT","endpoint":"TEXT","promptTokens":"INTEGER DEFAULT 0","completionTokens":"INTEGER DEFAULT 0","cost":"REAL DEFAULT 0","status":"TEXT","tokens":"TEXT","meta":"TEXT"},"indexes":["CREATE INDEX IF NOT EXISTS idx_uh_ts ON usageHistory(timestamp DESC)","CREATE INDEX IF NOT EXISTS idx_uh_provider ON usageHistory(provider)","CREATE INDEX IF NOT EXISTS idx_uh_model ON usageHistory(model)","CREATE INDEX IF NOT EXISTS idx_uh_conn ON usageHistory(connectionId)"]}],"ok":"CREATE TABLE IF NOT EXISTS usageHistory (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT NOT NULL, provider TEXT, model TEXT, connectionId TEXT, apiKey TEXT, endpoint TEXT, promptTokens INTEGER DEFAULT 0, completionTokens INTEGER DEFAULT 0, cost REAL DEFAULT 0, status TEXT, tokens TEXT, meta TEXT)"}
+{"fn":"buildCreateTableSql","args":["usageDaily",{"columns":{"dateKey":"TEXT PRIMARY KEY","data":"TEXT NOT NULL"}}],"ok":"CREATE TABLE IF NOT EXISTS usageDaily (dateKey TEXT PRIMARY KEY, data TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["requestDetails",{"columns":{"id":"TEXT PRIMARY KEY","timestamp":"TEXT NOT NULL","provider":"TEXT","model":"TEXT","connectionId":"TEXT","status":"TEXT","data":"TEXT NOT NULL"},"indexes":["CREATE INDEX IF NOT EXISTS idx_rd_ts ON requestDetails(timestamp DESC)","CREATE INDEX IF NOT EXISTS idx_rd_provider ON requestDetails(provider)","CREATE INDEX IF NOT EXISTS idx_rd_model ON requestDetails(model)","CREATE INDEX IF NOT EXISTS idx_rd_conn ON requestDetails(connectionId)"]}],"ok":"CREATE TABLE IF NOT EXISTS requestDetails (id TEXT PRIMARY KEY, timestamp TEXT NOT NULL, provider TEXT, model TEXT, connectionId TEXT, status TEXT, data TEXT NOT NULL)"}
+{"fn":"buildCreateTableSql","args":["empty",{"columns":{}}],"ok":"CREATE TABLE IF NOT EXISTS empty ()"}
+{"fn":"buildCreateTableSql","args":["priority_order",{"columns":{"2":"INTEGER","10":"INTEGER","z":"TEXT","01":"TEXT"}}],"ok":"CREATE TABLE IF NOT EXISTS priority_order (2 INTEGER, 10 INTEGER, z TEXT, 01 TEXT)"}
+{"fn":"buildCreateTableSql","args":["coercion",{"columns":{"n":null,"t":true,"a":[1,"TEXT"],"o":{}},"primaryKey":7}],"ok":"CREATE TABLE IF NOT EXISTS coercion (n null, t true, a 1,TEXT, o [object Object], 7)"}
+{"fn":"buildCreateTableSql","args":["text_columns",{"columns":"ñ🏡","primaryKey":[]}],"ok":{"$utf16":[67,82,69,65,84,69,32,84,65,66,76,69,32,73,70,32,78,79,84,32,69,88,73,83,84,83,32,116,101,120,116,95,99,111,108,117,109,110,115,32,40,48,32,241,44,32,49,32,55356,44,32,50,32,57313,44,32,41]}}
+{"fn":"buildCreateTableSql","args":[["a",1,null],{"columns":[1,2],"primaryKey":{}}],"ok":"CREATE TABLE IF NOT EXISTS a,1, (0 1, 1 2, [object Object])"}
+{"fn":"buildCreateTableSql","args":[{"toString":null},{"columns":{}}],"error":"Cannot convert object to primitive value"}
+{"fn":"buildCreateTableSql","args":["simple",{"columns":null}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["simple",{}],"error":"Cannot convert undefined or null to object"}
+{"fn":"buildCreateTableSql","args":["simple",null],"error":"Cannot read properties of null (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":["simple",{"$undefined":true}],"error":"Cannot read properties of undefined (reading 'columns')"}
+{"fn":"buildCreateTableSql","args":["simple",{"columns":0}],"ok":"CREATE TABLE IF NOT EXISTS simple ()"}
+{"fn":"buildCreateTableSql","args":[1e+21,{"columns":{"alpha":1e-7,"beta":[null]}}],"ok":"CREATE TABLE IF NOT EXISTS 1e+21 (alpha 1e-7, beta )"}

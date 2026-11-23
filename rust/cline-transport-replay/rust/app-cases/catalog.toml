@@ -1,0 +1,4 @@
+bin.name = "cline-transport-contract"
+args = ["catalog"]
+status.code = 0
+fs.sandbox = true

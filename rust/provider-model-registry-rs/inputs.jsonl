@@ -1,0 +1,110 @@
+{"fn": "withCodexReviewModels", "args": [[{"id": "gpt-5.4", "name": "GPT 5.4", "reasoning": true}, {"id": "gpt-5.4-review", "name": "Custom"}, {"id": "image-1", "name": "Image", "kind": "image"}, {"id": "gpt-5.3", "name": "GPT 5.3", "upstreamModelId": "gpt-5.3-codex", "quotaFamily": "original"}]]}
+{"fn": "withCodexReviewModels", "args": [[{"id": "a"}, {"id": "b", "name": null}, {"id": "c", "name": ["a", null, "b"]}, {"id": "d", "name": "d", "type": "embedding"}]]}
+{"fn": "withCodexReviewModels", "args": [[{"id": "e", "name": "draft", "kind": null, "type": ""}]]}
+{"fn": "withCodexReviewModels", "args": [[{"kind": "embedding"}]]}
+{"fn": "withCodexReviewModels", "args": [[{}]]}
+{"fn": "withCodexReviewModels", "args": [[null]]}
+{"fn": "withCodexReviewModels", "args": [[{"id": null}]]}
+{"fn": "withCodexReviewModels", "args": [[{"id": 42}]]}
+{"fn": "withCodexReviewModels", "args": [[]]}
+{"fn": "withCodexReviewModels", "args": [null]}
+{"fn": "withCodexReviewModels", "args": [{}]}
+{"fn": "isMuseSparkModel", "args": ["ocg/MUSE_SPARK-1.1(max)"]}
+{"fn": "isMuseSparkModel", "args": [" museSpark:"]}
+{"fn": "isMuseSparkModel", "args": ["muse-spark\ufeffsuffix"]}
+{"fn": "isMuseSparkModel", "args": ["muse-spark\u0085suffix"]}
+{"fn": "isMuseSparkModel", "args": ["x/muse-sparkish"]}
+{"fn": "isMuseSparkModel", "args": ["x/muse--spark"]}
+{"fn": "isMuseSparkModel", "args": ["muse spark"]}
+{"fn": "isMuseSparkModel", "args": ["muse-spark()"]}
+{"fn": "isMuseSparkModel", "args": [null]}
+{"fn": "isMuseSparkModel", "args": [42]}
+{"fn": "isDeepSeekModel", "args": ["oc/deepseek-v4-pro(max)"]}
+{"fn": "isDeepSeekModel", "args": ["p/q/DEEPSEEK-v4-flash(high)  "]}
+{"fn": "isDeepSeekModel", "args": ["deepseekish"]}
+{"fn": "isDeepSeekModel", "args": ["deepseek"]}
+{"fn": "isDeepSeekModel", "args": ["deepseek-v4"]}
+{"fn": "isDeepSeekModel", "args": [{"id": "deepseek-v4"}]}
+{"fn": "isOpencodeFreeTierModel", "args": ["oc/mimo-v2.6-flash-free"]}
+{"fn": "isOpencodeFreeTierModel", "args": ["oc/muse-spark-1.3-contributor-FREE(medium) "]}
+{"fn": "isOpencodeFreeTierModel", "args": ["oc/mimo-v2.6-flash-free-form"]}
+{"fn": "isOpencodeFreeTierModel", "args": ["free"]}
+{"fn": "isOpencodeFreeTierModel", "args": [false]}
+{"fn": "opencodeFamilyFormats", "args": ["GPT-6"]}
+{"fn": "opencodeFamilyFormats", "args": ["grok-4.3"]}
+{"fn": "opencodeFamilyFormats", "args": ["muse_spark-1.3-contributor-free"]}
+{"fn": "opencodeFamilyFormats", "args": ["deepseek-v4-pro"]}
+{"fn": "opencodeFamilyFormats", "args": ["deepseek-v4-flash(max)"]}
+{"fn": "opencodeFamilyFormats", "args": ["Deepseek-v4-pro"]}
+{"fn": "opencodeFamilyFormats", "args": ["qwen-3.7"]}
+{"fn": "opencodeFamilyFormats", "args": ["minimax-m3"]}
+{"fn": "opencodeFamilyFormats", "args": ["Claude-Sonnet"]}
+{"fn": "opencodeFamilyFormats", "args": ["oc/GPT-6"]}
+{"fn": "opencodeFamilyFormats", "args": ["unknown"]}
+{"fn": "opencodeFamilyFormats", "args": [null]}
+{"fn": "deriveModelName", "args": ["kimi-K2.7-THINKING"]}
+{"fn": "deriveModelName", "args": ["GLM-5.4v"]}
+{"fn": "deriveModelName", "args": ["GLM-5.4"]}
+{"fn": "deriveModelName", "args": ["MiniMax-M3.1"]}
+{"fn": "deriveModelName", "args": ["gemini-3.8-flash"]}
+{"fn": "deriveModelName", "args": ["Gpt-6-alpha_beta"]}
+{"fn": "deriveModelName", "args": ["grok-4-4.1"]}
+{"fn": "deriveModelName", "args": ["qWen3.6-coder"]}
+{"fn": "deriveModelName", "args": ["deepseek-v4-pro"]}
+{"fn": "deriveModelName", "args": ["qwen-3.6"]}
+{"fn": "deriveModelName", "args": ["gpt-\u00e9clair \u00dfeta"]}
+{"fn": "deriveModelName", "args": ["gpt-\ud801\udc28elta"]}
+{"fn": "deriveModelName", "args": ["gemini-\ufeff\u202f2.5-\tflash"]}
+{"fn": "deriveModelName", "args": ["gemini-\u0085abc"]}
+{"fn": "deriveModelName", "args": ["gemini-\u2028wrapped"]}
+{"fn": "deriveModelName", "args": ["gpt-\ud835\udd18nicode"]}
+{"fn": "deriveModelName", "args": ["gpt-\u0130zmir"]}
+{"fn": "deriveModelName", "args": ["qwen."]}
+{"fn": "deriveModelName", "args": ["gpt-\n"]}
+{"fn": "deriveModelName", "args": ["gpt-4\n"]}
+{"fn": "deriveModelName", "args": [{"$utf16": [103, 112, 116, 45, 55296, 45, 97]}]}
+{"fn": "deriveModelName", "args": [17]}
+{"fn": "deriveModelName", "args": [null]}
+{"fn": "normalizeModelId", "args": ["claude-sonnet-4-5"]}
+{"fn": "normalizeModelId", "args": ["x-1-2-3-4"]}
+{"fn": "normalizeModelId", "args": ["1-23-4-56"]}
+{"fn": "normalizeModelId", "args": ["qwen3-coder-next"]}
+{"fn": "normalizeModelId", "args": ["Qwen\u0663-4"]}
+{"fn": "normalizeModelId", "args": [{"$utf16": [55296, 49, 45, 50]}]}
+{"fn": "normalizeModelId", "args": [null]}
+{"fn": "normalizeModelId", "args": [{"id": "abc"}]}
+{"fn": "normalizeModel", "args": ["gemini-3.8-flash"]}
+{"fn": "normalizeModel", "args": [{"id": "kimi-k2.7-thinking", "kind": "llm", "upstreamModelId": "kimi-k2.7"}]}
+{"fn": "normalizeModel", "args": [{"id": "a", "name": null}]}
+{"fn": "normalizeModel", "args": [{"id": "a", "name": ""}]}
+{"fn": "normalizeModel", "args": [{"id": 3}]}
+{"fn": "normalizeModel", "args": [false]}
+{"fn": "normalizeModel", "args": [null]}
+{"fn": "normalizeModel", "args": [{}]}
+{"fn": "normalizeModel", "args": [[1, "a"]]}
+{"fn": "modelKind", "args": [{"kind": "stt", "type": "embedding"}]}
+{"fn": "modelKind", "args": [{"kind": "", "type": "embedding"}]}
+{"fn": "modelKind", "args": [{"kind": 42, "type": "embedding"}]}
+{"fn": "modelKind", "args": [{"kind": false}]}
+{"fn": "modelKind", "args": [{}]}
+{"fn": "modelKind", "args": [null]}
+{"fn": "modelQuotaFamily", "args": [{"quotaFamily": "review"}]}
+{"fn": "modelQuotaFamily", "args": [{"quotaFamily": false}]}
+{"fn": "modelQuotaFamily", "args": [{"quotaFamily": 0}]}
+{"fn": "modelQuotaFamily", "args": [{}]}
+{"fn": "modelQuotaFamily", "args": [null]}
+{"fn": "modelStrip", "args": [{"strip": ["image", "audio"]}]}
+{"fn": "modelStrip", "args": [{"strip": 0}]}
+{"fn": "modelStrip", "args": [{"strip": "pdf"}]}
+{"fn": "modelStrip", "args": [{}]}
+{"fn": "modelStrip", "args": [null]}
+{"fn": "modelTargetFormat", "args": [{"targetFormat": "openai-responses"}]}
+{"fn": "modelTargetFormat", "args": [{"targetFormat": false}]}
+{"fn": "modelTargetFormat", "args": [{"targetFormat": "x"}]}
+{"fn": "modelTargetFormat", "args": [{}]}
+{"fn": "modelTargetFormat", "args": [null]}
+{"fn": "modelSupportedFormats", "args": [{"supportedFormats": ["openai", "claude"]}]}
+{"fn": "modelSupportedFormats", "args": [{"supportedFormats": []}]}
+{"fn": "modelSupportedFormats", "args": [{"supportedFormats": 0}]}
+{"fn": "modelSupportedFormats", "args": [{}]}
+{"fn": "modelSupportedFormats", "args": [null]}

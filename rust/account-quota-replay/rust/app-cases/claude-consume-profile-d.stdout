@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/quota-reset/claude/profile", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"error": "Cannot resolve Claude organization (403)."}, "status": 500}]}

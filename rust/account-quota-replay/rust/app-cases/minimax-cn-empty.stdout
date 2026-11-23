@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/minimax/cn/coding_plan/remains", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "MiniMax connected. No quota data was returned."}, "status": 200}]}

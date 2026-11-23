@@ -1,0 +1,6 @@
+data: {"id":"chatcmpl-shared-kilo",[..],"model":"openai/gpt-4.1","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","content":"Kilo fixture reply"},"finish_reason":null}]}
+
+data: {"id":"chatcmpl-shared-kilo",[..],"model":"openai/gpt-4.1","object":"chat.completion.chunk","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2005,"completion_tokens":3,"total_tokens":2008}}
+
+data: [DONE]
+

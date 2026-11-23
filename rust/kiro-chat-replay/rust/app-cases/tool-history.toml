@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["tool-history"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,1 @@
+{"network": ["init", "poll", "business login", "organization and project", "list keys", "create key", "copy key"], "stored": {"email": "glm-owner@example.invalid", "hasCodingPlanKey": true, "identity": {"authMethod": "cli_poll", "userId": 42, "username": "Fixture Owner"}, "mode": "oauth", "name": "Fixture Owner"}}

@@ -1,0 +1,10 @@
+{
+  "schema": "rust-anything/app-cases@1",
+  "name": "original",
+  "run": [
+    "node",
+    "--disable-warning=MODULE_TYPELESS_PACKAGE_JSON",
+    "original.mjs"
+  ],
+  "timeout_secs": 8
+}

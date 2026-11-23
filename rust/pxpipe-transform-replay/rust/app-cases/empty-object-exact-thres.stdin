@@ -1,0 +1,1 @@
+{"enabled":true,"available":true,"format":"claude","body":{},"minChars":2,"outcome":{"reason":"below_min_chars","detail":"below_min_chars (0 < 2)"}}

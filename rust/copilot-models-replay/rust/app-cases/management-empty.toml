@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["management-empty"]
+status.code = 0
+fs.sandbox = true

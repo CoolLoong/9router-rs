@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/chat/completions"
+body = '{"model":"kc/openai/gpt-4.1","messages":[{"role":"user","content":"Kilo shared fixture"}],"stream":true}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+cache-control = "no-cache"
+content-type = "text/event-stream"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

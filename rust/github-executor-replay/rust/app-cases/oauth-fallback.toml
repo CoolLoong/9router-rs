@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["oauth-fallback"]
+status.code = 0
+fs.sandbox = true

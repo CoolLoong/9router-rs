@@ -1,0 +1,1 @@
+{"actual": {"model": "provider/quasiqwen-code", "body": {"model": "provider/quasiqwen-code", "max_tokens": 20, "messages": [{"role": "user", "content": "Test the fixture and keep the exact phrase."}], "system": "Fallback direct-calling unrelated family should stay unsupported."}, "minChars": 20, "repeat": 650, "scope": "quasiqwen-code"}}

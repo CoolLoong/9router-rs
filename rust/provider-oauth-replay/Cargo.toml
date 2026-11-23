@@ -1,0 +1,22 @@
+[package]
+name = "provider-oauth-replay"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8"
+base64 = "0.22"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+getrandom = "0.4"
+percent-encoding = "2"
+regex = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+sqlite-schema-rs = { path = "../sqlite-schema-rs" }
+subtle = "2"
+tempfile = "3"
+tokio = { version = "1", features = ["macros", "net", "rt-multi-thread", "time"] }
+url = "2"
+uuid = { version = "1", features = ["v4"] }

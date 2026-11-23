@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["ready"]
+status.code = 0
+fs.sandbox = true

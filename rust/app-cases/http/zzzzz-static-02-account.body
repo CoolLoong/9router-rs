@@ -1,0 +1,1 @@
+{"connection":{"id":"[..]","provider":"perplexity-agent","authType":"apikey","name":"Fixture perplexity-agent","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

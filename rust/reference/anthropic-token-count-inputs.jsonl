@@ -1,0 +1,7 @@
+{"fn":"estimateAnthropicInputTokens","args":[]}
+{"fn":"estimateAnthropicInputTokens","args":[null]}
+{"fn":"estimateAnthropicInputTokens","args":[{}]}
+{"fn":"estimateAnthropicInputTokens","args":[{"messages":[{"role":"user","content":"a字🚀"}]}]}
+{"fn":"estimateAnthropicInputTokens","args":[{"system":[{"type":"text","text":"system"}],"tools":[{"name":"lookup","input_schema":{"properties":{"a":{"type":"number"},"日":{"type":"boolean"}}}}],"messages":[{"role":"assistant","content":[{"type":"thinking","thinking":"trial"},{"type":"tool_use","name":"lookup","id":"not counted","input":{"a":1e-9,"日":false}}]},{"role":"user","content":[{"type":"tool_result","content":["text",{"type":"image","source":{"format":true}}]},{"type":"text","text":222},{"type":"unknown","value":1000000000000000000000000000}]}]}]}
+{"fn":"estimateAnthropicInputTokens","args":[{"system":false,"tools":{"😀":1.000001,"a":0.000000111},"messages":[]}]}
+{"fn":"estimateAnthropicInputTokens","args":[{"messages":[null,"ignore",false,0,[],{"content":[null,"raw",true,10,[1,2],{"x":true}]},{"content":{"k":[1,true,null]}}]}]}

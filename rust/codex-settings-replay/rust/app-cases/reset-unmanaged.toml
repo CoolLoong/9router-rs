@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["reset-unmanaged"]
+status.code = 0
+fs.sandbox = true

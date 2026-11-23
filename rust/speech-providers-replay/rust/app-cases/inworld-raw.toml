@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["inworld-raw"]
+status.code = 0
+fs.sandbox = true

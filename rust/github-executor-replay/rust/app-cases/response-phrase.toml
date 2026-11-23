@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["response-phrase"]
+status.code = 0
+fs.sandbox = true

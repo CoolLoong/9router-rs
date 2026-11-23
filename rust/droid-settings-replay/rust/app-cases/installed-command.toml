@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["installed-command"]
+status.code = 0
+fs.sandbox = true

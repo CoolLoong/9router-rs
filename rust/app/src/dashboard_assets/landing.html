@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>9Router | AI Gateway</title>
+  <link rel="stylesheet" href="/__9router-ui/landing.css">
+  <script src="/__9router-ui/landing.js" defer></script>
+</head>
+<body>
+  <header class="bar wrap">
+    <a class="brand" href="/">9Router</a>
+    <nav aria-label="Main">
+      <a href="#how-it-works">How it works</a>
+      <a href="#features">Features</a>
+      <a href="https://github.com/decolua/9router#readme">Docs</a>
+    </nav>
+    <a class="action secondary" href="/dashboard">Dashboard</a>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <h1>One endpoint for all AI providers</h1>
+      <p>Connect Claude Code, Codex, Cline, and Cursor to your AI providers through 9Router.</p>
+      <div class="actions">
+        <a class="action primary" href="#get-started">Get started</a>
+        <a class="action secondary" href="https://github.com/decolua/9router">View on GitHub</a>
+      </div>
+      <figure aria-label="Example request routing from AI tools through 9Router to model providers">
+        <ul class="nodes" aria-label="Clients">
+          <li>Claude Code</li>
+          <li>OpenAI Codex</li>
+          <li>Cline</li>
+          <li>Cursor</li>
+        </ul>
+        <div class="hub">9Router <span>Gateway</span></div>
+        <ul class="nodes providers" aria-label="Providers">
+          <li>OpenAI</li>
+          <li>Anthropic</li>
+          <li>Gemini</li>
+          <li>GitHub Copilot</li>
+        </ul>
+      </figure>
+    </section>
+    <section id="get-started" class="section setup">
+      <div>
+        <h2>Get started</h2>
+        <ol>
+          <li>Start 9Router.</li>
+          <li>Add your providers and credentials in the dashboard.</li>
+          <li>Set your tool’s base URL to the gateway endpoint shown in the dashboard.</li>
+        </ol>
+        <a class="action primary" href="/dashboard">Open dashboard</a>
+      </div>
+      <div class="command-panel">
+        <p>Start 9Router from the upstream npm package.</p>
+        <div class="command">
+          <code id="npm-command">npx 9router</code>
+          <button type="button" id="copy-command">Copy</button>
+        </div>
+        <p id="copy-status" role="status"></p>
+        <dl>
+          <dt>Default dashboard</dt>
+          <dd><code>http://localhost:20128/dashboard</code></dd>
+          <dt>Data file on macOS and Linux</dt>
+          <dd><code>~/.9router/db/data.sqlite</code></dd>
+          <dt>Data file on Windows</dt>
+          <dd><code>%APPDATA%/9router/db/data.sqlite</code></dd>
+        </dl>
+      </div>
+    </section>
+    <section id="how-it-works" class="section">
+      <h2>How 9Router works</h2>
+      <ol class="steps">
+        <li><strong>Send a request</strong><p>Your CLI or SDK uses the gateway URL and a model ID.</p></li>
+        <li><strong>Select a route</strong><p>9Router applies the model, account, and combo rules you configure.</p></li>
+        <li><strong>Receive the result</strong><p>The selected provider handles the request. 9Router returns the response to your client.</p></li>
+      </ol>
+    </section>
+    <section id="features" class="section">
+      <h2>Gateway features</h2>
+      <dl class="features">
+        <div><dt>Unified endpoint</dt><dd>Use one base URL across providers.</dd></div>
+        <div><dt>Provider setup</dt><dd>Add accounts from the dashboard.</dd></div>
+        <div><dt>Model fallback</dt><dd>Configure combos to retry with another model or provider.</dd></div>
+        <div><dt>Usage tracking</dt><dd>See request history, token usage, and costs.</dd></div>
+        <div><dt>OAuth and API keys</dt><dd>Manage provider credentials and gateway access.</dd></div>
+        <div><dt>Configuration sync</dt><dd>Back up and restore your configuration across devices.</dd></div>
+        <div><dt>CLI integrations</dt><dd>Configure Claude Code, Codex, Cline, Cursor, and other tools.</dd></div>
+        <div><dt>Dashboard</dt><dd>Manage routing, providers, and usage from your browser.</dd></div>
+      </dl>
+    </section>
+  </main>
+  <footer class="bar wrap">
+    <a href="/dashboard">Dashboard</a>
+    <a href="https://github.com/decolua/9router#readme">Documentation</a>
+    <a href="https://github.com/decolua/9router/releases">Changelog</a>
+    <a href="https://github.com/decolua/9router">GitHub</a>
+    <a href="https://www.npmjs.com/package/9router">npm</a>
+    <a href="/__9router-ui/license.txt">MIT License</a>
+  </footer>
+</body>
+</html>

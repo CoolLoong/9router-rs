@@ -1,0 +1,988 @@
+{
+  "google-tts": {
+    "hasModel": false,
+    "voiceSets": [
+      [
+        {
+          "id": "af",
+          "name": "Afrikaans"
+        },
+        {
+          "id": "ar",
+          "name": "Arabic"
+        },
+        {
+          "id": "bg",
+          "name": "Bulgarian"
+        },
+        {
+          "id": "bn",
+          "name": "Bengali"
+        },
+        {
+          "id": "bs",
+          "name": "Bosnian"
+        },
+        {
+          "id": "ca",
+          "name": "Catalan"
+        },
+        {
+          "id": "cs",
+          "name": "Czech"
+        },
+        {
+          "id": "cy",
+          "name": "Welsh"
+        },
+        {
+          "id": "da",
+          "name": "Danish"
+        },
+        {
+          "id": "de",
+          "name": "German"
+        },
+        {
+          "id": "el",
+          "name": "Greek"
+        },
+        {
+          "id": "en",
+          "name": "English"
+        },
+        {
+          "id": "eo",
+          "name": "Esperanto"
+        },
+        {
+          "id": "es",
+          "name": "Spanish"
+        },
+        {
+          "id": "et",
+          "name": "Estonian"
+        },
+        {
+          "id": "fi",
+          "name": "Finnish"
+        },
+        {
+          "id": "fr",
+          "name": "French"
+        },
+        {
+          "id": "gu",
+          "name": "Gujarati"
+        },
+        {
+          "id": "hi",
+          "name": "Hindi"
+        },
+        {
+          "id": "hr",
+          "name": "Croatian"
+        },
+        {
+          "id": "hu",
+          "name": "Hungarian"
+        },
+        {
+          "id": "hy",
+          "name": "Armenian"
+        },
+        {
+          "id": "id",
+          "name": "Indonesian"
+        },
+        {
+          "id": "is",
+          "name": "Icelandic"
+        },
+        {
+          "id": "it",
+          "name": "Italian"
+        },
+        {
+          "id": "ja",
+          "name": "Japanese"
+        },
+        {
+          "id": "jw",
+          "name": "Javanese"
+        },
+        {
+          "id": "km",
+          "name": "Khmer"
+        },
+        {
+          "id": "kn",
+          "name": "Kannada"
+        },
+        {
+          "id": "ko",
+          "name": "Korean"
+        },
+        {
+          "id": "la",
+          "name": "Latin"
+        },
+        {
+          "id": "lv",
+          "name": "Latvian"
+        },
+        {
+          "id": "mk",
+          "name": "Macedonian"
+        },
+        {
+          "id": "ml",
+          "name": "Malayalam"
+        },
+        {
+          "id": "mr",
+          "name": "Marathi"
+        },
+        {
+          "id": "my",
+          "name": "Myanmar (Burmese)"
+        },
+        {
+          "id": "ne",
+          "name": "Nepali"
+        },
+        {
+          "id": "nl",
+          "name": "Dutch"
+        },
+        {
+          "id": "no",
+          "name": "Norwegian"
+        },
+        {
+          "id": "pl",
+          "name": "Polish"
+        },
+        {
+          "id": "pt",
+          "name": "Portuguese"
+        },
+        {
+          "id": "ro",
+          "name": "Romanian"
+        },
+        {
+          "id": "ru",
+          "name": "Russian"
+        },
+        {
+          "id": "si",
+          "name": "Sinhala"
+        },
+        {
+          "id": "sk",
+          "name": "Slovak"
+        },
+        {
+          "id": "sq",
+          "name": "Albanian"
+        },
+        {
+          "id": "sr",
+          "name": "Serbian"
+        },
+        {
+          "id": "su",
+          "name": "Sundanese"
+        },
+        {
+          "id": "sv",
+          "name": "Swedish"
+        },
+        {
+          "id": "sw",
+          "name": "Swahili"
+        },
+        {
+          "id": "ta",
+          "name": "Tamil"
+        },
+        {
+          "id": "te",
+          "name": "Telugu"
+        },
+        {
+          "id": "th",
+          "name": "Thai"
+        },
+        {
+          "id": "tl",
+          "name": "Filipino"
+        },
+        {
+          "id": "tr",
+          "name": "Turkish"
+        },
+        {
+          "id": "uk",
+          "name": "Ukrainian"
+        },
+        {
+          "id": "ur",
+          "name": "Urdu"
+        },
+        {
+          "id": "vi",
+          "name": "Vietnamese"
+        },
+        {
+          "id": "zh-CN",
+          "name": "Chinese (Simplified)"
+        },
+        {
+          "id": "zh-TW",
+          "name": "Chinese (Traditional)"
+        }
+      ]
+    ],
+    "defaultVoices": 0
+  },
+  "openai": {
+    "hasModel": true,
+    "models": [
+      {
+        "id": "gpt-4o-mini-tts",
+        "name": "GPT-4o Mini TTS"
+      },
+      {
+        "id": "tts-1-hd",
+        "name": "TTS-1 HD"
+      },
+      {
+        "id": "tts-1",
+        "name": "TTS-1"
+      }
+    ],
+    "voiceSets": [
+      [
+        {
+          "id": "alloy",
+          "name": "Alloy"
+        },
+        {
+          "id": "ash",
+          "name": "Ash"
+        },
+        {
+          "id": "ballad",
+          "name": "Ballad"
+        },
+        {
+          "id": "cedar",
+          "name": "Cedar"
+        },
+        {
+          "id": "coral",
+          "name": "Coral"
+        },
+        {
+          "id": "echo",
+          "name": "Echo"
+        },
+        {
+          "id": "fable",
+          "name": "Fable"
+        },
+        {
+          "id": "marin",
+          "name": "Marin"
+        },
+        {
+          "id": "nova",
+          "name": "Nova"
+        },
+        {
+          "id": "onyx",
+          "name": "Onyx"
+        },
+        {
+          "id": "sage",
+          "name": "Sage"
+        },
+        {
+          "id": "shimmer",
+          "name": "Shimmer"
+        },
+        {
+          "id": "verse",
+          "name": "Verse"
+        }
+      ],
+      [
+        {
+          "id": "alloy",
+          "name": "Alloy"
+        },
+        {
+          "id": "ash",
+          "name": "Ash"
+        },
+        {
+          "id": "coral",
+          "name": "Coral"
+        },
+        {
+          "id": "echo",
+          "name": "Echo"
+        },
+        {
+          "id": "fable",
+          "name": "Fable"
+        },
+        {
+          "id": "nova",
+          "name": "Nova"
+        },
+        {
+          "id": "onyx",
+          "name": "Onyx"
+        },
+        {
+          "id": "sage",
+          "name": "Sage"
+        },
+        {
+          "id": "shimmer",
+          "name": "Shimmer"
+        }
+      ]
+    ],
+    "modelVoices": {
+      "gpt-4o-mini-tts": 0,
+      "tts-1": 1,
+      "tts-1-hd": 1
+    },
+    "defaultVoices": 0
+  },
+  "openrouter": {
+    "hasModel": true,
+    "models": [
+      {
+        "id": "openai/gpt-4o-mini-tts",
+        "name": "GPT-4o Mini TTS"
+      },
+      {
+        "id": "openai/tts-1-hd",
+        "name": "TTS-1 HD"
+      },
+      {
+        "id": "openai/tts-1",
+        "name": "TTS-1"
+      }
+    ],
+    "voiceSets": [
+      [
+        {
+          "id": "alloy",
+          "name": "Alloy"
+        },
+        {
+          "id": "ash",
+          "name": "Ash"
+        },
+        {
+          "id": "ballad",
+          "name": "Ballad"
+        },
+        {
+          "id": "cedar",
+          "name": "Cedar"
+        },
+        {
+          "id": "coral",
+          "name": "Coral"
+        },
+        {
+          "id": "echo",
+          "name": "Echo"
+        },
+        {
+          "id": "fable",
+          "name": "Fable"
+        },
+        {
+          "id": "marin",
+          "name": "Marin"
+        },
+        {
+          "id": "nova",
+          "name": "Nova"
+        },
+        {
+          "id": "onyx",
+          "name": "Onyx"
+        },
+        {
+          "id": "sage",
+          "name": "Sage"
+        },
+        {
+          "id": "shimmer",
+          "name": "Shimmer"
+        },
+        {
+          "id": "verse",
+          "name": "Verse"
+        }
+      ],
+      [
+        {
+          "id": "alloy",
+          "name": "Alloy"
+        },
+        {
+          "id": "ash",
+          "name": "Ash"
+        },
+        {
+          "id": "coral",
+          "name": "Coral"
+        },
+        {
+          "id": "echo",
+          "name": "Echo"
+        },
+        {
+          "id": "fable",
+          "name": "Fable"
+        },
+        {
+          "id": "nova",
+          "name": "Nova"
+        },
+        {
+          "id": "onyx",
+          "name": "Onyx"
+        },
+        {
+          "id": "sage",
+          "name": "Sage"
+        },
+        {
+          "id": "shimmer",
+          "name": "Shimmer"
+        }
+      ]
+    ],
+    "modelVoices": {
+      "openai/gpt-4o-mini-tts": 0,
+      "openai/tts-1": 1,
+      "openai/tts-1-hd": 1
+    },
+    "defaultVoices": 0
+  },
+  "elevenlabs": {
+    "hasModel": true,
+    "endpoint": "/api/media-providers/tts/elevenlabs/voices",
+    "models": [
+      {
+        "id": "eleven_flash_v2_5",
+        "name": "Flash v2.5 (Fastest)"
+      },
+      {
+        "id": "eleven_turbo_v2_5",
+        "name": "Turbo v2.5 (Fast)"
+      },
+      {
+        "id": "eleven_multilingual_v2",
+        "name": "Multilingual v2 (Quality)"
+      },
+      {
+        "id": "eleven_monolingual_v1",
+        "name": "Monolingual v1 (English)"
+      }
+    ]
+  },
+  "edge-tts": {
+    "hasModel": false,
+    "endpoint": "/api/media-providers/tts/voices?provider=edge-tts",
+    "voiceSets": [
+      [
+        {
+          "id": "en-US-AriaNeural",
+          "name": "Aria (en-US)"
+        },
+        {
+          "id": "en-US-GuyNeural",
+          "name": "Guy (en-US)"
+        },
+        {
+          "id": "en-GB-SoniaNeural",
+          "name": "Sonia (en-GB)"
+        },
+        {
+          "id": "vi-VN-HoaiMyNeural",
+          "name": "Hoai My (vi-VN)"
+        },
+        {
+          "id": "vi-VN-NamMinhNeural",
+          "name": "Nam Minh (vi-VN)"
+        },
+        {
+          "id": "zh-CN-XiaoxiaoNeural",
+          "name": "Xiaoxiao (zh-CN)"
+        },
+        {
+          "id": "zh-CN-YunxiNeural",
+          "name": "Yunxi (zh-CN)"
+        },
+        {
+          "id": "fr-FR-DeniseNeural",
+          "name": "Denise (fr-FR)"
+        },
+        {
+          "id": "de-DE-KatjaNeural",
+          "name": "Katja (de-DE)"
+        },
+        {
+          "id": "ja-JP-NanamiNeural",
+          "name": "Nanami (ja-JP)"
+        },
+        {
+          "id": "ko-KR-SunHiNeural",
+          "name": "SunHi (ko-KR)"
+        }
+      ]
+    ],
+    "defaultVoices": 0
+  },
+  "local-device": {
+    "hasModel": false,
+    "endpoint": "/api/media-providers/tts/voices?provider=local-device",
+    "voiceSets": [
+      [
+        {
+          "id": "default",
+          "name": "System Default Voice"
+        }
+      ]
+    ],
+    "defaultVoices": 0
+  },
+  "selfhosted-tts": {
+    "hasModel": true
+  },
+  "ollama-local": {
+    "hasModel": true,
+    "defaultVoice": "default",
+    "defaultFormat": "wav",
+    "formats": [
+      {
+        "value": "wav",
+        "label": "WAV (Binary)"
+      },
+      {
+        "value": "pcm",
+        "label": "PCM (Raw)"
+      }
+    ],
+    "models": [
+      {
+        "id": "phonon:latest",
+        "name": "Phonon (Latest)"
+      },
+      {
+        "id": "phonon",
+        "name": "Phonon"
+      },
+      {
+        "id": "phonon:multilingual",
+        "name": "Phonon Multilingual"
+      },
+      {
+        "id": "phonon:40m-multilingual",
+        "name": "Phonon 40M Multilingual"
+      },
+      {
+        "id": "phonon:en",
+        "name": "Phonon English"
+      },
+      {
+        "id": "phonon:31m-en",
+        "name": "Phonon 31M English"
+      },
+      {
+        "id": "phonon:40m-en",
+        "name": "Phonon 40M English"
+      },
+      {
+        "id": "phonon:de",
+        "name": "Phonon German"
+      },
+      {
+        "id": "phonon:40m-de",
+        "name": "Phonon 40M German"
+      },
+      {
+        "id": "phonon:es",
+        "name": "Phonon Spanish"
+      },
+      {
+        "id": "phonon:40m-es",
+        "name": "Phonon 40M Spanish"
+      },
+      {
+        "id": "phonon:fr",
+        "name": "Phonon French"
+      },
+      {
+        "id": "phonon:40m-fr",
+        "name": "Phonon 40M French"
+      },
+      {
+        "id": "phonon:pt",
+        "name": "Phonon Portuguese"
+      },
+      {
+        "id": "phonon:40m-pt",
+        "name": "Phonon 40M Portuguese"
+      }
+    ],
+    "voiceSets": [
+      [
+        {
+          "id": "default",
+          "name": "Default (Neutral)"
+        },
+        {
+          "id": "Zoey",
+          "name": "Zoey (US Female)"
+        },
+        {
+          "id": "Juniper",
+          "name": "Juniper (US Female)"
+        },
+        {
+          "id": "Everly",
+          "name": "Everly (US Female)"
+        },
+        {
+          "id": "Harper",
+          "name": "Harper (US Female)"
+        },
+        {
+          "id": "Hadley",
+          "name": "Hadley (US Female)"
+        },
+        {
+          "id": "Delia",
+          "name": "Delia (US Female)"
+        },
+        {
+          "id": "Easton",
+          "name": "Easton (US Male)"
+        },
+        {
+          "id": "Micah",
+          "name": "Micah (US Male)"
+        },
+        {
+          "id": "Trevor",
+          "name": "Trevor (US Male)"
+        },
+        {
+          "id": "Russell",
+          "name": "Russell (US Male)"
+        },
+        {
+          "id": "Preston",
+          "name": "Preston (US Male)"
+        },
+        {
+          "id": "Miles",
+          "name": "Miles (US Male)"
+        },
+        {
+          "id": "Maeve",
+          "name": "Maeve (UK Female)"
+        },
+        {
+          "id": "Freya",
+          "name": "Freya (UK Female)"
+        },
+        {
+          "id": "Pippa",
+          "name": "Pippa (UK Female)"
+        },
+        {
+          "id": "Elodie-Rose",
+          "name": "Elodie-Rose (UK Female)"
+        },
+        {
+          "id": "Imogen",
+          "name": "Imogen (UK Female)"
+        },
+        {
+          "id": "Lottie",
+          "name": "Lottie (UK Female)"
+        },
+        {
+          "id": "Bryony",
+          "name": "Bryony (UK Female)"
+        },
+        {
+          "id": "Alfie",
+          "name": "Alfie (UK Male)"
+        },
+        {
+          "id": "Hugh",
+          "name": "Hugh (UK Male)"
+        },
+        {
+          "id": "Edwin",
+          "name": "Edwin (UK Male)"
+        },
+        {
+          "id": "Spencer",
+          "name": "Spencer (UK Male)"
+        },
+        {
+          "id": "Toby",
+          "name": "Toby (UK Male)"
+        },
+        {
+          "id": "Teddy",
+          "name": "Teddy (UK Male)"
+        },
+        {
+          "id": "Azgorath",
+          "name": "Azgorath (Character)"
+        },
+        {
+          "id": "Captain Silas Blackwater",
+          "name": "Captain Silas (Character)"
+        },
+        {
+          "id": "Fairy Godmother",
+          "name": "Fairy Godmother (Character)"
+        },
+        {
+          "id": "Fennick the Young Elf",
+          "name": "Fennick Elf (Character)"
+        },
+        {
+          "id": "Grub the Ogre",
+          "name": "Grub the Ogre (Character)"
+        },
+        {
+          "id": "Master Aldric",
+          "name": "Master Aldric (Character)"
+        },
+        {
+          "id": "Morwenna of the Deep",
+          "name": "Morwenna (Character)"
+        },
+        {
+          "id": "Old Mortlake",
+          "name": "Old Mortlake (Character)"
+        },
+        {
+          "id": "Sir Bramwell",
+          "name": "Sir Bramwell (Character)"
+        },
+        {
+          "id": "The Snow Queen",
+          "name": "Snow Queen (Character)"
+        },
+        {
+          "id": "The Thing Under the Stairs",
+          "name": "Thing Under Stairs (Character)"
+        },
+        {
+          "id": "Vyrmathrax the Ancient",
+          "name": "Vyrmathrax (Character)"
+        }
+      ],
+      [
+        {
+          "id": "default",
+          "name": "Default"
+        }
+      ]
+    ],
+    "modelVoices": {
+      "phonon:latest": 0,
+      "phonon": 0,
+      "phonon:en": 0,
+      "phonon:31m-en": 0,
+      "phonon:40m-en": 0,
+      "phonon:multilingual": 1,
+      "phonon:40m-multilingual": 1,
+      "phonon:de": 1,
+      "phonon:40m-de": 1,
+      "phonon:es": 1,
+      "phonon:40m-es": 1,
+      "phonon:fr": 1,
+      "phonon:40m-fr": 1,
+      "phonon:pt": 1,
+      "phonon:40m-pt": 1
+    },
+    "defaultVoices": 0
+  },
+  "nvidia": {
+    "hasModel": true
+  },
+  "hyperbolic": {
+    "hasModel": true
+  },
+  "deepgram": {
+    "hasModel": false,
+    "endpoint": "/api/media-providers/tts/deepgram/voices"
+  },
+  "huggingface": {
+    "hasModel": true
+  },
+  "cartesia": {
+    "hasModel": true
+  },
+  "playht": {
+    "hasModel": true
+  },
+  "coqui": {
+    "hasModel": true
+  },
+  "tortoise": {
+    "hasModel": true
+  },
+  "inworld": {
+    "hasModel": true,
+    "endpoint": "/api/media-providers/tts/inworld/voices"
+  },
+  "qwen": {
+    "hasModel": true
+  },
+  "minimax": {
+    "hasModel": true,
+    "endpoint": "/api/media-providers/tts/minimax/voices",
+    "defaultVoice": "English_expressive_narrator"
+  },
+  "minimax-cn": {
+    "hasModel": true,
+    "endpoint": "/api/media-providers/tts/minimax/voices?provider=minimax-cn",
+    "defaultVoice": "English_expressive_narrator"
+  },
+  "gemini": {
+    "hasModel": true,
+    "endpoint": "/api/media-providers/tts/voices?provider=gemini",
+    "models": [
+      {
+        "id": "gemini-3.1-flash-tts-preview",
+        "name": "Gemini 3.1 Flash TTS"
+      },
+      {
+        "id": "gemini-2.5-flash-preview-tts",
+        "name": "Gemini 2.5 Flash TTS"
+      },
+      {
+        "id": "gemini-2.5-pro-preview-tts",
+        "name": "Gemini 2.5 Pro TTS"
+      }
+    ]
+  },
+  "xiaomi-mimo": {
+    "hasModel": true,
+    "models": [
+      {
+        "id": "mimo-v2.5-tts",
+        "name": "MiMo V2.5 TTS"
+      }
+    ],
+    "voiceSets": [
+      [
+        {
+          "id": "mimo_default",
+          "name": "mimo_default"
+        },
+        {
+          "id": "冰糖",
+          "name": "冰糖"
+        },
+        {
+          "id": "茉莉",
+          "name": "茉莉"
+        },
+        {
+          "id": "苏打",
+          "name": "苏打"
+        },
+        {
+          "id": "白桦",
+          "name": "白桦"
+        },
+        {
+          "id": "Mia",
+          "name": "Mia"
+        },
+        {
+          "id": "Chloe",
+          "name": "Chloe"
+        },
+        {
+          "id": "Milo",
+          "name": "Milo"
+        },
+        {
+          "id": "Dean",
+          "name": "Dean"
+        }
+      ]
+    ],
+    "modelVoices": {
+      "mimo-v2.5-tts": 0
+    }
+  },
+  "aws-polly": {
+    "hasModel": true,
+    "models": [
+      {
+        "id": "standard",
+        "name": "Standard"
+      },
+      {
+        "id": "neural",
+        "name": "Neural"
+      },
+      {
+        "id": "long-form",
+        "name": "Long-form"
+      },
+      {
+        "id": "generative",
+        "name": "Generative"
+      }
+    ],
+    "defaultVoice": "Joanna",
+    "formats": [
+      {
+        "value": "mp3",
+        "label": "MP3"
+      },
+      {
+        "value": "wav",
+        "label": "WAV"
+      },
+      {
+        "value": "ogg",
+        "label": "OGG"
+      },
+      {
+        "value": "pcm",
+        "label": "PCM"
+      },
+      {
+        "value": "json",
+        "label": "JSON"
+      }
+    ]
+  }
+}

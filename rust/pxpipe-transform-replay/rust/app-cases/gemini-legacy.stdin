@@ -1,0 +1,1 @@
+{"actual": {"model": "gemini-3.6-flash", "body": {"model": "gemini-3.6-flash", "max_tokens": 30, "messages": [{"role": "user", "content": "Proceed with the fixture using this model."}], "system": "A locally supplied test phrase describes a safe mock end state.\\n"}, "minChars": 20, "repeat": 200}}

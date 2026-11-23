@@ -1,0 +1,16 @@
+[package]
+name = "pxpipe-transform-replay"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+base64 = "0.22"
+flate2 = "1"
+png = "0.18"
+regex = "1"
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+url = "2"
+
+[workspace]

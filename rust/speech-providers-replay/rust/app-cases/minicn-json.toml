@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["minicn-json"]
+status.code = 0
+fs.sandbox = true

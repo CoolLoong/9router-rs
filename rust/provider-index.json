@@ -1,0 +1,1867 @@
+[
+  {
+    "id": "gemini-cli",
+    "alias": "gc",
+    "name": "Gemini CLI",
+    "authGroup": "free",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 8
+  },
+  {
+    "id": "kiro",
+    "alias": "kr",
+    "name": "Kiro AI",
+    "authGroup": "free",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 15,
+    "usageApiKey": true
+  },
+  {
+    "id": "mimo-free",
+    "alias": "mmf",
+    "name": "MiMo Code Free",
+    "authGroup": "free",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": true,
+    "hidden": true,
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://models.dev/api.json",
+      "type": "mimo-free"
+    }
+  },
+  {
+    "id": "opencode",
+    "alias": "oc",
+    "name": "OpenCode Free",
+    "authGroup": "free",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": true,
+    "serviceKinds": [
+      "llm",
+      "systemone"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://opencode.ai/zen/v1/models",
+      "type": "opencode-free"
+    }
+  },
+  {
+    "id": "byteplus",
+    "alias": "bpm",
+    "name": "BytePlus ModelArk",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm"
+    ]
+  },
+  {
+    "id": "cloudflare-ai",
+    "alias": "cf",
+    "name": "Cloudflare",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "image",
+      "systemone"
+    ]
+  },
+  {
+    "id": "coqui",
+    "alias": "coqui",
+    "name": "Coqui TTS",
+    "authType": "none",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "edge-tts",
+    "alias": "edge-tts",
+    "name": "Edge TTS",
+    "authType": "none",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "gemini",
+    "alias": "gemini",
+    "name": "Gemini",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding",
+      "image",
+      "imageToText",
+      "webSearch",
+      "tts",
+      "stt"
+    ]
+  },
+  {
+    "id": "google-tts",
+    "alias": "google-tts",
+    "name": "Google TTS",
+    "authType": "none",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "kimchi",
+    "alias": "kimchi",
+    "name": "Kimchi",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "imageToText"
+    ],
+    "passthroughModels": true
+  },
+  {
+    "id": "local-device",
+    "alias": "local-device",
+    "name": "Local Device",
+    "authType": "none",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "nvidia",
+    "alias": "nvidia",
+    "name": "NVIDIA NIM",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "tts",
+      "embedding"
+    ]
+  },
+  {
+    "id": "ollama",
+    "alias": "ollama",
+    "name": "Ollama Cloud",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "webFetch",
+      "systemone"
+    ],
+    "usageOrder": 18,
+    "usageApiKey": true
+  },
+  {
+    "id": "openrouter",
+    "alias": "openrouter",
+    "name": "OpenRouter",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding",
+      "tts",
+      "imageToText",
+      "video",
+      "systemone"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://openrouter.ai/api/v1/models",
+      "type": "openrouter-free"
+    }
+  },
+  {
+    "id": "searxng",
+    "alias": "searxng",
+    "name": "SearXNG",
+    "authType": "none",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "tortoise",
+    "alias": "tortoise",
+    "name": "Tortoise TTS",
+    "authType": "none",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuth": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "vertex",
+    "alias": "vx",
+    "name": "Vertex AI",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "imageToText",
+      "video"
+    ]
+  },
+  {
+    "id": "api-airforce",
+    "alias": "af",
+    "name": "API.airforce",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://api.airforce/v1/models",
+      "type": "airforce-free"
+    }
+  },
+  {
+    "id": "bazaarlink",
+    "alias": "bzl",
+    "name": "Bazaarlink",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "kilo-gateway",
+    "alias": "kgw",
+    "name": "Kilo Gateway",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "poolside",
+    "alias": "ps",
+    "name": "Poolside",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "agnes",
+    "alias": "agnes",
+    "name": "Agnes AI",
+    "authType": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true
+  },
+  {
+    "id": "nous",
+    "alias": "nous",
+    "name": "Nous Research",
+    "authType": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "imageToText"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://inference-api.nousresearch.com/v1/models",
+      "type": "nous-free"
+    }
+  },
+  {
+    "id": "antigravity",
+    "alias": "ag",
+    "name": "Antigravity",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "image",
+      "webSearch"
+    ],
+    "usageOrder": 0
+  },
+  {
+    "id": "claude",
+    "alias": "cc",
+    "name": "Claude Code",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 1
+  },
+  {
+    "id": "cline",
+    "alias": "cl",
+    "name": "Cline",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "clinepass",
+    "alias": "clinepass",
+    "name": "ClinePass",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 2,
+    "usageApiKey": true
+  },
+  {
+    "id": "codebuddy-cn",
+    "alias": "cbcn",
+    "name": "CodeBuddy CN",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 3,
+    "usageApiKey": true
+  },
+  {
+    "id": "codex",
+    "alias": "cx",
+    "name": "OpenAI Codex",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "image",
+      "stt"
+    ],
+    "usageOrder": 4
+  },
+  {
+    "id": "cursor",
+    "alias": "cu",
+    "name": "Cursor IDE",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 6
+  },
+  {
+    "id": "github",
+    "alias": "gh",
+    "name": "GitHub Copilot",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding"
+    ],
+    "usageOrder": 9
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab Duo",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "hidden": true
+  },
+  {
+    "id": "glm",
+    "alias": "glm",
+    "name": "Zai GLM Coding",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "webSearch"
+    ],
+    "usageOrder": 11,
+    "usageApiKey": true
+  },
+  {
+    "id": "grok-cli",
+    "alias": "gcli",
+    "name": "Grok CLI (Grok Build)",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 12
+  },
+  {
+    "id": "iflow",
+    "alias": "if",
+    "name": "iFlow AI",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "hidden": true
+  },
+  {
+    "id": "kilocode",
+    "alias": "kc",
+    "name": "Kilo Code",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://api.kilo.ai/api/gateway/models",
+      "type": "openrouter-free"
+    }
+  },
+  {
+    "id": "kimi",
+    "alias": "kimi",
+    "name": "Kimi",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "webSearch"
+    ],
+    "usageOrder": 14,
+    "usageApiKey": true
+  },
+  {
+    "id": "qoder-cn",
+    "alias": "qdcn",
+    "name": "Qoder CN",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 19,
+    "usageApiKey": true
+  },
+  {
+    "id": "qoder",
+    "alias": "qd",
+    "name": "Qoder",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 22,
+    "usageApiKey": true
+  },
+  {
+    "id": "xai",
+    "alias": "xai",
+    "name": "xAI (Grok)",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "imageToText",
+      "webSearch",
+      "image",
+      "video"
+    ]
+  },
+  {
+    "id": "xiaomi-mimo",
+    "alias": "mimo",
+    "name": "Xiaomi MiMo",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "tts"
+    ],
+    "usageOrder": 24,
+    "usageApiKey": true
+  },
+  {
+    "id": "codebuddy-intl",
+    "alias": "cbai",
+    "name": "CodeBuddy",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 25,
+    "usageApiKey": true
+  },
+  {
+    "id": "zed",
+    "alias": "zd",
+    "name": "Zed",
+    "authType": "oauth",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "usageOrder": 26
+  },
+  {
+    "id": "muse",
+    "alias": "muse",
+    "name": "Muse (Meta Model API)",
+    "authGroup": "oauth",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true
+  },
+  {
+    "id": "minimax-code",
+    "alias": "mm",
+    "name": "MiniMax Code",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "modelsFetcher": {
+      "url": "https://agent.minimax.cn/mavis/api/v1/models?region=cn&buildEnv=prod",
+      "type": "minimax-code"
+    },
+    "usageOrder": 27
+  },
+  {
+    "id": "minimax-code-global",
+    "alias": "mmg",
+    "name": "MiniMax Code (Global)",
+    "authGroup": "oauth",
+    "canCreateWithKey": false,
+    "webCookie": false,
+    "noAuthFree": false,
+    "modelsFetcher": {
+      "url": "https://agent.minimax.io/mavis/api/v1/models?region=en&buildEnv=prod",
+      "type": "minimax-code"
+    },
+    "usageOrder": 28
+  },
+  {
+    "id": "alicode-intl",
+    "alias": "alicode-intl",
+    "name": "Alibaba Coding",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "alicode",
+    "alias": "alicode",
+    "name": "Alibaba",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "anthropic",
+    "alias": "anthropic",
+    "name": "Anthropic",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "imageToText"
+    ]
+  },
+  {
+    "id": "assemblyai",
+    "alias": "aai",
+    "name": "AssemblyAI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "stt"
+    ]
+  },
+  {
+    "id": "aws-polly",
+    "credentialForm": "aws",
+    "alias": "polly",
+    "name": "AWS Polly",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "azure",
+    "alias": "azure",
+    "name": "Azure OpenAI",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "black-forest-labs",
+    "alias": "bfl",
+    "name": "Black Forest Labs",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "blackbox",
+    "alias": "bb",
+    "name": "Blackbox AI",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm"
+    ]
+  },
+  {
+    "id": "brave-search",
+    "alias": "brave",
+    "name": "Brave Search",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "cartesia",
+    "alias": "cartesia",
+    "name": "Cartesia",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "cerebras",
+    "alias": "cerebras",
+    "name": "Cerebras",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "chutes",
+    "alias": "ch",
+    "name": "Chutes AI",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "cohere",
+    "alias": "cohere",
+    "name": "Cohere",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "comfyui",
+    "alias": "comfyui",
+    "name": "ComfyUI",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "commandcode",
+    "alias": "cmc",
+    "name": "Command Code",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "usageOrder": 5,
+    "usageApiKey": true
+  },
+  {
+    "id": "deepgram",
+    "alias": "dg",
+    "name": "Deepgram",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "stt"
+    ]
+  },
+  {
+    "id": "deepseek",
+    "alias": "ds",
+    "name": "DeepSeek",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 7,
+    "usageApiKey": true
+  },
+  {
+    "id": "elevenlabs",
+    "alias": "el",
+    "name": "ElevenLabs",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts",
+      "stt"
+    ]
+  },
+  {
+    "id": "exa",
+    "alias": "exa",
+    "name": "Exa",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch",
+      "webFetch"
+    ]
+  },
+  {
+    "id": "fal-ai",
+    "alias": "fal",
+    "name": "Fal.ai",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "featherless",
+    "alias": "fl",
+    "name": "Featherless",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "firecrawl",
+    "alias": "firecrawl",
+    "name": "Firecrawl",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webFetch"
+    ]
+  },
+  {
+    "id": "fireworks",
+    "alias": "fireworks",
+    "name": "Fireworks AI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding"
+    ]
+  },
+  {
+    "id": "glm-cn",
+    "alias": "glm-cn",
+    "name": "GLM (China)",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "usageOrder": 10,
+    "usageApiKey": true
+  },
+  {
+    "id": "google-pse",
+    "alias": "gpse",
+    "name": "Google PSE",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "groq",
+    "alias": "groq",
+    "name": "Groq",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "imageToText",
+      "stt"
+    ],
+    "usageOrder": 13,
+    "usageApiKey": true
+  },
+  {
+    "id": "huggingface",
+    "alias": "hf",
+    "name": "HuggingFace",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image",
+      "stt"
+    ],
+    "hiddenKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "hyperbolic",
+    "alias": "hyp",
+    "name": "Hyperbolic",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "inworld",
+    "alias": "inworld",
+    "name": "Inworld TTS",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "jina-ai",
+    "alias": "jina",
+    "name": "Jina AI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "embedding"
+    ]
+  },
+  {
+    "id": "jina-reader",
+    "alias": "jina-reader",
+    "name": "Jina Reader",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webFetch"
+    ]
+  },
+  {
+    "id": "linkup",
+    "alias": "linkup",
+    "name": "Linkup",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "minimax-cn",
+    "alias": "minimax-cn",
+    "name": "Minimax (China)",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "tts"
+    ],
+    "usageOrder": 16,
+    "usageApiKey": true
+  },
+  {
+    "id": "minimax",
+    "alias": "minimax",
+    "name": "Minimax Coding",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "image",
+      "imageToText",
+      "webSearch",
+      "tts"
+    ],
+    "usageOrder": 17,
+    "usageApiKey": true
+  },
+  {
+    "id": "mistral",
+    "alias": "mistral",
+    "name": "Mistral",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "imageToText",
+      "embedding"
+    ]
+  },
+  {
+    "id": "mmf",
+    "name": "MMF",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "hidden": true
+  },
+  {
+    "id": "nanobanana",
+    "alias": "nb",
+    "name": "NanoBanana API",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "nebius",
+    "alias": "nebius",
+    "name": "Nebius AI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding"
+    ]
+  },
+  {
+    "id": "ollama-local",
+    "alias": "ollama-local",
+    "name": "Ollama Local",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "systemone",
+      "tts",
+      "embedding"
+    ]
+  },
+  {
+    "id": "ollama-search",
+    "alias": "ollama-search",
+    "name": "Ollama Search",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "openai",
+    "alias": "openai",
+    "name": "OpenAI",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding",
+      "tts",
+      "stt",
+      "image",
+      "imageToText",
+      "webSearch"
+    ]
+  },
+  {
+    "id": "opencode-go",
+    "alias": "ocg",
+    "name": "OpenCode Go",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://opencode.ai/inference/go/v1/models",
+      "type": "opencode-go"
+    },
+    "usageOrder": 20,
+    "usageApiKey": true
+  },
+  {
+    "id": "opencode-zen",
+    "alias": "ocz",
+    "name": "OpenCode Zen",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "systemone"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://opencode.ai/zen/v1/models",
+      "type": "opencode-free"
+    },
+    "usageOrder": 21,
+    "usageApiKey": true
+  },
+  {
+    "id": "perplexity",
+    "alias": "pplx",
+    "name": "Perplexity",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "webSearch"
+    ]
+  },
+  {
+    "id": "perplexity-agent",
+    "alias": "pa",
+    "name": "Perplexity Agent",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "webSearch"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://api.perplexity.ai/v1/models",
+      "type": "openai"
+    }
+  },
+  {
+    "id": "playht",
+    "alias": "playht",
+    "name": "PlayHT",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ],
+    "hidden": true
+  },
+  {
+    "id": "recraft",
+    "alias": "recraft",
+    "name": "Recraft",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "runwayml",
+    "alias": "runway",
+    "name": "Runway ML",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "sdwebui",
+    "alias": "sdwebui",
+    "name": "SD WebUI",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "searchapi",
+    "alias": "searchapi",
+    "name": "SearchAPI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "serper",
+    "alias": "serper",
+    "name": "Serper",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "siliconflow",
+    "alias": "siliconflow",
+    "name": "SiliconFlow",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "sensenova",
+    "alias": "sensenova",
+    "name": "SenseNova",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "image",
+      "imageToText"
+    ]
+  },
+  {
+    "id": "stability-ai",
+    "alias": "stability",
+    "name": "Stability AI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "tavily",
+    "alias": "tavily",
+    "name": "Tavily",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch",
+      "webFetch"
+    ]
+  },
+  {
+    "id": "together",
+    "alias": "together",
+    "name": "Together AI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding"
+    ]
+  },
+  {
+    "id": "topaz",
+    "alias": "topaz",
+    "name": "Topaz",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "venice",
+    "alias": "venice",
+    "name": "Venice AI",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding",
+      "image"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://api.venice.ai/api/v1/models",
+      "type": "openai"
+    }
+  },
+  {
+    "id": "vercel-ai-gateway",
+    "alias": "vercel",
+    "name": "Vercel AI Gateway",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding",
+      "image",
+      "imageToText",
+      "webSearch"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://ai-gateway.vercel.sh/v1/models",
+      "type": "openai"
+    },
+    "usageOrder": 23,
+    "usageApiKey": true
+  },
+  {
+    "id": "vertex-partner",
+    "alias": "vxp",
+    "name": "Vertex Partner",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "volcengine-ark",
+    "alias": "ark",
+    "name": "Volcengine Ark",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "voyage-ai",
+    "alias": "voyage",
+    "name": "Voyage AI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "embedding"
+    ]
+  },
+  {
+    "id": "xiaomi-tokenplan",
+    "alias": "xmtp",
+    "name": "Xiaomi MiMo (Token Plan)",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "youcom",
+    "alias": "youcom",
+    "name": "You.com Search",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "alims-intl",
+    "alias": "alims-intl",
+    "name": "Alibaba Studio",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "baidu",
+    "alias": "qianfan",
+    "name": "Baidu Qianfan",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "bluesminds",
+    "alias": "bm",
+    "name": "BluesMinds",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "hidden": true
+  },
+  {
+    "id": "llm7",
+    "alias": "llm7",
+    "name": "LLM7",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true
+  },
+  {
+    "id": "sambanova",
+    "alias": "samba",
+    "name": "SambaNova",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "hidden": true
+  },
+  {
+    "id": "tencent",
+    "alias": "hunyuan",
+    "name": "Tencent Hunyuan",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "morph",
+    "alias": "morph",
+    "name": "Morph",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "tokenrouter",
+    "alias": "tokenrouter",
+    "name": "TokenRouter",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "embedding",
+      "image"
+    ],
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://api.tokenrouter.com/v1/models",
+      "type": "openai"
+    }
+  },
+  {
+    "id": "selfhosted-stt",
+    "alias": "selfhosted-stt",
+    "name": "Self-hosted STT",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "stt"
+    ]
+  },
+  {
+    "id": "selfhosted-tts",
+    "alias": "selfhosted-tts",
+    "name": "Self-hosted TTS",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "selfhosted-embedding",
+    "alias": "selfhosted-embedding",
+    "name": "Self-hosted Embedding",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "embedding"
+    ]
+  },
+  {
+    "id": "fish-audio",
+    "alias": "fish",
+    "name": "Fish Audio",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "tts"
+    ]
+  },
+  {
+    "id": "alitp-intl",
+    "alias": "alitp-intl",
+    "name": "Alibaba Token Plan",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "xquik",
+    "alias": "xquik",
+    "name": "Xquik",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch"
+    ]
+  },
+  {
+    "id": "tokenharbor",
+    "alias": "tokenharbor",
+    "name": "Token Harbor",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://tokenharbor.ai/v1/models",
+      "type": "openai"
+    }
+  },
+  {
+    "id": "dahl",
+    "alias": "dahl",
+    "name": "Dahl Inference",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://inference.dahl.global/v1/models",
+      "type": "openai"
+    }
+  },
+  {
+    "id": "atria",
+    "alias": "atria",
+    "name": "Atria Dawn",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true
+  },
+  {
+    "id": "bai",
+    "alias": "bai",
+    "name": "B.AI",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "modelsFetcher": {
+      "url": "https://api.b.ai/v1/models",
+      "type": "openai"
+    }
+  },
+  {
+    "id": "tinyfish",
+    "alias": "tinyfish",
+    "name": "TinyFish",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "webSearch",
+      "webFetch"
+    ]
+  },
+  {
+    "id": "v1m",
+    "alias": "v1m",
+    "name": "v1m (System One)",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "systemone"
+    ]
+  },
+  {
+    "id": "bedrock",
+    "alias": "br",
+    "name": "AWS Bedrock",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "apiKeyOptionalWith": "profile",
+    "credentialForm": "aws",
+    "passthroughModels": true
+  },
+  {
+    "id": "bedrock-xai",
+    "alias": "brx",
+    "name": "AWS Bedrock (xAI)",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "apiKeyOptionalWith": "profile",
+    "credentialForm": "aws",
+    "passthroughModels": true
+  },
+  {
+    "id": "veoaifree-web",
+    "alias": "veo-free",
+    "name": "Veo AI Free Web",
+    "authType": "none",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image",
+      "video"
+    ]
+  },
+  {
+    "id": "runcrate",
+    "alias": "rc",
+    "name": "Runcrate",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false
+  },
+  {
+    "id": "nace",
+    "alias": "nace",
+    "name": "Nace Drex",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "systemone"
+    ]
+  },
+  {
+    "id": "sensenova-intl",
+    "alias": "sensenova-intl",
+    "name": "SenseNova (Intl)",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "llm",
+      "image",
+      "imageToText"
+    ]
+  },
+  {
+    "id": "synthetic",
+    "alias": "syn",
+    "name": "Synthetic",
+    "authType": "apikey",
+    "authGroup": "apikey",
+    "canCreateWithKey": true,
+    "webCookie": false,
+    "noAuthFree": false,
+    "passthroughModels": true,
+    "usageOrder": 29,
+    "usageApiKey": true
+  },
+  {
+    "id": "grok-web",
+    "alias": "gw",
+    "name": "Grok Web (Subscription)",
+    "authType": "cookie",
+    "canCreateWithKey": true,
+    "webCookie": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image",
+      "video"
+    ],
+    "passthroughModels": true
+  },
+  {
+    "id": "perplexity-web",
+    "alias": "pw",
+    "name": "Perplexity Web (Pro/Max)",
+    "authType": "cookie",
+    "canCreateWithKey": true,
+    "webCookie": true,
+    "noAuthFree": false,
+    "serviceKinds": []
+  },
+  {
+    "id": "deepseek-web",
+    "alias": "deepseek-web",
+    "name": "DeepSeek Web",
+    "authType": "cookie",
+    "canCreateWithKey": true,
+    "webCookie": true,
+    "noAuthFree": false
+  },
+  {
+    "id": "gemini-web",
+    "alias": "gemini-web",
+    "name": "Gemini Web",
+    "authType": "cookie",
+    "canCreateWithKey": true,
+    "webCookie": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "muse-web",
+    "alias": "muse-web",
+    "name": "Muse Web",
+    "authType": "cookie",
+    "canCreateWithKey": true,
+    "webCookie": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image",
+      "video"
+    ]
+  },
+  {
+    "id": "chatgpt-web",
+    "alias": "chatgpt-web",
+    "name": "ChatGPT Web",
+    "authType": "cookie",
+    "canCreateWithKey": true,
+    "webCookie": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image"
+    ]
+  },
+  {
+    "id": "uc-web",
+    "alias": "uc",
+    "name": "UC Web",
+    "authType": "cookie",
+    "canCreateWithKey": true,
+    "webCookie": true,
+    "noAuthFree": false,
+    "serviceKinds": [
+      "image",
+      "video"
+    ],
+    "passthroughModels": true
+  }
+]

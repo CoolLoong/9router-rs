@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["qoder-pat-denied"]
+status.code = 0
+fs.sandbox = true

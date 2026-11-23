@@ -1,0 +1,1 @@
+{"connection":{"id":"[..]","provider":"selfhosted-stt","authType":"apikey","name":"Fixture selfhosted-stt STT","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"baseUrl":"http://127.0.0.1:52989/v1/audio/transcriptions/","connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

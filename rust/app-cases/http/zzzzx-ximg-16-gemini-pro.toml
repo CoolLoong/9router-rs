@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/images/generations?response_format=binary"
+body = '{"model":"gemini/gemini-2.5-flash-image","prompt":"Gemini image text only","output_format":"GIF","image":"https://example.invalid/images/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-disposition = 'inline; filename="image.gif"'
+content-type = "image/png"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"

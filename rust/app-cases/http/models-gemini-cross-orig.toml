@@ -1,0 +1,13 @@
+[request]
+method = "GET"
+path = "/v1beta/models"
+
+[request.headers]
+origin = "https://example.org"
+
+[response]
+status = 401
+
+[response.headers]
+content-type = "application/json"
+vary = "Accept-Encoding"

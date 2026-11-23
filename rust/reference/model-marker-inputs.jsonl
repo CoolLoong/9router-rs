@@ -1,0 +1,13 @@
+{"fn":"stripModelContextMarker","args":["anthropic/claude-opus-5[1m]"]}
+{"fn":"stripModelContextMarker","args":["  Claude[1M]  "]}
+{"fn":"stripModelContextMarker","args":["x[1m]y"]}
+{"fn":"stripModelContextMarker","args":["\tmodel  [1m][1M]\n"]}
+{"fn":"stripModelContextMarker","args":[" x [1m] "]}
+{"fn":"stripModelContextMarker","args":["  unchanged  "]}
+{"fn":"stripModelContextMarker","args":["\ufeff模型😀[1m]\u3000"]}
+{"fn":"stripModelContextMarker","args":["x[1m]\u0085"]}
+{"fn":"stripModelContextMarker","args":["[1m]"]}
+{"fn":"stripModelContextMarker","args":[{"$utf16":[55296,91,49,109,93]}]}
+{"fn":"stripModelContextMarker","args":[{"$undefined":true}]}
+{"fn":"stripModelContextMarker","args":[null]}
+{"fn":"stripModelContextMarker","args":[{"other":[1,2]}]}

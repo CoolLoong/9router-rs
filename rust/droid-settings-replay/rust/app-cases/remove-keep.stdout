@@ -1,0 +1,1 @@
+{"disk": {"customModels": [{"apiKey": {"legacy": true, "placeholder": false, "previous": false, "selected": false}, "id": "vendor-original", "index": 8, "model": "private-model"}], "sticky": "original value"}, "mode": "0o640", "reply": {"body": {"message": "9Router settings removed successfully", "success": true}, "status": 200}, "symlink": false}

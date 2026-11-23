@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["codex-proactive"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,10 @@
+{
+  "schema": "rust-anything/app-cases@1",
+  "name": "driver",
+  "run": [
+    "sh",
+    "run.sh",
+    "reference"
+  ],
+  "timeout_secs": 24
+}

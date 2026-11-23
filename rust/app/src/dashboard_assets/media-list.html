@@ -1,0 +1,25 @@
+<div class="page-heading" id="media-page" data-media-kind="{{kind}}">
+  <h1>{{title}}</h1>
+</div>
+<p id="integration-status" class="notice" role="status" hidden></p>
+<section class="card" aria-labelledby="media-providers-title">
+  <div class="card-heading">
+    <h2 id="media-providers-title">Providers</h2>
+    <a class="button button-primary" href="/dashboard/providers/nodes/new?type=custom-embedding" id="new-embedding" {{embedding-hidden}}>Add custom embedding</a>
+  </div>
+  <div class="key-list" id="media-provider-list">{{providers}}</div>
+  <a href="/dashboard/providers">Manage provider connections</a>
+</section>
+<section class="card" aria-labelledby="media-combos-title" id="media-combos" {{web-hidden}}>
+  <h2 id="media-combos-title">Web combos</h2>
+  <form method="post" class="catalog-fields" id="media-new-combo">
+    <div><label for="media-combo-name">Name</label><input id="media-combo-name" pattern="[a-zA-Z0-9_.\-]+" required></div>
+    <div>
+      <label for="media-combo-kind">Service</label>
+      <select id="media-combo-kind"><option value="webFetch">Web Fetch</option><option value="webSearch">Web Search</option></select>
+    </div>
+    <div class="catalog-submit"><button class="button button-primary" type="submit">Create combo</button></div>
+  </form>
+  <div class="key-list" id="media-combo-list"></div>
+</section>
+<noscript><p class="muted">Enable JavaScript to configure media providers.</p></noscript>

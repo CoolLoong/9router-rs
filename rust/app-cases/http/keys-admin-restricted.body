@@ -1,0 +1,1 @@
+{"key":{"id":"fixture-restricted","key":"offline-restricted-key","name":"Restricted fixture","machineId":"fixture-machine","isActive":true,"createdAt":"[..]","access":{"restricted":true,"allow":["gemini/gemini-4-argon"]}}}

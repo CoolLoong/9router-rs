@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["github-proactive"]
+status.code = 0
+fs.sandbox = true

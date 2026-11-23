@@ -1,0 +1,63 @@
+<div class="page-heading">
+  <a href="/dashboard/providers">Back to providers</a>
+  <h1>{{title}}</h1>
+</div>
+<p id="management-status" class="notice" role="status" hidden></p>
+<datalist id="provider-directory">{{directory}}</datalist>
+<section class="card" aria-label="Connection settings">
+  <form id="connection-form" class="settings-form" method="post" data-connection-id="{{id}}">
+    <fieldset id="connection-fields" disabled>
+      <div class="settings-form" {{create-hidden}}>
+        <label for="connection-provider">Provider</label>
+        <select id="connection-provider">
+          <option value="">Select a provider</option>
+          {{providers}}
+        </select>
+      </div>
+      <p class="muted" id="connection-provider-name" {{edit-hidden}}></p>
+      <label for="connection-name">Connection name</label>
+      <input id="connection-name" autocomplete="off" required>
+      <div class="settings-form" id="connection-secret-fields">
+        <label for="connection-key">API key</label>
+        <input id="connection-key" type="password" autocomplete="new-password">
+        <p class="muted" id="connection-key-hint" {{edit-hidden}}>Enter a value to replace the stored key.</p>
+      </div>
+      <div class="settings-form" id="connection-host-fields" hidden>
+        <label for="connection-host">Ollama base URL</label>
+        <input id="connection-host" type="url" autocomplete="off" placeholder="http://127.0.0.1:11434">
+      </div>
+      <label for="connection-priority">Priority</label>
+      <input id="connection-priority" type="number" min="1" step="1" value="1" required>
+      <label for="connection-default-model">Default model</label>
+      <input id="connection-default-model" autocomplete="off">
+      <label for="connection-pool">Proxy pool</label>
+      <select id="connection-pool" disabled><option value="">No proxy pool</option></select>
+      <p id="connection-pool-status" class="muted" hidden></p>
+      <label class="check-row" {{edit-hidden}}><input type="checkbox" id="connection-active">Active</label>
+      <div class="key-actions">
+        <button type="submit" class="button button-primary">Save connection</button>
+        <a id="connection-models" href="/dashboard/models" {{edit-hidden}}>Manage models and aliases</a>
+        <a id="connection-advanced" href="/dashboard/providers" {{edit-hidden}}>Provider settings</a>
+      </div>
+    </fieldset>
+  </form>
+  <p class="muted" {{create-hidden}}><a href="/dashboard/providers/nodes/new">Add a compatible endpoint</a> or <a href="/dashboard/providers#oauth-providers-title">choose another sign-in method</a>.</p>
+</section>
+<section class="card" id="connection-suggestions" aria-labelledby="connection-suggestions-title" hidden>
+  <div class="card-heading">
+    <h2 id="connection-suggestions-title">Suggested models</h2>
+    <button type="button" class="button" id="connection-suggestions-load">Load catalog</button>
+  </div>
+  <p class="muted" id="connection-suggestions-status" role="status"></p>
+  <div id="connection-suggestions-list"></div>
+</section>
+<section class="card" aria-labelledby="connection-headers-title" {{edit-hidden}}>
+  <h2 id="connection-headers-title">Provider request headers</h2>
+  <p class="muted">These overrides apply to every connection for this provider.</p>
+  <form id="connection-headers-form" class="settings-form" method="post">
+    <label for="connection-headers">Override headers as JSON</label>
+    <textarea id="connection-headers" rows="6" autocomplete="off" spellcheck="false" disabled>{}</textarea>
+    <details><summary>Registry headers</summary><pre id="connection-builtin-headers" class="usage-log"></pre></details>
+    <div class="key-actions"><button type="submit" class="button button-primary" disabled>Save headers</button></div>
+  </form>
+</section>

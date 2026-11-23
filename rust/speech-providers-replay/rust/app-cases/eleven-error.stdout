@@ -1,0 +1,1 @@
+{"result": {"error": "ElevenLabs rejected the fixture", "status": 502}, "wire": [{"body": {"model_id": "eleven_flash_v2_5", "text": "Fixture TTS", "voice_settings": {"similarity_boost": 0.75, "stability": 0.5}}, "path": "/v1/text-to-speech/FixtureVoice", "verifiedAuth": true}]}

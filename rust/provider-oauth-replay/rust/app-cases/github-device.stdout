@@ -1,0 +1,1 @@
+{"db": [], "requests": [{"path": "/github/device", "valid": true}], "result": {"device_fields": ["codeVerifier", "device_code", "expires_in", "interval", "user_code", "verification_uri"], "flow": "device_code", "matches_pkce": true, "poll": []}}

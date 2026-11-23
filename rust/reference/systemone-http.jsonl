@@ -1,0 +1,11 @@
+{"name":"zzzzzzw-systemone-00-cors","path":"/v1/systemone","method":"OPTIONS"}
+{"name":"zzzzzzw-systemone-01-alias-cors","path":"/systemone","method":"OPTIONS"}
+{"name":"zzzzzzw-systemone-02-bad-json","path":"/v1/systemone","method":"POST","headers":{"content-type":"application/json"},"body":"["}
+{"name":"zzzzzzw-systemone-03-missing-key","path":"/v1/systemone","method":"POST","headers":{"content-type":"application/json"},"body":"{\"model\":\"jev/rev-latest\",\"state\":{\"text\":\"fixture\"},\"questions\":{}}"}
+{"name":"zzzzzzw-systemone-04-invalid-key","path":"/api/v1/systemone","method":"POST","headers":{"content-type":"application/json","x-api-key":"offline-disabled-key"},"body":"{\"model\":\"jev/rev-latest\",\"state\":{\"text\":\"fixture\"},\"questions\":{}}"}
+{"name":"zzzzzzw-systemone-05-missing-model","path":"/v1/systemone","method":"POST","headers":{"content-type":"application/json","authorization":"Bearer offline-chat-key"},"body":"{\"state\":{},\"questions\":{}}"}
+{"name":"zzzzzzw-systemone-06-missing-state","path":"/v1/systemone","method":"POST","headers":{"content-type":"application/json","authorization":"Bearer offline-chat-key"},"body":"{\"model\":\"jev/rev-latest\",\"state\":null,\"questions\":{}}"}
+{"name":"zzzzzzw-systemone-07-missing-questions","path":"/v1/systemone","method":"POST","headers":{"content-type":"application/json","authorization":"Bearer offline-chat-key"},"body":"{\"model\":\"jev/rev-latest\",\"state\":{\"text\":\"fixture\"},\"questions\":[]}"}
+{"name":"zzzzzzw-systemone-08-combo","path":"/v1/v1/systemone","method":"POST","headers":{"content-type":"application/json","authorization":"Bearer offline-chat-key"},"body":"{\"model\":\"fixture-seeded-web\",\"state\":{\"text\":\"fixture\"},\"questions\":{}}"}
+{"name":"zzzzzzw-systemone-09-restricted","path":"/v1/systemone","method":"POST","headers":{"content-type":"application/json","authorization":"Bearer offline-restricted-key"},"body":"{\"model\":\"jev/rev-latest\",\"state\":{\"text\":\"fixture\"},\"questions\":{}}"}
+{"name":"zzzzzzw-systemone-10-no-provider-account","path":"/v1/systemone","method":"POST","headers":{"content-type":"application/json","authorization":"Bearer offline-chat-key"},"body":"{\"model\":\"jev/rev-latest\",\"state\":{\"text\":\"fixture\"},\"questions\":{}}"}

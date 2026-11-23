@@ -1,0 +1,18 @@
+[request]
+method = "POST"
+path = "/v1/responses"
+body = '{"model":"fixture-responses/gpt-4o-mini","input":[{"type":"message","role":"user","content":[{"type":"input_text","text":"fixture vision native Responses"},{"type":"input_image","file_id":"file_fixture_image","detail":"low"}]}],"stream":true,"store":false}'
+
+[request.headers]
+accept = "text/event-stream"
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+cache-control = "no-cache"
+content-type = "text/event-stream"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

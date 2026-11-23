@@ -1,0 +1,12 @@
+[package]
+name = "rtk-replay"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }
+regex = "1"
+url = "2"
+
+[workspace]

@@ -1,0 +1,4 @@
+bin.name = "reference"
+args = ["existing"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,1 @@
+{"actual": {"model": "router/gpt-6.1-terra", "body": {"model": "router/gpt-6.1-terra", "max_tokens": 20, "messages": [{"role": "user", "content": "Test the fixture and keep the exact phrase."}], "system": "This is a sample for patch cost without alternate font.\n"}, "minChars": 20, "repeat": 530, "scope": "gpt-6.1-terra"}}

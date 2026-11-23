@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/glm/cn", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "GLM quota API error (403)."}, "status": 200}]}

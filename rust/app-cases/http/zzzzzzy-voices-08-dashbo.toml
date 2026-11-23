@@ -1,0 +1,10 @@
+[request]
+method = "GET"
+path = "/api/media-providers/tts/voices?provider=gemini"
+
+[response]
+status = 401
+
+[response.headers]
+content-type = "application/json"
+vary = "Accept-Encoding"

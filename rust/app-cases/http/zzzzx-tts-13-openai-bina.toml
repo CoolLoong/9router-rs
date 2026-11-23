@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/audio/speech"
+body = '{"model":"openai/tts-1/echo","input":"  OpenAI binary fixture ","response_format":"wav","voice":"ignored"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "audio/mp3"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"

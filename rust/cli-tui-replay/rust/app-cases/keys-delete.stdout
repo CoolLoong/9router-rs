@@ -1,0 +1,1 @@
+{"reads": ["/api/keys", "/api/tunnel/status"], "requests": [{"body": null, "method": "DELETE", "path": "/api/keys/key-fixture"}]}

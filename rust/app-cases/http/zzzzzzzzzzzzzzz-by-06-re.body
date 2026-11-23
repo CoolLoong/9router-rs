@@ -1,0 +1,1 @@
+{"error":{"message":"This API key is not allowed to use model \"fixture-unavailable-local-bypass\"","type":"permission_error","code":"insufficient_quota"}}

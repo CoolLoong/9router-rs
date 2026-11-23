@@ -1,0 +1,665 @@
+{
+  "cloudflare-ai": {
+    "defaultModel": "@cf/cloudflare/clef-flash"
+  },
+  "deepseek": {
+    "validateUrl": "https://api.deepseek.com/models",
+    "defaultModel": "deepseek-v4-pro"
+  },
+  "groq": {
+    "validateUrl": "https://api.groq.com/openai/v1/models",
+    "defaultModel": "llama-3.3-70b-versatile"
+  },
+  "xai": {
+    "validateUrl": "https://api.x.ai/v1/models",
+    "defaultModel": "grok-4.7"
+  },
+  "mistral": {
+    "validateUrl": "https://api.mistral.ai/v1/models",
+    "defaultModel": "mistral-large-latest"
+  },
+  "perplexity": {
+    "validateUrl": "https://api.perplexity.ai/models",
+    "defaultModel": "sonar-pro"
+  },
+  "together": {
+    "validateUrl": "https://api.together.xyz/v1/models",
+    "defaultModel": "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  },
+  "fireworks": {
+    "validateUrl": "https://api.fireworks.ai/inference/v1/models",
+    "defaultModel": "accounts/fireworks/models/deepseek-v3p1"
+  },
+  "cerebras": {
+    "validateUrl": "https://api.cerebras.ai/v1/models",
+    "defaultModel": "gpt-oss-120b"
+  },
+  "cohere": {
+    "validateUrl": "https://api.cohere.ai/v1/models",
+    "defaultModel": "command-r-plus-08-2024"
+  },
+  "nebius": {
+    "validateUrl": "https://api.studio.nebius.ai/v1/models",
+    "defaultModel": "meta-llama/Llama-3.3-70B-Instruct"
+  },
+  "siliconflow": {
+    "validateUrl": "https://api.siliconflow.com/v1/models",
+    "defaultModel": "deepseek-ai/DeepSeek-V4-Pro"
+  },
+  "hyperbolic": {
+    "validateUrl": "https://api.hyperbolic.xyz/v1/models",
+    "defaultModel": "Qwen/QwQ-32B"
+  },
+  "ollama": {
+    "validateUrl": "https://ollama.com/api/tags",
+    "defaultModel": "gpt-oss:120b"
+  },
+  "assemblyai": {
+    "validateUrl": "https://api.assemblyai.com/v1/account",
+    "defaultModel": "universal-3-pro"
+  },
+  "nanobanana": {
+    "validateUrl": "https://api.nanobananaapi.ai/v1/models",
+    "defaultModel": "nanobanana-flash"
+  },
+  "chutes": {
+    "validateUrl": "https://llm.chutes.ai/v1/models",
+    "defaultModel": null
+  },
+  "runcrate": {
+    "validateUrl": "https://www.runcrate.ai/api/v1/billing/balance",
+    "defaultModel": "deepseek-ai/DeepSeek-V4.1-Flash"
+  },
+  "synthetic": {
+    "validateUrl": "https://api.synthetic.new/v2/quotas",
+    "defaultModel": "hf:zai-org/GLM-5.3"
+  },
+  "xiaomi-mimo": {
+    "validateUrl": "https://api.xiaomimimo.com/v1/models",
+    "defaultModel": "mimo-v2.6-pro"
+  },
+  "xiaomi-tokenplan": {
+    "defaultModel": "mimo-v2.6-pro",
+    "regions": {
+      "sgp": "https://token-plan-sgp.xiaomimimo.com/v1",
+      "cn": "https://token-plan-cn.xiaomimimo.com/v1",
+      "ams": "https://token-plan-ams.xiaomimimo.com/v1"
+    },
+    "defaultRegion": "sgp"
+  },
+  "nvidia": {
+    "validateUrl": "https://integrate.api.nvidia.com/v1/models",
+    "defaultModel": "nvidia/nemotron-3.5-lightning-30b-a3b"
+  },
+  "opencode-go": {
+    "defaultModel": "deepseek-flash"
+  },
+  "mimo-free": {
+    "defaultProbe": {
+      "url": "https://api.xiaomimimo.com/api/free-ai/openai/chat",
+      "noAuth": true,
+      "model": "test"
+    }
+  },
+  "opencode": {
+    "defaultProbe": {
+      "url": "https://opencode.ai",
+      "noAuth": true,
+      "headers": {
+        "x-opencode-client": "desktop"
+      },
+      "model": "test"
+    }
+  },
+  "coqui": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "edge-tts": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "google-tts": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "kimchi": {
+    "defaultProbe": {
+      "url": "https://llm.kimchi.dev/openai/v1/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "User-Agent": "kimchi/0.1.50"
+      },
+      "model": "minimax-m3"
+    }
+  },
+  "local-device": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "searxng": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "tortoise": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "api-airforce": {
+    "defaultProbe": {
+      "url": "https://api.airforce/v1/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "HTTP-Referer": "https://endpoint-proxy.local",
+        "X-Title": "Endpoint Proxy"
+      },
+      "model": "test"
+    }
+  },
+  "bazaarlink": {
+    "defaultProbe": {
+      "url": "https://bazaarlink.ai/api/v1/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "kilo-gateway": {
+    "defaultProbe": {
+      "url": "https://api.kilo.ai/api/gateway/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "poolside": {
+    "defaultProbe": {
+      "url": "https://inference.poolside.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "poolside/laguna-s-2.1"
+    }
+  },
+  "agnes": {
+    "defaultProbe": {
+      "url": "https://apihub.agnes-ai.com/v1/chat/completions",
+      "noAuth": false,
+      "model": "agnes-2.5-flash"
+    }
+  },
+  "cline": {
+    "defaultProbe": {
+      "url": "https://api.cline.bot/api/v1/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "HTTP-Referer": "https://cline.bot",
+        "X-Title": "Cline"
+      },
+      "model": "test"
+    }
+  },
+  "clinepass": {
+    "defaultProbe": {
+      "url": "https://api.cline.bot/api/v1/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "HTTP-Referer": "https://cline.bot",
+        "X-Title": "Cline"
+      },
+      "model": "cline-pass/glm-5.2"
+    }
+  },
+  "codebuddy-cn": {
+    "defaultProbe": {
+      "url": "https://copilot.tencent.com/v2/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "User-Agent": "CLI/2.108.1 CodeBuddy/2.108.1",
+        "X-Product": "SaaS",
+        "X-IDE-Type": "CLI",
+        "X-IDE-Name": "CLI",
+        "x-requested-with": "XMLHttpRequest",
+        "x-codebuddy-request": "1"
+      },
+      "model": "test"
+    }
+  },
+  "github": {
+    "defaultProbe": {
+      "url": "https://api.githubcopilot.com/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "copilot-integration-id": "vscode-chat",
+        "editor-version": "vscode/1.110.0",
+        "editor-plugin-version": "copilot-chat/0.38.0",
+        "user-agent": "GitHubCopilotChat/0.38.0",
+        "openai-intent": "conversation-panel",
+        "x-github-api-version": "2025-04-01",
+        "x-vscode-user-agent-library-version": "electron-fetch",
+        "X-Initiator": "user",
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "model": "test"
+    }
+  },
+  "gitlab": {
+    "defaultProbe": {
+      "url": "https://gitlab.com/api/v4/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "iflow": {
+    "defaultProbe": {
+      "url": "https://apis.iflow.cn/v1/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "User-Agent": "iFlow-Cli"
+      },
+      "model": "test"
+    }
+  },
+  "kilocode": {
+    "defaultProbe": {
+      "url": "https://api.kilo.ai/api/openrouter/chat/completions",
+      "noAuth": false,
+      "headers": {},
+      "model": "test"
+    }
+  },
+  "codebuddy-intl": {
+    "defaultProbe": {
+      "url": "https://www.codebuddy.ai/v2/chat/completions",
+      "noAuth": false,
+      "headers": {
+        "User-Agent": "IDE/2.108.1 CodeBuddy/2.108.1",
+        "X-Product": "SaaS",
+        "X-IDE-Type": "IDE",
+        "X-IDE-Name": "IDE",
+        "x-requested-with": "XMLHttpRequest",
+        "x-codebuddy-request": "1"
+      },
+      "model": "test"
+    }
+  },
+  "zed": {
+    "defaultProbe": {
+      "url": "https://cloud.zed.dev/completions",
+      "noAuth": false,
+      "headers": {
+        "content-type": "application/json"
+      },
+      "model": "test"
+    }
+  },
+  "muse": {
+    "defaultProbe": {
+      "url": "https://api.meta.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "muse-spark-1.3"
+    }
+  },
+  "aws-polly": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "brave-search": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://api.search.brave.com/res/v1",
+      "method": "GET",
+      "auth": "x-subscription-token"
+    }
+  },
+  "cartesia": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "https://api.cartesia.ai/tts/bytes",
+      "method": "POST",
+      "auth": "x-api-key",
+      "model": "test"
+    }
+  },
+  "deepgram": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "https://api.deepgram.com/v1/listen",
+      "method": "POST",
+      "auth": "token",
+      "model": "nova-3"
+    }
+  },
+  "elevenlabs": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "https://api.elevenlabs.io/v1/text-to-speech",
+      "method": "POST",
+      "auth": "xi-api-key",
+      "model": "test"
+    }
+  },
+  "exa": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://api.exa.ai/search",
+      "method": "POST",
+      "auth": "x-api-key"
+    }
+  },
+  "featherless": {
+    "defaultProbe": {
+      "url": "https://api.featherless.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "deepseek-ai/DeepSeek-V4-Pro"
+    }
+  },
+  "firecrawl": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://api.firecrawl.dev/v1/scrape",
+      "method": "POST",
+      "auth": "bearer"
+    }
+  },
+  "google-pse": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://www.googleapis.com/customsearch/v1",
+      "method": "GET",
+      "auth": "key"
+    }
+  },
+  "huggingface": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "https://router.huggingface.co/hf-inference/models",
+      "method": "POST",
+      "auth": "bearer",
+      "model": "black-forest-labs/FLUX.1-schnell"
+    }
+  },
+  "inworld": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "https://api.inworld.ai/tts/v1/voice",
+      "method": "POST",
+      "auth": "basic",
+      "model": "test"
+    }
+  },
+  "jina-ai": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "https://api.jina.ai/v1/embeddings",
+      "method": "POST",
+      "auth": "bearer",
+      "model": "test"
+    }
+  },
+  "jina-reader": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://r.jina.ai",
+      "method": "GET",
+      "auth": "bearer"
+    }
+  },
+  "linkup": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://api.linkup.so/v1/search",
+      "method": "POST",
+      "auth": "bearer"
+    }
+  },
+  "mmf": {
+    "defaultProbe": {
+      "url": "https://api.xiaomimimo.com/api/free-ai/openai/chat",
+      "noAuth": true,
+      "model": "mimo-auto"
+    }
+  },
+  "ollama-search": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://ollama.com/api/web_search",
+      "method": "POST",
+      "auth": "bearer"
+    }
+  },
+  "opencode-zen": {
+    "defaultProbe": {
+      "url": "https://opencode.ai/zen/v1/chat/completions",
+      "noAuth": false,
+      "headers": {},
+      "model": "test"
+    }
+  },
+  "playht": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "searchapi": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://www.searchapi.io/api/v1/search",
+      "method": "GET",
+      "auth": "api_key"
+    }
+  },
+  "serper": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://google.serper.dev",
+      "method": "POST",
+      "auth": "x-api-key"
+    }
+  },
+  "sensenova": {
+    "defaultProbe": {
+      "url": "https://token.sensenova.cn/v1/chat/completions",
+      "noAuth": false,
+      "model": "sensenova-6.8-flash"
+    }
+  },
+  "tavily": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://api.tavily.com/search",
+      "method": "POST",
+      "auth": "bearer"
+    }
+  },
+  "topaz": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "venice": {
+    "defaultProbe": {
+      "url": "https://api.venice.ai/api/v1/chat/completions",
+      "noAuth": false,
+      "model": "venice-uncensored-1-2"
+    }
+  },
+  "youcom": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://ydc-index.io/v1/search",
+      "method": "GET",
+      "auth": "x-api-key"
+    }
+  },
+  "baidu": {
+    "defaultProbe": {
+      "url": "https://qianfan.baidubce.com/v2/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "bluesminds": {
+    "defaultProbe": {
+      "url": "https://api.bluesminds.com/v1/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "llm7": {
+    "defaultProbe": {
+      "url": "https://api.llm7.io/v1/chat/completions",
+      "noAuth": false,
+      "model": "gpt-5.5"
+    }
+  },
+  "sambanova": {
+    "defaultProbe": {
+      "url": "https://api.sambanova.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "tencent": {
+    "defaultProbe": {
+      "url": "https://api.hunyuan.cloud.tencent.com/v1/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "morph": {
+    "defaultProbe": {
+      "url": "https://api.morphllm.com/v1/chat/completions",
+      "noAuth": false,
+      "model": "morph-v3-large"
+    }
+  },
+  "tokenrouter": {
+    "defaultProbe": {
+      "url": "https://api.tokenrouter.com/v1/chat/completions",
+      "noAuth": false,
+      "model": "anthropic/claude-haiku-4.5"
+    }
+  },
+  "selfhosted-stt": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "http://localhost:8080/v1/audio/transcriptions",
+      "method": "POST",
+      "auth": "bearer",
+      "model": "whisper-1"
+    }
+  },
+  "selfhosted-embedding": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "http://localhost:8080/v1/embeddings",
+      "method": "POST",
+      "auth": "bearer",
+      "model": "embedding"
+    }
+  },
+  "fish-audio": {
+    "metadataProbe": {
+      "kind": "media",
+      "url": "https://api.fish.audio/v1/tts",
+      "method": "POST",
+      "auth": "bearer",
+      "model": "test"
+    }
+  },
+  "alitp-intl": {
+    "defaultProbe": {
+      "url": "https://token-plan.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "noAuth": false,
+      "headers": {},
+      "model": "qwen3.8-max-preview"
+    }
+  },
+  "xquik": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://xquik.com/api/v1/credits",
+      "method": "GET",
+      "auth": "x-api-key"
+    }
+  },
+  "tokenharbor": {
+    "defaultProbe": {
+      "url": "https://tokenharbor.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "claude-opus-5.5"
+    }
+  },
+  "dahl": {
+    "defaultProbe": {
+      "url": "https://inference.dahl.global/v1/chat/completions",
+      "noAuth": false,
+      "model": "zai-org/GLM-5.3-Flash"
+    }
+  },
+  "atria": {
+    "defaultProbe": {
+      "url": "https://api.atria-asi.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "Atria-Dawn-Preview"
+    }
+  },
+  "bai": {
+    "defaultProbe": {
+      "url": "https://api.b.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "test"
+    }
+  },
+  "tinyfish": {
+    "metadataProbe": {
+      "kind": "web",
+      "url": "https://api.search.tinyfish.ai/usage?limit=1",
+      "method": "GET",
+      "auth": "x-api-key"
+    }
+  },
+  "sensenova-intl": {
+    "defaultProbe": {
+      "url": "https://token.sensenova.ai/v1/chat/completions",
+      "noAuth": false,
+      "model": "sensenova-6.8-flash"
+    }
+  },
+  "deepseek-web": {
+    "defaultProbe": {
+      "url": "https://chat.deepseek.com/api/v0/chat/completion",
+      "noAuth": false,
+      "model": "deepseek-v4-pro"
+    }
+  },
+  "gemini-web": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "muse-web": {
+    "defaultProbe": {
+      "url": "https://muse.ai",
+      "noAuth": false,
+      "model": "muse-chat"
+    }
+  },
+  "chatgpt-web": {
+    "metadataProbe": {
+      "accept": true
+    }
+  },
+  "uc-web": {
+    "defaultProbe": {
+      "url": "https://internal.chatuncensored.ai",
+      "noAuth": false,
+      "model": "test"
+    }
+  }
+}

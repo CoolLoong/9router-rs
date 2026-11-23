@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/codex/credits", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"error": "Provider quota status unavailable"}, "status": 500}]}

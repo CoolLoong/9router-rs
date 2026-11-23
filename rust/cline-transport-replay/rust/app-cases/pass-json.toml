@@ -1,0 +1,4 @@
+bin.name = "cline-transport-contract"
+args = ["pass-json"]
+status.code = 0
+fs.sandbox = true

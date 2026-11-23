@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["deepseek-error"]
+status.code = 0
+fs.sandbox = true

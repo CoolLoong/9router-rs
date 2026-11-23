@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/combos"
+body = '{"name":"fixture-created-web","kind":"webFetch","models":["gemini"]}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 201
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

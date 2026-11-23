@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["zed-missing-user"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["clinepass-opaque"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,14 @@
+[package]
+name = "ollama-local-replay"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+futures-util = "0.3"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time"] }
+url = "2"
+uuid = { version = "1", features = ["v4"] }

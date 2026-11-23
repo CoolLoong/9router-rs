@@ -1,0 +1,9 @@
+[package]
+name = "anthropic-request-replay"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }
+provider-capabilities-rs = { path = "../provider-capabilities-rs" }
+url = "2"

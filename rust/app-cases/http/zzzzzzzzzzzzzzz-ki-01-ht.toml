@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/oauth/kiro/import-cli-proxy"
+body = '{"auth_method":"external_idp","access_token":"synthetic-kiro-access","refresh_token":"synthetic-kiro-refresh","email":"fixture-external-kiro@example.invalid","client_id":"synthetic-kiro-client","token_endpoint":"http://login.microsoftonline.com/token","region":"eu-central-1","scopes":[" synthetic/read ","synthetic/chat"],"profile_arn":"arn:aws:codewhisperer:us-east-1:000000000000:profile/synthetic","expired":"2040-01-01T00:00:00Z"}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 400
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

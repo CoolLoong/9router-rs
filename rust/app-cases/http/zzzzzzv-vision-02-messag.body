@@ -1,0 +1,1 @@
+{"id":"migration-fixture","type":"message","role":"assistant","model":"gpt-5.6-sol","content":[{"type":"text","text":"rust migration"}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":2004,"output_tokens":2}}

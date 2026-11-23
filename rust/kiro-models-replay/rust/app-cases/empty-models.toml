@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["empty-models"]
+status.code = 0
+fs.sandbox = true

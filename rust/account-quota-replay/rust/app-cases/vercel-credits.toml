@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["vercel-credits"]
+status.code = 0
+fs.sandbox = true

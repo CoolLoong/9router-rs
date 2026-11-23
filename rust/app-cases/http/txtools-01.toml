@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/translator/translate"
+body = '{"step":2,"body":{"model":"fixture-live/gpt-5.6-sol","stream":false,"messages":[{"role":"developer","content":"Use the test lookup"},{"role":"user","content":"Look this up"},{"role":"assistant","tool_calls":[{"id":"call_01","type":"function","function":{"name":"lookup","arguments":"{\"q\":\"synthetic\"}"}}]},{"role":"tool","tool_call_id":"call_01","content":"fixture response"}],"tools":[{"type":"function","function":{"name":"lookup","description":"Find a synthetic entry","parameters":{"type":"object","properties":{"q":{"type":"string"}}}}}],"tool_choice":{"type":"function","function":{"name":"lookup"}}}}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["claude-consume-profile-denied"]
+status.code = 0
+fs.sandbox = true

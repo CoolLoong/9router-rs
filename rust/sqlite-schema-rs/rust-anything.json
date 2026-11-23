@@ -1,0 +1,36 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/wing/projects/9router-rs",
+  "unit": "src/lib/db/schema.js",
+  "language": "ts",
+  "kind": "napi",
+  "crate_name": "sqlite-schema-rs",
+  "exports": [
+    {
+      "name": "buildCreateTableSql",
+      "file": "src/lib/db/schema.js",
+      "line": 161,
+      "params": [
+        {
+          "name": "name",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "def",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": []
+}

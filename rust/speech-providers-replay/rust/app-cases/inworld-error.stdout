@@ -1,0 +1,1 @@
+{"result": {"error": "Inworld rejected fixture", "status": 502}, "wire": [{"body": {"audioConfig": {"audioEncoding": "MP3"}, "modelId": "inworld-tts-1.5-max", "text": "Fixture TTS", "voiceId": "FixtureVoice"}, "path": "/tts/v1/voice", "verifiedAuth": true}]}

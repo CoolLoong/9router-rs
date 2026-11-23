@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/api/translator/translate"
+body = '{"step":2,"body":{"model":"openai/gpt-4o-mini","stream":false,"instructions":"Use lookup","input":[{"role":"user","content":[{"type":"input_text","text":"Find an entry"}]},{"type":"function_call","call_id":"fixture-call","name":"lookup","arguments":"{\"q\":\"example\"}"},{"type":"function_call_output","call_id":"fixture-call","output":"fixture response"}],"tools":[{"type":"function","name":"lookup","description":"Find a synthetic entry","parameters":{"type":"object","properties":{"q":{"type":"string"}}}}]}}'
+
+[request.headers]
+content-type = "application/json"
+x-9r-cli-token = "68977b6fd9422fbb"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

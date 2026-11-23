@@ -1,0 +1,1 @@
+{"connection":{"providerSpecificData":{"prefix":"fixture-responses","apiType":"responses","baseUrl":"http://127.0.0.1:52989/v1","nodeName":"Fixture Responses"},"id":"fixture-responses-connection","provider":"openai-compatible-responses-fixture","authType":"apikey","name":"Fixture Responses","email":null,"priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]"}}

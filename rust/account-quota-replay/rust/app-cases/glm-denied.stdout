@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "GET", "path": "/glm/global", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "GLM API key invalid or expired."}, "status": 200}]}

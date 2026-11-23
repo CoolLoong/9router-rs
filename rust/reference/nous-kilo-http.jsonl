@@ -1,0 +1,10 @@
+{"name":"zzzzzzzzzzzzzzzz-nk-01-nous-catalog","path":"/api/providers/fixture-nous-valid/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzz-nk-02-nous-catalog-upstream-error","path":"/api/providers/fixture-nous-reject/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzz-nk-03-nous-catalog-no-key","path":"/api/providers/fixture-nous-missing/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzz-nk-04-nous-validate","method":"POST","path":"/api/providers/validate","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\"nous\",\"apiKey\":\"offline-nous-key\"}"}
+{"name":"zzzzzzzzzzzzzzzz-nk-05-nous-validate-quota","method":"POST","path":"/api/providers/validate","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"provider\":\"nous\",\"apiKey\":\"offline-nous-quota\"}"}
+{"name":"zzzzzzzzzzzzzzzz-nk-06-nous-test-key","method":"POST","path":"/api/providers/fixture-nous-valid/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzz-nk-07-nous-test-reject","method":"POST","path":"/api/providers/fixture-nous-reject/test","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzzz-nk-08-kilo-active","method":"PUT","path":"/api/providers/fixture-kilo-chat","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"isActive\":true}"}
+{"name":"zzzzzzzzzzzzzzzz-nk-09-kilo-json","method":"POST","path":"/v1/chat/completions","headers":{"authorization":"Bearer offline-chat-key","content-type":"application/json"},"body":"{\"model\":\"kc/openai/gpt-4.1\",\"messages\":[{\"role\":\"user\",\"content\":\"Kilo shared fixture\"}],\"stream\":false}"}
+{"name":"zzzzzzzzzzzzzzzz-nk-10-kilo-sse","method":"POST","path":"/v1/chat/completions","headers":{"authorization":"Bearer offline-chat-key","content-type":"application/json"},"body":"{\"model\":\"kc/openai/gpt-4.1\",\"messages\":[{\"role\":\"user\",\"content\":\"Kilo shared fixture\"}],\"stream\":true}"}

@@ -1,0 +1,90 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/wing/projects/9router-rs",
+  "unit": "src/shared/utils/keyAccess.js",
+  "language": "ts",
+  "kind": "napi",
+  "crate_name": "key-access-rs",
+  "exports": [
+    {
+      "name": "normalizeAllowList",
+      "file": "src/shared/utils/keyAccess.js",
+      "line": 13,
+      "params": [
+        {
+          "name": "list",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "keyAccessFromColumns",
+      "file": "src/shared/utils/keyAccess.js",
+      "line": 36,
+      "params": [
+        {
+          "name": "restrictedCol",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "allowCol",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "keyAccessToColumns",
+      "file": "src/shared/utils/keyAccess.js",
+      "line": 47,
+      "params": [
+        {
+          "name": "access",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "validateKeyAccessInput",
+      "file": "src/shared/utils/keyAccess.js",
+      "line": 60,
+      "params": [
+        {
+          "name": "input",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": []
+}

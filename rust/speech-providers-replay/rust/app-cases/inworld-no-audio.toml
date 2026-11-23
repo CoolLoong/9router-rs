@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["inworld-no-audio"]
+status.code = 0
+fs.sandbox = true

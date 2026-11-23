@@ -1,0 +1,14 @@
+[request]
+method = "GET"
+path = "/v1/v1/audio/voices?provider=elevenlabs"
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+
+[response]
+status = 401
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

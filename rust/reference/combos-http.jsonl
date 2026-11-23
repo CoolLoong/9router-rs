@@ -1,0 +1,19 @@
+{"name":"combo-00-denied","method":"GET","path":"/api/combos"}
+{"name":"combo-01-list","method":"GET","path":"/api/combos","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"combo-02-show","method":"GET","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"combo-03-missing","method":"GET","path":"/api/combos/fixture-missing-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"combo-04-create-missing-name","method":"POST","path":"/api/combos","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{}"}
+{"name":"combo-05-create-invalid-name","method":"POST","path":"/api/combos","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"name\":\"not a combo\"}"}
+{"name":"combo-06-create-duplicate","method":"POST","path":"/api/combos","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"name\":\"fixture-seeded-web\"}"}
+{"name":"combo-07-update-invalid-name","method":"PUT","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"name\":\"not a combo\"}"}
+{"name":"combo-08-update","method":"PUT","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"name\":\"fixture-renamed-web\",\"models\":[\"openai\",\"gemini\"],\"note\":\"response only\"}"}
+{"name":"combo-09-read-after-update","method":"GET","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","x-migration-stage":"after-update"}}
+{"name":"combo-10-update-null-models","method":"PUT","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"models\":null}"}
+{"name":"combo-11-read-after-null-models","method":"GET","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","x-migration-stage":"after-null-models"}}
+{"name":"combo-12-update-missing","method":"PUT","path":"/api/combos/fixture-missing-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"name\":\"missing-web\"}"}
+{"name":"combo-13-remove","method":"DELETE","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"combo-14-remove-missing","method":"DELETE","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","x-migration-stage":"second-delete"}}
+{"name":"combo-15-read-after-remove","method":"GET","path":"/api/combos/fixture-seeded-combo","headers":{"x-9r-cli-token":"68977b6fd9422fbb","x-migration-stage":"after-delete"}}
+{"name":"combo-16-create","method":"POST","path":"/api/combos","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"name\":\"fixture-created-web\",\"kind\":\"webFetch\",\"models\":[\"gemini\"]}"}
+{"name":"combo-17-create-default-models","method":"POST","path":"/api/combos","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"name\":\"fixture-empty-web\",\"kind\":\"webFetch\",\"models\":false}"}
+{"name":"combo-18-list-after-create","method":"GET","path":"/api/combos","headers":{"x-9r-cli-token":"68977b6fd9422fbb","x-migration-stage":"after-create"}}

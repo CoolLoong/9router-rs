@@ -1,0 +1,25 @@
+{"fn":"stripModelContextMarker","args":[{"a":"b"}],"ok":{"model":{"a":"b"},"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":["x"],"ok":{"model":"x","contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[null],"ok":{"model":null,"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[["a",1]],"ok":{"model":["a",1],"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[[]],"ok":{"model":[],"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[{"a":{"b":"c"}}],"ok":{"model":{"a":{"b":"c"}},"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[{}],"ok":{"model":{},"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[true],"ok":{"model":true,"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[0],"ok":{"model":0,"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6}],"ok":{"model":{"2":4,"10":3,"zebra":1,"apple":2,"é":5,"Apple":6},"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7}],"ok":{"model":{"n":9007199254740992,"f":1e+21,"t":0.1,"neg":-7},"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[[3,1,2]],"ok":{"model":[3,1,2],"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":["anthropic/claude-opus-5[1m]"],"ok":{"model":"anthropic/claude-opus-5","contextMarker":"1m"}}
+{"fn":"stripModelContextMarker","args":["  Claude[1M]  "],"ok":{"model":"Claude","contextMarker":"1m"}}
+{"fn":"stripModelContextMarker","args":["x[1m]y"],"ok":{"model":"x[1m]y","contextMarker":null}}
+{"fn":"stripModelContextMarker","args":["\tmodel  [1m][1M]\n"],"ok":{"model":"model  [1m]","contextMarker":"1m"}}
+{"fn":"stripModelContextMarker","args":[" x [1m] "],"ok":{"model":"x ","contextMarker":"1m"}}
+{"fn":"stripModelContextMarker","args":["  unchanged  "],"ok":{"model":"  unchanged  ","contextMarker":null}}
+{"fn":"stripModelContextMarker","args":["﻿模型😀[1m]　"],"ok":{"model":"模型😀","contextMarker":"1m"}}
+{"fn":"stripModelContextMarker","args":["x[1m]"],"ok":{"model":"x[1m]","contextMarker":null}}
+{"fn":"stripModelContextMarker","args":["[1m]"],"ok":{"model":"","contextMarker":"1m"}}
+{"fn":"stripModelContextMarker","args":[{"$utf16":[55296,91,49,109,93]}],"ok":{"model":{"$utf16":[55296]},"contextMarker":"1m"}}
+{"fn":"stripModelContextMarker","args":[{"$undefined":true}],"ok":{"model":{"$undefined":true},"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[null],"ok":{"model":null,"contextMarker":null}}
+{"fn":"stripModelContextMarker","args":[{"other":[1,2]}],"ok":{"model":{"other":[1,2]},"contextMarker":null}}

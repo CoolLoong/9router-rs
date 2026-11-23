@@ -1,0 +1,12 @@
+[request]
+method = "POST"
+path = "/api/auth/logout"
+
+[response]
+status = 200
+
+[response.headers]
+cache-control = "no-store"
+content-type = "application/json"
+set-cookie = "auth_token=; Path=/; Expires=Thu, 01 Jan 1970 [..] GMT, oidc_state=; Path=/; Expires=Thu, 01 Jan 1970 [..] GMT, oidc_nonce=; Path=/; Expires=Thu, 01 Jan 1970 [..] GMT, oidc_code_verifier=; Path=/; Expires=Thu, 01 Jan 1970 [..] GMT"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

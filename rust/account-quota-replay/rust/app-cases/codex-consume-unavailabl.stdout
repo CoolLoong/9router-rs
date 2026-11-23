@@ -1,0 +1,1 @@
+{"accessRotated": false, "outbound": [{"method": "POST", "path": "/quota-reset/codex/consume", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"code": "temporarily_unavailable", "message": "Not available", "reset": false, "windows_reset": 0}, "status": 502}]}

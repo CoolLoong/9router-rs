@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/systemone"
+body = '{"model":"oc/jev-1.13-free","state":"OpenCode direct fixture","questions":{"route":{"type":"choice"}}}'
+
+[request.headers]
+authorization = "Bearer offline-restricted-key"
+content-type = "application/json"
+
+[response]
+status = 403
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

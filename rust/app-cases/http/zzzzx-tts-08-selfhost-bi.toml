@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/api/v1/audio/speech?response_format=wav"
+body = '{"model":"selfhosted-tts/kokoro/region/voice","input":" \ufeffKokoro binary fixture \u2003","voice":"ignored","speed":1.3,"style":"ignored","response_format":"mp3"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "audio/wav"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"

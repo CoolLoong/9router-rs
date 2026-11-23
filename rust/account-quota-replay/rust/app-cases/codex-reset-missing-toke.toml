@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["codex-reset-missing-token"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,16 @@
+[request]
+method = "POST"
+path = "/v1/v1/audio/speech?response_format=json"
+body = '{"model":"selfhosted-tts/kokoro","input":"Kokoro JSON fixture","response_format":"mp3"}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+content-type = "application/json"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

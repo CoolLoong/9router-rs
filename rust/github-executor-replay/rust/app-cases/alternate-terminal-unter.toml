@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["alternate-terminal-unterminated"]
+status.code = 0
+fs.sandbox = true

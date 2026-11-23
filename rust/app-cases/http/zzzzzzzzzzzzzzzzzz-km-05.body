@@ -1,0 +1,1 @@
+{"id":"resp_kimi_fixture","object":"response","model":"k3","created_at":1795046400,"status":"completed","output":[{"id":"msg_kimi_fixture","type":"message","status":"completed","role":"assistant","content":[{"type":"output_text","text":"Kimi fixture answer","annotations":[]}]}],"usage":{"input_tokens":2006,"output_tokens":2}}

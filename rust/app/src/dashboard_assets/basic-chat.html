@@ -1,0 +1,49 @@
+<div class="page-heading">
+  <h1>Basic Chat</h1>
+</div>
+<p id="chat-status" class="notice" role="status" hidden></p>
+<section class="card" aria-labelledby="chat-controls-title">
+  <h2 id="chat-controls-title">Chat settings</h2>
+  <div class="catalog-fields">
+    <div>
+      <label for="chat-key">Gateway API key</label>
+      <select id="chat-key" disabled><option value="">No key</option></select>
+    </div>
+    <div>
+      <label for="chat-provider">Provider</label>
+      <select id="chat-provider" disabled><option value="">All available models</option></select>
+      <template id="chat-provider-options">{{providers}}</template>
+    </div>
+    <div>
+      <label for="chat-model">Model ID</label>
+      <input id="chat-model" form="chat-form" list="chat-models" placeholder="provider/model" autocomplete="off" required>
+      <datalist id="chat-models"></datalist>
+    </div>
+    <div>
+      <label for="chat-history">Conversation</label>
+      <select id="chat-history"></select>
+    </div>
+  </div>
+  <div class="key-actions">
+    <button class="button" id="chat-new" type="button">New chat</button>
+    <button class="button button-danger" id="chat-delete" type="button">Delete chat</button>
+    <a href="/dashboard/endpoint">Manage API keys</a>
+  </div>
+</section>
+<section class="card" aria-labelledby="conversation-title">
+  <h2 id="conversation-title">Messages</h2>
+  <div class="chat-messages" id="chat-messages" role="log" aria-label="Conversation"></div>
+  <form id="chat-form" class="settings-form" method="post">
+    <label for="chat-draft">Message</label>
+    <textarea id="chat-draft" rows="4" placeholder="Write a message"></textarea>
+    <label for="chat-attachments">Attach images</label>
+    <input id="chat-attachments" type="file" accept="image/*" multiple>
+    <div id="chat-pending-images" class="key-actions" aria-label="Attached images" hidden></div>
+    <div class="key-actions">
+      <button id="chat-send" type="submit" class="button button-primary" disabled>Send</button>
+      <button id="chat-stop" type="button" class="button" hidden>Stop</button>
+      <label class="check-row"><input id="chat-stream" type="checkbox" checked>Stream response</label>
+    </div>
+  </form>
+</section>
+<noscript><p class="muted">Enable JavaScript to send messages.</p></noscript>

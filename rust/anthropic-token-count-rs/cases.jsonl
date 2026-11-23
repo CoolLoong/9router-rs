@@ -1,0 +1,18 @@
+{"fn":"estimateAnthropicInputTokens","args":[null],"error":"Cannot read properties of null (reading 'messages')"}
+{"fn":"estimateAnthropicInputTokens","args":["x"],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[true],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[{"$undefined":true}],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[{"a":{"b":"c"}}],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[0],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[{}],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[{"a":"b"}],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[["a",1]],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[[]],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[null],"error":"Cannot read properties of null (reading 'messages')"}
+{"fn":"estimateAnthropicInputTokens","args":[{}],"ok":0}
+{"fn":"estimateAnthropicInputTokens","args":[{"messages":[{"role":"user","content":"a字🚀"}]}],"ok":1}
+{"fn":"estimateAnthropicInputTokens","args":[{"system":[{"type":"text","text":"system"}],"tools":[{"name":"lookup","input_schema":{"properties":{"a":{"type":"number"},"日":{"type":"boolean"}}}}],"messages":[{"role":"assistant","content":[{"type":"thinking","thinking":"trial"},{"type":"tool_use","name":"lookup","id":"not counted","input":{"a":1e-9,"日":false}}]},{"role":"user","content":[{"type":"tool_result","content":["text",{"type":"image","source":{"format":true}}]},{"type":"text","text":222},{"type":"unknown","value":1e+27}]}]}],"ok":37}
+{"fn":"estimateAnthropicInputTokens","args":[{"system":false,"tools":{"😀":1.000001,"a":1.11e-7},"messages":[]}],"ok":6}
+{"fn":"estimateAnthropicInputTokens","args":[{"messages":[null,"ignore",false,0,[],{"content":[null,"raw",true,10,[1,2],{"x":true}]},{"content":{"k":[1,true,null]}}]}],"ok":6}

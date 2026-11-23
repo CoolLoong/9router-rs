@@ -1,0 +1,5 @@
+{"name":"zzzzzzzzzzzzzzz-md-00-catalog","method":"GET","path":"/api/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzz-md-01-alias","method":"PUT","path":"/api/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"model\":\"openai/gpt-4o-mini\",\"alias\":\"fixture dashboard alias\"}"}
+{"name":"zzzzzzzzzzzzzzz-md-02-alias-conflict","method":"PUT","path":"/api/models","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"model\":\"openai/gpt-4o\",\"alias\":\"fixture dashboard alias\"}"}
+{"name":"zzzzzzzzzzzzzzz-md-03-readback","method":"GET","path":"/api/models?after=alias","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
+{"name":"zzzzzzzzzzzzzzz-md-04-reset-alias","method":"DELETE","path":"/api/models/alias?alias=openai%2Fgpt-4o-mini","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

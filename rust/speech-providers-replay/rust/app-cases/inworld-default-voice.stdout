@@ -1,0 +1,1 @@
+{"result": {"digest": "08bb5e5d6eaac1049ede0893d30ed022b1a4d9b5b48db414871f51c9cb35283d", "format": "mp3", "length": 5, "status": 200}, "wire": [{"body": {"audioConfig": {"audioEncoding": "MP3"}, "modelId": "inworld-tts-1.5-mini", "text": "Fixture TTS", "voiceId": "Alex"}, "path": "/tts/v1/voice", "verifiedAuth": true}]}

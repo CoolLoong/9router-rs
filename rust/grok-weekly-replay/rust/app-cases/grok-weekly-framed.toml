@@ -1,0 +1,4 @@
+bin.name = "reference"
+args = ["framed"]
+status.code = 0
+fs.sandbox = true

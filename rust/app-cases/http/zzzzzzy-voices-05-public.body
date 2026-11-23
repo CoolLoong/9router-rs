@@ -1,0 +1,1 @@
+{"object":"list","data":[{"id":"en-US-AliceNeural","name":"Alice (English)","lang":"en","gender":"Female","model":"edge-tts/en-US-AliceNeural"},{"id":"en-GB-QuinnNeural","name":"Quinn","lang":"en","gender":"Male","model":"edge-tts/en-GB-QuinnNeural"},{"id":"pt-BR-BrunoNeural","name":"pt-BR-BrunoNeural","lang":"pt","gender":"Male","model":"edge-tts/pt-BR-BrunoNeural"}]}

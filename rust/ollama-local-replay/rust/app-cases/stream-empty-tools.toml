@@ -1,0 +1,4 @@
+bin.name = "driver"
+args = ["stream-empty-tools"]
+status.code = 0
+fs.sandbox = true

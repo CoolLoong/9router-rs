@@ -1,0 +1,12 @@
+[request]
+method = "OPTIONS"
+path = "/v1/videos/fixture-pending"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-headers = "*"
+access-control-allow-methods = "GET, OPTIONS"
+access-control-allow-origin = "*"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"

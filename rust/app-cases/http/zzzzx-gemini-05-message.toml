@@ -1,0 +1,17 @@
+[request]
+method = "POST"
+path = "/v1/messages"
+body = '{"model":"gemini/gemini-2.5-flash","max_tokens":64,"stream":true,"messages":[{"role":"user","content":"Gemini message stream"}]}'
+
+[request.headers]
+authorization = "Bearer offline-chat-key"
+content-type = "application/json"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-origin = "*"
+cache-control = "no-cache"
+content-type = "text/event-stream"
+vary = "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"

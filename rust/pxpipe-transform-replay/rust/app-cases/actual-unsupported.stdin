@@ -1,0 +1,1 @@
+{"actual": {"model": "gpt-5.5", "body": {"model": "gpt-5.5", "system": "Keep placeholder only.", "max_tokens": 40, "messages": [{"role": "user", "content": "fixture user input"}]}, "repeat": 60, "minChars": 20}}

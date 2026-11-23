@@ -1,0 +1,1 @@
+{"body":null,"summary":{"applied":false,"reason":"below_min_chars","detail":"below_min_chars (0 < 2)","originalChars":2},"request":{"body":{},"options":{"minCompressChars":2}}}

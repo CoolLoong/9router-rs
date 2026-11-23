@@ -1,0 +1,15 @@
+[request]
+method = "POST"
+path = "/v1beta/models/gemini-2.5-flash:generateContent"
+body = "{}"
+
+[request.headers]
+content-type = "application/json"
+origin = "https://example.org"
+
+[response]
+status = 401
+
+[response.headers]
+content-type = "application/json"
+vary = "Accept-Encoding"

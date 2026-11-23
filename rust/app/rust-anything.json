@@ -1,0 +1,53 @@
+{
+  "schema": "rust-anything/front-door@1",
+  "name": "server",
+  "commands": [],
+  "units": [
+    {
+      "name": "router-health",
+      "crate": "router-health-rs",
+      "path": "../router-health-rs",
+      "commands": [],
+      "routes": [
+        "GET /api/health",
+        "OPTIONS /api/health"
+      ],
+      "switch": "RUST_ANYTHING_UNIT_ROUTER_HEALTH"
+    },
+    {
+      "name": "gemini-model-list",
+      "crate": "gemini-model-list-rs",
+      "path": "../gemini-model-list-rs",
+      "commands": [],
+      "routes": [
+        "GET /v1beta/models",
+        "OPTIONS /v1beta/models",
+        "GET /api/v1beta/models",
+        "OPTIONS /api/v1beta/models"
+      ],
+      "switch": "RUST_ANYTHING_UNIT_GEMINI_MODEL_LIST"
+    }
+  ],
+  "kind": "http",
+  "routes": [
+    "GET /api/models",
+    "GET /api/providers",
+    "POST /v1/chat/completions",
+    "GET /api/auth/status",
+    "GET /",
+    "GET /dashboard",
+    "POST /v1/embeddings",
+    "GET /v1",
+    "POST /v1beta/models/gemini-4-argon:generateContent",
+    "GET /api/health",
+    "HEAD /api/health",
+    "OPTIONS /api/health",
+    "POST /v1/messages",
+    "GET /v1/models/embedding",
+    "OPTIONS /v1beta/models",
+    "GET /v1beta/models",
+    "OPTIONS /v1/models",
+    "GET /v1/models",
+    "POST /v1/responses"
+  ]
+}

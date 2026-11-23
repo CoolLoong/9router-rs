@@ -1,0 +1,2 @@
+{"fn":"GET","args":[],"ok":{"status":200,"headers":{"access-control-allow-headers":"*","access-control-allow-methods":"GET, OPTIONS","access-control-allow-origin":"*","content-type":"application/json"},"body":"{\"ok\":true}"}}
+{"fn":"OPTIONS","args":[],"ok":{"status":204,"headers":{"access-control-allow-headers":"*","access-control-allow-methods":"GET, OPTIONS","access-control-allow-origin":"*"},"body":""}}

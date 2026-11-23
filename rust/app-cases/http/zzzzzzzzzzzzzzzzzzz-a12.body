@@ -1,0 +1,1 @@
+{"connection":{"id":"[..]","provider":"sensenova-intl","authType":"apikey","name":"Fixture sensenova-intl","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}
