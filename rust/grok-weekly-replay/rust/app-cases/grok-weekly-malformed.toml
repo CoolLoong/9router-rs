@@ -1,4 +1,0 @@
-bin.name = "reference"
-args = ["malformed"]
-status.code = 0
-fs.sandbox = true

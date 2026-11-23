@@ -1,6 +1,0 @@
-data: {"candidates":[{"content":{"role":"model","parts":[{"text":"Gemini considers","thought":true}]},"index":0}]}
-
-data: {"candidates":[{"content":{"role":"model","parts":[{"text":"Gemini migration"}]},"index":0}]}
-
-data: {"candidates":[{"content":{"role":"model","parts":[{"text":""}]},"index":0,"finishReason":"STOP"}],"usageMetadata":{"promptTokenCount":2005,"candidatesTokenCount":6,"totalTokenCount":2011,"thoughtsTokenCount":2},"modelVersion":"gemini-2.5-flash"}
-

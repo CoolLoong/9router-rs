@@ -1,1 +1,0 @@
-{"connection":{"id":"[..]","provider":"openrouter","authType":"apikey","name":"Fixture openrouter","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

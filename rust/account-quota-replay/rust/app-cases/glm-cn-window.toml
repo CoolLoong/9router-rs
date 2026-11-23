@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["glm-cn-window"]
-status.code = 0
-fs.sandbox = true

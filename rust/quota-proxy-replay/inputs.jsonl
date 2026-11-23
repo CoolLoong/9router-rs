@@ -1,5 +1,0 @@
-{"name":"saved-relay-read","args":["relay"]}
-{"name":"saved-relay-read-more-providers","args":["additional-relays"]}
-{"name":"strict-http-proxy-read-fallback","args":["fallback"]}
-{"name":"pool-no-proxy","args":["no-proxy"]}
-{"name":"legacy-proxy-after-inactive-pool","args":["legacy"]}

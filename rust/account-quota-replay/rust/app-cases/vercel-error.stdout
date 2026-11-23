@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/vercel/credits", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Vercel AI Gateway credits API error (503): Fixture outage"}, "status": 200}]}

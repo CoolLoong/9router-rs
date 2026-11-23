@@ -1,4 +1,0 @@
-bin.name = "cline-transport-contract"
-args = ["oauth-stream"]
-status.code = 0
-fs.sandbox = true

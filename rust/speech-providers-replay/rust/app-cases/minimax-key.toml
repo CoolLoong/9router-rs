@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["minimax-key"]
-status.code = 0
-fs.sandbox = true

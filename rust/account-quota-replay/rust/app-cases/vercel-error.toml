@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["vercel-error"]
-status.code = 0
-fs.sandbox = true

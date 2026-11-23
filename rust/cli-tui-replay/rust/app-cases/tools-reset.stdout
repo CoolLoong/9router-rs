@@ -1,1 +1,0 @@
-{"reads": ["/api/cli-tools/claude-settings", "/api/keys", "/api/tunnel/status"], "requests": [{"body": null, "method": "DELETE", "path": "/api/cli-tools/claude-settings"}]}

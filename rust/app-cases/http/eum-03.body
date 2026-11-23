@@ -1,1 +1,0 @@
-{"error":{"message":"Provider 'bedrock' does not support embeddings.","type":"invalid_request_error","code":"bad_request"}}

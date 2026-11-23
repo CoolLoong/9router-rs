@@ -1,1 +1,0 @@
-{"id":"jina-reader/fetch","name":"Jina Reader Fetch","kind":"webFetch","owned_by":"jina-reader","endpoint":"/v1/fetch","params":["url","format","max_characters"]}

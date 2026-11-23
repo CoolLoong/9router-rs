@@ -1,6 +1,0 @@
-{"name":"zzzzzzzzzzzzzzz-zq-00-preset","method":"GET","path":"/api/combos/presets?source=invalid","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"}}
-{"name":"zzzzzzzzzzzzzzz-zq-01-preset","method":"GET","path":"/api/combos/presets?source=cursor","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"}}
-{"name":"zzzzzzzzzzzzzzz-zq-02-preset","method":"GET","path":"/api/combos/presets?source=claude","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"}}
-{"name":"zzzzzzzzzzzzzzz-zq-03-preset","method":"POST","path":"/api/combos/presets","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"source\":\"claude\"}"}
-{"name":"zzzzzzzzzzzzzzz-zq-04-preset","method":"GET","path":"/api/combos/presets?source=claude&created=1","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"}}
-{"name":"zzzzzzzzzzzzzzz-zq-05-preset","method":"POST","path":"/api/combos/presets?retry=1","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"source\":\"claude\"}"}

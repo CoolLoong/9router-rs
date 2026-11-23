@@ -1,0 +1,16 @@
+[package]
+name = "chat-account-rules-rs"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Rust port of `open-sse/services/accountFallback.js`"
+
+
+[dependencies]
+libm = "0.2"
+serde = "1"
+serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
+
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }

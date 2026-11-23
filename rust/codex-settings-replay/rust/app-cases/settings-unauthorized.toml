@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["settings-unauthorized"]
-status.code = 0
-fs.sandbox = true

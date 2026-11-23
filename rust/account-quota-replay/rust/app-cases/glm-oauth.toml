@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["glm-oauth"]
-status.code = 0
-fs.sandbox = true

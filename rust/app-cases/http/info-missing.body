@@ -1,1 +1,0 @@
-{"error":{"message":"Missing required query param: id (e.g. ?id=openai/dall-e-3)","type":"invalid_request_error"}}

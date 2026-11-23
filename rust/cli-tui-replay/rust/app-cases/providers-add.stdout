@@ -1,1 +1,0 @@
-{"reads": ["/api/keys", "/api/provider-nodes", "/api/providers", "/api/tunnel/status"], "requests": [{"body": {"apiKey": "provider-fixture-key", "name": "Fixture Conn", "provider": "openrouter"}, "method": "POST", "path": "/api/providers"}]}

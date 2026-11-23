@@ -1,1 +1,0 @@
-{"actual": {"model": "claude-fable-5", "body": {"model": "claude-fable-5", "messages": [{"role": "user", "content": "Run synthetic check."}], "max_tokens": 30, "system": [{"type": "text", "text": "{fixture}\n# Environment Details\n##looks-like-heading-with-no-space\n#####actual-invalid\n\n", "cache_control": {"type": "ephemeral"}}]}, "minChars": 20, "repeat": 145}}

@@ -1,1 +1,0 @@
-{"body":{"error":{"code":"bad_request","message":"[400]: {\"error\":{\"message\":\"Fixture provider rejected chat\"}}","type":"invalid_request_error"}},"mime":"application/json","status":400}

@@ -1,0 +1,15 @@
+[package]
+name = "router-health-rs"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Rust port of `src/app/api/health/`"
+
+
+[dependencies]
+serde = "1"
+serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
+
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }

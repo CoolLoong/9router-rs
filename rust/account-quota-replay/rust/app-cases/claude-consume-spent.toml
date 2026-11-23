@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["claude-consume-spent"]
-status.code = 0
-fs.sandbox = true

@@ -1,1 +1,0 @@
-{"models":[{"id":"fixture/free","name":"Free fixture model","isFree":true,"context_length":60000},{"id":"fixture/no-limit","isFree":true,"context_length":0}],"cached":true}

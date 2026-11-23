@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["alternate-tools"]
-status.code = 0
-fs.sandbox = true

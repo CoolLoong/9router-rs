@@ -1,1 +1,0 @@
-{"reads": ["/api/keys", "/api/settings", "/api/tunnel/status"], "requests": [{"body": {"rtkEnabled": false}, "method": "PATCH", "path": "/api/settings"}]}

@@ -1,1 +1,0 @@
-{"id":"resp_native_fixture","object":"response","created_at":1784419200,"status":"completed","output":[{"id":"msg_responses_fixture","type":"message","role":"assistant","content":[{"type":"output_text","text":"native responses migration","annotations":[]}]}],"usage":{"input_tokens":5,"output_tokens":3,"total_tokens":8}}

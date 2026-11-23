@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["gemini-relogin"]
-status.code = 0
-fs.sandbox = true

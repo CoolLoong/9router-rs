@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["response-case-sensitive"]
-status.code = 0
-fs.sandbox = true

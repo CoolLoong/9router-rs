@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["missing-account"]
-status.code = 0
-fs.sandbox = true

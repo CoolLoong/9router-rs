@@ -1,1 +1,0 @@
-{"result": {"digest": "db8fed54159afe40ace5b49d702259fd88c9c4009307181824487baab5c6bdea", "format": "mp3", "length": 2, "originalEncoding": true, "status": 200}, "wire": [{"body": {"audioConfig": {"audioEncoding": "MP3"}, "modelId": "inworld-tts-1.5-max", "text": "Fixture TTS", "voiceId": "FixtureVoice"}, "path": "/tts/v1/voice", "verifiedAuth": true}]}

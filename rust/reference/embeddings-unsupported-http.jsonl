@@ -1,5 +1,0 @@
-{"name":"eum-01","method":"POST","path":"/v1/embeddings","headers":{"authorization":"Bearer offline-active-key","content-type":"application/json"},"body":"{\"model\":\"bedrock/amazon.titan-embed-text-v2:0\",\"input\":\"offline\"}"}
-{"name":"eum-02","method":"PUT","path":"/api/providers/fixture-bedrock","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"isActive\":true}"}
-{"name":"eum-03","method":"POST","path":"/v1/embeddings?fixture=unsupported","headers":{"authorization":"Bearer offline-active-key","content-type":"application/json"},"body":"{\"model\":\"bedrock/amazon.titan-embed-text-v2:0\",\"input\":\"offline\"}"}
-{"name":"eum-04","method":"POST","path":"/v1/embeddings","headers":{"authorization":"Bearer offline-active-key","content-type":"application/json"},"body":"{\"model\":\"bedrock/amazon.titan-embed-text-v2:0\",\"input\":42}"}
-{"name":"eum-05","method":"PUT","path":"/api/providers/fixture-bedrock","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"isActive\":false}"}

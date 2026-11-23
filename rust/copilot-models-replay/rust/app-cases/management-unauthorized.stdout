@@ -1,1 +1,0 @@
-{"persistedCopilot": false, "result": [{"error": "Failed to fetch models: 401", "status": 401}], "wire": [{"credential": "copilot", "path": "/models"}]}

@@ -1,4 +1,0 @@
-bin.name = "reference"
-args = ["additional-relays"]
-status.code = 0
-fs.sandbox = true

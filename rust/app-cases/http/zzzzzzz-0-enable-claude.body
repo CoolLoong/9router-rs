@@ -1,1 +1,0 @@
-{"connection":{"providerSpecificData":{"prefix":"fixture-anthropic","baseUrl":"http://127.0.0.1:52989/v1","nodeName":"Fixture Anthropic"},"id":"fixture-anthropic-connection","provider":"anthropic-compatible-fixture","authType":"apikey","name":"Fixture Anthropic","email":null,"priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]"}}

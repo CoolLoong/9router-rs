@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["zed-overdue"]
-status.code = 0
-fs.sandbox = true

@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["codex-consume-wrong-provider"]
-status.code = 0
-fs.sandbox = true

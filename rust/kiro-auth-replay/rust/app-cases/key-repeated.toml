@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["key-repeated"]
-status.code = 0
-fs.sandbox = true

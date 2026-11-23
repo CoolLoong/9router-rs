@@ -1,8 +1,0 @@
-data: {"id":"chatcmpl-migration-gemini","object":"chat.completion.chunk",[..],"model":"gemini-2.5-flash","choices":[{"index":0,"delta":{"role":"assistant"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-migration-gemini","object":"chat.completion.chunk",[..],"model":"gemini-2.5-flash","choices":[{"index":0,"delta":{"reasoning_content":"Gemini considers"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-migration-gemini","object":"chat.completion.chunk",[..],"model":"gemini-2.5-flash","choices":[{"index":0,"delta":{"content":"Gemini migration"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-migration-gemini","object":"chat.completion.chunk",[..],"model":"gemini-2.5-flash","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2005,"completion_tokens":6,"total_tokens":2011,"prompt_tokens_details":{"cached_tokens":1},"completion_tokens_details":{"reasoning_tokens":2}}}
-

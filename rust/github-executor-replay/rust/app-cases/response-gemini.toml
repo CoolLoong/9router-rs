@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["response-gemini"]
-status.code = 0
-fs.sandbox = true

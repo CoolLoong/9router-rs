@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["session-claude-continuity"]
-status.code = 0
-fs.sandbox = true

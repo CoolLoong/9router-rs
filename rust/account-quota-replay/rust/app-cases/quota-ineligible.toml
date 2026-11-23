@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["quota-ineligible"]
-status.code = 0
-fs.sandbox = true

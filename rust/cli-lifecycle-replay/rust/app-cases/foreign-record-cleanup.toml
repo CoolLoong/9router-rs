@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["foreign-record-cleanup"]
-status.code = 0
-fs.sandbox = true

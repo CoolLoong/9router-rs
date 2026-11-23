@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [], "refreshRotated": false, "replies": [{"body": {"error": "Limit reset is only available for Claude OAuth connections."}, "status": 400}]}

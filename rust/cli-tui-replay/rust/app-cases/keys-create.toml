@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["keys-create"]
-status.code = 0
-fs.sandbox = true

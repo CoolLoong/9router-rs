@@ -1,7 +1,0 @@
-{"name":"headless","args":["headless"]}
-{"name":"ready","args":["ready"]}
-{"name":"autostart","args":["autostart"]}
-{"name":"pre-enabled","args":["pre-enabled"]}
-{"name":"dashboard-quit","args":["dashboard-quit"]}
-{"name":"no-watcher","args":["no-watcher"]}
-{"name":"hide","args":["hide"]}

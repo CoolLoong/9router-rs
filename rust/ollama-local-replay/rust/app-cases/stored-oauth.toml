@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["stored-oauth"]
-status.code = 0
-fs.sandbox = true

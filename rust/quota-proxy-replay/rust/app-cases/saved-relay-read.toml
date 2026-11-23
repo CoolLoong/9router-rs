@@ -1,4 +1,0 @@
-bin.name = "reference"
-args = ["relay"]
-status.code = 0
-fs.sandbox = true

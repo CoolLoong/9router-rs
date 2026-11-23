@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["ollama-endpoint-error"]
-status.code = 0
-fs.sandbox = true

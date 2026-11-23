@@ -1,1 +1,0 @@
-{"actual": {"model": "gemini-3.1-flash-lite", "body": {"model": "gemini-3.1-flash-lite", "max_tokens": 30, "messages": [{"role": "user", "content": "Proceed with the fixture using this model."}], "system": "The active scope does not select this model alias. "}, "minChars": 20, "repeat": 155, "scope": "claude-fable-5"}}

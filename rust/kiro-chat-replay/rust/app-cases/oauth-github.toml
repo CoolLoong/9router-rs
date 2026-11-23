@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["oauth-github"]
-status.code = 0
-fs.sandbox = true

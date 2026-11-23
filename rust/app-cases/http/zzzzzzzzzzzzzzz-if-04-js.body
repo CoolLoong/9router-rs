@@ -1,1 +1,0 @@
-{"id":"chatcmpl-iflow-fixture",[..],"model":"qwen3-coder-plus","object":"chat.completion","choices":[{"index":0,"message":{"role":"assistant","content":"signed iFlow fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2008,"completion_tokens":3,"total_tokens":2011}}

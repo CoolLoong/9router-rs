@@ -1,4 +1,0 @@
-data: {"id":"chatcmpl-[..]","object":"chat.completion.chunk",[..],"model":"fixture-response-model","choices":[{"index":0,"delta":{"content":"native responses migration"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-[..]","object":"chat.completion.chunk",[..],"model":"fixture-response-model","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2005,"completion_tokens":3,"total_tokens":2008,"prompt_tokens_details":{"cached_tokens":2}}}
-

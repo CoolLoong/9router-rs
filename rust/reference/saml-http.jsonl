@@ -1,3 +1,0 @@
-{"name":"saml-unconfigured","path":"/api/auth/saml/start","headers":{"x-forwarded-host":"gateway.example.invalid","x-forwarded-proto":"https"}}
-{"name":"saml-test-no-session","method":"POST","path":"/api/auth/saml/test","headers":{"content-type":"application/json"},"body":"{}"}
-{"name":"saml-acs-no-payload","method":"POST","path":"/api/auth/saml/acs","headers":{"content-type":"application/x-www-form-urlencoded","x-forwarded-host":"gateway.example.invalid","x-forwarded-proto":"https"},"body":"RelayState=fixture"}

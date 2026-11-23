@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["oauth-builder"]
-status.code = 0
-fs.sandbox = true

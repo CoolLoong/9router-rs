@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "POST", "path": "/gemini/quota", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Gemini CLI quota error (403).", "plan": "Free"}, "status": 200}]}

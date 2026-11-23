@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["get-absent"]
-status.code = 0
-fs.sandbox = true

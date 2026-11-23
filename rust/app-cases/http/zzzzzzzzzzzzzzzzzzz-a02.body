@@ -1,1 +1,0 @@
-{"id":"chatcmpl-static-fixture",[..],"model":"qwen3-coder-plus","object":"chat.completion","choices":[{"index":0,"message":{"role":"assistant","content":"native alicode fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2006,"completion_tokens":4,"total_tokens":2010}}

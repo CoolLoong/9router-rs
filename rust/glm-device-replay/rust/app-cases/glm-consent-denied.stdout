@@ -1,1 +1,0 @@
-{"network": ["init", "poll"], "poll": {"error": "access_denied", "errorDescription": "ZCode authorization failed or was cancelled", "pending": false, "success": false}}

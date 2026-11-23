@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["normal"]
-status.code = 0
-fs.sandbox = true

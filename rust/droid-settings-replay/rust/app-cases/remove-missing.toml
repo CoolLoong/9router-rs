@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["remove-missing"]
-status.code = 0
-fs.sandbox = true

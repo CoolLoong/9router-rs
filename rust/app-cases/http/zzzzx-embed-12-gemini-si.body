@@ -1,1 +1,0 @@
-{"object":"list","data":[{"object":"embedding","index":0,"embedding":[0.25,-0.5,0,0.875]}],"model":"gemini-embedding-001","usage":{"prompt_tokens":0,"total_tokens":0}}

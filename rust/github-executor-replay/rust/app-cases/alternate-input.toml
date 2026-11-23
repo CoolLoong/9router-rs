@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["alternate-input"]
-status.code = 0
-fs.sandbox = true

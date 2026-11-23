@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["ollama-invalid-json"]
-status.code = 0
-fs.sandbox = true

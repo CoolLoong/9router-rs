@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["alternate-cache"]
-status.code = 0
-fs.sandbox = true

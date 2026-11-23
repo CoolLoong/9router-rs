@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["codex-reset-failed"]
-status.code = 0
-fs.sandbox = true

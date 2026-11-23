@@ -1,1 +1,0 @@
-{"actual": {"model": "claude-fable-5-1", "body": {"model": "claude-fable-5-1", "system": "演示内容↵存在指定位置。\n\t正在读取 /tmp/fixture/demo.txt and taskName 🙃.  ", "max_tokens": 40, "messages": [{"role": "user", "content": "fixture user input"}]}, "repeat": 350, "minChars": 20}}

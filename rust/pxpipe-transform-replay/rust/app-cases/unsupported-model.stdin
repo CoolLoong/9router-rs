@@ -1,1 +1,0 @@
-{"enabled":true,"available":true,"format":"claude","body":{"model":"gpt-5.5"},"model":"gpt-5.5","minChars":2,"outcome":{"reason":"unsupported_model","detail":"gpt-5.5"}}

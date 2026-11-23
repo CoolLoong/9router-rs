@@ -1,1 +1,0 @@
-{"object":"list","data":[{"object":"embedding","index":0,"embedding":[0.125,-0.25,0.5]}],"model":"fixture-embedding-upstream","usage":{"prompt_tokens":5,"total_tokens":5}}

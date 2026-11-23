@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["claude-no-delta"]
-status.code = 0
-fs.sandbox = true

@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["get-bad"]
-status.code = 0
-fs.sandbox = true

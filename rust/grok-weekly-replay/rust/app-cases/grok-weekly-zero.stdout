@@ -1,1 +1,0 @@
-{"quota": {"remainingPercentage": 100, "resetAt": null, "total": 100, "unlimited": false, "used": 0}, "requests": [{"protocol": "grpc-web", "readOnly": true, "requestBytes": 5}]}

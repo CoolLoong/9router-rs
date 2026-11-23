@@ -1,6 +1,0 @@
-{"name":"zzzzzzzzzzzzzzz-pc-00-client","method":"GET","path":"/api/providers/client","headers":{}}
-{"name":"zzzzzzzzzzzzzzz-pc-01-client","method":"GET","path":"/api/providers/client?sort=provider&pageSize=2&page=1","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"zzzzzzzzzzzzzzz-pc-02-client","method":"GET","path":"/api/providers/client?sort=provider&pageSize=2&page=2","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"zzzzzzzzzzzzzzz-pc-03-client","method":"GET","path":"/api/providers/client?provider=github&accountStatus=inactive&pageSize=999&page=999","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"zzzzzzzzzzzzzzz-pc-04-client","method":"GET","path":"/api/providers/client?provider=gemini-cli&accountStatus=active&sort=priority&pageSize=%2B02items","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"zzzzzzzzzzzzzzz-pc-05-client","method":"GET","path":"/api/providers/client?provider=unregistered&pageSize=0&page=-1","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

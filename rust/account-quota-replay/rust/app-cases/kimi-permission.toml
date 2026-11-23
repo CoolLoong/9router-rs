@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["kimi-permission"]
-status.code = 0
-fs.sandbox = true

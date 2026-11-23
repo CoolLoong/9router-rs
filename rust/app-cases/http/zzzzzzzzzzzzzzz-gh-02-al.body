@@ -1,1 +1,0 @@
-{"id":"chatcmpl-[..]","object":"chat.completion",[..],"model":"gpt-5.3-codex","choices":[{"index":0,"message":{"role":"assistant","content":"GitHub Responses fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2008,"completion_tokens":3,"total_tokens":2011}}

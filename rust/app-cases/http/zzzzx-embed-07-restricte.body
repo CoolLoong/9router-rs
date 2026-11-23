@@ -1,1 +1,0 @@
-{"error":{"message":"This API key is not allowed to use model \"gemini/gemini-embedding-001\"","type":"permission_error","code":"insufficient_quota"}}

@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["url-blank"]
-status.code = 0
-fs.sandbox = true

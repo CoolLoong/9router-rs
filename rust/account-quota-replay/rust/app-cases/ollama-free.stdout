@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/ollama/usage", "valid": true}, {"method": "POST", "path": "/ollama/me", "valid": true}], "refreshRotated": false, "replies": [{"body": {"plan": "Free", "quotas": {"Monthly": {"remainingPercentage": 12, "resetAt": "next UTC signup anniversary", "total": 100, "unlimited": false, "used": 88}}}, "status": 200}]}

@@ -1,8 +1,0 @@
-data: {"id":"chatcmpl-[..]","object":"chat.completion.chunk",[..],"model":"fixture-unavailable-local-bypass","choices":[{"index":0,"delta":{"role":"assistant","content":"CLI Command Execution: Clear Terminal"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-[..]","object":"chat.completion.chunk",[..],"model":"fixture-unavailable-local-bypass","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":1,"completion_tokens":1,"total_tokens":2}}
-
-data: null
-
-data: [DONE]
-

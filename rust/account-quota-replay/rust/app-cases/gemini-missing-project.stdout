@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "POST", "path": "/gemini/assist", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Gemini CLI project ID not available. Reconnect Gemini CLI, or configure a Google Cloud project with Gemini Code Assist access before checking quota.", "plan": "Gemini fixture tier"}, "status": 200}]}

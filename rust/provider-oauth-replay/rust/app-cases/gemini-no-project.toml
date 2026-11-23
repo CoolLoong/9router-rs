@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["gemini-no-project"]
-status.code = 0
-fs.sandbox = true

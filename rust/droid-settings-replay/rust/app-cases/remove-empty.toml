@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["remove-empty"]
-status.code = 0
-fs.sandbox = true

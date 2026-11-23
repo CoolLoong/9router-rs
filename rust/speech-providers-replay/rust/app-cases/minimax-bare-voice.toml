@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["minimax-bare-voice"]
-status.code = 0
-fs.sandbox = true

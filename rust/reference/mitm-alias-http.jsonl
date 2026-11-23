@@ -1,5 +1,0 @@
-{"name":"mitm-alias-01-denied","path":"/api/cli-tools/antigravity-mitm/alias"}
-{"name":"mitm-alias-02-all","path":"/api/cli-tools/antigravity-mitm/alias","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"mitm-alias-03-tool","path":"/api/cli-tools/antigravity-mitm/alias?tool=antigravity","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"mitm-alias-04-space","path":"/api/cli-tools/antigravity-mitm/alias?tool=fixture%20tool","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"mitm-alias-05-missing","path":"/api/cli-tools/antigravity-mitm/alias?tool=unknown-fixture","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

@@ -1,1 +1,0 @@
-{"id":"chatcmpl-[..]","object":"chat.completion",[..],"model":"qwen3:8b","choices":[{"index":0,"message":{"role":"assistant","content":"Ollama JSON fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2011,"completion_tokens":3,"total_tokens":2014,"prompt_tokens_details":{"cached_tokens":4}}}

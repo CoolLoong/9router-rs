@@ -1,8 +1,0 @@
-data: {"id":"chatcmpl-iflow-fixture",[..],"model":"qwen3-coder-plus","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-iflow-fixture",[..],"model":"qwen3-coder-plus","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"content":"signed iFlow fixture"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-iflow-fixture",[..],"model":"qwen3-coder-plus","object":"chat.completion.chunk","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2008,"completion_tokens":3,"total_tokens":2011}}
-
-data: [DONE]
-

@@ -1,1 +1,0 @@
-{"id":"resp_native_fixture","object":"chat.completion",[..],"model":"fixture-response-model","choices":[{"index":0,"message":{"role":"assistant","content":"native responses migration"},"finish_reason":"stop"}],"usage":{"prompt_tokens":5,"completion_tokens":3,"total_tokens":8}}

@@ -1,1 +1,0 @@
-{"actual": {"model": "openai/gpt-5.6-sol-2026[1m]", "body": {"model": "openai/gpt-5.6-sol-2026[1m]", "max_tokens": 20, "messages": [{"role": "user", "content": "Test the fixture and keep the exact phrase."}], "system": "Repair local synthetic fixture. 一段測試消息. "}, "minChars": 20, "repeat": 780, "scope": "gpt-5.6-sol"}}

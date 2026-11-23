@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "POST", "path": "/quota-reset/codex/consume", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"code": "reset", "credit": {"fixture": true}, "redeemRequestId": "server-generated-uuid-v4", "reset": true, "windows_reset": 2}, "status": 200}]}

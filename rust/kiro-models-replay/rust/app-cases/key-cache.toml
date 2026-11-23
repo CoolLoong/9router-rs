@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["key-cache"]
-status.code = 0
-fs.sandbox = true

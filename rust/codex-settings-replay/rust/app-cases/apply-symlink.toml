@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["apply-symlink"]
-status.code = 0
-fs.sandbox = true

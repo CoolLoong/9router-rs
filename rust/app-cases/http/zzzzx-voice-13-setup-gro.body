@@ -1,1 +1,0 @@
-{"connection":{"id":"[..]","provider":"groq","authType":"apikey","name":"Fixture groq STT","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"baseUrl":"http://127.0.0.1:52989/groq/openai/v1/audio/transcriptions","connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

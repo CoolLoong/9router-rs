@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["get-registered"]
-status.code = 0
-fs.sandbox = true

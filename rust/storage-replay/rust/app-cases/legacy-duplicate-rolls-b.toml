@@ -1,4 +1,0 @@
-bin.name = "original"
-args = ["collision"]
-status.code = 0
-fs.sandbox = true

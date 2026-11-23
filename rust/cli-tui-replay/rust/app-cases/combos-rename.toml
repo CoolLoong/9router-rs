@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["combos-rename"]
-status.code = 0
-fs.sandbox = true

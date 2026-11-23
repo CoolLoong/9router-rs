@@ -1,1 +1,0 @@
-{"disk": "{\"customModels\":[{\"id\":\"custom:9Router-test\",\"model\":\"test\",},],}", "mode": "0o640", "reply": {"body": {"has9Router": true, "installed": true, "settings": {"customModels": [{"id": "custom:9Router-test", "model": "test"}]}, "settingsPath": "<home>/.factory/settings.json"}, "status": 200}, "symlink": false}

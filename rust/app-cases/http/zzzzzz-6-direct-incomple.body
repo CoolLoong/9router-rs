@@ -1,8 +1,0 @@
-event: response.created
-data: {"type":"response.created","response":{"id":"resp_native_fixture","created_at":1784419200,"object":"response","model":"fixture-response-model","status":"in_progress","output":[]},"sequence_number":1}
-
-event: response.output_text.delta
-data: {"type":"response.output_text.delta","output_index":0,"item_id":"msg_responses_fixture","delta":"native responses migration","sequence_number":2}
-
-data: [DONE]
-

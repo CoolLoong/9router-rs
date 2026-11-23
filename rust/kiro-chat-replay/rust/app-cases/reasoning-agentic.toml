@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["reasoning-agentic"]
-status.code = 0
-fs.sandbox = true

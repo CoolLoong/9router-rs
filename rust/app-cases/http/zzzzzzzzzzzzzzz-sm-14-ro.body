@@ -1,1 +1,0 @@
-{"id":"chatcmpl-migration-fixture",[..],"model":"fixture-combo-a","object":"chat.completion","choices":[{"index":0,"message":{"role":"assistant","content":"fixture-combo-a"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2004,"completion_tokens":2,"total_tokens":2006}}

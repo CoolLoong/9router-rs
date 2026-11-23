@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/groq/models", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Groq connected. No rate-limit data reported for this key yet.", "plan": "Groq", "quotas": {}}, "status": 200}]}

@@ -1,1 +1,0 @@
-{"connection":{"id":"fixture-ollama-local","provider":"ollama-local","authType":"apikey","name":"Fixture Ollama Local","email":null,"priority":5,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","providerSpecificData":{"baseUrl":"http://127.0.0.1:52989/ollama-local"}}}

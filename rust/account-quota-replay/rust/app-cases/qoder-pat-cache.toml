@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["qoder-pat-cache"]
-status.code = 0
-fs.sandbox = true

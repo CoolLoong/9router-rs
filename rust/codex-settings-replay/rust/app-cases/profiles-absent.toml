@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["profiles-absent"]
-status.code = 0
-fs.sandbox = true

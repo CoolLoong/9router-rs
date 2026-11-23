@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "POST", "path": "/quota-reset/codex/consume", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"code": "no_credit", "message": "No Codex reset credits available.", "reset": false, "windows_reset": 0}, "status": 409}]}

@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["idc-fallback-expiry"]
-status.code = 0
-fs.sandbox = true

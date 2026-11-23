@@ -1,1 +1,0 @@
-{"connection":{"providerSpecificData":{"prefix":"fixture-live","apiType":"chat","baseUrl":"http://127.0.0.1:52989/v1","nodeName":"Fixture live discovery"},"id":"fixture-live-second","provider":"openai-compatible-chat-fixture-live","authType":"apikey","name":"Fixture backup","email":null,"priority":8,"isActive":true,"createdAt":"[..]","updatedAt":"[..]"}}

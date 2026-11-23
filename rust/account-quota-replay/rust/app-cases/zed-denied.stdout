@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/zed/quota", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Zed authentication failed. Sign in again from the dashboard or Zed editor."}, "status": 200}]}

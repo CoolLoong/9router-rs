@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/kimi/usages", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Fixture account lacks a plan", "plan": "Kimi Coding"}, "status": 200}]}

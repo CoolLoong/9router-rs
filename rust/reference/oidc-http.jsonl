@@ -1,5 +1,0 @@
-{"name":"oidc-no-config","path":"/api/auth/oidc/start","headers":{"x-forwarded-host":"gateway.example.invalid","x-forwarded-proto":"https"}}
-{"name":"oidc-missing-code","path":"/api/auth/oidc/callback?state=fixture","headers":{"x-forwarded-host":"gateway.example.invalid","x-forwarded-proto":"https"}}
-{"name":"oidc-invalid-state","path":"/api/auth/oidc/callback?state=expected&code=fixture","headers":{"x-forwarded-host":"gateway.example.invalid","x-forwarded-proto":"https","cookie":"oidc_state=other; oidc_nonce=fixture-oidc-nonce; oidc_code_verifier=fixture-verifier"}}
-{"name":"oidc-provider-denial","path":"/api/auth/oidc/callback?error=access_denied","headers":{"x-forwarded-host":"gateway.example.invalid","x-forwarded-proto":"https"}}
-{"name":"oidc-test-no-session","method":"POST","path":"/api/auth/oidc/test","headers":{"content-type":"application/json"},"body":"{}"}

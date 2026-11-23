@@ -1,1 +1,0 @@
-{"actual": {"model": "gpt-4.1-nano", "body": {"model": "gpt-4.1-nano", "max_tokens": 20, "messages": [{"role": "user", "content": "Test the fixture and keep the exact phrase."}], "system": "Report syntax; token budget test sample.\n"}, "minChars": 20, "repeat": 260, "scope": "gpt-4.1-nano"}}

@@ -1,5 +1,0 @@
-bin.name = "original"
-args = []
-env.add.TZ = "America/Los_Angeles"
-status.code = 0
-fs.sandbox = true

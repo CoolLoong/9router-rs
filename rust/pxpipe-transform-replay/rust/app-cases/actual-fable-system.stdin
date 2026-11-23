@@ -1,1 +1,0 @@
-{"actual": {"model": "claude-fable-5", "body": {"model": "claude-fable-5", "system": "Please read the fictional fixture before answering.\nUse the output named omega. ", "max_tokens": 40, "messages": [{"role": "user", "content": "fixture user input"}]}, "repeat": 1500, "minChars": 20}}

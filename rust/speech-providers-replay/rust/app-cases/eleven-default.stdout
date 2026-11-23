@@ -1,1 +1,0 @@
-{"result": {"digest": "d414b085826eb06778483ba35564dc849e643359f69ed9747878ba6e54985bed", "format": "mp3", "length": 1280, "status": 200}, "wire": [{"body": {"model_id": "eleven_flash_v2_5", "text": "Fixture TTS", "voice_settings": {"similarity_boost": 0.75, "stability": 0.5}}, "path": "/v1/text-to-speech/FixtureVoice", "verifiedAuth": true}]}

@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["clinepass-underscore"]
-status.code = 0
-fs.sandbox = true

@@ -1,1 +1,0 @@
-{"id":"resp_migration-fixture","object":"response","created_at":1784419200,"model":"gpt-5.6-sol","status":"completed","background":false,"error":null,"output":[{"type":"message","role":"assistant","content":[{"type":"output_text","text":"rust migration","annotations":[]}]}],"usage":{"input_tokens":2004,"output_tokens":2}}

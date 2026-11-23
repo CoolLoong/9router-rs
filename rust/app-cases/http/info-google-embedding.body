@@ -1,1 +1,0 @@
-{"id":"gemini/embedding-001","name":"Embedding 001","kind":"embedding","owned_by":"gemini","endpoint":"/v1/embeddings","dimensions":768}

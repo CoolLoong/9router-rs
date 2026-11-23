@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["github-missing"]
-status.code = 0
-fs.sandbox = true

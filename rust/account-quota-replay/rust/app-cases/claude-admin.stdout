@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/claude/quota?cedar_ember=1", "rotated": false, "valid": true}, {"method": "GET", "path": "/claude/settings", "rotated": false, "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Claude connected. Usage API requires admin permissions."}, "status": 200}]}

@@ -1,1 +1,0 @@
-{"actual": {"model": "grok-4.6", "body": {"model": "grok-4.6", "max_tokens": 20, "messages": [{"role": "user", "content": "Test the fixture and keep the exact phrase."}], "system": "Report repeated symbolic X24. Write example λ and numeric pin 30001.\n"}, "minChars": 20, "repeat": 460, "scope": "grok-4.6"}}

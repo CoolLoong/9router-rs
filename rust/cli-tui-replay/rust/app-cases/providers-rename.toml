@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["providers-rename"]
-status.code = 0
-fs.sandbox = true

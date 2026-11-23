@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["eleven-error-default"]
-status.code = 0
-fs.sandbox = true

@@ -1,2 +1,0 @@
-{"name":"zzzzzzzzzzzzzzzzz-zp-01-glm-plan-enable","method":"PUT","path":"/api/providers/fixture-glm-plan-auth","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"isActive\":true}"}
-{"name":"zzzzzzzzzzzzzzzzz-zp-02-glm-plan-messages","method":"POST","path":"/v1/messages","headers":{"authorization":"Bearer offline-chat-key","content-type":"application/json","anthropic-version":"2023-06-01"},"body":"{\"model\":\"glm/glm-5.3\",\"messages\":[{\"role\":\"user\",\"content\":\"fixture glm authorized\"}],\"max_tokens\":30,\"stream\":false}"}

@@ -1,1 +1,0 @@
-{"id":"chatcmpl-xiaomi-fixture","object":"chat.completion",[..],"model":"mimo-v2.6-pro","choices":[{"index":0,"message":{"role":"assistant","content":"Xiaomi ams fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2009,"completion_tokens":3,"total_tokens":2012}}

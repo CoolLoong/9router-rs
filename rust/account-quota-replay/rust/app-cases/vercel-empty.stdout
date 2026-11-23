@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/vercel/credits", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Vercel AI Gateway connected. No credit allocation found (BYOK or unfunded account).", "plan": "Pay-as-you-go", "quotas": {}}, "status": 200}]}

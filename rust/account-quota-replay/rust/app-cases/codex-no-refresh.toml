@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["codex-no-refresh"]
-status.code = 0
-fs.sandbox = true

@@ -1,2 +1,0 @@
-{"name":"zzzzzzzzzzzzzzz-kf-00-fresh","method":"GET","path":"/api/providers/kilo/free-models","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"zzzzzzzzzzzzzzz-kf-01-cached","method":"GET","path":"/api/providers/kilo/free-models?later=1","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

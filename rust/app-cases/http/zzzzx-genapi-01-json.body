@@ -1,1 +1,0 @@
-{"candidates":[{"content":{"role":"model","parts":[{"text":"Gemini migration"}]},"finishReason":"STOP","index":0}],"modelVersion":"gemini-2.5-flash","usageMetadata":{"promptTokenCount":2007,"candidatesTokenCount":4,"totalTokenCount":2011,"thoughtsTokenCount":2}}

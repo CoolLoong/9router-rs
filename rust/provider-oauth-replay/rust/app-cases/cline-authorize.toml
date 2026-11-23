@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["cline-authorize"]
-status.code = 0
-fs.sandbox = true

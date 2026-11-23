@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["alternate-error-event"]
-status.code = 0
-fs.sandbox = true

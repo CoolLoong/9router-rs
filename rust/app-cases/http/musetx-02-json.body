@@ -1,1 +1,0 @@
-{"id":"chatcmpl-muse-shared",[..],"model":"fixture-muse-chat","object":"chat.completion","choices":[{"index":0,"message":{"role":"assistant","content":"Muse fixture response"},"finish_reason":"stop"}],"usage":{"prompt_tokens":7,"completion_tokens":3,"total_tokens":10}}

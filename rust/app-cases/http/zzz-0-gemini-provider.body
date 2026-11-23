@@ -1,1 +1,0 @@
-{"connection":{"id":"[..]","provider":"gemini","authType":"apikey","name":"Migration fixture Gemini","priority":1,"isActive":true,"createdAt":"[..]","updatedAt":"[..]","testStatus":"unknown","providerSpecificData":{"enabledModels":["gemini-4-argon","gemini-3.8-flash","gemini-embedding-001"],"connectionProxyEnabled":false,"connectionProxyUrl":"","connectionNoProxy":""}}}

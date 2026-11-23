@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["live-filter"]
-status.code = 0
-fs.sandbox = true

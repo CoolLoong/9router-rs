@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["codex-consume-missing-account"]
-status.code = 0
-fs.sandbox = true

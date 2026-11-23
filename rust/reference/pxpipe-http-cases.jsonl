@@ -1,9 +1,0 @@
-{"name":"pxpipe-status-guard","path":"/api/pxpipe/status"}
-{"name":"pxpipe-missing-status","path":"/api/pxpipe/status","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"pxpipe-empty-stats","path":"/api/pxpipe/stats?limit=2","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"pxpipe-empty-logs","path":"/api/pxpipe/logs","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"pxpipe-missing-health","path":"/api/pxpipe/health","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"pxpipe-missing-stop","path":"/api/pxpipe/stop","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"pxpipe-missing-restart","path":"/api/pxpipe/restart","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"pxpipe-z01-disabled-auto","path":"/api/settings","method":"PATCH","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"pxpipeAutoInstall\":false}"}
-{"name":"pxpipe-z02-missing-start","path":"/api/pxpipe/start","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

@@ -1,1 +1,0 @@
-{"id":"migration-fixture","type":"message","role":"assistant","model":"fixture-tools","content":[{"type":"thinking","thinking":"fixture thinks"},{"type":"tool_use","id":"call_fixture_lookup","name":"fixture_lookup","input":{"term":"rust"}}],"stop_reason":"tool_use","stop_sequence":null,"usage":{"input_tokens":2004,"output_tokens":2}}

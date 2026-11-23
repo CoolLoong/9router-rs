@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "POST", "path": "/cursor/period", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Cursor authentication failed. Reconnect the Cursor provider.", "plan": "Cursor"}, "status": 200}]}

@@ -1,1 +1,0 @@
-{"reads": ["/api/keys", "/api/provider-nodes", "/api/providers", "/api/tunnel/status"], "requests": [{"body": {"name": "New Connection"}, "method": "PUT", "path": "/api/providers/provider-fixture"}]}

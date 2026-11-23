@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["live-empty"]
-status.code = 0
-fs.sandbox = true

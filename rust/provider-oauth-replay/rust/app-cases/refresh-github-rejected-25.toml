@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["refresh-github-rejected-rotated"]
-status.code = 0
-fs.sandbox = true

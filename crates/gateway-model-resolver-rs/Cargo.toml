@@ -1,0 +1,16 @@
+[package]
+name = "gateway-model-resolver-rs"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Rust port of `open-sse/services/model.js`"
+
+
+[dependencies]
+serde = "1"
+ryu-js = "1"
+serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
+
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }

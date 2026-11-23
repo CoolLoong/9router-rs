@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["deepgram-default"]
-status.code = 0
-fs.sandbox = true

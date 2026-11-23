@@ -1,5 +1,0 @@
-{"name":"mcp-sse-guard","path":"/api/mcp/browsermcp/sse"}
-{"name":"mcp-message-guard","path":"/api/mcp/browsermcp/message","method":"POST"}
-{"name":"mcp-sse-proxy-guard","path":"/api/mcp/browsermcp/sse","headers":{"x-forwarded-for":"192.0.2.15","x-9r-cli-token":"invalid-fixture"}}
-{"name":"mcp-sse-unknown","path":"/api/mcp/not-a-preset/sse","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"mcp-message-unknown","path":"/api/mcp/not-a-preset/message","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

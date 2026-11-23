@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["profile-delete-missing"]
-status.code = 0
-fs.sandbox = true

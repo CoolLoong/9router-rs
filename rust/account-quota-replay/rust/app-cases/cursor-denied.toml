@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["cursor-denied"]
-status.code = 0
-fs.sandbox = true

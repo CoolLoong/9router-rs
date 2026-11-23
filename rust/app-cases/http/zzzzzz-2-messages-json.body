@@ -1,1 +1,0 @@
-{"id":"resp_native_fixture","type":"message","role":"assistant","model":"fixture-response-model","content":[{"type":"text","text":"native responses migration"}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":5,"output_tokens":3}}

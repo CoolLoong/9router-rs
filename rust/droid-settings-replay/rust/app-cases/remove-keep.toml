@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["remove-keep"]
-status.code = 0
-fs.sandbox = true

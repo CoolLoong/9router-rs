@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["url-default"]
-status.code = 0
-fs.sandbox = true

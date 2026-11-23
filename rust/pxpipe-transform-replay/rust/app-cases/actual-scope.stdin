@@ -1,1 +1,0 @@
-{"actual": {"model": "anthropic/claude-opus-4-8[1m]", "body": {"model": "anthropic/claude-opus-4-8[1m]", "system": "A fixture includes version v8.3.2, a path /var/test/log.cfg and code AUDIT-X7.\nKeep field testId. ", "max_tokens": 40, "messages": [{"role": "user", "content": "fixture user input"}]}, "repeat": 320, "minChars": 20, "scope": " CLAUDE-OPUS-4 "}}

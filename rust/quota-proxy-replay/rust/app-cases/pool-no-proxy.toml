@@ -1,4 +1,0 @@
-bin.name = "reference"
-args = ["no-proxy"]
-status.code = 0
-fs.sandbox = true

@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["clinepass-oauth"]
-status.code = 0
-fs.sandbox = true

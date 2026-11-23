@@ -1,0 +1,16 @@
+[package]
+name = "sqlite-schema-rs"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Rust port of `src/lib/db/schema.js`"
+
+
+[dependencies]
+serde = "1"
+ryu-js = "1"
+serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
+
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }

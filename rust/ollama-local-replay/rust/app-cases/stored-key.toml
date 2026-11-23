@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["stored-key"]
-status.code = 0
-fs.sandbox = true

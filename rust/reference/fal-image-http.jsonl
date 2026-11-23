@@ -1,3 +1,0 @@
-{"name":"falimg-01-enable","method":"PUT","path":"/api/providers/fixture-fal-image","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"isActive\":true}"}
-{"name":"falimg-02-queue","method":"POST","path":"/v1/images/generations","headers":{"authorization":"Bearer offline-active-key","content-type":"application/json"},"body":"{\"model\":\"fal-ai/fal-ai/flux/schnell\",\"prompt\":\"Fal accepted offline\",\"n\":2,\"size\":\"1024x1536\"}"}
-{"name":"falimg-03-disable","method":"PUT","path":"/api/providers/fixture-fal-image","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"isActive\":false}"}

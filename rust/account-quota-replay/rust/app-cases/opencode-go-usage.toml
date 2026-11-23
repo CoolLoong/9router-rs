@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["opencode-go-usage"]
-status.code = 0
-fs.sandbox = true

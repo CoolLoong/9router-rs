@@ -1,1 +1,0 @@
-{"object":"list","data":[{"object":"embedding","index":0,"embedding":[2,3.5]}],"model":"fixture-passthrough","usage":{"prompt_tokens":2,"total_tokens":2}}

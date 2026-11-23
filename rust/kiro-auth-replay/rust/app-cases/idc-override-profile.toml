@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["idc-override-profile"]
-status.code = 0
-fs.sandbox = true

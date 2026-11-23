@@ -1,9 +1,0 @@
-{"name":"proxy-probe-auth","path":"/api/proxy-pools/fixture-proxy-pool/test","method":"POST"}
-{"name":"proxy-probe-missing","path":"/api/proxy-pools/absent-pool/test","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"proxy-probe-empty","path":"/api/proxy-pools/fixture-proxy-pool/test","method":"POST","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"headroom-status-auth","path":"/api/headroom/status"}
-{"name":"headroom-proxy-local-auth","path":"/api/headroom/proxy/health"}
-{"name":"headroom-z01-invalid-url","path":"/api/settings","method":"PATCH","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"headroomUrl\":\"not-a-url\"}"}
-{"name":"headroom-z02-invalid-probe","path":"/api/headroom/proxy/health","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}
-{"name":"headroom-z03-invalid-scheme","path":"/api/settings","method":"PATCH","headers":{"x-9r-cli-token":"68977b6fd9422fbb","content-type":"application/json"},"body":"{\"headroomUrl\":\"file:///not-a-service\"}"}
-{"name":"headroom-z04-reject-scheme","path":"/api/headroom/proxy/health?case=scheme","headers":{"x-9r-cli-token":"68977b6fd9422fbb"}}

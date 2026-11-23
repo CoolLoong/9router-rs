@@ -1,5 +1,0 @@
-{"name":"fresh-schema","args":["empty"]}
-{"name":"legacy-import","args":["legacy"]}
-{"name":"marked-legacy-skips-import","args":["marked"]}
-{"name":"legacy-duplicate-rolls-back","args":["collision"]}
-{"name":"additive-sqlite-upgrade","args":["upgrade"]}

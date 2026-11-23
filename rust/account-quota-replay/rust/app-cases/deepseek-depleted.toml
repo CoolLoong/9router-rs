@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["deepseek-depleted"]
-status.code = 0
-fs.sandbox = true

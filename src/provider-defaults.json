@@ -1,0 +1,255 @@
+{
+  "shared": {
+    "anthropicApiVersion": "2023-06-01",
+    "claudeCliVersion": "2.1.322",
+    "antigravityIdeVersion": "2.24.0"
+  },
+  "gemini-cli.oauth": {
+    "authorizeUrl": "https://accounts.google.com/o/oauth2/v2/auth",
+    "tokenUrl": "https://oauth2.googleapis.com/token",
+    "userInfoUrl": "https://www.googleapis.com/oauth2/v1/userinfo",
+    "clientId": "681255809395-oo8ft2oprdrnp9e3aqf6av3hmdib135j.apps.googleusercontent.com",
+    "clientSecret": "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",
+    "scopes": "https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
+  },
+  "antigravity.oauth": {
+    "authorizeUrl": "https://accounts.google.com/o/oauth2/v2/auth",
+    "tokenUrl": "https://oauth2.googleapis.com/token",
+    "userInfoUrl": "https://www.googleapis.com/oauth2/v1/userinfo",
+    "clientId": "1071006060591-tmhssin2h21lcre235vtolojh4g403ep.apps.googleusercontent.com",
+    "clientSecret": "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",
+    "scopes": "https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/cclog https://www.googleapis.com/auth/experimentsandconfigs",
+    "loadCodeAssistEndpoint": "https://cloudcode-pa.googleapis.com/v1internal:loadCodeAssist",
+    "onboardUserEndpoint": "https://cloudcode-pa.googleapis.com/v1internal:onboardUser"
+  },
+  "iflow.oauth": {
+    "clientId": "10009311001",
+    "clientSecret": "4Z3YjXycVsQvyGF1etiNlIBB4RsqSDtW",
+    "authorizeUrl": "https://iflow.cn/oauth",
+    "tokenUrl": "https://iflow.cn/oauth/token",
+    "userInfoUrl": "https://iflow.cn/api/oauth/getUserInfo",
+    "loginMethod": "phone",
+    "type": "phone"
+  },
+  "claude.oauth": {
+    "clientId": "9d1c250a-e61b-44d9-88ed-5944d1962f5e",
+    "authorizeUrl": "https://claude.ai/oauth/authorize",
+    "tokenUrl": "https://api.anthropic.com/v1/oauth/token",
+    "codeChallengeMethod": "S256",
+    "scopes": "org:create_api_key user:profile user:inference"
+  },
+  "codex.oauth": {
+    "clientId": "app_EMoamEEZ73f0CkXaXp7hrann",
+    "authorizeUrl": "https://auth.openai.com/oauth/authorize",
+    "tokenUrl": "https://auth.openai.com/oauth/token",
+    "scope": "openid profile email offline_access",
+    "codeChallengeMethod": "S256",
+    "callbackPath": "/auth/callback",
+    "id_token_add_organizations": "true",
+    "codex_cli_simplified_flow": "true",
+    "originator": "codex_cli_rs",
+    "fixedPort": 1455
+  },
+  "github.oauth": {
+    "clientId": "Iv1.b507a08c87ecfe98",
+    "deviceCodeUrl": "https://github.com/login/device/code",
+    "tokenUrl": "https://github.com/login/oauth/access_token",
+    "userInfoUrl": "https://api.github.com/user",
+    "copilotTokenUrl": "https://api.github.com/copilot_internal/v2/token",
+    "scopes": "read:user",
+    "apiVersion": "2022-11-28",
+    "userAgent": "GitHubCopilotChat/0.26.7"
+  },
+  "cline.oauth": {
+    "authorizeUrl": "https://api.cline.bot/api/v1/auth/authorize",
+    "tokenExchangeUrl": "https://api.cline.bot/api/v1/auth/token",
+    "apiBaseUrl": "https://api.cline.bot",
+    "refreshUrl": "https://api.cline.bot/api/v1/auth/refresh"
+  },
+  "clinepass.oauth": {
+    "authorizeUrl": "https://api.cline.bot/api/v1/auth/authorize",
+    "tokenUrl": "https://api.cline.bot/api/v1/auth/token",
+    "apiBaseUrl": "https://api.cline.bot",
+    "refreshUrl": "https://api.cline.bot/api/v1/auth/refresh"
+  },
+  "glm.oauth": {
+    "cliInitUrl": "https://zcode.z.ai/api/v1/oauth/cli/init",
+    "cliPollUrl": "https://zcode.z.ai/api/v1/oauth/cli/poll",
+    "businessLoginUrl": "https://api.z.ai/api/auth/z/login",
+    "apiBaseUrl": "https://api.z.ai",
+    "providerId": "zai",
+    "planApiKeyName": "zcode-api-key"
+  },
+  "grok-cli.oauth": {
+    "deviceCodeUrl": "https://auth.x.ai/oauth2/device/code",
+    "tokenUrl": "https://auth.x.ai/oauth2/token",
+    "clientId": "b1a00492-073a-47ea-816f-4c329264a828",
+    "scope": "openid profile email offline_access grok-cli:access api:access conversations:read conversations:write",
+    "referrer": "grok-build",
+    "version": "1.0.44"
+  },
+  "github.transport": {
+    "baseUrl": "https://api.githubcopilot.com/chat/completions",
+    "responsesUrl": "https://api.githubcopilot.com/responses",
+    "messagesUrl": "https://api.githubcopilot.com/v1/messages"
+  },
+  "github.copilot": {
+    "vscodeVersion": "1.110.0",
+    "chatVersion": "0.38.0",
+    "userAgent": "GitHubCopilotChat/0.38.0",
+    "apiVersion": "2025-04-01"
+  },
+  "xai.transport": {
+    "clientId": "b1a00492-073a-47ea-816f-4c329264a828"
+  },
+  "codex.usage": {
+    "url": "https://chatgpt.com/backend-api/wham/usage",
+    "resetCreditsUrl": "https://chatgpt.com/backend-api/wham/rate-limit-reset-credits",
+    "resetCreditsConsumeUrl": "https://chatgpt.com/backend-api/wham/rate-limit-reset-credits/consume"
+  },
+  "claude.usage": {
+    "oauthUrl": "https://api.anthropic.com/api/oauth/usage",
+    "orgUrl": "https://api.anthropic.com/v1/organizations/{org_id}/usage",
+    "settingsUrl": "https://api.anthropic.com/v1/settings",
+    "profileUrl": "https://api.anthropic.com/api/oauth/profile",
+    "resetUrl": "https://api.anthropic.com/api/organizations/{org_id}/reset_rate_limits"
+  },
+  "github.usage": {
+    "url": "https://api.github.com/copilot_internal/user"
+  },
+  "clinepass.usage": {
+    "url": "https://api.cline.bot/api/v1/users/me/plan/usage-limits"
+  },
+  "gemini-cli.usage": {
+    "quotaUrl": "https://cloudcode-pa.googleapis.com/v1internal:retrieveUserQuota",
+    "loadCodeAssistUrl": "https://cloudcode-pa.googleapis.com/v1internal:loadCodeAssist"
+  },
+  "kiro.usage": {
+    "cwHost": "https://codewhisperer.us-east-1.amazonaws.com",
+    "qHost": "https://q.us-east-1.amazonaws.com",
+    "limitsPath": "/getUsageLimits"
+  },
+  "opencode-go.usage": {
+    "url": "https://opencode.ai/inference/go/v1/usage"
+  },
+  "opencode-zen.usage": {
+    "url": "https://opencode.ai/zen/v1/usage"
+  },
+  "gemini.search": {
+    "defaultModel": "gemini-2.5-flash",
+    "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+  },
+  "perplexity.search": {
+    "defaultModel": "sonar",
+    "endpoint": "https://api.perplexity.ai/chat/completions"
+  },
+  "perplexity-agent.search": {
+    "defaultModel": "perplexity/sonar",
+    "endpoint": "https://api.perplexity.ai/v1/responses"
+  },
+  "openai.search": {
+    "defaultModel": "gpt-4o-mini",
+    "endpoint": "https://api.openai.com/v1/responses"
+  },
+  "xai.search": {
+    "defaultModel": "grok-4.20-reasoning",
+    "endpoint": "https://api.x.ai/v1/responses"
+  },
+  "kimi.search": {
+    "defaultModel": "kimi-k3",
+    "endpoint": "https://api.moonshot.cn/v1/chat/completions"
+  },
+  "minimax.search": {
+    "defaultModel": "MiniMax-M2.7",
+    "endpoint": "https://api.minimaxi.com/v1/text/chatcompletion_v2"
+  },
+  "antigravity.search": {
+    "defaultModel": "gemini-2.5-flash"
+  },
+  "deepgram.tts": {},
+  "antigravity.models": {
+    "gemini-4-carbon-high": "gemini-4-carbon-high(high)",
+    "gemini-4-carbon-medium": "gemini-4-carbon-medium(medium)",
+    "gemini-4-carbon-low": "gemini-4-carbon-low(low)",
+    "gemini-4-carbon": "gemini-4-carbon-medium(medium)",
+    "gemini-4-argon-high": "gemini-4-argon-high(high)",
+    "gemini-4-argon-medium": "gemini-4-argon-medium(medium)",
+    "gemini-4-argon-low": "gemini-4-argon-low(low)",
+    "gemini-3.8-flash-high": "gemini-3.8-flash-high(high)",
+    "gemini-3.8-flash-medium": "gemini-3.8-flash-medium(medium)",
+    "gemini-3.8-flash-low": "gemini-3.8-flash-low(low)",
+    "gemini-3.8-flash": "gemini-3.8-flash-medium(medium)",
+    "gemini-3.7-flash-high": "gemini-3.7-flash-tiered(high)",
+    "gemini-3.7-flash-medium": "gemini-3.7-flash-tiered(medium)",
+    "gemini-3.7-flash-low": "gemini-3.7-flash-tiered(low)",
+    "gemini-3.6-flash-high": "gemini-3.6-flash-tiered(high)",
+    "gemini-3.6-flash-medium": "gemini-3.6-flash-tiered(medium)",
+    "gemini-3.6-flash-low": "gemini-3.6-flash-tiered(low)",
+    "gemini-3.1-pro-high": "gemini-pro-agent",
+    "gemini-pro-agent": "gemini-pro-agent",
+    "gemini-3.1-pro-low": "gemini-3.1-pro-low(low)",
+    "claude-sonnet-5-5-high": "claude-sonnet-5-5-high(high)",
+    "claude-sonnet-5-5-medium": "claude-sonnet-5-5-medium(medium)",
+    "claude-sonnet-5-5-low": "claude-sonnet-5-5-low(low)",
+    "claude-sonnet-5-5": "claude-sonnet-5-5-high(high)",
+    "claude-opus-5-5-high": "claude-opus-5-5-high(high)",
+    "claude-opus-5-5-medium": "claude-opus-5-5-medium(medium)",
+    "claude-opus-5-5-low": "claude-opus-5-5-low(low)",
+    "claude-opus-5-5": "claude-opus-5-5-high(high)",
+    "claude-sonnet-4-6": "claude-sonnet-4-6",
+    "claude-opus-4-6-thinking": "claude-opus-4-6-thinking",
+    "gpt-oss-120b-medium": "gpt-oss-120b-medium",
+    "gemini-3.1-flash-image": "gemini-3.1-flash-image"
+  },
+  "kiro.profiles": {
+    "builder-id": "arn:aws:codewhisperer:us-east-1:638616132270:profile/AAAACCCCXXXX",
+    "social": "arn:aws:codewhisperer:us-east-1:699475941385:profile/EHGA3GRVQMUK"
+  },
+  "xai.oauth": {
+    "ISSUER": "https://auth.x.ai",
+    "PKCE_VERIFIER_BYTES": 96,
+    "LOOPBACK_PORT": 56121,
+    "CALLBACK_PATH": "/callback",
+    "SCOPE": "openid profile email offline_access grok-cli:access api:access",
+    "AUTH_ENDPOINT_PATH": "/oauth2/authorize",
+    "TOKEN_ENDPOINT_PATH": "/oauth2/token",
+    "DISCOVERY_PATH": "/.well-known/openid-configuration"
+  },
+  "locales": [
+    "en",
+    "vi",
+    "zh-CN",
+    "zh-TW",
+    "ja",
+    "pt-BR",
+    "pt-PT",
+    "ko",
+    "es",
+    "de",
+    "fr",
+    "he",
+    "ar",
+    "ru",
+    "pl",
+    "cs",
+    "nl",
+    "tr",
+    "uk",
+    "tl",
+    "id",
+    "km",
+    "th",
+    "hi",
+    "bn",
+    "ur",
+    "ro",
+    "sv",
+    "it",
+    "el",
+    "hu",
+    "fi",
+    "da",
+    "no",
+    "fa"
+  ]
+}

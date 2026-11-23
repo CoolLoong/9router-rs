@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/minimax/global/token_plan/remains", "valid": true}, {"method": "GET", "path": "/minimax/global-alt/coding_plan/remains", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "MiniMax connected. MiniMax usage endpoint error (503)"}, "status": 200}]}

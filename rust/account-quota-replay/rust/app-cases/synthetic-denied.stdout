@@ -1,1 +1,0 @@
-{"accessRotated": false, "outbound": [{"method": "GET", "path": "/synthetic/quota", "valid": true}], "refreshRotated": false, "replies": [{"body": {"message": "Synthetic authentication failed. Check the API key.", "plan": "Synthetic"}, "status": 200}]}

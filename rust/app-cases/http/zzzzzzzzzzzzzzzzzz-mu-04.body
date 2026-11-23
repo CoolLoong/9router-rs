@@ -1,6 +1,0 @@
-data: {"id":"chatcmpl-muse-shared",[..],"model":"fixture-muse-chat","object":"chat.completion.chunk","choices":[{"index":0,"delta":{"role":"assistant","content":"Muse fixture response"},"finish_reason":null}]}
-
-data: {"id":"chatcmpl-muse-shared",[..],"model":"fixture-muse-chat","object":"chat.completion.chunk","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2007,"completion_tokens":3,"total_tokens":2010}}
-
-data: [DONE]
-

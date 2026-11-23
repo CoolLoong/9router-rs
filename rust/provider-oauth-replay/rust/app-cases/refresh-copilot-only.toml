@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["refresh-copilot-only"]
-status.code = 0
-fs.sandbox = true

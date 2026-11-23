@@ -1,1 +1,0 @@
-{"actual": {"model": "claude-fable-5", "body": {"model": "claude-fable-5", "system": "Fixture scope disabled.", "max_tokens": 40, "messages": [{"role": "user", "content": "fixture user input"}]}, "repeat": 60, "minChars": 20, "scope": "No"}}

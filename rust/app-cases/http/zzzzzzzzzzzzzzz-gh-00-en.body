@@ -1,1 +1,0 @@
-{"connection":{"expiresAt":"[..]","providerSpecificData":{"copilotToken":"offline-github-copilot","copilotTokenExpiresAt":4102444800},"id":"fixture-github","provider":"github","authType":"oauth","name":"Fixture GitHub Copilot","email":null,"priority":5,"isActive":true,"createdAt":"[..]","updatedAt":"[..]"}}

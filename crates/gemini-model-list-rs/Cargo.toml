@@ -1,0 +1,15 @@
+[package]
+name = "gemini-model-list-rs"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Rust port of `src/app/api/v1beta/models/`"
+
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
+
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }

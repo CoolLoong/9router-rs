@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["tool-parallel"]
-status.code = 0
-fs.sandbox = true

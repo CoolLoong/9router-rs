@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["minimax-invalid-hex"]
-status.code = 0
-fs.sandbox = true

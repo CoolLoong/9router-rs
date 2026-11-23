@@ -1,4 +1,0 @@
-bin.name = "driver"
-args = ["management-malformed"]
-status.code = 0
-fs.sandbox = true

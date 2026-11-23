@@ -1,1 +1,0 @@
-{"id":"chatcmpl-static-fixture",[..],"model":"llama-3.3-70b-versatile","object":"chat.completion","choices":[{"index":0,"message":{"role":"assistant","content":"native groq fixture"},"finish_reason":"stop"}],"usage":{"prompt_tokens":2006,"completion_tokens":4,"total_tokens":2010}}
