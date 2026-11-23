@@ -6,6 +6,7 @@
   </a>
   <h1>9Router Rust</h1>
   <p>A self-hosted Rust gateway for coding tools and model APIs.</p>
+  <p>Migrated with <a href="https://github.com/erkamyaman/rust-anything">rust-anything</a>.</p>
   <p>
     <a href="#getting-started">Getting Started</a> ·
     <a href="docs/native-packages.md">Native packages</a> ·
@@ -255,6 +256,7 @@ Report bugs and feature requests in [GitHub Issues](https://github.com/CoolLoong
 ## Acknowledgments
 
 - [decolua/9router](https://github.com/decolua/9router/tree/1855aa44473e88feac9d3f131b9c0c5fc9706b68) is the upstream project. This port uses commit `1855aa4` as its baseline.
+- [rust-anything](https://github.com/erkamyaman/rust-anything) provided the migration scaffolding and tools to replay recorded behavior against the Rust implementation.
 - The README layout is based on [Best-README-Template](https://github.com/othneildrew/Best-README-Template).
 
 <p align="right"><a href="#readme-top">↑ Top</a></p>

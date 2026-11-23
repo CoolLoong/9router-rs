@@ -6,6 +6,7 @@
   </a>
   <h1>9Router Rust</h1>
   <p>用一个自托管 Rust 网关接入编程工具和模型 API。</p>
+  <p>使用 <a href="https://github.com/erkamyaman/rust-anything">rust-anything</a> 迁移到 Rust。</p>
   <p>
     <a href="#快速开始">快速开始</a> ·
     <a href="docs/native-packages.md">原生打包</a> ·
@@ -255,6 +256,7 @@ cargo check --locked --no-default-features
 ## 致谢
 
 - 上游 [decolua/9router](https://github.com/decolua/9router/tree/1855aa44473e88feac9d3f131b9c0c5fc9706b68) 提供了迁移基线，对应提交 `1855aa4`。
+- [rust-anything](https://github.com/erkamyaman/rust-anything) 用于生成迁移骨架，并回放旧版记录以核对 Rust 实现的行为。
 - README 布局参考 [Best-README-Template](https://github.com/othneildrew/Best-README-Template)。
 
 <p align="right"><a href="#readme-top">↑ 顶部</a></p>
