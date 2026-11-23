@@ -10,6 +10,7 @@ FROM rust:bookworm AS build
 WORKDIR /app
 COPY Cargo.toml Cargo.lock build.rs ./
 COPY src src
+COPY assets assets
 COPY crates crates
 COPY tools tools
 COPY LICENSE LICENSE

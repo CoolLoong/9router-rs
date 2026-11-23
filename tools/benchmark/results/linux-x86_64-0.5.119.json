@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "options": {
+    "node_server": "9router@0.5.119 package/app/server.js",
+    "rust_bin": "9router-rs 0.5.119 native release with local assets cleanup",
+    "rounds": 5,
+    "requests": 1000,
+    "concurrency": 8
+  },
+  "environment": {
+    "architecture": "x86_64",
+    "kernel_release": "7.3.4-1-cachyos",
+    "available_parallelism": 28,
+    "clock_ticks_per_second": 100,
+    "rss_sample_interval_ms": 20
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "gateway": "node",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 310.49756099999996,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 21.595136,
+        "p95": 30.050145,
+        "p99": 34.25878
+      },
+      "measured_seconds": 2.769229634,
+      "successful_requests_per_second": 361.1112591466656,
+      "warm_rss_kib": 173592,
+      "sampled_peak_rss_kib": 253080,
+      "cpu_ticks": 320,
+      "gateway_main_thread_cpu_ticks": 266,
+      "harness_cpu_ticks": 17,
+      "cpu_ms_per_request": 3.2
+    },
+    {
+      "round": 1,
+      "gateway": "rust",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 12.076808,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 4.652561,
+        "p95": 40.059178,
+        "p99": 132.270525
+      },
+      "measured_seconds": 1.5623142319999999,
+      "successful_requests_per_second": 640.0760996203996,
+      "warm_rss_kib": 38000,
+      "sampled_peak_rss_kib": 48624,
+      "cpu_ticks": 380,
+      "gateway_main_thread_cpu_ticks": 0,
+      "harness_cpu_ticks": 14,
+      "cpu_ms_per_request": 3.8
+    },
+    {
+      "round": 2,
+      "gateway": "rust",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 12.281258999999999,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 4.374759,
+        "p95": 44.94938,
+        "p99": 132.3594
+      },
+      "measured_seconds": 1.556124654,
+      "successful_requests_per_second": 642.6220402263481,
+      "warm_rss_kib": 37552,
+      "sampled_peak_rss_kib": 46980,
+      "cpu_ticks": 368,
+      "gateway_main_thread_cpu_ticks": 0,
+      "harness_cpu_ticks": 14,
+      "cpu_ms_per_request": 3.68
+    },
+    {
+      "round": 2,
+      "gateway": "node",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 312.661115,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 21.535471,
+        "p95": 29.759107999999998,
+        "p99": 35.761981999999996
+      },
+      "measured_seconds": 2.7605752,
+      "successful_requests_per_second": 362.24334696624095,
+      "warm_rss_kib": 173412,
+      "sampled_peak_rss_kib": 252536,
+      "cpu_ticks": 321,
+      "gateway_main_thread_cpu_ticks": 264,
+      "harness_cpu_ticks": 17,
+      "cpu_ms_per_request": 3.21
+    },
+    {
+      "round": 3,
+      "gateway": "node",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 303.978631,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 20.917075,
+        "p95": 28.474379000000003,
+        "p99": 33.915353
+      },
+      "measured_seconds": 2.68288984,
+      "successful_requests_per_second": 372.7324115551461,
+      "warm_rss_kib": 173192,
+      "sampled_peak_rss_kib": 252268,
+      "cpu_ticks": 312,
+      "gateway_main_thread_cpu_ticks": 258,
+      "harness_cpu_ticks": 16,
+      "cpu_ms_per_request": 3.12
+    },
+    {
+      "round": 3,
+      "gateway": "rust",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 12.217274,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 4.7151440000000004,
+        "p95": 55.726625,
+        "p99": 132.209142
+      },
+      "measured_seconds": 1.505396929,
+      "successful_requests_per_second": 664.276630791506,
+      "warm_rss_kib": 38796,
+      "sampled_peak_rss_kib": 48692,
+      "cpu_ticks": 383,
+      "gateway_main_thread_cpu_ticks": 0,
+      "harness_cpu_ticks": 14,
+      "cpu_ms_per_request": 3.83
+    },
+    {
+      "round": 4,
+      "gateway": "rust",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 12.219393,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 4.731557,
+        "p95": 56.230089,
+        "p99": 109.157643
+      },
+      "measured_seconds": 1.5367861299999999,
+      "successful_requests_per_second": 650.7086317859988,
+      "warm_rss_kib": 38436,
+      "sampled_peak_rss_kib": 49292,
+      "cpu_ticks": 379,
+      "gateway_main_thread_cpu_ticks": 0,
+      "harness_cpu_ticks": 15,
+      "cpu_ms_per_request": 3.79
+    },
+    {
+      "round": 4,
+      "gateway": "node",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 319.43230900000003,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 21.281968,
+        "p95": 32.966434,
+        "p99": 39.460558999999996
+      },
+      "measured_seconds": 2.786969108,
+      "successful_requests_per_second": 358.812732128784,
+      "warm_rss_kib": 172952,
+      "sampled_peak_rss_kib": 252380,
+      "cpu_ticks": 324,
+      "gateway_main_thread_cpu_ticks": 266,
+      "harness_cpu_ticks": 16,
+      "cpu_ms_per_request": 3.24
+    },
+    {
+      "round": 5,
+      "gateway": "node",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 322.778863,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 20.906406,
+        "p95": 27.504158,
+        "p99": 35.325862
+      },
+      "measured_seconds": 2.6730264200000002,
+      "successful_requests_per_second": 374.1077875317072,
+      "warm_rss_kib": 172368,
+      "sampled_peak_rss_kib": 250612,
+      "cpu_ticks": 312,
+      "gateway_main_thread_cpu_ticks": 258,
+      "harness_cpu_ticks": 17,
+      "cpu_ms_per_request": 3.12
+    },
+    {
+      "round": 5,
+      "gateway": "rust",
+      "requests": 1000,
+      "succeeded": 1000,
+      "errors": 0,
+      "first_error": null,
+      "mock_calls": 1000,
+      "cold_ready_ms": 11.744253,
+      "warmup_requests": 50,
+      "warmup_mock_calls": 50,
+      "latency_ms": {
+        "p50": 4.5049529999999995,
+        "p95": 56.413679,
+        "p99": 108.12002299999999
+      },
+      "measured_seconds": 1.486749068,
+      "successful_requests_per_second": 672.6084593045798,
+      "warm_rss_kib": 38036,
+      "sampled_peak_rss_kib": 48896,
+      "cpu_ticks": 371,
+      "gateway_main_thread_cpu_ticks": 0,
+      "harness_cpu_ticks": 14,
+      "cpu_ms_per_request": 3.71
+    }
+  ],
+  "summaries": {
+    "node": {
+      "valid_rounds": 5,
+      "cold_ready_ms": {
+        "median": 312.661115,
+        "min": 303.978631,
+        "max": 322.778863
+      },
+      "latency_ms": {
+        "p50": {
+          "median": 21.281968,
+          "min": 20.906406,
+          "max": 21.595136
+        },
+        "p95": {
+          "median": 29.759107999999998,
+          "min": 27.504158,
+          "max": 32.966434
+        },
+        "p99": {
+          "median": 35.325862,
+          "min": 33.915353,
+          "max": 39.460558999999996
+        }
+      },
+      "successful_requests_per_second": {
+        "median": 362.24334696624095,
+        "min": 358.812732128784,
+        "max": 374.1077875317072
+      },
+      "warm_rss_kib": {
+        "median": 173192.0,
+        "min": 172368.0,
+        "max": 173592.0
+      },
+      "sampled_peak_rss_kib": {
+        "median": 252380.0,
+        "min": 250612.0,
+        "max": 253080.0
+      },
+      "cpu_ms_per_request": {
+        "median": 3.2,
+        "min": 3.12,
+        "max": 3.24
+      }
+    },
+    "rust": {
+      "valid_rounds": 5,
+      "cold_ready_ms": {
+        "median": 12.217274,
+        "min": 11.744253,
+        "max": 12.281258999999999
+      },
+      "latency_ms": {
+        "p50": {
+          "median": 4.652561,
+          "min": 4.374759,
+          "max": 4.731557
+        },
+        "p95": {
+          "median": 55.726625,
+          "min": 40.059178,
+          "max": 56.413679
+        },
+        "p99": {
+          "median": 132.209142,
+          "min": 108.12002299999999,
+          "max": 132.3594
+        }
+      },
+      "successful_requests_per_second": {
+        "median": 650.7086317859988,
+        "min": 640.0760996203996,
+        "max": 672.6084593045798
+      },
+      "warm_rss_kib": {
+        "median": 38036.0,
+        "min": 37552.0,
+        "max": 38796.0
+      },
+      "sampled_peak_rss_kib": {
+        "median": 48692.0,
+        "min": 46980.0,
+        "max": 49292.0
+      },
+      "cpu_ms_per_request": {
+        "median": 3.79,
+        "min": 3.68,
+        "max": 3.83
+      }
+    }
+  },
+  "provenance": {
+    "node": "v22.23.5",
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "node_package": "9router@0.5.119",
+    "node_package_integrity": "sha512-3u78lwsp1+xAE0MffPE/tomgzOg01zmqWAWGlzH4lWxdePjDdH5vhER7YOJsKDjmrvR1IDPbd5Vct2zHXGgyew==",
+    "rust_base_commit": "770722382b19b157137eef57c3c763b9a7461df2",
+    "rust_executable_sha256": "4b0aaa1b5029bbb4414434342e11c27721fa21b95c3ab1dafd32ba5c54e79903",
+    "rust_build": "release, default features, assets cleanup applied",
+    "pre_run_load_average": [
+      1.52,
+      2.25,
+      2.85
+    ]
+  },
+  "diagnostics": {
+    "node_median_main_thread_cores_8": 0.9605559493301306,
+    "node_median_harness_cores_8": 0.06138891405493316,
+    "rust_median_harness_cores_8": 0.09299872831081085,
+    "single_pair_at_concurrency_16": [
+      {
+        "round": 1,
+        "gateway": "node",
+        "requests": 500,
+        "succeeded": 500,
+        "errors": 0,
+        "first_error": null,
+        "mock_calls": 500,
+        "cold_ready_ms": 312.982101,
+        "warmup_requests": 50,
+        "warmup_mock_calls": 50,
+        "latency_ms": {
+          "p50": 42.560494999999996,
+          "p95": 52.257578,
+          "p99": 69.247569
+        },
+        "measured_seconds": 1.344884829,
+        "successful_requests_per_second": 371.7790469625411,
+        "warm_rss_kib": 172340,
+        "sampled_peak_rss_kib": 212128,
+        "cpu_ticks": 160,
+        "gateway_main_thread_cpu_ticks": 131,
+        "harness_cpu_ticks": 8,
+        "cpu_ms_per_request": 3.2
+      },
+      {
+        "round": 1,
+        "gateway": "rust",
+        "requests": 500,
+        "succeeded": 500,
+        "errors": 0,
+        "first_error": null,
+        "mock_calls": 500,
+        "cold_ready_ms": 12.235904000000001,
+        "warmup_requests": 50,
+        "warmup_mock_calls": 50,
+        "latency_ms": {
+          "p50": 6.545978,
+          "p95": 105.35301,
+          "p99": 234.043417
+        },
+        "measured_seconds": 0.956762274,
+        "successful_requests_per_second": 522.5958564499168,
+        "warm_rss_kib": 40836,
+        "sampled_peak_rss_kib": 47772,
+        "cpu_ticks": 253,
+        "gateway_main_thread_cpu_ticks": 0,
+        "harness_cpu_ticks": 7,
+        "cpu_ms_per_request": 5.06
+      }
+    ],
+    "rust_sleep_trace": {
+      "used_in_timing_table": false,
+      "requests": 128,
+      "concurrency": 8,
+      "instrumentation": "strace -f -k -e trace=clock_nanosleep",
+      "sqliteDefaultBusyCallback_stack_frames": 3341
+    }
+  }
+}

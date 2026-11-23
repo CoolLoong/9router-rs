@@ -1,8 +1,7 @@
 use axum::Json;
 use axum::Router;
 use axum::extract::{Request, State};
-use axum::http::{Method, StatusCode, header};
-use axum::middleware::Next;
+use axum::http::{StatusCode, header};
 use axum::response::{IntoResponse, Response};
 use axum::routing::get;
 use percent_encoding::percent_decode_str;
@@ -15,7 +14,35 @@ const POLICY: &str = "default-src 'none'; script-src 'self'; style-src 'self' 'u
 include!(concat!(env!("OUT_DIR"), "/dashboard_assets.rs"));
 
 pub(super) fn router(storage: Storage) -> Router {
-    Router::new()
+    let mut pages = Router::new();
+    for path in [
+        "/dashboard",
+        "/dashboard/endpoint",
+        "/dashboard/settings/pricing",
+        "/dashboard/skills",
+        "/dashboard/console-log",
+        "/dashboard/combos",
+        "/dashboard/basic-chat",
+        "/dashboard/media-providers/{kind}",
+        "/dashboard/media-providers/combo/{id}",
+        "/dashboard/media-providers/{kind}/{id}",
+        "/dashboard/cli-tools",
+        "/dashboard/cli-tools/{tool}",
+        "/dashboard/mitm",
+        "/dashboard/providers",
+        "/dashboard/providers/new",
+        "/dashboard/providers/{id}",
+        "/dashboard/profile",
+        "/dashboard/proxy-pools",
+        "/dashboard/token-saver",
+        "/dashboard/quota",
+        "/dashboard/pxpipe",
+        "/dashboard/usage",
+        "/dashboard/translator",
+    ] {
+        pages = pages.route(path, get(page));
+    }
+    pages
         .route("/api/dashboard/context", get(context))
         .with_state(storage)
         .route("/__dashboard/{*asset}", get(serve_asset))
@@ -93,21 +120,7 @@ async fn context(State(storage): State<Storage>, request: Request) -> Response {
         .into_response()
 }
 
-pub(super) async fn render(
-    State(storage): State<Storage>,
-    request: Request,
-    next: Next,
-) -> Response {
-    let path = request.uri().path();
-    let native_page = matches!(path, "/dashboard/models" | "/dashboard/updates")
-        || path.starts_with("/dashboard/providers/nodes/")
-        || path.starts_with("/dashboard/providers/connections/");
-    if request.method() != Method::GET
-        || native_page
-        || !(path == "/dashboard" || path.starts_with("/dashboard/"))
-    {
-        return next.run(request).await;
-    }
+async fn page(State(storage): State<Storage>, request: Request) -> Response {
     if let Err(path) = protected(&storage, request.headers()).await {
         return redirect(path);
     }

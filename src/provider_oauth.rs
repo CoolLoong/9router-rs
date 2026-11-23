@@ -181,7 +181,7 @@ async fn callback() -> Response {
                 "default-src 'none'; script-src 'self'; base-uri 'none'; frame-ancestors 'none'",
             ),
         ],
-        include_str!("dashboard_assets/oauth-callback.html"),
+        include_str!("../assets/native-web/oauth-callback.html"),
     )
         .into_response()
 }
@@ -189,7 +189,7 @@ async fn callback() -> Response {
 async fn callback_script() -> Response {
     (
         [(header::CONTENT_TYPE, "text/javascript; charset=utf-8")],
-        include_str!("dashboard_assets/oauth-callback.js"),
+        include_str!("../assets/native-web/oauth-callback.js"),
     )
         .into_response()
 }

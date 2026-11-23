@@ -467,7 +467,7 @@ impl Drop for Icon {
 }
 
 fn icon_resource() -> Option<&'static [u8]> {
-    let ico = include_bytes!("dashboard_assets/tray-icon.ico");
+    let ico = include_bytes!("../assets/tray/tray-icon.ico");
     let size = u32::from_le_bytes(ico.get(14..18)?.try_into().ok()?) as usize;
     let offset = u32::from_le_bytes(ico.get(18..22)?.try_into().ok()?) as usize;
     ico.get(offset..offset.checked_add(size)?)

@@ -23,15 +23,15 @@ const INDEX: &str = "<!doctype html>\n<html><head><meta charset=\"utf-8\"><title
 const FILES: &[(&str, &str)] = &[
     (
         "relay.js",
-        include_str!("relay_assets/netlify_relay_function.cjs"),
+        include_str!("../assets/relay/netlify_relay_function.cjs"),
     ),
     (
         "relay.mjs",
-        include_str!("relay_assets/cloudflare_relay_worker.mjs"),
+        include_str!("../assets/relay/cloudflare_relay_worker.mjs"),
     ),
     (
         "pinned-https.mjs",
-        include_str!("relay_assets/pinned_relay_https.mjs"),
+        include_str!("../assets/relay/pinned_relay_https.mjs"),
     ),
 ];
 

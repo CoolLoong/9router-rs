@@ -79,7 +79,7 @@ webpki-roots = "1"
 
 [workspace]
 resolver = "3"
-members = ["crates/*", "tools/package"]
+members = ["crates/*", "tools/benchmark", "tools/package"]
 default-members = ["."]
 
 [target.'cfg(target_os = "linux")'.dependencies]

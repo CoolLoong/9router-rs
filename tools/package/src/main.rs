@@ -136,7 +136,7 @@ fn package() -> Result<()> {
             0o644,
         )?;
     }
-    for entry in fs::read_dir(root.join("src/pxpipe_assets"))? {
+    for entry in fs::read_dir(root.join("assets/pxpipe"))? {
         let path = entry?.path();
         let name = path
             .file_name()

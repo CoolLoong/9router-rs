@@ -13,7 +13,7 @@ use super::{StateData, error};
 
 const API: &str = "https://api.cloudflare.com/client/v4";
 const FIXTURE_API: &str = "http://127.0.0.1:52989/cloudflare-management/client/v4";
-const WORKER: &str = include_str!("relay_assets/cloudflare_relay_worker.mjs");
+const WORKER: &str = include_str!("../assets/relay/cloudflare_relay_worker.mjs");
 
 fn identifier(value: &Value) -> Option<&str> {
     value

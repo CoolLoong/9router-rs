@@ -20,15 +20,15 @@ const FIXTURE_API: &str = "http://127.0.0.1:52989/vercel-management";
 const ASSETS: &[(&str, &str)] = &[
     (
         "api/relay.mjs",
-        include_str!("relay_assets/vercel_relay_function.mjs"),
+        include_str!("../assets/relay/vercel_relay_function.mjs"),
     ),
     (
         "lib/relay.mjs",
-        include_str!("relay_assets/cloudflare_relay_worker.mjs"),
+        include_str!("../assets/relay/cloudflare_relay_worker.mjs"),
     ),
     (
         "lib/pinned-https.mjs",
-        include_str!("relay_assets/pinned_relay_https.mjs"),
+        include_str!("../assets/relay/pinned_relay_https.mjs"),
     ),
 ];
 

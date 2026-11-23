@@ -2708,6 +2708,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d"
 
 [[package]]
+name = "nine-router-benchmark"
+version = "0.1.0"
+dependencies = [
+ "axum",
+ "futures-util",
+ "reqwest",
+ "rustix",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+]
+
+[[package]]
 name = "ninerouter"
 version = "0.5.119"
 dependencies = [

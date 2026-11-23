@@ -39,25 +39,29 @@ impl Font {
             };
         }
         match (self, aa) {
-            (Self::Spleen, true) => load!(SPLEEN_GRAY, "pxpipe_assets/spleen-unifont-atlas.zlib"),
-            (Self::Spleen, false) => load!(SPLEEN_BITS, "pxpipe_assets/spleen-unifont-bitmap.zlib"),
+            (Self::Spleen, true) => {
+                load!(SPLEEN_GRAY, "../assets/pxpipe/spleen-unifont-atlas.zlib")
+            }
+            (Self::Spleen, false) => {
+                load!(SPLEEN_BITS, "../assets/pxpipe/spleen-unifont-bitmap.zlib")
+            }
             (Self::JetBrains10, true) => {
-                load!(JB10_GRAY, "pxpipe_assets/jetbrains-mono-10-gray.zlib")
+                load!(JB10_GRAY, "../assets/pxpipe/jetbrains-mono-10-gray.zlib")
             }
             (Self::JetBrains10, false) => {
-                load!(JB10_BITS, "pxpipe_assets/jetbrains-mono-10-bitmap.zlib")
+                load!(JB10_BITS, "../assets/pxpipe/jetbrains-mono-10-bitmap.zlib")
             }
             (Self::JetBrains12, true) => {
-                load!(JB12_GRAY, "pxpipe_assets/jetbrains-mono-12-gray.zlib")
+                load!(JB12_GRAY, "../assets/pxpipe/jetbrains-mono-12-gray.zlib")
             }
             (Self::JetBrains12, false) => {
-                load!(JB12_BITS, "pxpipe_assets/jetbrains-mono-12-bitmap.zlib")
+                load!(JB12_BITS, "../assets/pxpipe/jetbrains-mono-12-bitmap.zlib")
             }
             (Self::JetBrains14, true) => {
-                load!(JB14_GRAY, "pxpipe_assets/jetbrains-mono-14-gray.zlib")
+                load!(JB14_GRAY, "../assets/pxpipe/jetbrains-mono-14-gray.zlib")
             }
             (Self::JetBrains14, false) => {
-                load!(JB14_BITS, "pxpipe_assets/jetbrains-mono-14-bitmap.zlib")
+                load!(JB14_BITS, "../assets/pxpipe/jetbrains-mono-14-bitmap.zlib")
             }
         }
     }

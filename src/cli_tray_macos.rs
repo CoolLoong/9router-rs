@@ -147,7 +147,7 @@ pub fn start(address: SocketAddr, shutdown: Arc<Notify>) -> Option<TraySession> 
             bar.removeStatusItem(&item);
             return None;
         };
-        let png = NSData::with_bytes(include_bytes!("dashboard_assets/tray-icon.png"));
+        let png = NSData::with_bytes(include_bytes!("../assets/tray/tray-icon.png"));
         if let Some(image) = NSImage::initWithData(NSImage::alloc(), &png) {
             image.setSize(NSSize::new(18.0, 18.0));
             button.setImage(Some(&image));

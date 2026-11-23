@@ -5,6 +5,9 @@ use std::time::{Duration, SystemTime};
 use rusqlite::{Connection, OpenFlags, OptionalExtension};
 use serde_json::{Value, json};
 use tempfile::TempDir;
+use tokio::sync::Mutex as AsyncMutex;
+
+const MAX_IDLE_READERS: usize = 8;
 
 enum StorageRoot {
     Temporary(TempDir),
@@ -12,10 +15,23 @@ enum StorageRoot {
 }
 
 #[derive(Clone)]
-pub struct Storage {
-    root: Arc<StorageRoot>,
+pub struct Storage(Arc<StorageState>);
+
+struct StorageState {
+    readers: Mutex<Vec<Connection>>,
+    writer: Arc<AsyncMutex<Writer>>,
+    catalog: Mutex<Option<Catalog>>,
+    database: Arc<Database>,
+}
+
+struct Writer {
+    connection: Option<Connection>,
+    database: Arc<Database>,
+}
+
+struct Database {
+    root: StorageRoot,
     file: PathBuf,
-    catalog: Arc<Mutex<Option<Catalog>>>,
 }
 
 struct Catalog {
@@ -37,14 +53,18 @@ impl Storage {
     }
 
     fn initialize(root: StorageRoot) -> Result<Self, Box<dyn std::error::Error>> {
-        let root = Arc::new(root);
         let file = root.path().join("db/data.sqlite");
         crate::storage_migration::initialize(root.path(), &file)?;
-        Ok(Self {
-            root,
-            file,
-            catalog: Arc::new(Mutex::new(None)),
-        })
+        let database = Arc::new(Database { root, file });
+        Ok(Self(Arc::new(StorageState {
+            readers: Mutex::new(Vec::with_capacity(MAX_IDLE_READERS)),
+            writer: Arc::new(AsyncMutex::new(Writer {
+                connection: None,
+                database: database.clone(),
+            })),
+            catalog: Mutex::new(None),
+            database,
+        })))
     }
 
     pub fn model_catalog(&self) -> Option<Arc<Value>> {
@@ -52,6 +72,7 @@ impl Storage {
         let metadata = std::fs::metadata(&path).ok();
         let stamp = metadata.and_then(|metadata| Some((metadata.modified().ok()?, metadata.len())));
         let mut cached = self
+            .0
             .catalog
             .lock()
             .unwrap_or_else(|error| error.into_inner());
@@ -76,7 +97,7 @@ impl Storage {
     }
 
     pub fn root(&self) -> &Path {
-        self.root.path()
+        self.0.database.root.path()
     }
 
     pub async fn api_key_is_active(&self, key: String) -> bool {
@@ -114,20 +135,54 @@ impl Storage {
         write: bool,
         operation: impl FnOnce(&mut Connection) -> rusqlite::Result<T> + Send + 'static,
     ) -> Result<T, String> {
-        let db = self.clone();
-        tokio::task::spawn_blocking(move || {
-            let flags = if write {
-                OpenFlags::SQLITE_OPEN_READ_WRITE
-            } else {
-                OpenFlags::SQLITE_OPEN_READ_ONLY
-            };
-            let mut connection = Connection::open_with_flags(&db.file, flags)?;
-            connection.busy_timeout(Duration::from_secs(5))?;
-            operation(&mut connection)
-        })
-        .await
-        .map_err(|error| error.to_string())?
-        .map_err(|error| error.to_string())
+        let task = if write {
+            let writer = self.0.writer.clone().lock_owned().await;
+            tokio::task::spawn_blocking(move || {
+                let mut writer = writer;
+                let mut connection = match writer.connection.take() {
+                    Some(connection) => connection,
+                    None => writer.database.connect(OpenFlags::SQLITE_OPEN_READ_WRITE)?,
+                };
+                let result = operation(&mut connection);
+                if result.is_ok() && connection.is_autocommit() {
+                    writer.connection = Some(connection);
+                }
+                result
+            })
+        } else {
+            let state = self.0.clone();
+            tokio::task::spawn_blocking(move || {
+                let cached = state
+                    .readers
+                    .lock()
+                    .ok()
+                    .and_then(|mut readers| readers.pop());
+                let mut connection = match cached {
+                    Some(connection) => connection,
+                    None => state.database.connect(OpenFlags::SQLITE_OPEN_READ_ONLY)?,
+                };
+                let result = operation(&mut connection);
+                if result.is_ok()
+                    && connection.is_autocommit()
+                    && let Ok(mut readers) = state.readers.lock()
+                    && readers.len() < MAX_IDLE_READERS
+                {
+                    readers.push(connection);
+                }
+                result
+            })
+        };
+        task.await
+            .map_err(|error| error.to_string())?
+            .map_err(|error| error.to_string())
+    }
+}
+
+impl Database {
+    fn connect(&self, flags: OpenFlags) -> rusqlite::Result<Connection> {
+        let connection = Connection::open_with_flags(&self.file, flags)?;
+        connection.busy_timeout(Duration::from_secs(5))?;
+        Ok(connection)
     }
 }
 

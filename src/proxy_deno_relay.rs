@@ -14,9 +14,9 @@ use super::{StateData, error};
 
 const API: &str = "https://api.deno.com/v2";
 const FIXTURE_API: &str = "http://127.0.0.1:52989/deno-management/v2";
-const RUNTIME: &str = include_str!("relay_assets/deno_relay_runtime.mjs");
-const HANDLER: &str = include_str!("relay_assets/cloudflare_relay_worker.mjs");
-const PINNED_HTTPS: &str = include_str!("relay_assets/pinned_relay_https.mjs");
+const RUNTIME: &str = include_str!("../assets/relay/deno_relay_runtime.mjs");
+const HANDLER: &str = include_str!("../assets/relay/cloudflare_relay_worker.mjs");
+const PINNED_HTTPS: &str = include_str!("../assets/relay/pinned_relay_https.mjs");
 
 fn nonempty(value: &Value) -> Option<&str> {
     value

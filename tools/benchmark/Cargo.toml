@@ -1,0 +1,16 @@
+[package]
+name = "nine-router-benchmark"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+axum = "0.8"
+futures-util = "0.3"
+reqwest = { version = "0.12", default-features = false, features = ["json"] }
+rustix = { version = "1", features = ["param"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tempfile = "3"
+tokio = { version = "1", features = ["macros", "net", "process", "rt-multi-thread", "signal", "time"] }

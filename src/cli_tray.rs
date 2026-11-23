@@ -200,7 +200,7 @@ impl Tray for RouterTray {
 
 fn icon() -> Option<&'static Icon> {
     static ICON: LazyLock<Option<Icon>> = LazyLock::new(|| {
-        let input = include_bytes!("dashboard_assets/tray-icon.png");
+        let input = include_bytes!("../assets/tray/tray-icon.png");
         let mut decoder = png::Decoder::new(Cursor::new(input));
         decoder.set_transformations(png::Transformations::normalize_to_color8());
         let mut reader = decoder.read_info().ok()?;

@@ -245,14 +245,6 @@ pub fn router(storage: Storage, bound: std::net::SocketAddr) -> (Router, mitm::S
     (router, shutdown)
 }
 
-pub(crate) async fn tool_status(id: &str) -> Option<Value> {
-    let status = tool_status_details(id).await?;
-    Some(json!({
-        "installed":status["installed"].as_bool(),
-        "has9Router":status["has9Router"].as_bool(),
-    }))
-}
-
 async fn tool_status_details(id: &str) -> Option<Value> {
     if let Some(tool) = HostTool::ALL.into_iter().find(|tool| tool.id() == id) {
         tokio::task::spawn_blocking(move || tool.status())
