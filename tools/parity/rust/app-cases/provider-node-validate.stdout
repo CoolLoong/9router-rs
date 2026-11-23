@@ -1,0 +1,1 @@
+{"response":{"body":{"valid":true},"contentType":"application/json","status":200},"step":"01 /api/provider-nodes/validate","upstream":[{"path":"/v1/models","request":null}]}

@@ -1,0 +1,4 @@
+bin.name = "9router-upstream-1855aa44"
+args = ["auth-session"]
+status.code = 0
+fs.sandbox = true

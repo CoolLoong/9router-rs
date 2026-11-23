@@ -1,0 +1,4 @@
+{"response":{"body":{"id":"<generated-id>","key":"<fixture-secret>","machineId":"<fixture-secret>","name":"parity-fixture-key"},"contentType":"application/json","status":201},"step":"01 /api/keys","upstream":[]}
+{"response":{"body":{"key":{"access":{"allow":[],"restricted":false},"id":"<generated-id>","isActive":true,"key":"<fixture-secret>","machineId":"<fixture-secret>","name":"parity-fixture-key"}},"contentType":"application/json","status":200},"step":"02 /api/keys/{id}","upstream":[]}
+{"response":{"body":{"message":"Key deleted successfully"},"contentType":"application/json","status":200},"step":"03 /api/keys/{id}","upstream":[]}
+{"response":{"body":{"keys":[{"access":{"allow":[],"restricted":false},"id":"fixture-key","isActive":true,"key":"<fixture-secret>","machineId":null,"name":"Fixture"}]},"contentType":"application/json","status":200},"step":"04 /api/keys","upstream":[]}

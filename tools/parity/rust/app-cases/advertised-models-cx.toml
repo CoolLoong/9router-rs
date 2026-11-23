@@ -1,0 +1,4 @@
+bin.name = "9router-upstream-1855aa44"
+args = ["advertised-models-cx"]
+status.code = 0
+fs.sandbox = true

@@ -1,0 +1,10 @@
+{
+  "schema": "rust-anything/app-cases@1",
+  "name": "9router-upstream-1855aa44",
+  "run": [
+    "python3",
+    "run.py",
+    "node"
+  ],
+  "timeout_secs": 45
+}

@@ -1,0 +1,4 @@
+bin.name = "9router-upstream-1855aa44"
+args = ["transport-api-v1-chat-completions"]
+status.code = 0
+fs.sandbox = true

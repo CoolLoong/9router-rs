@@ -1,0 +1,13 @@
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"01 /dashboard/endpoint","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"02 /dashboard/providers","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"03 /dashboard/providers/new","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":404},"step":"04 /dashboard/models","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"05 /dashboard/combos","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"06 /dashboard/basic-chat","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"07 /dashboard/cli-tools","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"08 /dashboard/quota","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"09 /dashboard/usage","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"10 /dashboard/profile","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"11 /dashboard/proxy-pools","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":200},"step":"12 /dashboard/translator","upstream":[]}
+{"response":{"contentType":"text/html","html":true,"status":404},"step":"13 /dashboard/updates","upstream":[]}
