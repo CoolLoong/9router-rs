@@ -13,6 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+      - run: npm --prefix dashboard ci
+      - run: npm --prefix dashboard run build
       - run: rustup update stable --no-self-update
       - run: cargo +stable check --locked --workspace
       - run: cargo +stable check --locked --no-default-features

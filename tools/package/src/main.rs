@@ -125,6 +125,17 @@ fn package() -> Result<()> {
     }
 
     let mut members = dependency_notices(packager, &metadata, main_id)?;
+    let browser_licenses = root.join("dashboard/dist/licenses");
+    let mut browser_notices = BTreeMap::new();
+    license_directory(&browser_licenses, &browser_licenses, &mut browser_notices)?;
+    for (name, path) in browser_notices {
+        add_file(
+            &mut members,
+            format!("licenses/dashboard/{name}"),
+            path,
+            0o644,
+        )?;
+    }
     for entry in fs::read_dir(root.join("src/pxpipe_assets"))? {
         let path = entry?.path();
         let name = path

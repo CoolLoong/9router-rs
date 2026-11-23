@@ -16,14 +16,14 @@ use crate::storage::Storage;
 mod catalog_ui;
 #[path = "dashboard_chat_ui.rs"]
 mod chat_ui;
+#[path = "dashboard_frontend.rs"]
+mod frontend;
 #[path = "dashboard_integrations_ui.rs"]
 mod integrations_ui;
 #[path = "dashboard_management_ui.rs"]
 mod management_ui;
 #[path = "dashboard_optimization_ui.rs"]
 mod optimization_ui;
-#[path = "dashboard_original.rs"]
-mod original;
 #[path = "translator_ui.rs"]
 mod translator_ui;
 #[path = "dashboard_usage_ui.rs"]
@@ -92,10 +92,10 @@ pub fn router(storage: Storage) -> Router {
         .merge(optimization)
         .merge(usage)
         .merge(translator)
-        .merge(original::assets())
+        .merge(frontend::router(browser_storage.clone()))
         .layer(axum::middleware::from_fn_with_state(
             browser_storage,
-            original::render,
+            frontend::render,
         ))
 }
 

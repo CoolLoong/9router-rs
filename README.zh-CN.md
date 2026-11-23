@@ -88,6 +88,7 @@ flowchart LR
 ### 环境要求
 
 - 稳定版 [Rust 和 Cargo][rust-site]
+- 用于构建管理台的 Node.js 22 和 npm
 - 本机 C 编译器和链接器，供 SQLite 等依赖编译
 - Docker 与 Compose，用于容器部署
 
@@ -96,6 +97,8 @@ flowchart LR
 ```sh
 git clone https://github.com/CoolLoong/9router-rs.git
 cd 9router-rs
+npm --prefix dashboard ci
+npm --prefix dashboard run build
 cargo build --release --locked
 ```
 
@@ -226,6 +229,7 @@ Linux 工作区和无默认特性配置的编译检查由 [Rust CI](https://gith
 提交 Pull Request 前，在本地执行格式检查和编译检查。改动 API 或 CLI 时，请同步更新用法说明。
 
 ```sh
+npm --prefix dashboard run build
 cargo fmt --all -- --check
 cargo check --locked --workspace
 cargo check --locked --no-default-features
@@ -234,6 +238,7 @@ cargo check --locked --no-default-features
 | 路径 | 内容 |
 | --- | --- |
 | `src/` | 网关、Provider、管理台、CLI 和内嵌资源 |
+| `dashboard/` | 原版 React 管理台源码和前端构建 |
 | `crates/` | 内部 Rust 库 |
 | `tools/package/` | 原生归档和依赖许可清单 |
 

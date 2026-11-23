@@ -1,6 +1,6 @@
 # Native CLI preview packages
 
-The Cargo packager builds the application in release mode and writes a tar.gz archive on Linux and macOS or a ZIP on Windows. Cargo needs the locked crates, the selected Rust target, and its linker. The packaging build runs offline.
+The Cargo packager builds the application in release mode and writes a tar.gz archive on Linux and macOS or a ZIP on Windows. Cargo needs the locked crates, the selected Rust target, and its linker. Build the [dashboard assets](dashboard-assets.md) from source before packaging. Cargo's packaging build runs offline.
 
 ```sh
 cargo run --offline --locked -p ninerouter-package --

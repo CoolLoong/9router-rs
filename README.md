@@ -88,6 +88,7 @@ The model ID or Combo name determines which account handles a request. The gatew
 ### Prerequisites
 
 - A stable [Rust toolchain with Cargo][rust-site]
+- Node.js 22 and npm for the dashboard build
 - A C compiler and linker for bundled dependencies such as SQLite
 - Docker and Compose for container deployments
 
@@ -96,6 +97,8 @@ The model ID or Combo name determines which account handles a request. The gatew
 ```sh
 git clone https://github.com/CoolLoong/9router-rs.git
 cd 9router-rs
+npm --prefix dashboard ci
+npm --prefix dashboard run build
 cargo build --release --locked
 ```
 
@@ -226,6 +229,7 @@ Use the Cargo packager to build a Linux or macOS tarball or a Windows ZIP contai
 Before opening a pull request, check formatting and compilation. Update the usage documentation for changes to the API or CLI.
 
 ```sh
+npm --prefix dashboard run build
 cargo fmt --all -- --check
 cargo check --locked --workspace
 cargo check --locked --no-default-features
@@ -234,6 +238,7 @@ cargo check --locked --no-default-features
 | Path | Contents |
 | --- | --- |
 | `src/` | Gateway, providers, dashboard, CLI, and embedded assets |
+| `dashboard/` | Original React dashboard source and frontend build |
 | `crates/` | Internal Rust libraries |
 | `tools/package/` | Native archive builder and dependency license collection |
 
