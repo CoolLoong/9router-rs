@@ -38,22 +38,25 @@ pub fn capture<'a>(
         return (model, None);
     };
     claude_thinking::strip(body);
-    let fallback = if responses {
-        "openai-responses"
+    let native = if responses {
+        override_format.unwrap_or("openai-responses")
     } else {
-        "openai"
-    };
-    let native = override_format
-        .or_else(|| {
-            caps["thinkingFormat"].as_str().filter(|format| {
-                !matches!(
-                    *format,
-                    "gemini-level" | "gemini-budget" | "claude-budget" | "claude-adaptive" | "kiro"
-                )
+        override_format
+            .or_else(|| {
+                caps["thinkingFormat"].as_str().filter(|format| {
+                    !matches!(
+                        *format,
+                        "gemini-level"
+                            | "gemini-budget"
+                            | "claude-budget"
+                            | "claude-adaptive"
+                            | "kiro"
+                    )
+                })
             })
-        })
-        .unwrap_or(fallback)
-        .to_owned();
+            .unwrap_or("openai")
+    }
+    .to_owned();
     let levels = thinking_catalog::levels(provider, model, &caps, openai_models::data());
     (
         model,
@@ -91,7 +94,7 @@ impl Controls {
                     self.openai_level(level)
                 });
             }
-            "openai-responses" if !disabled => {
+            "openai-responses" if !disabled && level != "auto" => {
                 body["reasoning"] = json!({"effort":self.openai_level(level),"summary":"auto"});
             }
             "zai" if disabled => body["enable_thinking"] = json!(false),
