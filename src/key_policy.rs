@@ -112,6 +112,7 @@ pub fn filter_for_key(
 }
 
 pub fn permits_chat(db: &Connection, key: &str, requested: &str) -> rusqlite::Result<bool> {
+    let requested = model_resolution::strip_gateway_prefix(requested);
     let Some(allow) = load_allow_sets(db, key)? else {
         return Ok(true);
     };

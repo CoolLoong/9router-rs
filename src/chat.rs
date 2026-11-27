@@ -259,7 +259,7 @@ async fn chat_body(
     if model.is_empty() {
         return error(StatusCode::BAD_REQUEST, "Missing model", HeaderMap::new());
     }
-    let model = model.to_owned();
+    let model = crate::model_resolution::strip_gateway_prefix(model).to_owned();
     let marked_model = parsed["contextMarker"].as_str().map(|marker| {
         let id = model.split_once('/').map_or(model.as_str(), |(_, id)| id);
         format!("{id}[{marker}]")

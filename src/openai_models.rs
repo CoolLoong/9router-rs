@@ -119,6 +119,7 @@ async fn list(State(state): State<ModelState>, request: Request) -> Response {
         .headers()
         .get(INTERNAL_DISCOVERY)
         .is_some_and(|value| value == "1");
+    let anthropic_gateway = !skip_dynamic && request.headers().contains_key("anthropic-version");
     match models(
         &state,
         crate::catalog_guard::api_key(&request),
@@ -131,12 +132,43 @@ async fn list(State(state): State<ModelState>, request: Request) -> Response {
     )
     .await
     {
-        Ok(models) => respond(
-            StatusCode::OK,
-            json!({ "object": "list", "data": models }),
-            true,
-        ),
+        Ok(mut models) => {
+            if anthropic_gateway {
+                for entry in &mut models {
+                    format_anthropic_gateway_entry(entry);
+                }
+            }
+            respond(
+                StatusCode::OK,
+                json!({ "object": "list", "data": models }),
+                true,
+            )
+        }
         Err(message) => catalog_error(message, false),
+    }
+}
+
+fn anthropic_gateway_compatible_id(id: &str) -> bool {
+    let lower = id.to_ascii_lowercase();
+    lower.contains("claude") || lower.contains("anthropic")
+}
+
+fn format_anthropic_gateway_entry(entry: &mut Value) {
+    let Some(id) = entry["id"].as_str().map(str::to_owned) else {
+        return;
+    };
+    if entry
+        .get("display_name")
+        .and_then(Value::as_str)
+        .is_none_or(str::is_empty)
+    {
+        entry["display_name"] = json!(id);
+    }
+    if !anthropic_gateway_compatible_id(&id) {
+        entry["id"] = json!(format!(
+            "{}{id}",
+            crate::model_resolution::ANTHROPIC_GATEWAY_PREFIX
+        ));
     }
 }
 
@@ -203,6 +235,8 @@ async fn detail(
             Err(message) => catalog_error(message, true),
         };
     }
+    let anthropic_gateway = request.headers().contains_key("anthropic-version");
+    let raw_path = crate::model_resolution::strip_gateway_prefix(&path);
     match models(
         &state,
         crate::catalog_guard::api_key(&request),
@@ -212,7 +246,13 @@ async fn detail(
     .await
     {
         Ok(models) => {
-            if let Some(model) = models.into_iter().find(|model| model["id"] == path) {
+            if let Some(mut model) = models
+                .into_iter()
+                .find(|model| model["id"] == path || model["id"] == raw_path)
+            {
+                if anthropic_gateway || raw_path != path {
+                    format_anthropic_gateway_entry(&mut model);
+                }
                 return respond(StatusCode::OK, model, true);
             }
             respond(

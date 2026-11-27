@@ -2,7 +2,23 @@ use gateway_model_resolver_rs::port::{known_provider_id, resolve_model_alias_tar
 use rusqlite::{Connection, OptionalExtension};
 use serde_json::Value;
 
+pub const ANTHROPIC_GATEWAY_PREFIX: &str = "anthropic-gateway/";
+
+pub fn strip_gateway_prefix(model: &str) -> &str {
+    model
+        .strip_prefix(ANTHROPIC_GATEWAY_PREFIX)
+        .or_else(|| {
+            model
+                .get(..ANTHROPIC_GATEWAY_PREFIX.len())
+                .filter(|head| head.eq_ignore_ascii_case(ANTHROPIC_GATEWAY_PREFIX))
+                .and_then(|_| model.get(ANTHROPIC_GATEWAY_PREFIX.len()..))
+        })
+        .filter(|rest| !rest.is_empty())
+        .unwrap_or(model)
+}
+
 pub fn get_model_info(db: &Connection, model: &str) -> rusqlite::Result<Option<(String, String)>> {
+    let model = strip_gateway_prefix(model);
     if model.is_empty() {
         return Ok(None);
     }
@@ -58,6 +74,7 @@ pub fn get_model_info(db: &Connection, model: &str) -> rusqlite::Result<Option<(
 }
 
 pub fn combo_exists(db: &Connection, name: &str) -> rusqlite::Result<bool> {
+    let name = strip_gateway_prefix(name);
     db.query_row(
         "SELECT EXISTS(SELECT 1 FROM combos WHERE name = ?1)",
         [name],
@@ -66,6 +83,7 @@ pub fn combo_exists(db: &Connection, name: &str) -> rusqlite::Result<bool> {
 }
 
 pub fn get_combo_models(db: &Connection, model: &str) -> rusqlite::Result<Option<Value>> {
+    let model = strip_gateway_prefix(model);
     if model.contains('/') {
         return Ok(None);
     }
