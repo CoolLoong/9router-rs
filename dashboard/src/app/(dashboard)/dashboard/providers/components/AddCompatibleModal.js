@@ -45,6 +45,7 @@ function AddCompatibleModal({ variant, isOpen, onClose, onCreated }) {
 
   const [formData, setFormData] = useState(initialFormData);
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [checkKey, setCheckKey] = useState("");
   const [checkModelId, setCheckModelId] = useState("");
   const [validating, setValidating] = useState(false);
@@ -61,9 +62,16 @@ function AddCompatibleModal({ variant, isOpen, onClose, onCreated }) {
     }
   }, [config.hasApiType ? formData.apiType : isOpen]);
 
+  useEffect(() => {
+    if (isOpen) {
+      setSubmitError("");
+    }
+  }, [isOpen]);
+
   const handleSubmit = async () => {
     if (!formData.name.trim() || !formData.prefix.trim() || !formData.baseUrl.trim()) return;
     setSubmitting(true);
+    setSubmitError("");
     try {
       const res = await fetch("/api/provider-nodes", {
         method: "POST",
@@ -82,9 +90,13 @@ function AddCompatibleModal({ variant, isOpen, onClose, onCreated }) {
         setFormData(initialFormData());
         setCheckKey("");
         setValidationResult(null);
+        setSubmitError("");
+      } else {
+        setSubmitError(data.error || "Failed to create provider node");
       }
     } catch (error) {
       console.log(`Error creating ${config.errorLabel} node:`, error);
+      setSubmitError("Network error");
     } finally {
       setSubmitting(false);
     }
@@ -146,7 +158,10 @@ function AddCompatibleModal({ variant, isOpen, onClose, onCreated }) {
         <Input
           label="Prefix"
           value={formData.prefix}
-          onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
+          onChange={(e) => {
+            setSubmitError("");
+            setFormData({ ...formData, prefix: e.target.value });
+          }}
           placeholder={config.prefixPlaceholder}
           hint="Required. Used as the provider prefix for model IDs."
         />
@@ -156,6 +171,7 @@ function AddCompatibleModal({ variant, isOpen, onClose, onCreated }) {
             options={API_TYPE_OPTIONS}
             value={formData.apiType}
             onChange={(e) => setFormData({ ...formData, apiType: e.target.value })}
+            data-i18n-skip
           />
         )}
         <Input
@@ -189,6 +205,9 @@ function AddCompatibleModal({ variant, isOpen, onClose, onCreated }) {
           </Button>
           {renderValidationResult()}
         </div>
+        {submitError && (
+          <p className="text-sm text-red-500">{submitError}</p>
+        )}
         <div className="flex flex-col gap-2 sm:flex-row">
           <Button
             onClick={handleSubmit}

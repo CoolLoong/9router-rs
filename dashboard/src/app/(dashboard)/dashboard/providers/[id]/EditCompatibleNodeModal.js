@@ -12,6 +12,7 @@ export default function EditCompatibleNodeModal({ isOpen, node, onSave, onClose,
     baseUrl: "https://api.openai.com/v1",
   });
   const [saving, setSaving] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [checkKey, setCheckKey] = useState("");
   const [checkModelId, setCheckModelId] = useState("");
   const [validating, setValidating] = useState(false);
@@ -25,8 +26,9 @@ export default function EditCompatibleNodeModal({ isOpen, node, onSave, onClose,
         apiType: node.apiType || "chat",
         baseUrl: node.baseUrl || (isAnthropic ? "https://api.anthropic.com/v1" : "https://api.openai.com/v1"),
       });
+      setSubmitError("");
     }
-  }, [node, isAnthropic]);
+  }, [node, isAnthropic, isOpen]);
 
   const apiTypeOptions = [
     { value: "chat", label: "Chat Completions" },
@@ -36,6 +38,7 @@ export default function EditCompatibleNodeModal({ isOpen, node, onSave, onClose,
   const handleSubmit = async () => {
     if (!formData.name.trim() || !formData.prefix.trim() || !formData.baseUrl.trim()) return;
     setSaving(true);
+    setSubmitError("");
     try {
       const payload = {
         name: formData.name,
@@ -45,7 +48,10 @@ export default function EditCompatibleNodeModal({ isOpen, node, onSave, onClose,
       if (!isAnthropic) {
         payload.apiType = formData.apiType;
       }
-      await onSave(payload);
+      const result = await onSave(payload);
+      if (result && result.ok === false) {
+        setSubmitError(result.error || "Failed to update provider node");
+      }
     } finally {
       setSaving(false);
     }
@@ -88,7 +94,10 @@ export default function EditCompatibleNodeModal({ isOpen, node, onSave, onClose,
         <Input
           label="Prefix"
           value={formData.prefix}
-          onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
+          onChange={(e) => {
+            setSubmitError("");
+            setFormData({ ...formData, prefix: e.target.value });
+          }}
           placeholder={isAnthropic ? "ac-prod" : "oc-prod"}
           hint="Required. Used as the provider prefix for model IDs."
         />
@@ -98,6 +107,7 @@ export default function EditCompatibleNodeModal({ isOpen, node, onSave, onClose,
             options={apiTypeOptions}
             value={formData.apiType}
             onChange={(e) => setFormData({ ...formData, apiType: e.target.value })}
+            data-i18n-skip
           />
         )}
         <Input
@@ -132,6 +142,9 @@ export default function EditCompatibleNodeModal({ isOpen, node, onSave, onClose,
           <Badge variant={validationResult === "success" ? "success" : "error"}>
             {validationResult === "success" ? "Valid" : "Invalid"}
           </Badge>
+        )}
+        {submitError && (
+          <p className="text-sm text-red-500">{submitError}</p>
         )}
         <div className="flex gap-2">
           <Button onClick={handleSubmit} fullWidth disabled={!formData.name.trim() || !formData.prefix.trim() || !formData.baseUrl.trim() || saving}>

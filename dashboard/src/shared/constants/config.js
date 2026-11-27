@@ -1,6 +1,6 @@
 // App configuration
 export const APP_CONFIG = {
-  name: "9Router Proxy",
+  name: "9Router-RS",
   description: "AI Infrastructure Management",
   version: __NINEROUTER_VERSION__,
 };

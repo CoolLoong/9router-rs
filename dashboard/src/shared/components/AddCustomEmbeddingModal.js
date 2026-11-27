@@ -15,6 +15,7 @@ export default function AddCustomEmbeddingModal({ isOpen, onClose, onCreated, on
     baseUrl: DEFAULT_BASE_URL,
   });
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [checkKey, setCheckKey] = useState("");
   const [checkModelId, setCheckModelId] = useState("");
   const [validating, setValidating] = useState(false);
@@ -23,6 +24,7 @@ export default function AddCustomEmbeddingModal({ isOpen, onClose, onCreated, on
   useEffect(() => {
     if (!isOpen) return;
     setValidationResult(null);
+    setSubmitError("");
     setCheckKey("");
     setCheckModelId("");
     if (isEdit) {
@@ -39,6 +41,7 @@ export default function AddCustomEmbeddingModal({ isOpen, onClose, onCreated, on
   const handleSubmit = async () => {
     if (!formData.name.trim() || !formData.prefix.trim() || !formData.baseUrl.trim()) return;
     setSubmitting(true);
+    setSubmitError("");
     try {
       const url = isEdit ? `/api/provider-nodes/${node.id}` : "/api/provider-nodes";
       const method = isEdit ? "PUT" : "POST";
@@ -58,9 +61,12 @@ export default function AddCustomEmbeddingModal({ isOpen, onClose, onCreated, on
       if (res.ok) {
         if (isEdit) onSaved?.(data.node);
         else onCreated?.(data.node);
+      } else {
+        setSubmitError(data.error || "Failed to save custom embedding node");
       }
     } catch (error) {
       console.log("Error saving custom embedding node:", error);
+      setSubmitError("Network error");
     } finally {
       setSubmitting(false);
     }
@@ -120,7 +126,10 @@ export default function AddCustomEmbeddingModal({ isOpen, onClose, onCreated, on
         <Input
           label="Prefix"
           value={formData.prefix}
-          onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
+          onChange={(e) => {
+            setSubmitError("");
+            setFormData({ ...formData, prefix: e.target.value });
+          }}
           placeholder="voyage"
           hint="Required. Used as the provider prefix for model IDs (e.g. voyage/voyage-3)."
         />
@@ -154,6 +163,9 @@ export default function AddCustomEmbeddingModal({ isOpen, onClose, onCreated, on
           </Button>
           {renderValidationResult()}
         </div>
+        {submitError && (
+          <p className="text-sm text-red-500">{submitError}</p>
+        )}
         <div className="flex gap-2">
           <Button
             onClick={handleSubmit}

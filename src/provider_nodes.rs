@@ -134,6 +134,7 @@ async fn read_body(req: Request) -> Option<Value> {
 
 enum Validation {
     Invalid(&'static str),
+    Conflict(String),
     InvalidType,
 }
 
@@ -141,9 +142,62 @@ impl Validation {
     fn response(self, internal: &str) -> Response {
         match self {
             Self::Invalid(message) => error(StatusCode::BAD_REQUEST, message),
+            Self::Conflict(message) => error(StatusCode::CONFLICT, &message),
             Self::InvalidType => error(StatusCode::INTERNAL_SERVER_ERROR, internal),
         }
     }
+}
+
+fn builtin_prefix_conflict(prefix: &str) -> Option<&'static str> {
+    let lower = prefix.to_ascii_lowercase();
+    if let Ok(Some(provider)) = gateway_model_resolver_rs::port::known_provider_id(&lower) {
+        return Some(provider);
+    }
+    crate::provider_index::entries().iter().find_map(|entry| {
+        let id = entry["id"].as_str()?;
+        let alias = entry["alias"].as_str();
+        if id.eq_ignore_ascii_case(prefix)
+            || alias.is_some_and(|alias| alias.eq_ignore_ascii_case(prefix))
+        {
+            Some(id)
+        } else {
+            None
+        }
+    })
+}
+
+fn check_prefix_conflict(
+    db: &Connection,
+    prefix: &str,
+    exclude_id: Option<&str>,
+) -> rusqlite::Result<Option<String>> {
+    if let Some(provider) = builtin_prefix_conflict(prefix) {
+        return Ok(Some(format!(
+            "Prefix \"{prefix}\" conflicts with built-in provider \"{provider}\""
+        )));
+    }
+    let mut statement = db.prepare("SELECT id, name, data FROM providerNodes")?;
+    let mut rows = statement.query([])?;
+    while let Some(row) = rows.next()? {
+        let id: String = row.get(0)?;
+        if exclude_id == Some(id.as_str()) {
+            continue;
+        }
+        let name: Option<String> = row.get(1)?;
+        let data: Option<String> = row.get(2)?;
+        let existing = data
+            .as_deref()
+            .and_then(|raw| serde_json::from_str::<Value>(raw).ok())
+            .and_then(|value| value["prefix"].as_str().map(str::to_owned));
+        if existing.is_some_and(|value| value.eq_ignore_ascii_case(prefix)) {
+            let message = match name.as_deref().filter(|name| !name.is_empty()) {
+                Some(name) => format!("Prefix \"{prefix}\" is already used by \"{name}\""),
+                None => format!("Prefix \"{prefix}\" is already in use"),
+            };
+            return Ok(Some(message));
+        }
+    }
+    Ok(None)
 }
 
 fn required<'a>(body: &'a Value, key: &str, message: &'static str) -> Result<&'a str, Validation> {
@@ -232,6 +286,23 @@ async fn list(State(state): State<NodeState>) -> Response {
     }
 }
 
+enum Create {
+    Invalid(Validation),
+    Node(Node),
+}
+
+fn create_node(db: &mut Connection, node: Node) -> rusqlite::Result<Create> {
+    let tx = db.transaction_with_behavior(TransactionBehavior::Immediate)?;
+    if let Some(prefix) = node.get("prefix").and_then(Value::as_str)
+        && let Some(message) = check_prefix_conflict(&tx, prefix, None)?
+    {
+        return Ok(Create::Invalid(Validation::Conflict(message)));
+    }
+    write(&tx, &node)?;
+    tx.commit()?;
+    Ok(Create::Node(node))
+}
+
 async fn create(State(state): State<NodeState>, req: Request) -> Response {
     let Some(body) = read_body(req).await else {
         return error(StatusCode::INTERNAL_SERVER_ERROR, CREATE_ERROR);
@@ -242,13 +313,11 @@ async fn create(State(state): State<NodeState>, req: Request) -> Response {
     };
     match state
         .storage
-        .run(true, move |db| {
-            write(db, &node)?;
-            Ok(node)
-        })
+        .run(true, move |db| create_node(db, node))
         .await
     {
-        Ok(node) => respond(StatusCode::CREATED, json!({ "node": node })),
+        Ok(Create::Node(node)) => respond(StatusCode::CREATED, json!({ "node": node })),
+        Ok(Create::Invalid(validation)) => validation.response(CREATE_ERROR),
         Err(_) => error(StatusCode::INTERNAL_SERVER_ERROR, CREATE_ERROR),
     }
 }
@@ -331,6 +400,11 @@ fn update_node(db: &mut Connection, id: &str, body: &Value) -> rusqlite::Result<
         Ok(api) => api,
         Err(validation) => return Ok(Update::Invalid(validation)),
     };
+    if let Some(prefix) = node.get("prefix").and_then(Value::as_str)
+        && let Some(message) = check_prefix_conflict(&tx, prefix, Some(id))?
+    {
+        return Ok(Update::Invalid(Validation::Conflict(message)));
+    }
     match connections_decode_without_loss(&tx, id) {
         Ok(true) => {}
         Ok(false) | Err(rusqlite::Error::InvalidColumnType(..)) => return Ok(Update::Unreadable),
