@@ -118,12 +118,16 @@ pub(super) async fn run(State(state): State<NodeState>, request: Request) -> Res
         }
         _ => return unavailable("Endpoint validation proxy unavailable"),
     };
-    let sockets = match timeout(TIMEOUT, allowed_addresses(&url, local)).await {
-        Ok(Ok(sockets)) => sockets,
-        Ok(Err(())) => return error(StatusCode::BAD_REQUEST, "URL not allowed"),
-        Err(_) => return network(true),
+    let sockets = if local && tunnel.is_none() {
+        Vec::new()
+    } else {
+        match timeout(TIMEOUT, allowed_addresses(&url, local)).await {
+            Ok(Ok(sockets)) => sockets,
+            Ok(Err(())) => return error(StatusCode::BAD_REQUEST, "URL not allowed"),
+            Err(_) => return network(true),
+        }
     };
-    let Ok(client) = pinned_client(&url, &sockets) else {
+    let Ok(client) = probe_client(&url, &sockets) else {
         return network(false);
     };
     let probe = Probe {
@@ -333,13 +337,15 @@ async fn allowed_addresses(url: &Url, local: bool) -> Result<Vec<SocketAddr>, ()
     Ok(sockets)
 }
 
-fn pinned_client(url: &Url, sockets: &[SocketAddr]) -> Result<Client, reqwest::Error> {
+fn probe_client(url: &Url, sockets: &[SocketAddr]) -> Result<Client, reqwest::Error> {
     let mut builder = Client::builder()
         .no_proxy()
         .timeout(TIMEOUT)
         .redirect(reqwest::redirect::Policy::none())
         .retry(reqwest::retry::never());
-    if let Some(host) = url.domain() {
+    if !sockets.is_empty()
+        && let Some(host) = url.domain()
+    {
         builder = builder.resolve_to_addrs(host, sockets);
     }
     builder.build()

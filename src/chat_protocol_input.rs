@@ -293,8 +293,10 @@ fn convert_claude_message(
     let inline_files = inline_files && message["role"] == "user";
     if !responses
         && content.as_array().is_some_and(|parts| {
-            parts.iter().any(|part| {
-                unsupported_claude_block(part) && !(inline_files && part["type"] == "document")
+            parts.iter().any(|part| match part["type"].as_str() {
+                Some("thinking" | "redacted_thinking") => false,
+                Some("document") if inline_files => false,
+                _ => unsupported_claude_block(part),
             })
         })
     {
