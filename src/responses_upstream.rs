@@ -48,9 +48,12 @@ pub async fn respond(
     let content_type = headers
         .get(header::CONTENT_TYPE)
         .and_then(|value| value.to_str().ok())
-        .unwrap_or_default();
+        .unwrap_or_default()
+        .to_ascii_lowercase();
 
-    if !client_stream && content_type.contains("text/event-stream") {
+    if !client_stream
+        && (content_type.contains("text/event-stream") || content_type.is_empty())
+    {
         let Some(value) = collect(upstream, stall_timeout(provider)).await else {
             return error(
                 StatusCode::BAD_GATEWAY,
@@ -71,8 +74,7 @@ pub async fn respond(
         return json_response(StatusCode::OK, value, None);
     }
 
-    if executor_stream {
-        let content_type = content_type.to_ascii_lowercase();
+    if executor_stream && (client_stream || !content_type.contains("application/json")) {
         if !content_type.is_empty()
             && !content_type.contains("text/event-stream")
             && !content_type.contains("application/json")
