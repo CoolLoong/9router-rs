@@ -363,16 +363,12 @@ fn convert_claude_message(
             }
             Some("tool_result") => {
                 let content = &block["content"];
-                let images: Vec<_> = if responses {
-                    content
-                        .as_array()
-                        .into_iter()
-                        .flatten()
-                        .filter_map(claude_image)
-                        .collect()
-                } else {
-                    Vec::new()
-                };
+                let images: Vec<_> = content
+                    .as_array()
+                    .into_iter()
+                    .flatten()
+                    .filter_map(claude_image)
+                    .collect();
                 results.push(tool_result(
                     block,
                     "tool_use_id",
@@ -468,11 +464,9 @@ fn unsupported_claude_block(block: &Value) -> bool {
                 | "web_search_tool_result"
         )
     ) || (block["type"] == "tool_result"
-        && block["content"].as_array().is_some_and(|parts| {
-            parts
-                .iter()
-                .any(|item| item["type"] == "image" || unsupported_claude_block(item))
-        }))
+        && block["content"]
+            .as_array()
+            .is_some_and(|parts| parts.iter().any(unsupported_claude_block)))
 }
 
 fn collapse_claude_text(mut parts: Vec<Value>) -> Value {

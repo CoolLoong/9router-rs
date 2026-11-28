@@ -14,7 +14,7 @@ pub fn prepare(client: ChatFormat, body: Value, model: &str, accept: &str) -> Op
     let mut prepared = match client {
         ChatFormat::Responses => native(body, model, false)?,
         ChatFormat::Messages => {
-            let chat = chat_protocol_input::translate(client, body, accept)?;
+            let chat = chat_protocol_input::anthropic_messages_for_responses(body, accept)?;
             from_chat(chat, model)?
         }
         ChatFormat::Chat => {
